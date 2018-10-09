@@ -18,7 +18,7 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>https://kenarnold.org/home/about/</guid>
-      <description>Biography Kenneth C. Arnold is finishing his PhD in Computer Science at Harvard University, working with Professor Krzysztof Gajos. He studies how people use intelligent systems for creative productivity, such as writing.</description>
+      <description>Kenneth C. Arnold is finishing his PhD in Computer Science at Harvard University, working with Professor Krzysztof Z. Gajos. He studies how people use intelligent systems for creative productivity, such as writing.</description>
     </item>
     
     <item>
@@ -67,13 +67,12 @@
     </item>
     
     <item>
-      <title>Custom Section</title>
+      <title>Teaching</title>
       <link>https://kenarnold.org/home/teaching/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>https://kenarnold.org/home/teaching/</guid>
-      <description>This is an example of using the custom widget to create your own homepage section.
-To remove this section, either delete content/home/teaching.md or edit the frontmatter of the file to deactivate the widget by setting active = false.</description>
+      <description> Fall 2018: CS109a Data Science (Section Leader) Spring 2015: CS282r Decision-Making Under Uncertainty Spring 2013: CS179 Design of Usable Interactive Systems  </description>
     </item>
     
     <item>

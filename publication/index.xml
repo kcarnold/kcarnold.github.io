@@ -12,5 +12,23 @@
 	<atom:link href="https://kenarnold.org/publication/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Sentiment Bias in Predictive Text Recommendations Results in Biased Writing</title>
+      <link>https://kenarnold.org/publication/sentiment-bias/</link>
+      <pubDate>Tue, 08 May 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://kenarnold.org/publication/sentiment-bias/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On Suggesting Phrases vs. Predicting Words for Mobile Text Composition</title>
+      <link>https://kenarnold.org/publication/phrase-suggestion/</link>
+      <pubDate>Sun, 16 Oct 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://kenarnold.org/publication/phrase-suggestion/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
