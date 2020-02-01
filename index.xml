@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kenneth C. Arnold on Kenneth C. Arnold</title>
@@ -7,24 +6,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 08 May 2018 00:00:00 -0400</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Sentiment Bias in Predictive Text Recommendations Results in Biased Writing</title>
-      <link>https://kenarnold.org/publication/sentiment-bias/</link>
-      <pubDate>Tue, 08 May 2018 00:00:00 -0400</pubDate>
+      <title>Posts</title>
+      <link>https://kenarnold.org/post/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
       
-      <guid>https://kenarnold.org/publication/sentiment-bias/</guid>
+      <guid>https://kenarnold.org/post/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>On Suggesting Phrases vs. Predicting Words for Mobile Text Composition</title>
-      <link>https://kenarnold.org/publication/phrase-suggestion/</link>
-      <pubDate>Sun, 16 Oct 2016 00:00:00 -0400</pubDate>
+      <title>Publications</title>
+      <link>https://kenarnold.org/publication/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
       
-      <guid>https://kenarnold.org/publication/phrase-suggestion/</guid>
+      <guid>https://kenarnold.org/publication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>https://kenarnold.org/talk/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://kenarnold.org/talk/</guid>
       <description></description>
     </item>
     
