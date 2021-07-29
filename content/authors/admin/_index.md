@@ -28,7 +28,7 @@ education:
   courses:
   - course: PhD in Computer Science
     institution: Harvard University
-    year: 20202
+    year: 2020
   - course: MS in Media Arts and Sciences
     institution: Massachusetts Institute of Technology
     year: 2010
