@@ -27,10 +27,12 @@ content:
   filter_button:
   - name: All
     tag: '*'
-  - name: Deep Learning
-    tag: Deep Learning
-  - name: Other
+  - name: HCI
+    tag: HCI
+  - name: Education
     tag: Demo
+  - name: NLP
+    tag: NLP
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
