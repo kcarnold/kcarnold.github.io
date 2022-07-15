@@ -1,0 +1,33 @@
+---
+title: "Selected Publications"
+jupyter: sp22
+---
+
+```{python}
+#| echo: false
+#| output: asis
+
+import yaml
+
+pubs = yaml.load('''
+- title: "On Suggesting Phrases vs. Predicting Words for Mobile Text Composition"
+  date: 2016-10-16
+  authors: ["KC Arnold", "KZ Gajos", "AT Kalai"]
+  publication: "In *Proceedings of the 29th Annual Symposium on User Interface Software and Technology*, UIST '16"
+  publication_short: "In *UIST'16*"
+  abstract: "A system capable of suggesting multi-word phrases while someone is writing could supply ideas about content and phrasing and allow those ideas to be inserted efficiently. Meanwhile, statistical language modeling has provided various approaches to predicting phrases that users type. We introduce a simple extension to the familiar mobile keyboard suggestion interface that presents phrase suggestions that can be accepted by a repeated-tap gesture. In an extended composition task, we found that phrases were interpreted as suggestions that affected the content of what participants wrote more than conventional single-word suggestions, which were interpreted as predictions. We highlight a design challenge: how can a phrase suggestion system make valuable suggestions rather than just accurate predictions? "
+  abstract_short: "We introduce a simple extension to the familiar mobile keyboard suggestion interface that presents phrase suggestions that can be accepted by a repeated-tap gesture. In an extended composition task, we found that phrases were interpreted as suggestions that affected the content of what participants wrote more than conventional single-word suggestions, which were interpreted as predictions."
+  url_pdf: "http://iis.seas.harvard.edu/papers/2016/arnold16suggesting.pdf"
+
+
+''', Loader=yaml.CSafeLoader)
+
+for pub in pubs:
+    authors = ', '.join(pub['authors'])
+    links = []
+
+    print(f"### {pub['title']}\n")
+    print(f"by {authors}\n")
+    print(f"{pub['publication_short']}\n\n")
+    print(f"**Abstract**: {pub['abstract_short']}")
+```

@@ -27,6 +27,19 @@ Kenneth (Ken) Arnold is a professor of computer science and data science at Calv
 - Artificial Intelligence
 - Creativity Support Tools
 
+## Teaching
+
+- CS 108 and 106 (Introduction to Computing)
+- DATA 202 (Data Wrangling and Analytics)
+- CS 344 (Artificial Intelligence)
+- INFO 602 (Predictive Analytics)
+
+Earlier (at Harvard University):
+
+- Fall 2018: CS109a Data Science (Section Leader)
+- Spring 2015: CS282r Decision-Making Under Uncertainty
+- Spring 2013: CS179 Design of Usable Interactive Systems
+
 
 ## Education
 
