@@ -28,3 +28,10 @@ url_video: ''
 ---
 
 ![](featured.png)
+
+[PDF]({{< meta url_pdf >}}) {{< meta publication_short >}}
+
+
+## Abstract
+
+{{< meta abstract_long >}}

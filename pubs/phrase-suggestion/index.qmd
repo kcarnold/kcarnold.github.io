@@ -20,7 +20,7 @@ tags: ["HCI", "NLP"]
 
 ![](featured.png)
 
-[PDF](http://iis.seas.harvard.edu/papers/2016/arnold16suggesting.pdf) {{<meta publication_short>}}
+[PDF](http://iis.seas.harvard.edu/papers/2016/arnold16suggesting.pdf) {{< meta publication_short >}}
 
 ## Abstract
 
