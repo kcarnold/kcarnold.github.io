@@ -1,12 +1,8 @@
 ---
 title: "Welcome To My Blog"
-author: "Tristan O'Malley"
-date: "2022-07-12"
+author: "Ken Arnold"
+date: "2022-07-15"
 categories: [news]
 ---
 
-This is the first post in a Quarto blog. Welcome!
-
-![](thumbnail.jpg)
-
-Since this post doesn't specify an explicit `image`, the first image in the post will be used in the listing page of posts.
+I'm in the process of converting my website to Quarto.
