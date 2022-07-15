@@ -1,0 +1,9 @@
+---
+title: "Selected Publications"
+listing:
+  contents: pubs
+  sort:
+    - "date desc"
+    - "title"
+  type: default
+---
