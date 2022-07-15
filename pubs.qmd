@@ -1,5 +1,5 @@
 ---
-title: "Selected Publications"
+title: "Publications"
 listing:
   contents: pubs
   sort:
@@ -7,3 +7,5 @@ listing:
     - "title"
   type: default
 ---
+
+Some selected publications are below. For a more complete list, see my [Google Scholar profile](https://scholar.google.com/citations?hl=en&user=u512YusAAAAJ&view_op=list_works&sortby=pubdate)
