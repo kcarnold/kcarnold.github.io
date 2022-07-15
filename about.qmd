@@ -1,0 +1,35 @@
+---
+title: "About"
+image: profile.jpg
+about:
+  template: trestles
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/kcarnold
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/kcarnold/
+    - icon: github
+      text: Github
+      href: https://github.com
+
+---
+
+
+Kenneth (Ken) Arnold is a professor of computer science and data science at Calvin University. He studies how people can use intelligent systems for creative productivity and learning. His doctoral research was on how predictive typing affects what people write and how.
+
+
+## Interests
+
+- Natural Language Processing
+- Human-Computer Interaction
+- Artificial Intelligence
+- Creativity Support Tools
+
+
+## Education
+
+- PhD in Computer Science, Harvard, 2020
+- MS in Media Arts and Sciences, MIT, 2010
+- BS in Electrical and Computer Engineering, Cornell, 2007
