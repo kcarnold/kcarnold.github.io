@@ -19,15 +19,26 @@ pubs = yaml.load('''
   abstract_short: "We introduce a simple extension to the familiar mobile keyboard suggestion interface that presents phrase suggestions that can be accepted by a repeated-tap gesture. In an extended composition task, we found that phrases were interpreted as suggestions that affected the content of what participants wrote more than conventional single-word suggestions, which were interpreted as predictions."
   url_pdf: "http://iis.seas.harvard.edu/papers/2016/arnold16suggesting.pdf"
 
+- title: "Sentiment Bias in Predictive Text Recommendations Results in Biased Writing"
+  date: "2018-05-08"
+  authors: ["KC Arnold", "K Chauncey", "KZ Gajos"]
+  publication: "In *Graphics Interface 2018*."
+  publication_short: "In *GI2018*"
+  abstract: "Prior research has demonstrated that intelligent systems make biased decisions because they are trained on biased data. As people increasingly leverage intelligent systems to enhance their productivity and creativity, could system biases affect what people create? We demonstrate that in at least one domain (writing restaurant reviews), biased system behavior leads to biased human behavior: People presented with phrasal text entry shortcuts that were skewed positive wrote more positive reviews than they did when presented with negative-skewed shortcuts. This result contributes to the pertinent debate about the role of intelligent systems in our society."
+  abstract_short: "Intelligent systems make biased decisions because they are trained on biased data. Could these system biases affect what people create? We found that when writing restaurant reviews, biased system behavior leads to biased human behavior: People presented with phrasal text entry shortcuts that were skewed positive wrote more positive reviews than they did when presented with negative-skewed shortcuts."
+  url_pdf: "http://iis.seas.harvard.edu/papers/2018/arnold18sentiment.pdf"
 
 ''', Loader=yaml.CSafeLoader)
 
 for pub in pubs:
     authors = ', '.join(pub['authors'])
     links = []
-
+    if 'url_pdf' in pub:
+        links.append(f"[PDF]({pub['url_pdf']})")
     print(f"### {pub['title']}\n")
     print(f"by {authors}\n")
+    print(', '.join(links) + '\n')
     print(f"{pub['publication_short']}\n\n")
     print(f"**Abstract**: {pub['abstract_short']}")
+    print('\n\n')
 ```
