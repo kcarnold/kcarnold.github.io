@@ -44,13 +44,12 @@ I teach:
 
 - [DATA 202 Data Science 2](https://cs.calvin.edu/courses/data/202/), a data wrangling, predictive modeling, and visualization course using the R tidyverse, with a project emphasis
 - [CS 344 Artificial Intelligence](https://cs.calvin.edu/courses/cs/344/), an applications-first machine learning course based on the [fast.ai course](https://course.fast.ai/)
-- [CS 108 Introduction to Computing](https://cs.calvin.edu/courses/cs/108/kvlinden/), Calvin's first-year Computer Science course, in Python.
-
+- [CS 108 Introduction to Computing](https://cs.calvin.edu/courses/cs/108/) and CS 106, Calvin's first-year Computer Science course, in Python.
+- INFO 602 Predictive Analytics (for Calvin's MBA program)
 
 ## Harvard University
 
 At Harvard, I was a teaching assistant for the following classes:
-
 
 * Fall 2018: CS109a Data Science
 * Spring 2015: CS282r Decision-Making Under Uncertainty
