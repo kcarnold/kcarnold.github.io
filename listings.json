@@ -1,0 +1,15 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/pubs.html",
+    "items": [
+      "/pubs/sentiment-bias/index.html",
+      "/pubs/phrase-suggestion/index.html"
+    ]
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "I’m in the process of converting my website to Quarto."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "AI for Everyday Creativity",
+    "section": "",
+    "text": "news\n\n\n\n\n\n\n\n\n\n\n\nJul 15, 2022\n\n\nKen Arnold\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Kenneth (Ken) Arnold is a professor of computer science and data science at Calvin University. He studies how people can use intelligent systems for creative productivity and learning. His doctoral research was on how predictive typing affects what people write and how."
+  },
+  {
+    "objectID": "about.html#interests",
+    "href": "about.html#interests",
+    "title": "About",
+    "section": "Interests",
+    "text": "Interests\n\nNatural Language Processing\nHuman-Computer Interaction\nArtificial Intelligence\nCreativity Support Tools"
+  },
+  {
+    "objectID": "about.html#teaching",
+    "href": "about.html#teaching",
+    "title": "About",
+    "section": "Teaching",
+    "text": "Teaching\n\nCS 108 and 106 (Introduction to Computing)\nDATA 202 (Data Wrangling and Analytics)\nCS 344 (Artificial Intelligence)\nINFO 602 (Predictive Analytics)\n\nEarlier (at Harvard University):\n\nFall 2018: CS109a Data Science (Section Leader)\nSpring 2015: CS282r Decision-Making Under Uncertainty\nSpring 2013: CS179 Design of Usable Interactive Systems"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About",
+    "section": "Education",
+    "text": "Education\n\nPhD in Computer Science, Harvard, 2020\nMS in Media Arts and Sciences, MIT, 2010\nBS in Electrical and Computer Engineering, Cornell, 2007"
+  },
+  {
+    "objectID": "pubs.html",
+    "href": "pubs.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Sentiment Bias in Predictive Text Recommendations Results in Biased Writing\n\n\n\n\n\nIntelligent systems make biased decisions because they are trained on biased data. Could these system biases affect what people create? We found that when writing restaurant reviews, biased system behavior leads to biased human behavior: People presented with phrasal text entry shortcuts that were skewed positive wrote more positive reviews than they did when presented with negative-skewed shortcuts.\n\n\n\n\n\n\nMay 8, 2018\n\n\n\n\n\n\n  \n\n\n\n\nOn Suggesting Phrases vs. Predicting Words for Mobile Text Composition\n\n\n\n\n\nWe introduce a simple extension to the familiar mobile keyboard suggestion interface that presents phrase suggestions that can be accepted by a repeated-tap gesture. In an extended composition task, we found that phrases were interpreted as suggestions that affected the content of what participants wrote more than conventional single-word suggestions, which were interpreted as predictions.\n\n\n\n\n\n\nOct 16, 2016\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "static/new_years_2020/new_years_2020.html",
+    "href": "static/new_years_2020/new_years_2020.html",
+    "title": "Arnolds New Years Letter 2020",
+    "section": "",
+    "text": "Highlights:\n\nWe’ve moved to Grand Rapids, Michigan! We miss Boston and our friends there (who helped us immensely with the move, by the way), but we’ve started to appreciate Grand Rapids on its own terms.\nKen started teaching Computer Science and Data Science at Calvin University! The first semester was joyfully overwhelming. Ken feels increasingly thankful and blessed to be there.\nSusan has mostly been at home with Naomi and Esther. For ten weeks last spring, she went back to work part time for her former architecture firm, with the help of a wonderful nanny. She felt like that was a nice balance and is hoping to find a similar part time schedule here, once she finishes her architecture professional exams.\nNaomi and Esther celebrated their second birthday in November. They have learned so much, going from not talking at the beginning of the year, to putting ever more complex phrases together.\n\nOther tidbits:\n\n2019 started with a New Year’s Day hike in Maryland with Ken’s brother Austin and (now) fiancée Mason, and finished with Ken’s parents visiting us in Grand Rapids for New Years 2020.\nKen’s parents visited us frequently during the year (coming from Maryland) and Susan’s parents visited Boston over the summer to help us pack up for our move.\nNaomi and Esther were baptized at Citylife Church in Boston in June, with all grandparents attending. Baptism is a symbol of the faith we share and our hopes that the girls will grow in that faith as part of Christian community.\nWe enjoyed Christmas in Portland, Oregon with Susan’s parents.\nWe are now located closer to Susan’s extended family in Michigan.\nWe bought a minivan (a like-new Honda Odyssey)!\n\nLooking forward to:\n\nKen teaching another two classes this spring, and hopefully finally defending his PhD thesis (long story).\nUpcoming travels: to Ken’s brother Austin’s wedding mid-October, Ken traveling to Italy in March to present a paper at a conference (it finally got accepted on the third try), and maybe a few days vacationing by Lake Michigan this summer with one of Susan’s friends.\nGetting connected with a local church.\nSusan continuing in professional development and maybe starting work.\nNaomi and Esther continuing to grow, and we’re considering starting preschool this year.\n\nOur new address is 3654 Palmer Ridge Road SE, Grand Rapids MI 49546.\nWith love,\nKen, Susan, Esther and Naomi\n\n\n\nNaomi and Esther\n\n\nmore photos here."
+  },
+  {
+    "objectID": "pubs/sentiment-bias/index.html",
+    "href": "pubs/sentiment-bias/index.html",
+    "title": "Sentiment Bias in Predictive Text Recommendations Results in Biased Writing",
+    "section": "",
+    "text": "PDF In GI’18"
+  },
+  {
+    "objectID": "pubs/sentiment-bias/index.html#abstract",
+    "href": "pubs/sentiment-bias/index.html#abstract",
+    "title": "Sentiment Bias in Predictive Text Recommendations Results in Biased Writing",
+    "section": "Abstract",
+    "text": "Abstract\nPrior research has demonstrated that intelligent systems make biased decisions because they are trained on biased data. As people increasingly leverage intelligent systems to enhance their productivity and creativity, could system biases affect what people create? We demonstrate that in at least one domain (writing restaurant reviews), biased system behavior leads to biased human behavior: People presented with phrasal text entry shortcuts that were skewed positive wrote more positive reviews than they did when presented with negative-skewed shortcuts. This result contributes to the pertinent debate about the role of intelligent systems in our society."
+  },
+  {
+    "objectID": "pubs/phrase-suggestion/index.html",
+    "href": "pubs/phrase-suggestion/index.html",
+    "title": "On Suggesting Phrases vs. Predicting Words for Mobile Text Composition",
+    "section": "",
+    "text": "PDF In UIST’16"
+  },
+  {
+    "objectID": "pubs/phrase-suggestion/index.html#abstract",
+    "href": "pubs/phrase-suggestion/index.html#abstract",
+    "title": "On Suggesting Phrases vs. Predicting Words for Mobile Text Composition",
+    "section": "Abstract",
+    "text": "Abstract\nA system capable of suggesting multi-word phrases while someone is writing could supply ideas about content and phrasing and allow those ideas to be inserted efficiently. Meanwhile, statistical language modeling has provided various approaches to predicting phrases that users type. We introduce a simple extension to the familiar mobile keyboard suggestion interface that presents phrase suggestions that can be accepted by a repeated-tap gesture. In an extended composition task, we found that phrases were interpreted as suggestions that affected the content of what participants wrote more than conventional single-word suggestions, which were interpreted as predictions. We highlight a design challenge: how can a phrase suggestion system make valuable suggestions rather than just accurate predictions?"
+  }
+]
