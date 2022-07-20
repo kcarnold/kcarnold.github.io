@@ -1,0 +1,9 @@
+---
+title: "AI and Mimicry"
+summary: |
+  AI systems aren't magic or inherently objective. For all their strengths, most
+  AI systems mimic human behavior.
+draft: true
+---
+
+I suspect that many laypeople think of AI as either magic or made by highly clever programmers. The main thing missing in that view is that the most common form of AI today---machine learning---is rooted in data, which mostly comes from people. Much of AI's strengths and weaknesses can be understood by thinking of it as mimicking the examples of human behavior that end up in its training data---both the good and bad parts. That means that the data needed to be collected from people (bringing up questions of privacy and of "[Ghost Work](https://ghostwork.info/)"), and that the results are rarely "rational" or "objective".
