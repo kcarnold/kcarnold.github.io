@@ -11,14 +11,21 @@
     "href": "index.html",
     "title": "AI for Everyday Creativity",
     "section": "",
-    "text": "news\n\n\n\n\n\n\n\n\n\n\n\nJul 15, 2022\n\n\nKen Arnold\n\n\n\n\n\n\nNo matching items"
+    "text": "Some of my current projects:\n\nApplying today’s large AI language models to Help writers – but without putting words in their mouth the way predictive text does.\nAugmenting instructors to have better views of what their students are actually learning.\nHelping Christians understand what AI can do, and accurately calibrating both our excitement and our concerns.\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJul 15, 2022\n\n\nKen Arnold\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Kenneth (Ken) Arnold is a professor of computer science and data science at Calvin University. He studies how people can use intelligent systems for creative productivity and learning. His doctoral research was on how predictive typing affects what people write and how."
+    "text": "Ken Arnold is an assistant professor of Computer Science and Data Science at Calvin University. His research focuses on how data-driven intelligent systems can support human creative productivity and learning. His teaching seeks to cultivate communities of learners who engage data and computation with both technical maturity and contextual thoughtfulness. His doctoral work at Harvard University, advised by Prof. Krzysztof Gajos, was on how predictive text affects what people write."
+  },
+  {
+    "objectID": "about.html#doing-research-with-me",
+    "href": "about.html#doing-research-with-me",
+    "title": "About",
+    "section": "Doing research with me",
+    "text": "Doing research with me\nI welcome students who are interested in human-computer interaction, machine learning, data science, interactive visualization, and Christian perspectives on data and computation. I have a range of ideas and ongoing projects, but bring your own interests too! Please contact me via email (Calvin: ka37) or Teams."
   },
   {
     "objectID": "about.html#interests",
@@ -32,7 +39,14 @@
     "href": "about.html#teaching",
     "title": "About",
     "section": "Teaching",
-    "text": "Teaching\n\nCS 108 and 106 (Introduction to Computing)\nDATA 202 (Data Wrangling and Analytics)\nCS 344 (Artificial Intelligence)\nINFO 602 (Predictive Analytics)\n\nEarlier (at Harvard University):\n\nFall 2018: CS109a Data Science (Section Leader)\nSpring 2015: CS282r Decision-Making Under Uncertainty\nSpring 2013: CS179 Design of Usable Interactive Systems"
+    "text": "Teaching\nI teach computer science, data science, and machine learning.\n\nCalvin University\nI teach:\n\nDATA 202 Data Science 2, a data wrangling, predictive modeling, and visualization course using the R tidyverse, with a project emphasis\nCS 344 Artificial Intelligence, an applications-first machine learning course based on the fast.ai course\nCS 108 Introduction to Computing and CS 106, Calvin’s first-year Computer Science course, in Python.\nINFO 602 Predictive Analytics (for Calvin’s MBA program)"
+  },
+  {
+    "objectID": "about.html#harvard-university",
+    "href": "about.html#harvard-university",
+    "title": "About",
+    "section": "Harvard University",
+    "text": "Harvard University\nAt Harvard, I was a teaching assistant for the following classes:\n\nFall 2018: CS109a Data Science\nSpring 2015: CS282r Decision-Making Under Uncertainty\nSpring 2013: CS179 Design of Usable Interactive Systems"
   },
   {
     "objectID": "about.html#education",
