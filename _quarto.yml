@@ -1,5 +1,6 @@
 project:
   type: website
+  resources: static
 
 website:
   title: "Ken Arnold @ Calvin University"
