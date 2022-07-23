@@ -1,20 +1,23 @@
 ---
 title: "Ken Arnold"
 description: "AI for Everyday Creativity"
-page-layout: full
-image: profile.jpg
+about:
+  template: solana
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/kcarnold
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/kcarnold/
+    - icon: github
+      text: GitHub
+      href: https://github.com/kcarnold
+    - icon: book
+      text: Google Scholar
+      href: https://scholar.google.com/citations?hl=en&user=u512YusAAAAJ&view_op=list_works&sortby=pubdate
+  image: profile.jpg
 ---
-
-
-::: {.column-margin}
-![](profile.jpg)
-
-- [Twitter](https://twitter.com/kcarnold)
-- [LinkedIn](https://www.linkedin.com/in/kcarnold/)
-- [GitHub](https://github.com/kcarnold)
-- [Google Scholar](https://scholar.google.com/citations?hl=en&user=u512YusAAAAJ&view_op=list_works&sortby=pubdate)
-
-:::
 
 I'm Ken Arnold, and I'm interested in research and teaching at the intersection of data science, people, and Christian faith.
 
@@ -29,7 +32,7 @@ My main projects are around **AI for Everyday Creativity**, including:
 I teach computer science, data science, and machine learning. Recent classes:
 
 - [DATA 202 Data Science 2](https://cs.calvin.edu/courses/data/202/), a data wrangling, predictive modeling, and visualization course using the R tidyverse, with a project emphasis
-- [CS 344 Artificial Intelligence](https://cs.calvin.edu/courses/cs/344/), an applications-first machine learning course based on the [fast.ai course](https://course.fast.ai/)
+- [CS 344 Artificial Intelligence](https://cs.calvin.edu/courses/cs/344/), a hands-on (but also concept-heavy) machine learning course based on the [fast.ai course](https://course.fast.ai/) and Hugging Face Transformers
 - [CS 108 Introduction to Computing](https://cs.calvin.edu/courses/cs/108/) and CS 106, Calvin's first-year Computer Science course, in Python.
 - INFO 602 Predictive Analytics (for Calvin's MBA program)
 
