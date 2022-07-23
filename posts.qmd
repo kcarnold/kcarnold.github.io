@@ -1,0 +1,20 @@
+---
+title: "AI for Everyday Creativity"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
+---
+
+I'm Ken Arnold, and I'm interested in research and teaching at the intersection of data science, people, and Christian faith.
+
+Some of my current projects:
+
+- Applying today's large AI language models to Help writers -- but without putting words in their mouth the way predictive text does.
+- Augmenting instructors to have better views of what their students are actually learning.
+- Helping Christians understand what AI can do, and accurately calibrating both our excitement and our concerns.
