@@ -1,62 +1,49 @@
 ---
-title: "About"
+title: "Ken Arnold"
+description: "AI for Everyday Creativity"
+page-layout: full
 image: profile.jpg
-about:
-  template: trestles
-  links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/kcarnold
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/kcarnold/
-    - icon: github
-      text: Github
-      href: https://github.com
-
 ---
 
 
-Ken Arnold is an assistant professor of Computer Science and Data Science at
-[Calvin University](https://cs.calvin.edu).
-His research focuses on how data-driven intelligent systems can support human creative productivity and learning.
-His teaching seeks to cultivate communities of learners who engage data and computation with both technical maturity and contextual thoughtfulness.
-His doctoral work at Harvard University, advised by Prof. Krzysztof Gajos, was on how predictive text affects what people write.
+::: {.column-margin}
+![](profile.jpg)
 
-## Doing research with me
+- [Twitter](https://twitter.com/kcarnold)
+- [LinkedIn](https://www.linkedin.com/in/kcarnold/)
+- [GitHub](https://github.com/kcarnold)
+- [Google Scholar](https://scholar.google.com/citations?hl=en&user=u512YusAAAAJ&view_op=list_works&sortby=pubdate)
 
-I welcome students who are interested in human-computer interaction, machine learning, data science, interactive visualization, and Christian perspectives on data and computation. I have a range of ideas and ongoing projects, but bring your own interests too! Please contact me via email (Calvin: ka37) or Teams.
+:::
 
-## Interests
+I'm Ken Arnold, and I'm interested in research and teaching at the intersection of data science, people, and Christian faith.
 
-- Natural Language Processing
-- Human-Computer Interaction
-- Artificial Intelligence
-- Creativity Support Tools
+My main projects are around **AI for Everyday Creativity**, including:
+
+- Applying today's large AI language models to help writers -- but without putting words in their mouth the way predictive text does.
+- Augmenting instructors to have better views of what their students are actually learning.
+- Helping everyone understand what AI can do, and accurately calibrating both our excitement and our concerns.
 
 ## Teaching
 
-I teach computer science, data science, and machine learning.
-
-### Calvin University
-
-I teach:
+I teach computer science, data science, and machine learning. Recent classes:
 
 - [DATA 202 Data Science 2](https://cs.calvin.edu/courses/data/202/), a data wrangling, predictive modeling, and visualization course using the R tidyverse, with a project emphasis
 - [CS 344 Artificial Intelligence](https://cs.calvin.edu/courses/cs/344/), an applications-first machine learning course based on the [fast.ai course](https://course.fast.ai/)
 - [CS 108 Introduction to Computing](https://cs.calvin.edu/courses/cs/108/) and CS 106, Calvin's first-year Computer Science course, in Python.
 - INFO 602 Predictive Analytics (for Calvin's MBA program)
 
-## Harvard University
+See CV for others.
 
-At Harvard, I was a teaching assistant for the following classes:
+## Doing research with me
 
-* Fall 2018: CS109a Data Science
-* Spring 2015: CS282r Decision-Making Under Uncertainty
-* Spring 2013: CS179 Design of Usable Interactive Systems
+I welcome students who are interested in human-computer interaction, machine learning, data science, interactive visualization, and Christian perspectives on data and computation. I have a range of ideas and ongoing projects, but bring your own interests too! Please contact me via email (Calvin: ka37) or Teams.
+
 
 ## Education
 
 - PhD in Computer Science, Harvard, 2020
 - MS in Media Arts and Sciences, MIT, 2010
 - BS in Electrical and Computer Engineering, Cornell, 2007
+
+
