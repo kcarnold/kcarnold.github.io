@@ -2,30 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://kcarnold.github.io/posts/welcome/index.html</loc>
-    <lastmod>2022-07-23T13:32:41.714Z</lastmod>
+    <lastmod>2022-07-23T13:36:47.092Z</lastmod>
   </url>
   <url>
     <loc>https://kcarnold.github.io/index.html</loc>
-    <lastmod>2022-07-23T13:32:42.718Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kcarnold.github.io/about.html</loc>
-    <lastmod>2022-07-23T13:32:43.266Z</lastmod>
+    <lastmod>2022-07-23T13:36:47.859Z</lastmod>
   </url>
   <url>
     <loc>https://kcarnold.github.io/pubs.html</loc>
-    <lastmod>2022-07-23T13:32:43.805Z</lastmod>
+    <lastmod>2022-07-23T13:36:48.307Z</lastmod>
   </url>
   <url>
     <loc>https://kcarnold.github.io/static/new_years_2020/new_years_2020.html</loc>
-    <lastmod>2022-07-23T13:32:44.191Z</lastmod>
+    <lastmod>2022-07-23T13:36:48.741Z</lastmod>
   </url>
   <url>
     <loc>https://kcarnold.github.io/pubs/sentiment-bias/index.html</loc>
-    <lastmod>2022-07-23T13:32:44.655Z</lastmod>
+    <lastmod>2022-07-23T13:36:49.076Z</lastmod>
   </url>
   <url>
     <loc>https://kcarnold.github.io/pubs/phrase-suggestion/index.html</loc>
-    <lastmod>2022-07-23T13:32:45.023Z</lastmod>
+    <lastmod>2022-07-23T13:36:49.518Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kcarnold.github.io/posts.html</loc>
+    <lastmod>2022-07-23T13:36:49.851Z</lastmod>
   </url>
 </urlset>

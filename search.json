@@ -11,47 +11,47 @@
     "href": "index.html",
     "title": "AI for Everyday Creativity",
     "section": "",
-    "text": "Some of my current projects:\n\nApplying today’s large AI language models to Help writers – but without putting words in their mouth the way predictive text does.\nAugmenting instructors to have better views of what their students are actually learning.\nHelping Christians understand what AI can do, and accurately calibrating both our excitement and our concerns.\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJul 15, 2022\n\n\nKen Arnold\n\n\n\n\n\n\nNo matching items"
+    "text": "I’m Ken Arnold, and I’m interested in research and teaching at the intersection of data science, people, and Christian faith.\nSome of my current projects:"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Ken Arnold is an assistant professor of Computer Science and Data Science at Calvin University. His research focuses on how data-driven intelligent systems can support human creative productivity and learning. His teaching seeks to cultivate communities of learners who engage data and computation with both technical maturity and contextual thoughtfulness. His doctoral work at Harvard University, advised by Prof. Krzysztof Gajos, was on how predictive text affects what people write."
+    "objectID": "index.html#bio",
+    "href": "index.html#bio",
+    "title": "AI for Everyday Creativity",
+    "section": "Bio",
+    "text": "Bio\nKen Arnold is an assistant professor of Computer Science and Data Science at Calvin University. His research focuses on how data-driven intelligent systems can support human creative productivity and learning. His teaching seeks to cultivate communities of learners who engage data and computation with both technical maturity and contextual thoughtfulness. His doctoral work at Harvard University, advised by Prof. Krzysztof Gajos, was on how predictive text affects what people write."
   },
   {
-    "objectID": "about.html#doing-research-with-me",
-    "href": "about.html#doing-research-with-me",
-    "title": "About",
+    "objectID": "index.html#doing-research-with-me",
+    "href": "index.html#doing-research-with-me",
+    "title": "AI for Everyday Creativity",
     "section": "Doing research with me",
     "text": "Doing research with me\nI welcome students who are interested in human-computer interaction, machine learning, data science, interactive visualization, and Christian perspectives on data and computation. I have a range of ideas and ongoing projects, but bring your own interests too! Please contact me via email (Calvin: ka37) or Teams."
   },
   {
-    "objectID": "about.html#interests",
-    "href": "about.html#interests",
-    "title": "About",
+    "objectID": "index.html#interests",
+    "href": "index.html#interests",
+    "title": "AI for Everyday Creativity",
     "section": "Interests",
     "text": "Interests\n\nNatural Language Processing\nHuman-Computer Interaction\nArtificial Intelligence\nCreativity Support Tools"
   },
   {
-    "objectID": "about.html#teaching",
-    "href": "about.html#teaching",
-    "title": "About",
+    "objectID": "index.html#teaching",
+    "href": "index.html#teaching",
+    "title": "AI for Everyday Creativity",
     "section": "Teaching",
     "text": "Teaching\nI teach computer science, data science, and machine learning.\n\nCalvin University\nI teach:\n\nDATA 202 Data Science 2, a data wrangling, predictive modeling, and visualization course using the R tidyverse, with a project emphasis\nCS 344 Artificial Intelligence, an applications-first machine learning course based on the fast.ai course\nCS 108 Introduction to Computing and CS 106, Calvin’s first-year Computer Science course, in Python.\nINFO 602 Predictive Analytics (for Calvin’s MBA program)"
   },
   {
-    "objectID": "about.html#harvard-university",
-    "href": "about.html#harvard-university",
-    "title": "About",
+    "objectID": "index.html#harvard-university",
+    "href": "index.html#harvard-university",
+    "title": "AI for Everyday Creativity",
     "section": "Harvard University",
     "text": "Harvard University\nAt Harvard, I was a teaching assistant for the following classes:\n\nFall 2018: CS109a Data Science\nSpring 2015: CS282r Decision-Making Under Uncertainty\nSpring 2013: CS179 Design of Usable Interactive Systems"
   },
   {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "About",
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "AI for Everyday Creativity",
     "section": "Education",
     "text": "Education\n\nPhD in Computer Science, Harvard, 2020\nMS in Media Arts and Sciences, MIT, 2010\nBS in Electrical and Computer Engineering, Cornell, 2007"
   },
@@ -96,5 +96,12 @@
     "title": "On Suggesting Phrases vs. Predicting Words for Mobile Text Composition",
     "section": "Abstract",
     "text": "Abstract\nA system capable of suggesting multi-word phrases while someone is writing could supply ideas about content and phrasing and allow those ideas to be inserted efficiently. Meanwhile, statistical language modeling has provided various approaches to predicting phrases that users type. We introduce a simple extension to the familiar mobile keyboard suggestion interface that presents phrase suggestions that can be accepted by a repeated-tap gesture. In an extended composition task, we found that phrases were interpreted as suggestions that affected the content of what participants wrote more than conventional single-word suggestions, which were interpreted as predictions. We highlight a design challenge: how can a phrase suggestion system make valuable suggestions rather than just accurate predictions?"
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "AI for Everyday Creativity",
+    "section": "",
+    "text": "news\n\n\n\n\n\n\n\n\n\n\n\nJul 15, 2022\n\n\nKen Arnold\n\n\n\n\n\n\nNo matching items"
   }
 ]

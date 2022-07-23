@@ -25,12 +25,9 @@ ul.task-list{list-style: none;}
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -55,42 +52,12 @@ ul.task-list{list-style: none;}
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -107,9 +74,8 @@ ul.task-list{list-style: none;}
   <li class="nav-item">
     <a class="nav-link" href="./pubs.html">Publications</a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html">About</a>
-  </li>  
+  <li class="dropdown-header">
+ about.qmd</li>
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/kcarnold"><i class="bi bi-github" role="img">
 </i> 
@@ -127,33 +93,38 @@ ul.task-list{list-style: none;}
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">AI for Everyday Creativity</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="news">news <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
-
-
-
-
+<div class="quarto-about-trestles">
+  <div class="about-entity">
+    <img src="profile.jpg" class="about-image
+  rounded " style="width: 20em;">
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">AI for Everyday Creativity</h1>
+</div>
+<div class="quarto-title-meta">
+  </div>
+</header>
+    <div class="about-links">
+  <a href="https://twitter.com/kcarnold" class="about-link">
+    <i class="bi bi-twitter"></i>
+     <span class="about-link-text">Twitter</span>
+  </a>
+  <a href="https://www.linkedin.com/in/kcarnold/" class="about-link">
+    <i class="bi bi-linkedin"></i>
+     <span class="about-link-text">LinkedIn</span>
+  </a>
+  <a href="https://github.com" class="about-link">
+    <i class="bi bi-github"></i>
+     <span class="about-link-text">Github</span>
+  </a>
+</div>
+  </div>
+  <div class="about-contents"><main class="content" id="quarto-document-content">
 <p>I’m Ken Arnold, and I’m interested in research and teaching at the intersection of data science, people, and Christian faith.</p>
 <p>Some of my current projects:</p>
 <ul>
@@ -161,49 +132,59 @@ ul.task-list{list-style: none;}
 <li>Augmenting instructors to have better views of what their students are actually learning.</li>
 <li>Helping Christians understand what AI can do, and accurately calibrating both our excitement and our concerns.</li>
 </ul>
+<section id="bio" class="level2">
+<h2 data-anchor-id="bio">Bio</h2>
+<p>Ken Arnold is an assistant professor of Computer Science and Data Science at <a href="https://cs.calvin.edu">Calvin University</a>. His research focuses on how data-driven intelligent systems can support human creative productivity and learning. His teaching seeks to cultivate communities of learners who engage data and computation with both technical maturity and contextual thoughtfulness. His doctoral work at Harvard University, advised by Prof.&nbsp;Krzysztof Gajos, was on how predictive text affects what people write.</p>
+</section>
+<section id="doing-research-with-me" class="level2">
+<h2 data-anchor-id="doing-research-with-me">Doing research with me</h2>
+<p>I welcome students who are interested in human-computer interaction, machine learning, data science, interactive visualization, and Christian perspectives on data and computation. I have a range of ideas and ongoing projects, but bring your own interests too! Please contact me via email (Calvin: ka37) or Teams.</p>
+</section>
+<section id="interests" class="level2">
+<h2 data-anchor-id="interests">Interests</h2>
+<ul>
+<li>Natural Language Processing</li>
+<li>Human-Computer Interaction</li>
+<li>Artificial Intelligence</li>
+<li>Creativity Support Tools</li>
+</ul>
+</section>
+<section id="teaching" class="level2">
+<h2 data-anchor-id="teaching">Teaching</h2>
+<p>I teach computer science, data science, and machine learning.</p>
+<section id="calvin-university" class="level3">
+<h3 data-anchor-id="calvin-university">Calvin University</h3>
+<p>I teach:</p>
+<ul>
+<li><a href="https://cs.calvin.edu/courses/data/202/">DATA 202 Data Science 2</a>, a data wrangling, predictive modeling, and visualization course using the R tidyverse, with a project emphasis</li>
+<li><a href="https://cs.calvin.edu/courses/cs/344/">CS 344 Artificial Intelligence</a>, an applications-first machine learning course based on the <a href="https://course.fast.ai/">fast.ai course</a></li>
+<li><a href="https://cs.calvin.edu/courses/cs/108/">CS 108 Introduction to Computing</a> and CS 106, Calvin’s first-year Computer Science course, in Python.</li>
+<li>INFO 602 Predictive Analytics (for Calvin’s MBA program)</li>
+</ul>
+</section>
+</section>
+<section id="harvard-university" class="level2">
+<h2 data-anchor-id="harvard-university">Harvard University</h2>
+<p>At Harvard, I was a teaching assistant for the following classes:</p>
+<ul>
+<li>Fall 2018: CS109a Data Science</li>
+<li>Spring 2015: CS282r Decision-Making Under Uncertainty</li>
+<li>Spring 2013: CS179 Design of Usable Interactive Systems</li>
+</ul>
+</section>
+<section id="education" class="level2">
+<h2 data-anchor-id="education">Education</h2>
+<ul>
+<li>PhD in Computer Science, Harvard, 2020</li>
+<li>MS in Media Arts and Sciences, MIT, 2010</li>
+<li>BS in Electrical and Computer Engineering, Cornell, 2007</li>
+</ul>
 
 
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="news" data-listing-date-sort="1657857600000" data-listing-file-modified-sort="1657922344522" data-listing-reading-time-sort="0.05">
-<div class="body">
-<a href="./posts/welcome/index.html">
-<h3 class="no-anchor listing-title">
-Welcome To My Blog
-</h3>
-<div class="listing-subtitle">
-
+</section>
+</main></div>
 </div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
-news
-</div>
-</div>
-<a href="./posts/welcome/index.html">
-<div class="listing-description">
-I’m in the process of converting my website to Quarto.
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/welcome/index.html">
-<div class="listing-date">
-Jul 15, 2022
-</div>
-<div class="listing-author">
-Ken Arnold
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -224,13 +205,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const clipboard = new window.ClipboardJS('.code-copy-button', {
     target: function(trigger) {
       return trigger.previousElementSibling;
