@@ -1,7 +1,8 @@
 project:
-  type: website
-  resources: static
-
+  type: "website"
+  output-dir: _site
+  post-render: "rsync -r static/ _site"
+ 
 website:
   title: "Ken Arnold @ Calvin University"
   navbar:
