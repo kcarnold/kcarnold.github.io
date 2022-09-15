@@ -19,7 +19,7 @@ about:
   image: profile.jpg
 ---
 
-I'm Ken Arnold, and I'm interested in research and teaching at the intersection of data science, people, and Christian faith.
+I'm interested in research and teaching at the intersection of data science, people, and Christian faith.
 
 My main projects are around **AI for Everyday Creativity**, including:
 
