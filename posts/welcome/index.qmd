@@ -1,8 +1,0 @@
----
-title: "Welcome To My Blog"
-author: "Ken Arnold"
-date: "2022-07-15"
-categories: [news]
----
-
-I'm in the process of converting my website to Quarto.
