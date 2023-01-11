@@ -1,5 +1,12 @@
 [
   {
+    "listing": "/index.html",
+    "items": [
+      "/posts/synthesis/index.html",
+      "/posts/welcome/index.html"
+    ]
+  },
+  {
     "listing": "/pubs.html",
     "items": [
       "/pubs/sentiment-bias/index.html",
@@ -9,6 +16,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/synthesis/index.html",
       "/posts/welcome/index.html"
     ]
   }
