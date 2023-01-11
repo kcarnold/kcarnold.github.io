@@ -109,13 +109,20 @@
     "href": "bio.html",
     "title": "Bios",
     "section": "",
-    "text": "Ken Arnold (B.S., Cornell; M.S., MIT; Ph.D., Harvard) is an assistant professor of computer science and data science at Calvin University. His research has shown how predictive text interfaces, like those in smartphone keyboards and email apps, can shape the content of what people communicate. His current research interests include human-AI interaction in communication, creativity, and education."
+    "text": "Assistant professor of computer science and data science at Calvin University. Crafting tools to augment intelligence, teaching students to build and use tech wisely."
   },
   {
-    "objectID": "bio.html#medium",
-    "href": "bio.html#medium",
+    "objectID": "bio.html#medium50-words",
+    "href": "bio.html#medium50-words",
     "title": "Bios",
-    "section": "Medium",
-    "text": "Medium\nKen Arnold (B.S., Cornell; M.S., MIT; Ph.D., Harvard) is an assistant professor of computer science and data science at Calvin University. His research has shown how predictive text interfaces, like those in smartphone keyboards and email apps, can shape the content of what people communicate. He is currently working on intelligence augmentation to help writers craft words that are fully their own. His current research interests include human-AI interaction in communication, creativity, and education."
+    "section": "Medium(50 words)",
+    "text": "Medium(50 words)\nKen Arnold (B.S., Cornell; M.S., MIT; Ph.D., Harvard) is an assistant professor of computer science and data science at Calvin University. His research has shown how predictive text interfaces, like those in smartphone keyboards and email apps, can shape the content of what people communicate. His current research interests include human-AI interaction in communication, creativity, and education."
+  },
+  {
+    "objectID": "bio.html#longer",
+    "href": "bio.html#longer",
+    "title": "Bios",
+    "section": "Longer",
+    "text": "Longer\nKen Arnold (B.S., Cornell; M.S., MIT; Ph.D., Harvard) is an assistant professor of computer science and data science at Calvin University. His research has shown how predictive text interfaces, like those in smartphone keyboards and email apps, can shape the content of what people communicate. He is currently working on intelligence augmentation to help writers craft words that are fully their own. His current research interests include human-AI interaction in communication, creativity, and education."
   }
 ]
