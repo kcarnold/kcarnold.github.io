@@ -2,8 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/synthesis/index.html",
-      "/posts/welcome/index.html"
+      "/posts/synthesis/index.html"
     ]
   },
   {
@@ -16,8 +15,7 @@
   {
     "listing": "/posts.html",
     "items": [
-      "/posts/synthesis/index.html",
-      "/posts/welcome/index.html"
+      "/posts/synthesis/index.html"
     ]
   }
 ]
