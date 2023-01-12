@@ -1,35 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://kcarnold.github.io/posts/ml-gratitude/index.html</loc>
+    <lastmod>2023-01-12T14:51:45.004Z</lastmod>
+  </url>
+  <url>
     <loc>https://kcarnold.github.io/posts/knowledge-fusion/index.html</loc>
-    <lastmod>2023-01-11T14:56:35.134Z</lastmod>
+    <lastmod>2023-01-12T14:51:45.392Z</lastmod>
   </url>
   <url>
     <loc>https://kcarnold.github.io/index.html</loc>
-    <lastmod>2023-01-11T14:56:35.904Z</lastmod>
+    <lastmod>2023-01-12T14:51:46.181Z</lastmod>
   </url>
   <url>
     <loc>https://kcarnold.github.io/pubs.html</loc>
-    <lastmod>2023-01-11T14:56:36.236Z</lastmod>
+    <lastmod>2023-01-12T14:51:46.585Z</lastmod>
   </url>
   <url>
     <loc>https://kcarnold.github.io/static/new_years_2020/new_years_2020.html</loc>
-    <lastmod>2023-01-11T14:56:36.571Z</lastmod>
+    <lastmod>2023-01-12T14:51:46.936Z</lastmod>
   </url>
   <url>
     <loc>https://kcarnold.github.io/pubs/sentiment-bias/index.html</loc>
-    <lastmod>2023-01-11T14:56:36.913Z</lastmod>
+    <lastmod>2023-01-12T14:51:47.298Z</lastmod>
   </url>
   <url>
     <loc>https://kcarnold.github.io/pubs/phrase-suggestion/index.html</loc>
-    <lastmod>2023-01-11T14:56:37.238Z</lastmod>
+    <lastmod>2023-01-12T14:51:47.618Z</lastmod>
   </url>
   <url>
     <loc>https://kcarnold.github.io/posts.html</loc>
-    <lastmod>2023-01-11T14:56:37.550Z</lastmod>
+    <lastmod>2023-01-12T14:51:47.951Z</lastmod>
   </url>
   <url>
     <loc>https://kcarnold.github.io/bio.html</loc>
-    <lastmod>2023-01-11T14:56:37.854Z</lastmod>
+    <lastmod>2023-01-12T14:51:48.324Z</lastmod>
   </url>
 </urlset>

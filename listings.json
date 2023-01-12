@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/ml-gratitude/index.html",
       "/posts/knowledge-fusion/index.html"
     ]
   },
@@ -15,6 +16,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/ml-gratitude/index.html",
       "/posts/knowledge-fusion/index.html"
     ]
   }
