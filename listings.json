@@ -11,6 +11,7 @@
   {
     "listing": "/pubs.html",
     "items": [
+      "/pubs/iui21-help-writers/index.html",
       "/pubs/sentiment-bias/index.html",
       "/pubs/phrase-suggestion/index.html"
     ]
