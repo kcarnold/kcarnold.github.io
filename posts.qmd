@@ -1,5 +1,5 @@
 ---
-title: "AI for Everyday Creativity"
+title: "Posts"
 listing:
   contents: posts
   sort: "date desc"
