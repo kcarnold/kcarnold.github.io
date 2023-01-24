@@ -24,12 +24,10 @@ about:
   image: profile.jpg
 ---
 
-I'm interested in research and teaching at the intersection of data science, people, and Christian faith.
+I'm interested in research and teaching at the intersection of data science, people, and Christian faith. My main projects are around **AI for Everyday Creativity**, including:
 
-My main projects are around **AI for Everyday Creativity**, including:
-
-- Applying today's large AI language models to help writers -- but without putting words in their mouth the way predictive text does.
-- Augmenting instructors to have better views of what their students are actually learning.
+- Applying today's large AI language models to help writers express their ideas in their *own* words
+- Augmenting instructors to see better what their students are actually learning.
 - Helping everyone understand what AI can do, and accurately calibrating both our excitement and our concerns.
 
 ## Recent Posts
