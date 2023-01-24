@@ -56,6 +56,13 @@
     "text": "How to avoid magical thinking?\n\nTry it out yourself. With ChatGPT (temporarily) open to everyone, this is a great time. Try to find things it can’t do well. This requires attention, because it’s trained to be believable even when it’s wrong.\nInterrogate the model about why it’s giving the outputs it is giving. Unfortunately ths isn’t as accessible right now, but I’m hoping (and working towards) making this more accessible. (Current approaches usually visualize attention or input salience, both of which basically show how information flows through the model. That’s helpful, but limited; we don’t know what the model does with that information. I’ve got some ideas.)\nDevelop intuitions about how it works.\nLearn the concepts and math behind how it works. Two concepts that keep coming up in my intuitive explanations are distribution and embedding."
   },
   {
+    "objectID": "posts/magical-thinking/index.html#want-to-learn-more",
+    "href": "posts/magical-thinking/index.html#want-to-learn-more",
+    "title": "Avoid Magical Thinking about AI",
+    "section": "Want to learn more?",
+    "text": "Want to learn more?\nI teach AI at Calvin University, and I’m happy to talk to help anyone understanding and grow in this area."
+  },
+  {
     "objectID": "posts/ai-proverbs/index.html",
     "href": "posts/ai-proverbs/index.html",
     "title": "Solomon’s proverbs about AI",
