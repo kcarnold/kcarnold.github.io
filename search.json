@@ -35,6 +35,27 @@
     "text": "Related\n\nMargaret Boden, Computer Models of Creativity | AI Magazine"
   },
   {
+    "objectID": "posts/magical-thinking/index.html",
+    "href": "posts/magical-thinking/index.html",
+    "title": "Avoid Magical Thinking about AI",
+    "section": "",
+    "text": "It’s become too common to ascribe a sort of magical veneer to AI. News outlets personify ChatGPT, for example. Not to mention personal assistants, voice recognition, even search engines. In practice, people are viewing these things as black boxes that might have little elves inside them as far as we know.\nThat ignorance is understandable because the technology is complex. But it’s harmful, and it doesn’t have to be that way."
+  },
+  {
+    "objectID": "posts/magical-thinking/index.html#why-avoid-magical-thinking",
+    "href": "posts/magical-thinking/index.html#why-avoid-magical-thinking",
+    "title": "Avoid Magical Thinking about AI",
+    "section": "Why avoid magical thinking?",
+    "text": "Why avoid magical thinking?\n\nUse the technology better. Work with it. Leverage its strengths. e.g., if you know how a language model (like ChatGPT) is just assigning a score to every possible sequence of characters, you can have it score things that it never would have generated.\nDemonstrate gratitude to the humans who worked to make the data the model is trained on. And properly worship the God who made a world that’s simultaneously structured enough to have learnable patterns and rich enough that those patterns are endless and fascinating.\nKnow the limits of the technology. Predict its biases. e.g., if you know how the model’s capabilities come from its training data, you can think about what doesn’t get captured in that data, and about what might happen if the model starts getting trained largely on its own outputs.\nSteer its progress. Yes, you can build systems that use AI towards flourishing. (I’m working on that for writers and educators, but there’s many more ways. Chat with me!) Imagine and envision ways that people can benefit from it.\nPolicymakers need to regulate it, both inside organizations and in broader society. It can really harm people. We also need to retain the future ability to govern it; its extreme hunger for data and computational power tends towards concentrating AI capabilities in the hands of a few."
+  },
+  {
+    "objectID": "posts/magical-thinking/index.html#how-to-avoid-magical-thinking",
+    "href": "posts/magical-thinking/index.html#how-to-avoid-magical-thinking",
+    "title": "Avoid Magical Thinking about AI",
+    "section": "How to avoid magical thinking?",
+    "text": "How to avoid magical thinking?\n\nTry it out yourself. With ChatGPT (temporarily) open to everyone, this is a great time. Try to find things it can’t do well. This requires attention, because it’s trained to be believable even when it’s wrong.\nInterrogate the model about why it’s giving the outputs it is giving. Unfortunately ths isn’t as accessible right now, but I’m hoping (and working towards) making this more accessible. (Current approaches usually visualize attention or input salience, both of which basically show how information flows through the model. That’s helpful, but limited; we don’t know what the model does with that information. I’ve got some ideas.)\nDevelop intuitions about how it works.\nLearn the concepts and math behind how it works. Two concepts that keep coming up in my intuitive explanations are distribution and embedding."
+  },
+  {
     "objectID": "posts/ai-proverbs/index.html",
     "href": "posts/ai-proverbs/index.html",
     "title": "Solomon’s proverbs about AI",
@@ -60,7 +81,7 @@
     "href": "index.html#recent-posts",
     "title": "Ken Arnold",
     "section": "Recent Posts",
-    "text": "Recent Posts\n\n\n\n\n\n\nStop trying to detect computer-generated writing.\n\n\n\n\nIt’s a risky distraction that just encourages an arms race.\n\n\n\n\n\n\nJan 17, 2023\n\n\nKen Arnold\n\n\n\n\n\n\n\n\nSolomon’s proverbs about AI\n\n\n\n\nA reflection without words on the difference between wisdom and its imitation.\n\n\n\n\n\n\nJan 16, 2023\n\n\nKen Arnold\n\n\n\n\n\n\n\n\nWithout Acknowledgment: Cultivating Gratitude in an ML age\n\n\n\n\nCreativity support tools based on machine learning hide the human authors that contributed to the work. Does it have to be that way?\n\n\n\n\n\n\nJan 12, 2023\n\n\nKen Arnold\n\n\n\n\n\n\n\n\nLanguage Models for Species-Scale Collaboration\n\n\n\n\nHow knowledge fusion will continue the trend of scaling humam collaboration\n\n\n\n\n\n\nJan 11, 2023\n\n\nKen Arnold\n\n\n\n\n\n\nNo matching items"
+    "text": "Recent Posts\n\n\n\n\n\n\nAvoid Magical Thinking about AI\n\n\n\n\nEven if you’re not a computer scientist, you should learn enough about AI that you can steer its progress.\n\n\n\n\n\n\nJan 24, 2023\n\n\nKen Arnold\n\n\n\n\n\n\n\n\nStop trying to detect computer-generated writing.\n\n\n\n\nIt’s a risky distraction that just encourages an arms race.\n\n\n\n\n\n\nJan 17, 2023\n\n\nKen Arnold\n\n\n\n\n\n\n\n\nSolomon’s proverbs about AI\n\n\n\n\nA reflection without words on the difference between wisdom and its imitation.\n\n\n\n\n\n\nJan 16, 2023\n\n\nKen Arnold\n\n\n\n\n\n\n\n\nWithout Acknowledgment: Cultivating Gratitude in an ML age\n\n\n\n\nCreativity support tools based on machine learning hide the human authors that contributed to the work. Does it have to be that way?\n\n\n\n\n\n\nJan 12, 2023\n\n\nKen Arnold\n\n\n\n\n\n\n\n\nLanguage Models for Species-Scale Collaboration\n\n\n\n\nHow knowledge fusion will continue the trend of scaling humam collaboration\n\n\n\n\n\n\nJan 11, 2023\n\n\nKen Arnold\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html#teaching",
@@ -144,7 +165,7 @@
     "href": "posts.html",
     "title": "Posts",
     "section": "",
-    "text": "Stop trying to detect computer-generated writing.\n\n\n\n\n\n\n\nai\n\n\nml\n\n\nlm\n\n\n\n\nIt’s a risky distraction that just encourages an arms race.\n\n\n\n\n\n\nJan 17, 2023\n\n\nKen Arnold\n\n\n\n\n\n\n\n\nSolomon’s proverbs about AI\n\n\n\n\n\n\n\nai\n\n\nml\n\n\nlm\n\n\n\n\nA reflection without words on the difference between wisdom and its imitation.\n\n\n\n\n\n\nJan 16, 2023\n\n\nKen Arnold\n\n\n\n\n\n\n\n\nWithout Acknowledgment: Cultivating Gratitude in an ML age\n\n\n\n\n\n\n\nai\n\n\nml\n\n\nlm\n\n\nia\n\n\n\n\nCreativity support tools based on machine learning hide the human authors that contributed to the work. Does it have to be that way?\n\n\n\n\n\n\nJan 12, 2023\n\n\nKen Arnold\n\n\n\n\n\n\n\n\nLanguage Models for Species-Scale Collaboration\n\n\n\n\n\n\n\nai\n\n\nml\n\n\nlm\n\n\nia\n\n\n\n\nHow knowledge fusion will continue the trend of scaling humam collaboration\n\n\n\n\n\n\nJan 11, 2023\n\n\nKen Arnold\n\n\n\n\n\n\nNo matching items"
+    "text": "Avoid Magical Thinking about AI\n\n\n\n\n\n\n\nai\n\n\nml\n\n\n\n\nEven if you’re not a computer scientist, you should learn enough about AI that you can steer its progress.\n\n\n\n\n\n\nJan 24, 2023\n\n\nKen Arnold\n\n\n\n\n\n\n\n\nStop trying to detect computer-generated writing.\n\n\n\n\n\n\n\nai\n\n\nml\n\n\nlm\n\n\n\n\nIt’s a risky distraction that just encourages an arms race.\n\n\n\n\n\n\nJan 17, 2023\n\n\nKen Arnold\n\n\n\n\n\n\n\n\nSolomon’s proverbs about AI\n\n\n\n\n\n\n\nai\n\n\nml\n\n\nlm\n\n\n\n\nA reflection without words on the difference between wisdom and its imitation.\n\n\n\n\n\n\nJan 16, 2023\n\n\nKen Arnold\n\n\n\n\n\n\n\n\nWithout Acknowledgment: Cultivating Gratitude in an ML age\n\n\n\n\n\n\n\nai\n\n\nml\n\n\nlm\n\n\nia\n\n\n\n\nCreativity support tools based on machine learning hide the human authors that contributed to the work. Does it have to be that way?\n\n\n\n\n\n\nJan 12, 2023\n\n\nKen Arnold\n\n\n\n\n\n\n\n\nLanguage Models for Species-Scale Collaboration\n\n\n\n\n\n\n\nai\n\n\nml\n\n\nlm\n\n\nia\n\n\n\n\nHow knowledge fusion will continue the trend of scaling humam collaboration\n\n\n\n\n\n\nJan 11, 2023\n\n\nKen Arnold\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "bio.html",
