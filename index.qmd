@@ -6,6 +6,7 @@ listing:
   contents: posts
   sort: "date desc"
   type: default
+  fields: [date, title, reading-time, description]
 about:
   template: solana
   links:
@@ -27,7 +28,7 @@ about:
 I'm interested in research and teaching at the intersection of data science, people, and Christian faith. My main projects are around **AI for Everyday Creativity**, including:
 
 - Applying today's large AI language models to help writers express their ideas in their *own* words
-- Augmenting instructors to see better what their students are actually learning.
+- AI for instructors to see what students are learning
 - Helping everyone understand what AI can do, and accurately calibrating both our excitement and our concerns.
 
 ## Recent Posts
