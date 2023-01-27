@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Ken Arnold @ Calvin University</title>
+<link>https://kenarnold.org/index.html</link>
+<atom:link href="https://kenarnold.org/index.xml" rel="self" type="application/rss+xml"/>
+<description>AI for Everyday Creativity</description>
+<generator>quarto-1.2.313</generator>
+<lastBuildDate>Fri, 27 Jan 2023 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Multidimensional Array Terminology</title>
+  <link>https://kenarnold.org/posts/dim-axis-rank/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>A surprisingly large amount of the thinking that goes into implementing neural net code is getting the shapes of multidimensional structures right. I’d heard that from others but didn’t really believe it until I had to figure it out myself a couple of times, and that convinced me that everyone could use some guided practice with that. So I give my AI students some exercises in thinking about the shapes of multidimensional structures. We’re working with images because they’re easier to visualize, but the same thing comes up in sequence modeling (batch by sequence length by embedding dimension, sometimes with an attention head dim in there too!).</p>
+<p>Students start to explore what broadcasting does (before officially learning how it works), which lets you do cool things like inverting an image by just computing <code>1 - image</code>.</p>
+<section id="axis-or-dimension" class="level2">
+<h2 class="anchored" data-anchor-id="axis-or-dimension">Axis or Dimension?</h2>
+<p>Problem: both the <a href="https://pytorch.org/docs/stable/notes/broadcasting.html">PyTorch</a> and <a href="https://numpy.org/doc/stable/user/basics.broadcasting.html">NumPy</a> broadcasting docs tend to use the term “dimension”. This is confusing because, e.g., [0.5, 0.25, 0.75] is a vector in 3d space but has just one axis.</p>
+<p>I’m guilty of sloppy use of this terminology too, but I suggest we use “number of axes” to refer to <code>len(some_array.shape)</code>. This aligns with the NumPy <a href="https://numpy.org/doc/stable/glossary.html#term-axis">Glossary</a> and the <code>axis=</code> keyword common in NumPy functions. Unfortunately we’ll need to remember that sometimes PyTorch uses “dimension”, e.g,. ‘array.ndim’ and the <code>dim=</code> keyword argument (kwarg) to reduction methods like <code>softmax</code>.</p>
+</section>
+<section id="rank" class="level2">
+<h2 class="anchored" data-anchor-id="rank">Rank?</h2>
+<p>To make matters worse, the fast.ai book uses “rank” to refer to the number of axes of a tensor. But “rank” means something different in linear algebra. For example, a length-5 column vector times a length-4 row vector would give a matrix (tensor) with two axes (2-dimensional), with shape <code>(5, 4)</code></p>
+<div class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;">import</span> torch</span>
+<span id="cb1-2">t1 <span class="op" style="color: #5E5E5E;">=</span> torch.ones((<span class="dv" style="color: #AD0000;">5</span>, <span class="dv" style="color: #AD0000;">1</span>))<span class="op" style="color: #5E5E5E;">;</span> t1</span>
+<span id="cb1-3">t2 <span class="op" style="color: #5E5E5E;">=</span> torch.ones((<span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">4</span>))<span class="op" style="color: #5E5E5E;">;</span> t2</span>
+<span id="cb1-4">t3 <span class="op" style="color: #5E5E5E;">=</span> t1 <span class="op" style="color: #5E5E5E;">@</span> t2<span class="op" style="color: #5E5E5E;">;</span> t3</span></code></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="1">
+<pre><code>tensor([[1., 1., 1., 1.],
+        [1., 1., 1., 1.],
+        [1., 1., 1., 1.],
+        [1., 1., 1., 1.],
+        [1., 1., 1., 1.]])</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1">t3.shape</span></code></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="2">
+<pre><code>torch.Size([5, 4])</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1">t3.ndim</span></code></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="3">
+<pre><code>2</code></pre>
+</div>
+</div>
+<p>But because of how we made it, we know that the matrix has <a href="https://en.wikipedia.org/wiki/Rank_(linear_algebra)">rank</a> 1 in the linear algebra sense, as Torch confirms. (Note that the Torch computation is sensitive to numerical precision issues, though it works correctly in this case.)</p>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1">torch.linalg.matrix_rank(t3)</span></code></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<pre><code>tensor(1)</code></pre>
+</div>
+</div>
+</section>
+<section id="the-exercise" class="level2">
+<h2 class="anchored" data-anchor-id="the-exercise">The Exercise</h2>
+<p>Here’s the exercise, for anyone interested:</p>
+<blockquote class="blockquote">
+<p><a href="https://cs.calvin.edu/courses/cs/344/23sp/fundamentals/u02n2-image-ops.ipynb">Image Operations</a> (show <a href="https://cs.calvin.edu/courses/cs/344/23sp/fundamentals/u02n2-image-ops.html">preview</a>, open in <a href="https://colab.research.google.com/github/kcarnold/cs344/blob/main/static/fundamentals/u02n2-image-ops.ipynb">Colab</a>)</p>
+</blockquote>
+
+
+</section>
+
+ ]]></description>
+  <category>ml</category>
+  <category>coding</category>
+  <guid>https://kenarnold.org/posts/dim-axis-rank/index.html</guid>
+  <pubDate>Fri, 27 Jan 2023 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Avoid Magical Thinking about AI</title>
+  <dc:creator>Ken Arnold</dc:creator>
+  <link>https://kenarnold.org/posts/magical-thinking/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>It’s become too common to ascribe a sort of magical veneer to AI. News outlets personify ChatGPT, for example. Not to mention personal assistants, voice recognition, even search engines. In practice, people are viewing these things as black boxes that might have little elves inside them as far as we know.</p>
+<p>That ignorance is understandable because the technology is complex. But it’s harmful, and it doesn’t have to be that way.</p>
+<section id="why-avoid-magical-thinking" class="level2">
+<h2 class="anchored" data-anchor-id="why-avoid-magical-thinking">Why avoid magical thinking?</h2>
+<ul>
+<li>Use the technology <em>better</em>. Work <em>with</em> it. Leverage its strengths. e.g., if you know how a language model (like ChatGPT) is just assigning a score to every possible sequence of characters, you can have it <em>score</em> things that it never would have generated.</li>
+<li>Demonstrate <a href="../ml-gratitude/">gratitude</a> to the humans who worked to make the data the model is trained on. And properly worship the God who made a world that’s simultaneously <em>structured</em> enough to have learnable patterns and <em>rich</em> enough that those patterns are endless and fascinating.</li>
+<li>Know the limits of the technology. Predict its biases. e.g., if you know how the model’s capabilities come from its training data, you can think about what <em>doesn’t</em> get captured in that data, and about what might happen if the model starts getting trained largely on its own outputs.</li>
+<li>Steer its progress. Yes, you can build systems that use AI towards flourishing. (I’m working on that for writers and educators, but there’s many more ways. Chat with me!) Imagine and envision ways that people can benefit from it.</li>
+<li>Policymakers need to regulate it, both inside organizations and in broader society. It can really harm people. We also need to retain the future ability to govern it; its extreme hunger for data and computational power tends towards concentrating AI capabilities in the hands of a few.</li>
+</ul>
+</section>
+<section id="how-to-avoid-magical-thinking" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-avoid-magical-thinking">How to avoid magical thinking?</h2>
+<ul>
+<li>Try it out yourself. With ChatGPT (temporarily) open to everyone, this is a great time. Try to find things it can’t do well. This requires attention, because it’s trained to be <em>believable</em> even when it’s wrong.</li>
+<li>Interrogate the model about <em>why</em> it’s giving the outputs it is giving. Unfortunately ths isn’t as accessible right now, but I’m hoping (and working towards) making this more accessible. (Current approaches usually visualize <em>attention</em> or <em>input salience</em>, both of which basically show how information flows through the model. That’s helpful, but limited; we don’t know what the model <em>does</em> with that information. I’ve got some ideas.)</li>
+<li>Develop intuitions about how it works.</li>
+<li>Learn the concepts and math behind how it works. Two concepts that keep coming up in my intuitive explanations are <em>distribution</em> and <em>embedding</em>.</li>
+</ul>
+</section>
+<section id="want-to-learn-more" class="level2">
+<h2 class="anchored" data-anchor-id="want-to-learn-more">Want to learn more?</h2>
+<p>I teach AI at Calvin University, and I’m happy to talk to help anyone understanding and grow in this area.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>ai</category>
+  <category>ml</category>
+  <guid>https://kenarnold.org/posts/magical-thinking/index.html</guid>
+  <pubDate>Tue, 24 Jan 2023 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Stop trying to detect computer-generated writing.</title>
+  <dc:creator>Ken Arnold</dc:creator>
+  <link>https://kenarnold.org/posts/detect-gpt/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Many people saw the quality of AI-generated text and immediately thought that they need to find ways to detect such “cheating”. I respect those trying to make those tools (including my former colleagues who made <a href="http://gltr.io/">GLTR</a> back in 2019, and more recently Edward Tian, who is “<a href="https://www.npr.org/sections/money/2023/01/17/1149206188/this-22-year-old-is-trying-to-save-us-from-chatgpt-before-it-changes-writing-for">trying to save us from ChatGPT before it changes writing forever (NPR)</a>” with <a href="https://gptzero.me/">GPTZero</a>), and the educators feeling like they’re forced into using them—at the present moment this might be a best-of-bad-options situation. But we need to stop it. Reasons:</p>
+<ol type="1">
+<li><p>It’s going to have <strong>false positives</strong>. There will be text that’s actually written by a thoughtful human but gets flagged as machine-generated. The author will get accused of cheating and will probably have no recourse. Even if they successfully counter the accusation, it’s discouraging — especially if classmates who used ChatGPT a bit more cleverly were able to sneak actual computer-generated text past the system (a <em>false negative</em>). And although I don’t have specific evidence in this situation, the false positives of other AI risk assessment systems tend to fall disproportionately on those already marginalized.</p></li>
+<li><p>It’s just going to lead to an <strong>arms race</strong>. We’ve already seen examples of how simple tweaks to how the system is used (e.g., telling it to introduce mistakes) can sneak past some ways of detection (some examples I found without trying hard: <a href="https://twitter.com/nickmmark/status/1612602697492074497">1</a>, <a href="https://twitter.com/SmoothMikeP/status/1613750382181888001">2</a>, <a href="https://twitter.com/KyleLiang5/status/1611897959217790976">3</a>). If there’s a clear signal of computer generation, the bad actors will find a way around it. Meanwhile the false positive rate will go up (see #1).</p></li>
+<li><p>It’s distracting and unproductive for most common purposes of writing. For writing-as-<em>art</em>, it might be productive to detect forgeries. But when writing is used to <em>communicate</em>, <em>think</em>, and <em>learn</em>, this focus on evaluating the <em>output</em> distracts from the emphasis we need to have on the <em>process</em>. Others have written more about this, and I’ll post some more thoughts myself soon.</p></li>
+</ol>
+
+
+
+ ]]></description>
+  <category>ai</category>
+  <category>ml</category>
+  <category>lm</category>
+  <guid>https://kenarnold.org/posts/detect-gpt/index.html</guid>
+  <pubDate>Tue, 17 Jan 2023 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Solomon’s proverbs about AI</title>
+  <dc:creator>Ken Arnold</dc:creator>
+  <link>https://kenarnold.org/posts/ai-proverbs/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><strong>Prompt</strong>: Solomon’s proverbs about AI:</p>
+<p><strong>Generated text</strong> (by <code>text-davinci-003</code>):</p>
+<pre><code>1. "The clever man uses artificial intelligence to better understand the world."  
+2. "Artificial intelligence can be a great friend, but a dangerous enemy."
+3. "The man who trusts artificial intelligence too much will be led astray."
+4. "He who puts his trust in artificial intelligence will suffer many defeats."
+5. "Artificial intelligence is a powerful tool, but it must be used with caution."
+6. "The wise man uses artificial intelligence to gain knowledge, but not to make decisions."
+7. "Artificial intelligence is a double-edged sword; it can be used for good or harm."
+8. "The man who follows artificial intelligence blindly will suffer the consequences."
+9. "Artificial intelligence can be a helpful guide, but its advice should be taken with care."
+10. "He who uses artificial intelligence wisely will find many advantages."</code></pre>
+<p><strong>Prompt</strong>: Write a blog post about how these “proverbs” are superficial.</p>
+<p><strong>Generated text</strong>:</p>
+<pre><code>The age of Artificial Intelligence (AI) has arrived, bringing with it a flurry of proverbs and sayings about the technology. While these proverbs may seem wise and insightful, they are actually quite superficial when it comes to understanding the true implications of AI.
+
+Let's take a look at the first proverb: "The clever man uses artificial intelligence to better understand the world." While this proverb may be true in a certain sense, it fails to capture the full scope of what AI can do. AI can be used for a variety of purposes, from predicting market trends to helping diagnose medical conditions. It's more than just a tool for understanding the world; it's a powerful technology that can be used to improve efficiency and accuracy in many different contexts.
+
+The second proverb, "Artificial intelligence can be a great friend, but a dangerous enemy," is similarly shallow. AI may be capable of making decisions on our behalf, but it's important to remember that it's still only a machine. It lacks the capacity for moral judgement and can often lead us astray if it's used without proper oversight.
+
+The third and fourth proverbs, "The man who trusts artificial intelligence too much will be led astray" and "He who puts his trust in artificial intelligence will suffer many defeats," further illustrate the superficial nature of these proverbs. While it's true that AI can be a powerful tool, it can also be dangerous if used improperly. It's important to remember that AI is still a machine and should be used with caution and oversight.
+
+Finally, the fifth proverb, "Artificial intelligence is a powerful tool, but it must be used with caution," is the only one that captures the full scope of the implications of AI. AI is an incredibly powerful tool, but it's important to remember that it's still a machine and should be used responsibly.
+
+In conclusion, while these proverbs may seem wise and insightful, they are actually quite superficial in their approach to AI. It's important to remember that AI is a powerful tool, but it must be used with caution and oversight.</code></pre>
+
+
+
+ ]]></description>
+  <category>ai</category>
+  <category>ml</category>
+  <category>lm</category>
+  <guid>https://kenarnold.org/posts/ai-proverbs/index.html</guid>
+  <pubDate>Mon, 16 Jan 2023 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Without Acknowledgment: Cultivating Gratitude in an ML age</title>
+  <dc:creator>Ken Arnold</dc:creator>
+  <link>https://kenarnold.org/posts/ml-gratitude/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Generative AI tools can be really helpful for our creativity. Engaging with many and diverse examples has been shown to help human creativity; the systems themselves have engaged deeply with diverse examples and can fluently retrieve them for creators to use. But unlike when we a search engine, we can’t even acknowledge our inspiration if we want to. Rather than being able to give credit to a specific human author, or even to a creative team, the model makes us credit <em>it</em>, as the amalgamation of all of the human labor that it was trained on. The sheer scale of the data these models work with makes this hard: being trained on close to all human work becomes essentially the same as not being human work at all. If <strong>gratitude</strong> is a virtue, it seems like generative AI is positioned in opposition to it.</p>
+<ul>
+<li>Lack of gratitude has been developing for a while. My students regularly write that they got some code “from StackOverflow” or got their data “from Kaggle” (note that they’re crediting the platform rather than the people); social media memes and quotes are copy-pasted without attribution. “Credit goes to the original authors” (without specifying who they are) exemplifies this trend.</li>
+<li>In the case of image generation, researchers have found that generative image models would even learn to add watermarks like Shutterstock’s to their generated images; current systems avoid this behavior but the creators of both academic or industrial image generation systems have not thoroughly engaged the questions of attribution that arise.</li>
+<li>I’ve mainly seen this discussed in terms of copyright, which represents the perspective of the creator who rightly wants credit for their labor. But I’m pointing out here that the model isn’t serving the <em>user</em> either, if they want to practice gratitude in their creative work. Another related virtue is <strong>humility</strong>, exemplified by the phrase popularized by Isaac Newton of “<a href="https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants">standing on the shoulders of giants</a>” (see that link for further tracing the source).</li>
+<li>It’s most obvious in image generation models, where artists (rightly) complain that the model has appropriated their individual style without attribution. But text has the same issue; it’s just harder to notice how one piece of text is based on another, and text can be recomposed in so many different ways that it’s easy to dilute obvious influence.</li>
+</ul>
+<p>Does it have to be this way? Yesterday I referenced an LM that tries to cite its sources for factual knowledge; citing sources for ideas and inspiration is technically and conceptually harder. But here are some things we might explore:</p>
+<ul>
+<li>Instead of treating the task as generating a complete outcome, what if the system’s goal were to <em>retrieve</em> a curated set of inspirational examples? There’s some good academic work on this using older AI techniques; perhaps we can upgrade that.</li>
+<li>Can we query an LM to ask what items in its training data were most helpful in constructing an example? This has some relationships with interpretability and explainability literature<sup>1</sup>, but academic work there tends to be focused on explaining a single decision, rather than the sequence of decisions that leads to a generated text or image.
+<ul>
+<li>Retrieval-oriented LMs help with this a lot for factual content, but don’t really work for style, I’m guessing.</li>
+<li>Simple approach would be to query the training data for examples with similar embeddings for the current token. I saw some then-Facebook Research papers on this a while back. But that’s a single token, not a phrase.</li>
+<li>Perhaps we can sample forward from a hidden state to get a sense of: contexts are similar if they lead to similar generations.</li>
+<li>A different direction could be augmenting the training process with some aux output that is then used for retrieval.</li>
+</ul></li>
+</ul>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=rjJjXM3qcKE">GPT-3 – Copyright Law and Power - Dr Michael Guihot - YouTube</a></li>
+<li><a href="https://digismak.com/dall-e-works-with-the-images-of-creators-who-do-not-receive-anything-in-return-what-copyright-says-about-ai/">DALL-E works with the images of creators who do not receive anything in return: what copyright says about AI - Digis Mak</a></li>
+<li><a href="https://www.engadget.com/dall-e-generative-ai-tracking-data-privacy-160034656.html">Is DALL-E’s art borrowed or stolen? - Engadget</a></li>
+</ul>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><a href="https://arxiv.org/abs/2106.04753">On Sample Based Explanation Methods for NLP:Efficiency, Faithfulness, and Semantic Evaluation</a>↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>ai</category>
+  <category>ml</category>
+  <category>lm</category>
+  <category>ia</category>
+  <guid>https://kenarnold.org/posts/ml-gratitude/index.html</guid>
+  <pubDate>Thu, 12 Jan 2023 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Language Models for Species-Scale Collaboration</title>
+  <dc:creator>Ken Arnold</dc:creator>
+  <link>https://kenarnold.org/posts/knowledge-fusion/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Large lanugage models like ChatGPT (and its peers like PaLM, BLOOMZ, etc.) are surprisingly powerful tools for knowledge <em>fusion</em>. For example, if I ask GPT-3 to continue “A list of exercises for beginning computer science students: 1.”, it will generate that list based on all exercises that ever have been listed in plausibly similar contexts. Communities of practice have been exchanging ideas and knowledge throughout human history, but the tools and scale have increased with technological developments like the printing press, video capture, and the Internet, and social developments like academic conferences and social media. Language models are continuing the trend of increasing knowledge sharing by becoming, in a sense, dynamic summaries of slices of others’ ideas. Like reading a textbook or a review article, we can benefit from the insights and ideas of others without directly having to read them. But it can do this without nearly as much human effort as writing such reviews.</p>
+<section id="implications" class="level2">
+<h2 class="anchored" data-anchor-id="implications">Implications</h2>
+<ul>
+<li>We’ll be able to collaborate at even greater scales than before. AI systems will help cross-pollinate ideas between disparate communities of practice. Instructors will still make our own educational materials, for example, but instead of blank pages, we’ll start with ideas synthesized from everyone else who’s ever taught a related subject.</li>
+<li>But, LMs will need to get better at citing their sources. There’s thankfully some work going on in that area: <a href="https://arxiv.org/abs/2212.08037">Attributed Question Answering: Evaluation and Modeling for Attributed Large Language Models | Abstract</a></li>
+<li>And: since LMs conflate popularity (i.e., what’s common) with quality—and that’s really tricky to untangle—we’ll need more discernment about when, and when not, to seek and use LM suggestions.</li>
+</ul>
+</section>
+<section id="related" class="level2">
+<h2 class="anchored" data-anchor-id="related">Related</h2>
+<ul>
+<li><a href="https://ojs.aaai.org/index.php/aimagazine/article/view/2254">Margaret Boden, Computer Models of Creativity | AI Magazine</a></li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>ai</category>
+  <category>ml</category>
+  <category>lm</category>
+  <category>ia</category>
+  <guid>https://kenarnold.org/posts/knowledge-fusion/index.html</guid>
+  <pubDate>Wed, 11 Jan 2023 05:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

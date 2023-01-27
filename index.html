@@ -71,7 +71,8 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-date','listing-title','listing-reading-time','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
+      page: 5,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-date","listing-title","listing-author","listing-description"],
     };
 
@@ -93,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
-</head>
+<link rel="alternate" type="application/rss+xml" title="Ken Arnold @ Calvin University" href="index.xml"></head>
 
 <body class="nav-fixed fullcontent">
 
@@ -336,7 +337,11 @@ Jan 11, 2023
 <div class="listing-no-matching d-none">
 No matching items
 </div>
+<nav id="blog-posts-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div>
+<p><a href="./posts/">All posts</a></p>
 </section>
 <section id="teaching" class="level2">
 <h2 data-anchor-id="teaching">Teaching</h2>
