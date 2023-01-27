@@ -88,7 +88,7 @@
     "href": "posts/dim-axis-rank/index.html#rank",
     "title": "Multidimensional Array Terminology",
     "section": "Rank?",
-    "text": "Rank?\nTo make matters worse, the fast.ai book uses “rank” to refer to the number of axes of a tensor. But “rank” means something different in linear algebra. For example, a length-5 column vector times a length-4 row vector would give a matrix (tensor) with two axes (2-dimensional), with shape (5, 4) and rank 1 in the linear algebra sense:\nSee this notebook.\n\nimport torch\nt1 = torch.ones((5, 1)); t1\nt2 = torch.ones((1, 4)); t2\nt3 = t1 @ t2; t3\n\ntensor([[1., 1., 1., 1.],\n        [1., 1., 1., 1.],\n        [1., 1., 1., 1.],\n        [1., 1., 1., 1.],\n        [1., 1., 1., 1.]])\n\n\nt3.shape t3.ndim torch.matrix_rank(t3)"
+    "text": "Rank?\nTo make matters worse, the fast.ai book uses “rank” to refer to the number of axes of a tensor. But “rank” means something different in linear algebra. For example, a length-5 column vector times a length-4 row vector would give a matrix (tensor) with two axes (2-dimensional), with shape (5, 4) and rank 1 in the linear algebra sense:\nSee this notebook.\n\nimport torch\nt1 = torch.ones((5, 1)); t1\nt2 = torch.ones((1, 4)); t2\nt3 = t1 @ t2; t3\n\ntensor([[1., 1., 1., 1.],\n        [1., 1., 1., 1.],\n        [1., 1., 1., 1.],\n        [1., 1., 1., 1.],\n        [1., 1., 1., 1.]])\n\n\n\nt3.shape\n\ntorch.Size([5, 4])\n\n\n\nt3.ndim\n\n2\n\n\n\ntorch.linalg.matrix_rank(t3)\n\ntensor(1)"
   },
   {
     "objectID": "posts/dim-axis-rank/index.html#the-exercise",
