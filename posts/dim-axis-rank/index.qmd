@@ -1,7 +1,7 @@
 ---
 title: "Multidimensional Array Terminology"
 date: "2023-01-27"
-keywords: ["ml", "coding"]
+categories: ["ml", "coding"]
 ---
 
 A surprisingly large amount of the thinking that goes into implementing neural net code is getting the shapes of multidimensional structures right. I'd heard that from others but didn’t really believe it until I had to figure it out myself a couple of times, and that convinced me that everyone could use some guided practice with that. So I give my AI students some exercises in thinking about the shapes of multidimensional structures. We're working with images because they're easier to visualize, but the same thing comes up in sequence modeling (batch by sequence length by embedding dimension, sometimes with an attention head dim in there too!).
