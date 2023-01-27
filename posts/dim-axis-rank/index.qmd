@@ -16,9 +16,8 @@ I'm guilty of sloppy use of this terminology too, but I suggest we use "number o
 
 ## Rank?
 
-To make matters worse, the fast.ai book uses "rank" to refer to the number of axes of a tensor. But "rank" means something different in linear algebra. For example, a length-5 column vector times a length-4 row vector would give a matrix (tensor) with two axes (2-dimensional), with shape `(5, 4)` and rank 1 in the linear algebra sense:
+To make matters worse, the fast.ai book uses "rank" to refer to the number of axes of a tensor. But "rank" means something different in linear algebra. For example, a length-5 column vector times a length-4 row vector would give a matrix (tensor) with two axes (2-dimensional), with shape `(5, 4)`
 
- See [this notebook](https://nbviewer.jupyter.org/github/kcarnold/cs344/blob/main/src/Number_of_Dimensions_is_not_Rank.ipynb).
 
 ```{python}
 import torch
@@ -35,6 +34,8 @@ t3.shape
 ```{python}
 t3.ndim
 ```
+
+But because of how we made it, we know that the matrix has [rank](https://en.wikipedia.org/wiki/Rank_(linear_algebra)) 1 in the linear algebra sense, as Torch confirms. (Note that the Torch computation is sensitive to numerical precision issues, though it works correctly in this case.)
 
 ```{python}
 torch.linalg.matrix_rank(t3)
