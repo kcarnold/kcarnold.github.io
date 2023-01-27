@@ -5,6 +5,7 @@ project:
  
 website:
   title: "Ken Arnold @ Calvin University"
+  site-url: "https://kenarnold.org/"
   navbar:
     right:
       - posts.qmd

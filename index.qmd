@@ -3,10 +3,12 @@ title: "Ken Arnold"
 description: "AI for Everyday Creativity"
 listing:
   id: blog-posts
+  page-size: 5
   contents: posts
   sort: "date desc"
   type: default
   fields: [date, title, reading-time, description]
+  feed: true
 about:
   template: solana
   links:
@@ -35,6 +37,8 @@ I'm interested in research and teaching at the intersection of data science, peo
 
 :::{#blog-posts}
 :::
+
+[All posts](/posts/)
 
 ## Teaching
 
