@@ -214,8 +214,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="rank" class="level2">
 <h2 class="anchored" data-anchor-id="rank">Rank?</h2>
-<p>To make matters worse, the fast.ai book uses “rank” to refer to the number of axes of a tensor. But “rank” means something different in linear algebra. For example, a length-5 column vector times a length-4 row vector would give a matrix (tensor) with two axes (2-dimensional), with shape <code>(5, 4)</code> and rank 1 in the linear algebra sense:</p>
-<p>See <a href="https://nbviewer.jupyter.org/github/kcarnold/cs344/blob/main/src/Number_of_Dimensions_is_not_Rank.ipynb">this notebook</a>.</p>
+<p>To make matters worse, the fast.ai book uses “rank” to refer to the number of axes of a tensor. But “rank” means something different in linear algebra. For example, a length-5 column vector times a length-4 row vector would give a matrix (tensor) with two axes (2-dimensional), with shape <code>(5, 4)</code></p>
 <div class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>t1 <span class="op">=</span> torch.ones((<span class="dv">5</span>, <span class="dv">1</span>))<span class="op">;</span> t1</span>
@@ -241,6 +240,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>2</code></pre>
 </div>
 </div>
+<p>But because of how we made it, we know that the matrix has <a href="https://en.wikipedia.org/wiki/Rank_(linear_algebra)">rank</a> 1 in the linear algebra sense, as Torch confirms. (Note that the Torch computation is sensitive to numerical precision issues, though it works correctly in this case.)</p>
 <div class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>torch.linalg.matrix_rank(t3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
