@@ -10,7 +10,33 @@
 <atom:link href="https://kenarnold.org/index.xml" rel="self" type="application/rss+xml"/>
 <description>AI for Everyday Creativity</description>
 <generator>quarto-1.2.313</generator>
-<lastBuildDate>Fri, 27 Jan 2023 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 30 Jan 2023 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Self-Study Advice</title>
+  <dc:creator>Ken Arnold</dc:creator>
+  <link>https://kenarnold.org/posts/self-study/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I am occasionally asked for advice on how to get better at CS on your own. This is very well attested on the Internet, so you can probably find better examples, but for what it’s worth here’s one response I’ve written.</p>
+<p>For self-study, I typically suggest focusing on practicing solving problems; in the process you end up learning a lot about programming languages, data structures, algorithms, data manipulation, etc.. You learn fewer different things that way than you would in a course (or 3!), but you tend to learn them much better.</p>
+<p>Here are three specific strategies (pick one):</p>
+<ol type="1">
+<li>Find an example of something that someone else has built that you’d like to be able to build yourself. (Perhaps a data visualization, an interactive application, etc.) Usually a blog post that you can mostly understand already is about the right size of thing to tackle. Try to build it without looking too much at how the original did it.</li>
+<li>Like #1, but you come up with the idea yourself. It’s harder because you don’t know before you start how easy or hard it will be, but it can be more motivating to “scratch your own itch”.</li>
+<li>Work through a collection of problems, like <a href="https://adventofcode.com/">Advent of Code</a>, <a href="https://projecteuler.net/">Project Euler</a>, <a href="https://github.com/norvig/pytudes">Pytudes</a>, <a href="https://github.com/rfordatascience/tidytuesday">Tidy Tuesday</a> (yes it’s intended for R but you can do the same in Python—or just learn R, like I eventually did), or Kaggle competitions.</li>
+</ol>
+<p>(Addendum: you may appreciate <a href="https://www.youtube.com/watch?v=gGxe2mN3kAg">fast.ai Lesson “0”</a>.)</p>
+
+
+
+ ]]></description>
+  <category>coding</category>
+  <guid>https://kenarnold.org/posts/self-study/index.html</guid>
+  <pubDate>Mon, 30 Jan 2023 05:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Multidimensional Array Terminology</title>
   <link>https://kenarnold.org/posts/dim-axis-rank/index.html</link>

@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/self-study/index.html",
       "/posts/dim-axis-rank/index.html",
       "/posts/magical-thinking/index.html",
       "/posts/detect-gpt/index.html",
@@ -22,6 +23,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/self-study/index.html",
       "/posts/dim-axis-rank/index.html",
       "/posts/magical-thinking/index.html",
       "/posts/detect-gpt/index.html",
