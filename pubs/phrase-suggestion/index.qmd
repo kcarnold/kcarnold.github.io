@@ -15,7 +15,7 @@ publication_short: In *UIST'16*
 
 abstract: "We introduce a simple extension to the familiar mobile keyboard suggestion interface that presents phrase suggestions that can be accepted by a repeated-tap gesture. In an extended composition task, we found that phrases were interpreted as suggestions that affected the content of what participants wrote more than conventional single-word suggestions, which were interpreted as predictions."
 
-tags: ["HCI", "NLP"]
+categories: ["HCI", "NLP"]
 ---
 
 ![](featured.png)

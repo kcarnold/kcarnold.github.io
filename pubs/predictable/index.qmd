@@ -13,7 +13,7 @@ publication_short: "IUI 2020"
 
 abstract: "In our lab study, image captions written with predictive text suggestions were shorter and included fewer words that that the system did not predict."
 
-tags: ["HCI", "NLP"]
+categories: ["HCI", "NLP"]
 ---
 
 ![](featured.png){width=25%}
