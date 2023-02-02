@@ -4,7 +4,7 @@ title: "AI and Writing: Do we speak the words of stochastic parrots?"
 authors:
 - Kenneth C. Arnold
 
-date: "2022"
+date: "2022-06-02"
 
 # Publication name and optional abbreviated publication name.
 publication: ACMS 2022
