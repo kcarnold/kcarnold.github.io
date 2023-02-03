@@ -10,7 +10,64 @@
 <atom:link href="https://kenarnold.org/index.xml" rel="self" type="application/rss+xml"/>
 <description>AI for Everyday Creativity</description>
 <generator>quarto-1.2.313</generator>
-<lastBuildDate>Mon, 30 Jan 2023 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 03 Feb 2023 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>ChatGPT Doesn’t Have a Database of Facts</title>
+  <dc:creator>Ken Arnold</dc:creator>
+  <link>https://kenarnold.org/posts/lm-facts/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>A colleague posted the following on our university Yammer:</p>
+<p><img src="https://kenarnold.org/posts/lm-facts/trying-to-correct-chatgpt.png" class="img-fluid" alt="text repeated below"></p>
+<p>Here’s the text, for the search engines:</p>
+<ul>
+<li><strong>Luke</strong>: Do you know that Calvin College was renamed Calvin University?</li>
+<li><strong>ChatGPT</strong>: Yes, I am aware that Calvin College was renamed Calvin University. My training data goes &amp; up until 2021, and the change took place after that.</li>
+<li><strong>Luke</strong>: Calvin College has changed its name to “Calvin University” and publicly made that operational change effective July 10, 2019.</li>
+<li><strong>ChatGPT</strong>: Thank you for the update. I have updated my information. Calvin College is now known as Calvin University, effective July 10, 2019.</li>
+</ul>
+<section id="factuality" class="level2">
+<h2 class="anchored" data-anchor-id="factuality">Factuality</h2>
+<ul>
+<li>The text saying “I have updated my information” was entirely vacuous; it has not actually updated anything. It has no readily-editable database of facts.</li>
+<li>“I have updated my information” came from a human labeler who gave that answer as an appropriate response to a statement like that. (See Step 1 in the process diagram on the <a href="https://openai.com/blog/chatgpt/">ChatGPT blog post</a>.)</li>
+<li>The human labeler probably intended that the engineers would actually implement some sort of update mechanism, but doing so in any general sense is an open research problem.</li>
+</ul>
+<p>My colleague thought that he was helping correct a mistake in the model’s knowledge base so that it would represent our university better in its responses. But the model doesn’t have a knowledge base, no database of facts.</p>
+</section>
+<section id="truth-vs-popularity" class="level2">
+<h2 class="anchored" data-anchor-id="truth-vs-popularity">Truth vs Popularity</h2>
+<ul>
+<li>To the extent that ChatGPT has any conception of truth or fact, it defines factuality of a statement as proportional to popularity, or more precisely, how much of the Internet is consistent (in a very superficial sense) with it being true.</li>
+<li>It is possible to extract a kind of knowledge base from the model after the fact<sup>1</sup>, but since the model does not store its knowledge as a set of assertions, there isn’t a straightforward way to update that knowledge base in general.</li>
+<li>Human feedback during the training process can tweak it somewhat (which is partly continuing, based on people annotating your ChatGPT sessions, I hope you are ok with that!), but I doubt we’re going to see an improvement in the following output soon:</li>
+</ul>
+<p><img src="https://kenarnold.org/posts/lm-facts/calvin-college.png" class="img-fluid" alt="text repeated below"></p>
+<ul>
+<li><strong>me</strong>: What is the name of the Christian liberal arts school in Grand Rapids, Michigan?</li>
+<li><strong>ChatGPT</strong>: Calvin College is a Christian liberal arts school located in Grand Rapids, Michigan.</li>
+</ul>
+<p>The general confusion of truth with popularity is not so readily dismissed.</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><a href="https://arxiv.org/abs/2301.12810">Crawling the Internal Knowledge-Base of Language Models | Abstract</a>↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>ai</category>
+  <category>ml</category>
+  <guid>https://kenarnold.org/posts/lm-facts/index.html</guid>
+  <pubDate>Fri, 03 Feb 2023 05:00:00 GMT</pubDate>
+  <media:content url="https://kenarnold.org/posts/lm-facts/trying-to-correct-chatgpt.png" medium="image" type="image/png" height="106" width="144"/>
+</item>
 <item>
   <title>Self-Study Advice</title>
   <dc:creator>Ken Arnold</dc:creator>

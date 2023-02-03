@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/lm-facts/index.html",
       "/posts/self-study/index.html",
       "/posts/dim-axis-rank/index.html",
       "/posts/magical-thinking/index.html",
@@ -24,6 +25,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/lm-facts/index.html",
       "/posts/self-study/index.html",
       "/posts/dim-axis-rank/index.html",
       "/posts/magical-thinking/index.html",

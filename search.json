@@ -105,6 +105,27 @@
     "text": "The Exercise\nHere’s the exercise, for anyone interested:\n\nImage Operations (show preview, open in Colab)"
   },
   {
+    "objectID": "posts/lm-facts/index.html",
+    "href": "posts/lm-facts/index.html",
+    "title": "ChatGPT Doesn’t Have a Database of Facts",
+    "section": "",
+    "text": "A colleague posted the following on our university Yammer:\nHere’s the text, for the search engines:"
+  },
+  {
+    "objectID": "posts/lm-facts/index.html#factuality",
+    "href": "posts/lm-facts/index.html#factuality",
+    "title": "ChatGPT Doesn’t Have a Database of Facts",
+    "section": "Factuality",
+    "text": "Factuality\n\nThe text saying “I have updated my information” was entirely vacuous; it has not actually updated anything. It has no readily-editable database of facts.\n“I have updated my information” came from a human labeler who gave that answer as an appropriate response to a statement like that. (See Step 1 in the process diagram on the ChatGPT blog post.)\nThe human labeler probably intended that the engineers would actually implement some sort of update mechanism, but doing so in any general sense is an open research problem.\n\nMy colleague thought that he was helping correct a mistake in the model’s knowledge base so that it would represent our university better in its responses. But the model doesn’t have a knowledge base, no database of facts."
+  },
+  {
+    "objectID": "posts/lm-facts/index.html#truth-vs-popularity",
+    "href": "posts/lm-facts/index.html#truth-vs-popularity",
+    "title": "ChatGPT Doesn’t Have a Database of Facts",
+    "section": "Truth vs Popularity",
+    "text": "Truth vs Popularity\n\nTo the extent that ChatGPT has any conception of truth or fact, it defines factuality of a statement as proportional to popularity, or more precisely, how much of the Internet is consistent (in a very superficial sense) with it being true.\nIt is possible to extract a kind of knowledge base from the model after the fact1, but since the model does not store its knowledge as a set of assertions, there isn’t a straightforward way to update that knowledge base in general.\nHuman feedback during the training process can tweak it somewhat (which is partly continuing, based on people annotating your ChatGPT sessions, I hope you are ok with that!), but I doubt we’re going to see an improvement in the following output soon:\n\n\n\nme: What is the name of the Christian liberal arts school in Grand Rapids, Michigan?\nChatGPT: Calvin College is a Christian liberal arts school located in Grand Rapids, Michigan.\n\nThe general confusion of truth with popularity is not so readily dismissed."
+  },
+  {
     "objectID": "posts/detect-gpt/index.html",
     "href": "posts/detect-gpt/index.html",
     "title": "Stop trying to detect computer-generated writing.",
@@ -123,7 +144,7 @@
     "href": "index.html#recent-posts",
     "title": "Ken Arnold",
     "section": "Recent Posts",
-    "text": "Recent Posts\n\n\n\n\n\n\nSelf-Study Advice\n\n\n\n\nPractice solving problems.\n\n\n\n\n\n\nJan 30, 2023\n\n\n1 min\n\n\n\n\n\n\n\n\nMultidimensional Array Terminology\n\n\n\n\n\n\n\n\n\n\n\nJan 27, 2023\n\n\n1 min\n\n\n\n\n\n\n\n\nAvoid Magical Thinking about AI\n\n\n\n\nEven if you’re not a computer scientist, you should learn enough about AI that you can steer its progress.\n\n\n\n\n\n\nJan 24, 2023\n\n\n2 min\n\n\n\n\n\n\n\n\nStop trying to detect computer-generated writing.\n\n\n\n\nIt’s a risky distraction that just encourages an arms race.\n\n\n\n\n\n\nJan 17, 2023\n\n\n1 min\n\n\n\n\n\n\n\n\nSolomon’s proverbs about AI\n\n\n\n\nA reflection without words on the difference between wisdom and its imitation.\n\n\n\n\n\n\nJan 16, 2023\n\n\n2 min\n\n\n\n\n\n\n\n\nWithout Acknowledgment: Cultivating Gratitude in an ML age\n\n\n\n\nCreativity support tools based on machine learning hide the human authors that contributed to the work. Does it have to be that way?\n\n\n\n\n\n\nJan 12, 2023\n\n\n3 min\n\n\n\n\n\n\n\n\nLanguage Models for Species-Scale Collaboration\n\n\n\n\nHow knowledge fusion will continue the trend of scaling humam collaboration\n\n\n\n\n\n\nJan 11, 2023\n\n\n1 min\n\n\n\n\n\n\nNo matching items\n\n\n  \n\n\nAll posts"
+    "text": "Recent Posts\n\n\n\n\n\n\nChatGPT Doesn’t Have a Database of Facts\n\n\n\n\nIt was trained to be believable, not to be right.\n\n\n\n\n\n\nFeb 3, 2023\n\n\n2 min\n\n\n\n\n\n\n\n\nSelf-Study Advice\n\n\n\n\nPractice solving problems.\n\n\n\n\n\n\nJan 30, 2023\n\n\n1 min\n\n\n\n\n\n\n\n\nMultidimensional Array Terminology\n\n\n\n\n\n\n\n\n\n\n\nJan 27, 2023\n\n\n1 min\n\n\n\n\n\n\n\n\nAvoid Magical Thinking about AI\n\n\n\n\nEven if you’re not a computer scientist, you should learn enough about AI that you can steer its progress.\n\n\n\n\n\n\nJan 24, 2023\n\n\n2 min\n\n\n\n\n\n\n\n\nStop trying to detect computer-generated writing.\n\n\n\n\nIt’s a risky distraction that just encourages an arms race.\n\n\n\n\n\n\nJan 17, 2023\n\n\n1 min\n\n\n\n\n\n\n\n\nSolomon’s proverbs about AI\n\n\n\n\nA reflection without words on the difference between wisdom and its imitation.\n\n\n\n\n\n\nJan 16, 2023\n\n\n2 min\n\n\n\n\n\n\n\n\nWithout Acknowledgment: Cultivating Gratitude in an ML age\n\n\n\n\nCreativity support tools based on machine learning hide the human authors that contributed to the work. Does it have to be that way?\n\n\n\n\n\n\nJan 12, 2023\n\n\n3 min\n\n\n\n\n\n\n\n\nLanguage Models for Species-Scale Collaboration\n\n\n\n\nHow knowledge fusion will continue the trend of scaling humam collaboration\n\n\n\n\n\n\nJan 11, 2023\n\n\n1 min\n\n\n\n\n\n\nNo matching items\n\n\n  \n\n\nAll posts"
   },
   {
     "objectID": "index.html#teaching",
@@ -235,7 +256,7 @@
     "href": "posts.html",
     "title": "Posts",
     "section": "",
-    "text": "Self-Study Advice\n\n\n\n\n\n\n\ncoding\n\n\n\n\nPractice solving problems.\n\n\n\n\n\n\nJan 30, 2023\n\n\nKen Arnold\n\n\n\n\n\n\n\n\nMultidimensional Array Terminology\n\n\n\n\n\n\n\nml\n\n\ncoding\n\n\n\n\n\n\n\n\n\n\n\nJan 27, 2023\n\n\n\n\n\n\n\n\nAvoid Magical Thinking about AI\n\n\n\n\n\n\n\nai\n\n\nml\n\n\n\n\nEven if you’re not a computer scientist, you should learn enough about AI that you can steer its progress.\n\n\n\n\n\n\nJan 24, 2023\n\n\nKen Arnold\n\n\n\n\n\n\n\n\nStop trying to detect computer-generated writing.\n\n\n\n\n\n\n\nai\n\n\nml\n\n\nlm\n\n\n\n\nIt’s a risky distraction that just encourages an arms race.\n\n\n\n\n\n\nJan 17, 2023\n\n\nKen Arnold\n\n\n\n\n\n\n\n\nSolomon’s proverbs about AI\n\n\n\n\n\n\n\nai\n\n\nml\n\n\nlm\n\n\n\n\nA reflection without words on the difference between wisdom and its imitation.\n\n\n\n\n\n\nJan 16, 2023\n\n\nKen Arnold\n\n\n\n\n\n\n\n\nWithout Acknowledgment: Cultivating Gratitude in an ML age\n\n\n\n\n\n\n\nai\n\n\nml\n\n\nlm\n\n\nia\n\n\n\n\nCreativity support tools based on machine learning hide the human authors that contributed to the work. Does it have to be that way?\n\n\n\n\n\n\nJan 12, 2023\n\n\nKen Arnold\n\n\n\n\n\n\n\n\nLanguage Models for Species-Scale Collaboration\n\n\n\n\n\n\n\nai\n\n\nml\n\n\nlm\n\n\nia\n\n\n\n\nHow knowledge fusion will continue the trend of scaling humam collaboration\n\n\n\n\n\n\nJan 11, 2023\n\n\nKen Arnold\n\n\n\n\n\n\nNo matching items"
+    "text": "ChatGPT Doesn’t Have a Database of Facts\n\n\n\n\n\n\n\nai\n\n\nml\n\n\n\n\nIt was trained to be believable, not to be right.\n\n\n\n\n\n\nFeb 3, 2023\n\n\nKen Arnold\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSelf-Study Advice\n\n\n\n\n\n\n\ncoding\n\n\n\n\nPractice solving problems.\n\n\n\n\n\n\nJan 30, 2023\n\n\nKen Arnold\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMultidimensional Array Terminology\n\n\n\n\n\n\n\nml\n\n\ncoding\n\n\n\n\n\n\n\n\n\n\n\nJan 27, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAvoid Magical Thinking about AI\n\n\n\n\n\n\n\nai\n\n\nml\n\n\n\n\nEven if you’re not a computer scientist, you should learn enough about AI that you can steer its progress.\n\n\n\n\n\n\nJan 24, 2023\n\n\nKen Arnold\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStop trying to detect computer-generated writing.\n\n\n\n\n\n\n\nai\n\n\nml\n\n\nlm\n\n\n\n\nIt’s a risky distraction that just encourages an arms race.\n\n\n\n\n\n\nJan 17, 2023\n\n\nKen Arnold\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolomon’s proverbs about AI\n\n\n\n\n\n\n\nai\n\n\nml\n\n\nlm\n\n\n\n\nA reflection without words on the difference between wisdom and its imitation.\n\n\n\n\n\n\nJan 16, 2023\n\n\nKen Arnold\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWithout Acknowledgment: Cultivating Gratitude in an ML age\n\n\n\n\n\n\n\nai\n\n\nml\n\n\nlm\n\n\nia\n\n\n\n\nCreativity support tools based on machine learning hide the human authors that contributed to the work. Does it have to be that way?\n\n\n\n\n\n\nJan 12, 2023\n\n\nKen Arnold\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLanguage Models for Species-Scale Collaboration\n\n\n\n\n\n\n\nai\n\n\nml\n\n\nlm\n\n\nia\n\n\n\n\nHow knowledge fusion will continue the trend of scaling humam collaboration\n\n\n\n\n\n\nJan 11, 2023\n\n\nKen Arnold\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "bio.html",
