@@ -16,6 +16,8 @@ website:
         href: https://github.com/kcarnold
       - icon: twitter
         href: https://twitter.com/kcarnold
+  page-navigation: true
+  google-analytics: "G-6SPV9Y5XFG"
 format:
   html:
     theme: cosmo
