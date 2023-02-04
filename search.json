@@ -207,7 +207,7 @@
     "href": "pubs/sentiment-bias/index.html",
     "title": "Sentiment Bias in Predictive Text Recommendations Results in Biased Writing",
     "section": "",
-    "text": "PDF In GI’18"
+    "text": "PDF In GI’18\nNote: The authors of this paper, published in CHI 2023, independently replicated our study but with better design, much improved language model, and much larger scale. The basic findings still hold, and the implications are just as concerning. Co-Writing with Opinionated Language Models Affects Users’ Views | Abstract"
   },
   {
     "objectID": "pubs/sentiment-bias/index.html#abstract",
