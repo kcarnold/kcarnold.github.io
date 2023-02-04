@@ -31,6 +31,7 @@ url_video: ''
 
 [PDF]({{< meta url_pdf >}}) {{< meta publication_short >}}
 
+**Note**: The authors of [this paper](https://arxiv.org/abs/2302.00560), published in CHI 2023, independently replicated our study but with better design, much improved language model, and much larger scale. The basic findings still hold, and the implications are just as concerning. [Co-Writing with Opinionated Language Models Affects Users' Views | Abstract](https://arxiv.org/abs/2302.00560)
 
 ## Abstract
 
