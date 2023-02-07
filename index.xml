@@ -12,7 +12,7 @@
 <generator>quarto-1.2.313</generator>
 <lastBuildDate>Mon, 06 Feb 2023 05:00:00 GMT</lastBuildDate>
 <item>
-  <title>Personas?</title>
+  <title>Language Models have Personas?</title>
   <dc:creator>Ken Arnold</dc:creator>
   <link>https://kenarnold.org/posts/personas/index.html</link>
   <description><![CDATA[ 
@@ -56,6 +56,7 @@
 </section></div> ]]></description>
   <category>ai</category>
   <category>ml</category>
+  <category>lm</category>
   <guid>https://kenarnold.org/posts/personas/index.html</guid>
   <pubDate>Mon, 06 Feb 2023 05:00:00 GMT</pubDate>
 </item>
