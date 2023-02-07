@@ -1,9 +1,9 @@
 ---
-title: "Personas?"
-description: "RLHF is fascinating"
+title: "Language Models have Personas?"
+description: "RLHF is fascinating."
 author: "Ken Arnold"
 date: "2023-02-06"
-categories: [ai, ml]
+categories: [ai, ml, lm]
 ---
 
 My CS 344 students told me about how some people had come up with [a prompt that "hacks" ChatGPT](https://twitter.com/venturetwins/status/1622243944649347074) to do things that its content policies normally prohibit. This is fascinating for both human reasons and AI reasons.
