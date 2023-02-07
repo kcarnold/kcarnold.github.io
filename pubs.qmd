@@ -12,7 +12,8 @@ title-block-banner: true
 
 ---
 
-Some selected publications are below. For a more complete list, see my [Google Scholar profile](https://scholar.google.com/citations?hl=en&user=u512YusAAAAJ&view_op=list_works&sortby=pubdate)
+Some selected publications are below. For a more complete list, see my [Google Scholar profile](https://scholar.google.com/citations?hl=en&user=u512YusAAAAJ&view_op=list_works&sortby=pubdate).
+For less-polished but more recent thoughts, see the [blog posts](/posts.qmd) here.
 
 - [Faithful text prediction | Christian Courier](https://www.christiancourier.ca/faithful-text-prediction/)
 - [ChatGPT is not Magic (Talk)](https://youtu.be/Vvb3ht7uYiA)
