@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/personas/index.html",
       "/posts/major-in-human/index.html",
       "/posts/lm-facts/index.html",
       "/posts/self-study/index.html",
@@ -26,6 +27,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/personas/index.html",
       "/posts/major-in-human/index.html",
       "/posts/lm-facts/index.html",
       "/posts/self-study/index.html",
