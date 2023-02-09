@@ -2,6 +2,8 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/unsurprised-by-internet/index.html",
+      "/posts/risks-of-alignment/index.html",
       "/posts/personas/index.html",
       "/posts/major-in-human/index.html",
       "/posts/lm-facts/index.html",
@@ -27,6 +29,8 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/unsurprised-by-internet/index.html",
+      "/posts/risks-of-alignment/index.html",
       "/posts/personas/index.html",
       "/posts/major-in-human/index.html",
       "/posts/lm-facts/index.html",
