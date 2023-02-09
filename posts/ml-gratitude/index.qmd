@@ -4,6 +4,7 @@ description: "Creativity support tools based on machine learning hide the human 
 author: "Ken Arnold"
 date: "2023-01-12"
 categories: [ai, ml, lm, ia]
+featured: 2
 ---
 
 Generative AI tools can be really helpful for our creativity. Engaging with many and diverse examples has been shown to help human creativity; the systems themselves have engaged deeply with diverse examples and can fluently retrieve them for creators to use. But unlike when we a search engine, we can't even acknowledge our inspiration if we want to. Rather than being able to give credit to a specific human author, or even to a creative team, the model makes us credit *it*, as the amalgamation of all of the human labor that it was trained on. The sheer scale of the data these models work with makes this hard: being trained on close to all human work becomes essentially the same as not being human work at all. If **gratitude** is a virtue, it seems like generative AI is positioned in opposition to it.

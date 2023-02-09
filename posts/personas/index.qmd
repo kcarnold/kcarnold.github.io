@@ -3,6 +3,7 @@ title: "Language Models have Personas?"
 description: "RLHF is fascinating."
 author: "Ken Arnold"
 date: "2023-02-06"
+featured: 1
 categories: [ai, ml, lm]
 ---
 

@@ -4,6 +4,7 @@ description: "It's a risky distraction that just encourages an arms race."
 author: "Ken Arnold"
 date: "2023-01-17"
 categories: [ai, ml, lm]
+featured: 1
 ---
 
 Many people saw the quality of AI-generated text and immediately thought that they need to find ways to detect such "cheating". I respect those trying to make those tools (including my former colleagues who made [GLTR](http://gltr.io/) back in 2019, and more recently Edward Tian, who is "[trying to save us from ChatGPT before it changes writing forever (NPR)](https://www.npr.org/sections/money/2023/01/17/1149206188/this-22-year-old-is-trying-to-save-us-from-chatgpt-before-it-changes-writing-for)" with [GPTZero](https://gptzero.me/)), and the educators feeling like they're forced into using them---at the present moment this might be a best-of-bad-options situation. But we need to stop it. Reasons:

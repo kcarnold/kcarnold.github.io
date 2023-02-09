@@ -4,6 +4,7 @@ description: "Even if you're not a computer scientist, you should learn enough a
 author: "Ken Arnold"
 date: "2023-01-24"
 categories: [ai, ml]
+featured: 1
 ---
 
 It's become too common to ascribe a sort of magical veneer to AI. News outlets personify ChatGPT, for example. Not to mention personal assistants, voice recognition, even search engines. In practice, people are viewing these things as black boxes that might have little elves inside them as far as we know.

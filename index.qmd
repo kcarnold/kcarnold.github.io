@@ -5,7 +5,9 @@ listing:
   id: blog-posts
   page-size: 5
   contents: posts
-  sort: "date desc"
+  sort:
+    - "featured"
+    - "date desc"
   type: default
   fields: [date, title, reading-time, description]
   feed: true
