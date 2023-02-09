@@ -2,17 +2,17 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/unsurprised-by-internet/index.html",
       "/posts/risks-of-alignment/index.html",
       "/posts/personas/index.html",
       "/posts/major-in-human/index.html",
+      "/posts/magical-thinking/index.html",
+      "/posts/detect-gpt/index.html",
+      "/posts/ml-gratitude/index.html",
+      "/posts/unsurprised-by-internet/index.html",
       "/posts/lm-facts/index.html",
       "/posts/self-study/index.html",
       "/posts/dim-axis-rank/index.html",
-      "/posts/magical-thinking/index.html",
-      "/posts/detect-gpt/index.html",
       "/posts/ai-proverbs/index.html",
-      "/posts/ml-gratitude/index.html",
       "/posts/knowledge-fusion/index.html"
     ]
   },

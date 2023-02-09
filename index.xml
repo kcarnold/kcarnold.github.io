@@ -12,26 +12,6 @@
 <generator>quarto-1.2.313</generator>
 <lastBuildDate>Thu, 09 Feb 2023 05:00:00 GMT</lastBuildDate>
 <item>
-  <title>On being unsurprised by the Internet</title>
-  <dc:creator>Ken Arnold</dc:creator>
-  <link>https://kenarnold.org/posts/unsurprised-by-internet/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>(placeholder post for now; until then, see my <a href="../../pubs.html">ChatGPT talk</a>.)</p>
-
-
-
- ]]></description>
-  <category>ai</category>
-  <category>ml</category>
-  <category>lm</category>
-  <guid>https://kenarnold.org/posts/unsurprised-by-internet/index.html</guid>
-  <pubDate>Thu, 09 Feb 2023 05:00:00 GMT</pubDate>
-</item>
-<item>
   <title>Does increasing ‘alignment’ increase risk?</title>
   <dc:creator>Ken Arnold</dc:creator>
   <link>https://kenarnold.org/posts/risks-of-alignment/index.html</link>
@@ -50,6 +30,26 @@
  ]]></description>
   <category>ai</category>
   <guid>https://kenarnold.org/posts/risks-of-alignment/index.html</guid>
+  <pubDate>Thu, 09 Feb 2023 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>On being unsurprised by the Internet</title>
+  <dc:creator>Ken Arnold</dc:creator>
+  <link>https://kenarnold.org/posts/unsurprised-by-internet/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>(placeholder post for now; until then, see my <a href="../../pubs.html">ChatGPT talk</a>.)</p>
+
+
+
+ ]]></description>
+  <category>ai</category>
+  <category>ml</category>
+  <category>lm</category>
+  <guid>https://kenarnold.org/posts/unsurprised-by-internet/index.html</guid>
   <pubDate>Thu, 09 Feb 2023 05:00:00 GMT</pubDate>
 </item>
 <item>
