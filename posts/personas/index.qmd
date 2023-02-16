@@ -7,7 +7,7 @@ featured: 1
 categories: [ai, ml, lm]
 ---
 
-**TODO**: It might be better to call what I'm describing here *behavior units*. *Persona* implies a coherent set of behavior units, and that indeed might emerge, especially with RLHF, but the discussion here doesn't require that level of coherence. Also, some people that "persona" implies "person"; I intend to use it in the opposite sense (it's an imitation of a person).
+> **TODO**: It might be better to call what I'm describing here *behavior units*. *Persona* implies a coherent set of behavior units, and that indeed might emerge, especially with RLHF, but the discussion here doesn't require that level of coherence. Also, some people that "persona" implies "person"; I intend to use it in the opposite sense (it's an imitation of a person).
 
 My CS 344 students told me about how some people had come up with [a prompt that "hacks" ChatGPT](https://twitter.com/venturetwins/status/1622243944649347074) to do things that its content policies normally prohibit. This is fascinating for both human reasons and AI reasons.
 
