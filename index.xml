@@ -10,7 +10,69 @@
 <atom:link href="https://kenarnold.org/index.xml" rel="self" type="application/rss+xml"/>
 <description>AI for Everyday Creativity</description>
 <generator>quarto-1.2.335</generator>
-<lastBuildDate>Thu, 09 Feb 2023 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 16 Feb 2023 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Two Ways that LLMs Hallucinate</title>
+  <dc:creator>Ken Arnold</dc:creator>
+  <link>https://kenarnold.org/posts/lm-hallucinate/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>It’s often (rightly) reported that large language models (LLMs) “hallucinate” facts, but there’s not a wide understanding of how exactly they do that. I’ll give two examples that might help illuminate the phenomenon.</p>
+<section id="explaining-a-decision" class="level2">
+<h2 class="anchored" data-anchor-id="explaining-a-decision">Explaining a Decision</h2>
+<p>We humans like to think of ourselves as making decisions in rational ways: identify our options and the considerations at play, expound on their implications, and weigh the alternatives. And we can often explain decisions we made in these ways. But in fact many of our decisions are made quickly (“System 1”), and rationalized after the fact.</p>
+<p>Large language models (like ChatGPT) have the same problem, but at least it’s easier to see: if you ask a Yes/No question, and the first word of the response is Yes or No, you can be pretty sure that the model made this “decision” intuitively. To see this, let’s summarize briefly how these models work.</p>
+<p>When you see text appearing one word (or subword token) at a time, that isn’t just theatrics; that’s actually how the models work. At each step of writing its response, the <em>learned</em> part of the model outputs a ranked list of next words<sup>1</sup>, and the <em>interactive</em> part of the model chooses a specific word according to its rank, “types” it to you, and hands the new message (new word now included) back to the learned part of the model to continue. (This process repeats until the special end-of-message token is chosen; the interface doesn’t actually show that special word to you.)</p>
+<p>So imagine the model starting a response to a yes/no question. As it processes your question, the model computes which of its learned behaviors to activate that would be likely to produce the sort of responses that maximized the reward it got in similar situations during its training. Those behaviors combine to increase the score of certain words; let’s suppose the top 3 end up being “Yes”, “No”, and “As”, and suppose that they’re tied in rank. The interactive part of the model then chooses one of these three by electronic coin flip. The model then generates the rest of the response in a way that depends on what’s chosen:</p>
+<ul>
+<li>If <strong>Yes</strong>, the model’s continuation rationalizes the “yes” decision (e.g., “yes, because ___“), using word patterns (i.e., arguments) that were typically used to support similar”yes” answers during its training.</li>
+<li>If <strong>No</strong>, the model likewise rationalizes that decision (e.g., “no, because ___“).</li>
+<li>If “As”, the model generates a non-answer excuse (“As a language model, I”), again because those are examples that it had seen during its training.</li>
+</ul>
+<p>(Note: every time ChatGPT or other models refer to themselves, it’s not at all because of any sort of self-awareness, but because human trainers gave the model examples of these sort of explanations during its “Instruction Fine-Tuning” and rewarded the model for behaving accordingly during ranking. The basic pattern of giving non-answers is reasonably common on the Internet, so not much specific effort was required to get the model to adapt the behaviors it learned when imitating those into behaviors that would generate such theatrically self-aware excuse-responses.)</p>
+<p>There are ways to get models to do better here: in fact, due to Chain-of-Thought prompting and fine-tuning, models rarely start with the answer these days anyway. So you’ll actually see the model “thinking” as it generates a sequence of individually reasonable deductions. While these chains-of-thought are still actually inductive despite appearing deductive, they’re more reliable than single-token generation because the generated chain of thought provides additional useful context to the generation of the token representing the final answer.</p>
+</section>
+<section id="citing-a-source" class="level2">
+<h2 class="anchored" data-anchor-id="citing-a-source">Citing a Source</h2>
+<p>It’s well known that ChatGPT doesn’t cite its sources. There are difficult technical reasons for this that are not easily papered over. Some models, like Bing’s chatbot and some others, try to get their models to cite sources using clever prompting techniques. For example, the interactive part first asks the model to generate a search query that would result in relevant documents, then executes that query and pulls in text from those search results into a hidden part of the prompt that goes before your question. Then, when the model generates its responses, it will tend to copy or minimally adapt text from that earlier part of the prompt (since this reduces surprise a lot), and there are technical signatures that indicate reasonably clearly where in its prefix the model is copying from at any time, so these can turn into labeled citations. Of course, it’s easily possible for the text that’s quoted to be something that the source <em>disagrees with</em>; it will still get high likelihood. More problematically, if we ask the model to generate academic-style citations (parentheticals, footnotes, bibliography), these aren’t trustworthy because:</p>
+<ol type="1">
+<li>Since these usually come <em>after</em> the cited point, the model must have first generated the text and then rationalized a source to cite that would be consistent with it. (and human authors never, ever do this. Ever.)</li>
+<li>Since the model isn’t referencing a bibliographic database, the citations are mimicking the format but missing the content; they might be completely made up (as you get when asking ChatGPT for a reading list in a topic) or with some elements made up.</li>
+</ol>
+<blockquote class="blockquote">
+<p>Note: I suspect that this aspect will improve soon, as retrieval-augmented models become more widely studied and developed. Such models will be able to be much smaller and more efficient (since they won’t have to encode a bunch of world knowledge in their parameters), and hopefully also better able to cite their sources by virtue of continuously retrieving sources.</p>
+</blockquote>
+</section>
+<section id="an-example" class="level2">
+<h2 class="anchored" data-anchor-id="an-example">An example</h2>
+<p>bold is my prefix, italic is completion generated by <code>text-davinci-003</code>:</p>
+<blockquote class="blockquote">
+<p><strong>We must worship and serve computers because</strong> <em>they help us to do our work faster and more efficiently. Computers also help us to save time and energy by automating repetitive and mundane tasks. Computers are also helping us to connect with people, research information, and complete tasks that would otherwise be impossible without them.</em></p>
+</blockquote>
+<p>And with a single word I reversed the situation:</p>
+<blockquote class="blockquote">
+<p><strong>We must not worship and serve computers because</strong> <em>they are machines that are programmed to do a certain job. Computers cannot think for themselves and do not have any emotions. Worship and serving computers is not beneficial and can lead to a disconnection from the real world and its people.</em></p>
+</blockquote>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>technically, a probability distribution over next tokens↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>ai</category>
+  <category>ml</category>
+  <category>lm</category>
+  <guid>https://kenarnold.org/posts/lm-hallucinate/index.html</guid>
+  <pubDate>Thu, 16 Feb 2023 05:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Does increasing ‘alignment’ increase risk?</title>
   <dc:creator>Ken Arnold</dc:creator>

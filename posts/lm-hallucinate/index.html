@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Ken Arnold">
+<meta name="dcterms.date" content="2023-02-16">
+<meta name="description" content="Do you ever make your decision first and think about your reasons later?">
+
+<title>Ken Arnold @ Calvin University - Two Ways that LLMs Hallucinate</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6SPV9Y5XFG"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
+</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Ken Arnold @ Calvin University</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts.html">
+ <span class="menu-text">Posts</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pubs.html">
+ <span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../static/kcarnold_cv.pdf">
+ <span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/kcarnold"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/kcarnold"><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Two Ways that LLMs Hallucinate</h1>
+                  <div>
+        <div class="description">
+          Do you ever make your decision first and think about your reasons later?
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">ai</div>
+                <div class="quarto-category">ml</div>
+                <div class="quarto-category">lm</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Ken Arnold </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">February 16, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p>It’s often (rightly) reported that large language models (LLMs) “hallucinate” facts, but there’s not a wide understanding of how exactly they do that. I’ll give two examples that might help illuminate the phenomenon.</p>
+<section id="explaining-a-decision" class="level2">
+<h2 class="anchored" data-anchor-id="explaining-a-decision">Explaining a Decision</h2>
+<p>We humans like to think of ourselves as making decisions in rational ways: identify our options and the considerations at play, expound on their implications, and weigh the alternatives. And we can often explain decisions we made in these ways. But in fact many of our decisions are made quickly (“System 1”), and rationalized after the fact.</p>
+<p>Large language models (like ChatGPT) have the same problem, but at least it’s easier to see: if you ask a Yes/No question, and the first word of the response is Yes or No, you can be pretty sure that the model made this “decision” intuitively. To see this, let’s summarize briefly how these models work.</p>
+<p>When you see text appearing one word (or subword token) at a time, that isn’t just theatrics; that’s actually how the models work. At each step of writing its response, the <em>learned</em> part of the model outputs a ranked list of next words<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, and the <em>interactive</em> part of the model chooses a specific word according to its rank, “types” it to you, and hands the new message (new word now included) back to the learned part of the model to continue. (This process repeats until the special end-of-message token is chosen; the interface doesn’t actually show that special word to you.)</p>
+<p>So imagine the model starting a response to a yes/no question. As it processes your question, the model computes which of its learned behaviors to activate that would be likely to produce the sort of responses that maximized the reward it got in similar situations during its training. Those behaviors combine to increase the score of certain words; let’s suppose the top 3 end up being “Yes”, “No”, and “As”, and suppose that they’re tied in rank. The interactive part of the model then chooses one of these three by electronic coin flip. The model then generates the rest of the response in a way that depends on what’s chosen:</p>
+<ul>
+<li>If <strong>Yes</strong>, the model’s continuation rationalizes the “yes” decision (e.g., “yes, because ___“), using word patterns (i.e., arguments) that were typically used to support similar”yes” answers during its training.</li>
+<li>If <strong>No</strong>, the model likewise rationalizes that decision (e.g., “no, because ___“).</li>
+<li>If “As”, the model generates a non-answer excuse (“As a language model, I”), again because those are examples that it had seen during its training.</li>
+</ul>
+<p>(Note: every time ChatGPT or other models refer to themselves, it’s not at all because of any sort of self-awareness, but because human trainers gave the model examples of these sort of explanations during its “Instruction Fine-Tuning” and rewarded the model for behaving accordingly during ranking. The basic pattern of giving non-answers is reasonably common on the Internet, so not much specific effort was required to get the model to adapt the behaviors it learned when imitating those into behaviors that would generate such theatrically self-aware excuse-responses.)</p>
+<p>There are ways to get models to do better here: in fact, due to Chain-of-Thought prompting and fine-tuning, models rarely start with the answer these days anyway. So you’ll actually see the model “thinking” as it generates a sequence of individually reasonable deductions. While these chains-of-thought are still actually inductive despite appearing deductive, they’re more reliable than single-token generation because the generated chain of thought provides additional useful context to the generation of the token representing the final answer.</p>
+</section>
+<section id="citing-a-source" class="level2">
+<h2 class="anchored" data-anchor-id="citing-a-source">Citing a Source</h2>
+<p>It’s well known that ChatGPT doesn’t cite its sources. There are difficult technical reasons for this that are not easily papered over. Some models, like Bing’s chatbot and some others, try to get their models to cite sources using clever prompting techniques. For example, the interactive part first asks the model to generate a search query that would result in relevant documents, then executes that query and pulls in text from those search results into a hidden part of the prompt that goes before your question. Then, when the model generates its responses, it will tend to copy or minimally adapt text from that earlier part of the prompt (since this reduces surprise a lot), and there are technical signatures that indicate reasonably clearly where in its prefix the model is copying from at any time, so these can turn into labeled citations. Of course, it’s easily possible for the text that’s quoted to be something that the source <em>disagrees with</em>; it will still get high likelihood. More problematically, if we ask the model to generate academic-style citations (parentheticals, footnotes, bibliography), these aren’t trustworthy because:</p>
+<ol type="1">
+<li>Since these usually come <em>after</em> the cited point, the model must have first generated the text and then rationalized a source to cite that would be consistent with it. (and human authors never, ever do this. Ever.)</li>
+<li>Since the model isn’t referencing a bibliographic database, the citations are mimicking the format but missing the content; they might be completely made up (as you get when asking ChatGPT for a reading list in a topic) or with some elements made up.</li>
+</ol>
+<blockquote class="blockquote">
+<p>Note: I suspect that this aspect will improve soon, as retrieval-augmented models become more widely studied and developed. Such models will be able to be much smaller and more efficient (since they won’t have to encode a bunch of world knowledge in their parameters), and hopefully also better able to cite their sources by virtue of continuously retrieving sources.</p>
+</blockquote>
+</section>
+<section id="an-example" class="level2">
+<h2 class="anchored" data-anchor-id="an-example">An example</h2>
+<p>bold is my prefix, italic is completion generated by <code>text-davinci-003</code>:</p>
+<blockquote class="blockquote">
+<p><strong>We must worship and serve computers because</strong> <em>they help us to do our work faster and more efficiently. Computers also help us to save time and energy by automating repetitive and mundane tasks. Computers are also helping us to connect with people, research information, and complete tasks that would otherwise be impossible without them.</em></p>
+</blockquote>
+<p>And with a single word I reversed the situation:</p>
+<blockquote class="blockquote">
+<p><strong>We must not worship and serve computers because</strong> <em>they are machines that are programmed to do a certain job. Computers cannot think for themselves and do not have any emotions. Worship and serving computers is not beneficial and can lead to a disconnection from the real world and its people.</em></p>
+</blockquote>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>technically, a probability distribution over next tokens<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<script src="https://utteranc.es/client.js" repo="kcarnold/kcarnold.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
