@@ -1,6 +1,6 @@
 ---
 title: "Ken Arnold"
-description: "AI for Everyday Creativity"
+description: "Augmenting Intelligence for Everyday Creativity"
 listing:
   id: blog-posts
   page-size: 5
@@ -35,7 +35,7 @@ I'm interested in research and teaching at the intersection of data science, peo
 - AI for instructors to see what students are learning
 - Helping everyone understand what AI can do, and accurately calibrating both our excitement and our concerns.
 
-## Recent Posts
+## Highlighted Posts
 
 :::{#blog-posts}
 :::
