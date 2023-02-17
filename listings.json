@@ -2,13 +2,13 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/mark-generated/index.html",
       "/posts/risks-of-alignment/index.html",
       "/posts/personas/index.html",
       "/posts/major-in-human/index.html",
       "/posts/magical-thinking/index.html",
       "/posts/detect-gpt/index.html",
       "/posts/ml-gratitude/index.html",
-      "/posts/mark-generated/index.html",
       "/posts/lm-hallucinate/index.html",
       "/posts/unsurprised-by-internet/index.html",
       "/posts/lm-facts/index.html",
