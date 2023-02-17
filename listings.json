@@ -8,6 +8,7 @@
       "/posts/magical-thinking/index.html",
       "/posts/detect-gpt/index.html",
       "/posts/ml-gratitude/index.html",
+      "/posts/mark-generated/index.html",
       "/posts/lm-hallucinate/index.html",
       "/posts/unsurprised-by-internet/index.html",
       "/posts/lm-facts/index.html",
@@ -30,6 +31,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/mark-generated/index.html",
       "/posts/lm-hallucinate/index.html",
       "/posts/unsurprised-by-internet/index.html",
       "/posts/risks-of-alignment/index.html",
