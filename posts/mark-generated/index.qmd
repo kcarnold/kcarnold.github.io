@@ -2,9 +2,11 @@
 title: "Transparency for Generated Text"
 date: "2023-02-17"
 categories: ["ml", "llm", "nlp"]
+description: "Lightweight marks for AI-generated text"
+featured: 1
 ---
 
-How should we indicate that some text has been automatically generated? Some have proposed fancy watermarks, but these have the potential for false positives, can be gamed, and aren't actually visible to humans without using a fancy tool. I think it's better if we make it easier for people to mark generated text, so easy that it would be the default.
+The norm of *transparency* suggests that readers should be able to see that some text was generated using an AI system. But how should we indicate that some text has been automatically generated? Some have proposed fancy watermarks, but these have the potential for false positives, can be gamed, and aren't actually visible to humans without using a fancy tool. I think it's better if we make it easier for people to mark generated text, so easy that it would be the default.
 
 A few dimensions in the design space:
 
@@ -23,6 +25,7 @@ A few dimensions in the design space:
     - Every generated word?
     - Some generated words?
     - Proportional to how much information the model added (i.e., its total logprob?)
+4. How does this relate to co-writing?
 
 For example, this is what GitHub Copilot generated when I started this blog post.
 
@@ -71,7 +74,7 @@ print(repr(encoded_text[:30]))
 from IPython.display import HTML
 def format_generated(match):
     word = match.group(1)
-    return f'<span style="color: #444444;">{word}</span>'
+    return f'<span style="color: #999999;">{word}</span>'
 
 def pre_line(x): return f'<div style="white-space: pre-line;">{x}</div>'
 HTML(pre_line(re.sub(r'(\w+)\u200c', format_generated, encoded_text)))
