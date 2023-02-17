@@ -46,6 +46,7 @@
 <li>Some generated words?</li>
 <li>Proportional to how much information the model added (i.e., its total logprob?)</li>
 </ul></li>
+<li>How does this relate to co-writing?</li>
 </ol>
 <p>For example, this is what GitHub Copilot generated when I started this blog post.</p>
 <div class="cell" data-execution_count="1">
@@ -118,7 +119,7 @@ I·think·it's·important·to·be·transparent·about·the·fact·that·some·te
 <span id="cb8-5"></span>
 <span id="cb8-6"><span class="kw" style="color: #003B4F;">def</span> pre_line(x): <span class="cf" style="color: #003B4F;">return</span> <span class="ss" style="color: #20794D;">f'&lt;div style="white-space: pre-line;"&gt;</span><span class="sc" style="color: #5E5E5E;">{</span>x<span class="sc" style="color: #5E5E5E;">}</span><span class="ss" style="color: #20794D;">&lt;/div&gt;'</span></span>
 <span id="cb8-7">HTML(pre_line(re.sub(<span class="vs" style="color: #20794D;">r'(\w+)\u200c'</span>, format_generated, encoded_text)))</span></code></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="15">
+<div class="cell-output cell-output-display" data-execution_count="20">
 <div style="white-space: pre-line;"><span style="color: #999999;">but</span> <span style="color: #999999;">I</span> <span style="color: #999999;">think</span> <span style="color: #999999;">that</span>'<span style="color: #999999;">s</span> <span style="color: #999999;">a</span> <span style="color: #999999;">bit</span> <span style="color: #999999;">too</span> <span style="color: #999999;">much</span>. <span style="color: #999999;">I</span> <span style="color: #999999;">think</span> <span style="color: #999999;">we</span> <span style="color: #999999;">should</span> <span style="color: #999999;">just</span> <span style="color: #999999;">add</span> <span style="color: #999999;">a</span> <span style="color: #999999;">simple</span> <span style="color: #999999;">line</span> <span style="color: #999999;">at</span> <span style="color: #999999;">the</span> <span style="color: #999999;">end</span> <span style="color: #999999;">of</span> <span style="color: #999999;">the</span> <span style="color: #999999;">text</span>, <span style="color: #999999;">like</span> <span style="color: #999999;">this</span>:
 
 &gt; <span style="color: #999999;">This</span> <span style="color: #999999;">text</span> <span style="color: #999999;">was</span> <span style="color: #999999;">generated</span> <span style="color: #999999;">by</span> <span style="color: #999999;">a</span> <span style="color: #999999;">machine</span> <span style="color: #999999;">learning</span> <span style="color: #999999;">model</span>.
