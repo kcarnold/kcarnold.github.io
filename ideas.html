@@ -98,6 +98,10 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
  <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link active" href="./ideas.html" aria-current="page">
+ <span class="menu-text">Ideas</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./static/kcarnold_cv.pdf">
  <span class="menu-text">CV</span></a>
   </li>  
@@ -159,7 +163,7 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
 <li>Might need a layer embedding; perhaps a learnable offset vector layer-wise, or just a component that’s 0 for self layer and 1 for other-layer</li>
 <li>Related to PaLM’s “multi-key attentiotn”</li>
 </ul></li>
-<li>Attention heads currently can’t turn themselves off. What if we always throw a zero Value in the mix, with a learnable Key?</li>
+<li>Attention heads currently can’t turn themselves off. What if we always throw a zero Value in the mix, with a learnable Key? Could also include</li>
 <li>What if only some dims have residual connections?</li>
 <li>Could we get a Transformer where everything is in the same vector space, even queries and keys?</li>
 </ul></li>
