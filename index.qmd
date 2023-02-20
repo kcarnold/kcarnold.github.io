@@ -14,18 +14,21 @@ listing:
 about:
   template: solana
   links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/kcarnold
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/kcarnold/
+    - icon: youtube
+      text: YouTube
+      href: https://www.youtube.com/@kcarnold
     - icon: github
       text: GitHub
       href: https://github.com/kcarnold
     - icon: book
       text: Google Scholar
       href: https://scholar.google.com/citations?hl=en&user=u512YusAAAAJ&view_op=list_works&sortby=pubdate
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/kcarnold
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/kcarnold/
   image: profile.jpg
 ---
 
