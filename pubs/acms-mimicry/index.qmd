@@ -28,6 +28,6 @@ suggested phrase before even thinking about what to say.  In this article, I fir
 pervades the design and implementation of generative AI systems and expound on some of the implications thereof.
 I then critique how these systems are designed and implemented in light of our God-given identity, a
 biblical perspective on mimicry, and a reflection on virtue.  I finally outline several
-``swords-to-plowshares'' approaches that re-form generative AI technologies to support human thinking in
+"swords-to-plowshares" approaches that re-form generative AI technologies to support human thinking in
 writing tasks: *structural editing tools*, *writer-directed questions* to support writers
 without speaking for them, and *visualizations* to enable writers to reflect on their work.
