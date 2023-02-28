@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2022-06-02">
+<meta name="author" content="Ken Arnold">
 
-<title>Ken Arnold @ Calvin University - AI and Writing: Do we speak the words of stochastic parrots?</title>
+<title>Ken Arnold @ Calvin University - Desiderata for data science workbench</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -122,59 +122,76 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Desiderata for data science workbench</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Ken Arnold </p>
+            </div>
+    </div>
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">AI and Writing: Do we speak the words of stochastic parrots?</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">HCI</div>
-    <div class="quarto-category">NLP</div>
-  </div>
-  </div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
-<div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Kenneth C. Arnold </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">June 2, 2022</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-<div>
-  <div class="abstract">
-    <div class="abstract-title">Abstract</div>
-    Mimicry pervades the design and implementation of generative AI systems. I reflect on this observation from a Christian perspective and outline various approaches to ‘redeem’ how we use the artificial parrots in writing.
-  </div>
-</div>
+<p>Jupyter notebook: bundle some cells together as a function or class, but still allow them to execute one at a time. So we can trace execution, show examples of intermediate steps, without duplicating the code when going real. Maybe an approach: name cells, refer to cells by name within the function.</p>
+<p>Maybe: separate the “compute” from the “show” part within a cell.</p>
+<ul>
+<li>Parallelism by default</li>
+<li>Lightweight versioning of code for all computational units</li>
+<li>Incremental results view</li>
+<li>hot-spot sampling profiler always running so you see where the slow lines are</li>
+<li>Highlight what changed</li>
+<li>Mark anything to put it in a notebook with context</li>
+<li>Get alerted when anything you previously marked changed</li>
+<li>Search (visual and text) among everything you’re previously seen</li>
+<li>Data views and examples are as important as code to keep track</li>
+<li>Auto example collection - detect what parts of the input objects are actually used</li>
+<li>Data science is collaborative data driven end user programming</li>
+<li>Make it easy to try different parameter values, and see how interesting effects they have on results</li>
+<li>caching</li>
+<li>distinguishing scope</li>
+<li>Make it hard to do stats wrong, perhaps by requiring it to be visual
+<ul>
+<li>Should Economists Use Open Source Software for Doing Research?</li>
+</ul></li>
+<li>Call attention to missing values when making relationships</li>
+<li>Make changes in dimensionally be obvious</li>
+<li>Expand abstractions in-place to avoid accidental sharing, automatically identify similar code “phrases” and highlight them / alert when changing one of them and not another</li>
+<li>Progress reporting throughout pipelines, histograms about delays, hotspots</li>
+<li>Visualization-first: data defaults to visible unless you explicitly tell it not to
+<ul>
+<li>Default visualizations of data</li>
+<li>Show the data going through a neural net, for example</li>
+<li>Data streams through the model continuously by default; the model is always trying to fit it.
+<ul>
+<li>yes, compute is expensive. But vis helps people avoid the wrong compute.</li>
+</ul></li>
+</ul></li>
+<li>stats as a game: best stats is an algorithm that can play a game against nature well</li>
+</ul>
 
-</header>
 
-<p><a href="arnold2022mimicry.pdf">PDF</a> ACMS 2022</p>
-<section id="abstract" class="level2">
-<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
-<p>Generative Artificial Intelligence systems have recently and publicly become increasingly comparable to the capabilities of many humans in some domains, such as text and image generation. These systems are rapidly being incorporated into human contexts, for example as phone keyboards and email apps offer us AI-generated suggestions of words and even complete phrases to enter with a single tap or swipe. But these suggestions don’t just reduce physical effort; they reduce cognitive effort: we can accept a suggested phrase before even thinking about what to say. In this article, I first describe how mimicry pervades the design and implementation of generative AI systems and expound on some of the implications thereof. I then critique how these systems are designed and implemented in light of our God-given identity, a biblical perspective on mimicry, and a reflection on virtue. I finally outline several “swords-to-plowshares” approaches that re-form generative AI technologies to support human thinking in writing tasks: <em>structural editing tools</em>, <em>writer-directed questions</em> to support writers without speaking for them, and <em>visualizations</em> to enable writers to reflect on their work.</p>
-
-
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -309,6 +326,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
+</script>
+<script src="https://utteranc.es/client.js" repo="kcarnold/kcarnold.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
 
