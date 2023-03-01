@@ -1,0 +1,34 @@
+---
+title: "Why chatbots?"
+description: "UX has advanced since the teletype. Maybe."
+date: "2023-03-01"
+categories: ["ux", "ml"]
+draft: 1
+---
+
+A powerful interface. You give it text instructions, it responds with text. Impressive, useful text. If you're knowledgeable, you can tweak the text instructions to engineer even better responses.
+
+That could describe ChatGPT. Or the teletype of the 60s.
+
+## Why we think we want chatbots
+
+- Origins: Turing's imitation game
+- Digital butler
+- A servant that responds to (most of) our commands
+- A substitute for human companionship
+
+## Text is a Limited Modality
+
+When we interact with other humans, we typically have richer interactions.
+
+UI possibilities
+
+## Chatbots seem to encourage extreme use
+
+[ChatGPT Bing is becoming an unhinged AI nightmare | Digital Trends](https://www.digitaltrends.com/computing/microsoft-chatgpt-bing-becoming-ai-nightmare/)
+
+This is far from the first. Microsoft's Tay chatbot
+
+## Possibilities for better UX
+
+Broadly, this is the purpose of the ACM IUI conference, and many papers at other conferences like CHI, UIST, and ACL.
