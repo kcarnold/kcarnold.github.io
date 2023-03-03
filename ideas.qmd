@@ -10,7 +10,7 @@ description: "Please feel free to steal."
     - What if only half of the embedding weights are tied between input and LM head? `wte = concat(A, B)`, `lm_head = concat(A, C)`
     - What if each layer could attend to the keys and values of the previous layer? That would provide non-residual data flow between layers.
         - Might need a layer embedding; perhaps a learnable offset vector layer-wise, or just a component that's 0 for self layer and 1 for other-layer
-        - Related to PaLM's "multi-key attentiotn"
+        - Related to PaLM's "multi-key attention"
     - Attention heads currently can't turn themselves off. What if we always throw a zero Value in the mix, with a learnable Key? Could also include 
     - What if only some dims have residual connections?
     - Could we get a Transformer where everything is in the same vector space, even queries and keys?
@@ -21,7 +21,7 @@ description: "Please feel free to steal."
 
 ## High-level goals
 
-- A CoPilot that never shows something that's incorrerct?
+- A CoPilot that never shows something that's incorrect?
     - Reference material, contextualized
     - Changes in test results if certain changes are made
     - Dynamically generate a *verifiable* "compilation" from high-level goal to low-level implementation.
@@ -31,8 +31,8 @@ description: "Please feel free to steal."
 ## Tools
 
 - clients for the OpenAI API to:
-    - systematically compare logprobs of diferent phrases in different contexts
-        - getting confidence bounds for these compariosns somehow, perhaps by adding "noise" to the context?
+    - systematically compare logprobs of different phrases in different contexts
+        - getting confidence bounds for these comparisons somehow, perhaps by adding "noise" to the context?
     - visualizing embeddings
 - LMs to generate variations of class exercises
 
