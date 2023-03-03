@@ -161,7 +161,7 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
 <li>What if each layer could attend to the keys and values of the previous layer? That would provide non-residual data flow between layers.
 <ul>
 <li>Might need a layer embedding; perhaps a learnable offset vector layer-wise, or just a component that’s 0 for self layer and 1 for other-layer</li>
-<li>Related to PaLM’s “multi-key attentiotn”</li>
+<li>Related to PaLM’s “multi-key attention”</li>
 </ul></li>
 <li>Attention heads currently can’t turn themselves off. What if we always throw a zero Value in the mix, with a learnable Key? Could also include</li>
 <li>What if only some dims have residual connections?</li>
@@ -177,7 +177,7 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
 <section id="high-level-goals" class="level2">
 <h2 class="anchored" data-anchor-id="high-level-goals">High-level goals</h2>
 <ul>
-<li>A CoPilot that never shows something that’s incorrerct?
+<li>A CoPilot that never shows something that’s incorrect?
 <ul>
 <li>Reference material, contextualized</li>
 <li>Changes in test results if certain changes are made</li>
@@ -194,9 +194,9 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
 <ul>
 <li>clients for the OpenAI API to:
 <ul>
-<li>systematically compare logprobs of diferent phrases in different contexts
+<li>systematically compare logprobs of different phrases in different contexts
 <ul>
-<li>getting confidence bounds for these compariosns somehow, perhaps by adding “noise” to the context?</li>
+<li>getting confidence bounds for these comparisons somehow, perhaps by adding “noise” to the context?</li>
 </ul></li>
 <li>visualizing embeddings</li>
 </ul></li>
