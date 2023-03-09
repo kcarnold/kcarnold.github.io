@@ -50,3 +50,4 @@ description: "Please feel free to steal."
     - *truth* vs *popularity* / *engagement* / what's consistent with what everyone thinks.
 - 2x2: change on need for human decision vs change in information (of outcome)
 - Does AI make it easier to *choose* low-value work? Getting a dopamine hit for getting something "done" vs thinking, reflection.
+- With RLHF and similar, we're finding ways of programming models again, not just purely learning from data. But unlike hand-programmed logic, these programs will generalize in powerful and often surprising ways.
