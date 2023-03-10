@@ -21,11 +21,11 @@ That ignorance is understandable because the technology is complex. But it's har
 
 ## How to avoid magical thinking?
 
-- Try it out yourself. With ChatGPT (temporarily) open to everyone, this is a great time. Try to find things it can't do well. This requires attention, because it's trained to be *believable* even when it's wrong.
+- Try it out yourself. With ChatGPT open to everyone (at least for now), this is a great time. Try to find things it can't do well. This requires attention, because it's trained to be *believable* even when it's wrong.
 - Interrogate the model about *why* it's giving the outputs it is giving. Unfortunately ths isn't as accessible right now, but I'm hoping (and working towards) making this more accessible. (Current approaches usually visualize *attention* or *input salience*, both of which basically show how information flows through the model. That's helpful, but limited; we don't know what the model *does* with that information. I've got some ideas.)
 - Develop intuitions about how it works.
 - Learn the concepts and math behind how it works. Two concepts that keep coming up in my intuitive explanations are *distribution* and *embedding*.
 
 ## Want to learn more?
 
-I teach AI at Calvin University, and I'm happy to talk to help anyone understanding and grow in this area.
+I teach AI at Calvin University, and I'm happy to help anyone grow in understanding in this area.
