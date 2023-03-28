@@ -9,6 +9,7 @@
       "/posts/magical-thinking/index.html",
       "/posts/detect-gpt/index.html",
       "/posts/ml-gratitude/index.html",
+      "/posts/simplify-context/index.html",
       "/posts/shalom-ia/index.html",
       "/posts/info-decision/index.html",
       "/posts/lm-hallucinate/index.html",
@@ -33,6 +34,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/simplify-context/index.html",
       "/posts/shalom-ia/index.html",
       "/posts/info-decision/index.html",
       "/posts/mark-generated/index.html",
