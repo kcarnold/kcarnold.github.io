@@ -86,7 +86,7 @@
 
 <ol>
 <li id="fn1"><p>This can be a quite nuanced and powerful step, though, as StyleGAN shows us.↩︎</p></li>
-<li id="fn2"><p>I mean this in the sense of the <a href="TODO Sharpness-aware minimization">sharpness of the loss surface</a>↩︎</p></li>
+<li id="fn2"><p>I mean this in the sense of the <a href="https://arxiv.org/abs/2010.01412">sharpness of the loss surface</a>↩︎</p></li>
 </ol>
 </section></div> ]]></description>
   <category>ai</category>
