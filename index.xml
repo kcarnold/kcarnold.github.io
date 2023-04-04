@@ -10,7 +10,91 @@
 <atom:link href="https://kenarnold.org/index.xml" rel="self" type="application/rss+xml"/>
 <description>Augmenting Intelligence for Everyday Creativity</description>
 <generator>quarto-1.2.475</generator>
-<lastBuildDate>Tue, 28 Mar 2023 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 04 Apr 2023 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>Mapping to Mimicry</title>
+  <dc:creator>Ken Arnold</dc:creator>
+  <link>https://kenarnold.org/posts/map-to-mimic/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Machine learning is, we might say loosely, a one-trick pony: we can find functions that minimize a loss when evaluated on a set of data. I’ll call this trick the “imitation machine”, since that’s usually how it’s used: the loss is computed by comparing the function’s output with some reference output (we’ll see some important exceptions though). But machine learning scholars are creative: we can use that one trick to do all kinds of things.</p>
+<section id="language-modeling" class="level2">
+<h2 class="anchored" data-anchor-id="language-modeling">Language Modeling</h2>
+<p>I’ve written a lot about LM on this blog, so I won’t bore you here. Let’s just say:</p>
+<ol type="1">
+<li>We can make functions that output discrete probability distributions (using softmax).</li>
+<li>We can train them to minimize perplexity of sequences from naturalistic language (by minimizing cross-entropy loss for next-token prediction).</li>
+<li>We can generate new text by sampling from that distribution one token at a time, appending it and repeating.</li>
+</ol>
+<p>Thus we can use an imitation machine to make a language parrot.</p>
+<p>What I didn’t appreciate until recently was <em>just how many other tasks</em> this can end up learning. For example, it’s long been clear that this ends up learning syntactic analysis (because that helps predict whether, say, a verb is singular or plural). But it wasn’t obvious that this would learn <em>translation</em> until GPT-2 showed that (because documents often include glosses in a second language). And while most natural text corpora don’t contain a lot of the sort of instruction-response dialogues that characterize the modern chatbot (e.g., ChatGPT or Bard), InstructGPT showed us that the instruction is just a minor variation on the sort of context that these models <em>do</em> see often in training data, so a small amount of fine-tuning is sufficient to get them to recognize instructions as another way to cue that context.</p>
+</section>
+<section id="reinforcement-learning" class="level2">
+<h2 class="anchored" data-anchor-id="reinforcement-learning">Reinforcement Learning</h2>
+<p>The “imitation machine” framing assumes that we know what the right result should be. But that’s a big assumption. Examples:</p>
+<ol type="1">
+<li>When you’re playing a video game, you don’t get a reward for moving <em>towards</em> the gold coin, only for <em>reaching</em> it. In fact, you may temporarily incur a cost to get that reward.</li>
+<li>When a robot is picking up an object to move it, it doesn’t get feedback every millisecond about whether it’s being successful, only when it puts the object down at the end.</li>
+<li>When playing chess, you may sacrifice a queen in order to get checkmate two moves later.</li>
+</ol>
+<p>That’s some classic examples, but here’s another one that’s become important recently:</p>
+<ol start="4" type="1">
+<li>When a dialogue agent is generating text, it doesn’t get feedback after every single token whether that response is useful to the user, only after generating potentially thousands of tokens.</li>
+</ol>
+<p>The common element of all of these situations is <em>delayed reward</em>: we don’t get immediate feedback on what the right action was.</p>
+<p>The clever trick of practical Reinforcement Learning algorithms, though, is, you guessed it: turn this into an imitation problem. Here are some common approaches (oversimplified):</p>
+<ul>
+<li>Make an imitation model that attempts to <em>predict later rewards</em> from current states and actions. Use that model to give a fake reward for each action.</li>
+<li>Make an imitation model that includes <em>both actions and rewards</em>, and just ask it to imagine what might come next.</li>
+<li>Just give a lot of examples of successful attempts (including ones where some difficulty was encountered), and use a language model.</li>
+</ul>
+</section>
+<section id="image-generation" class="level2">
+<h2 class="anchored" data-anchor-id="image-generation">Image generation</h2>
+<p>How do you generate an image using an imitation machine?</p>
+<ol type="1">
+<li>Pretend it’s language. Organize the image into a sequence of tokens (e.g., scan pixels left-to-right, row by row; or make groups of, say, 8 pixels square and give common groups a “token id”). Then sample one token at a time. ImageGPT, Taming Transformers, etc.</li>
+<li>Learn a <em>function from noise to image</em>. (Noise is great because you can sample it, so you can generate many different images by starting with different noise samples.) There are two basic approaches to do this, differing in what they do about the loss.
+<ul>
+<li><strong>Diffusion</strong>: Learn to map a noisy image to a less-noisy image. Start with an image, add noise, and give the noised image as input and penalize the difference between the output and the starting image. The trick is repeating this for different levels of noise; one you add noise many times, you get a totally noisy image, i.e., all images look alike with enough noise added. This is the approach taken by DALL-E 2, Stable Diffusion, and other popular image generators. Major con: speed. You have to start with noise and generate many successively less noisy images sequentially.</li>
+<li><strong>Generative Adversarial Networks</strong>: These are actually older than diffusion models. The basic idea is: learn a one-step mapping (the <em>generator</em>) from noise to image<sup>1</sup>, and simultaneously learn a <em>discriminator</em> that achieves low loss when it can correctly label whether an image is generated or real.
+<ul>
+<li>The training regime is a bit tricky: we alternate training the discriminator (to reduce its loss) and training the generator (to <em>increase</em> the discriminator’s loss, i.e., to make it generate images that are more difficult to distinguish).</li>
+<li>When we backpropagate through the discriminator, we get an image-shaped forgery detection: each pixel comes with a value of how much changing that pixel would cause the discriminator to get more confused. This gives the generator a pixel-by-pixel target to achieve, analogous to the denoised image from the diffusion model.</li>
+<li>We need to make sure the two networks are balanced in training: if the discriminator gets too much better than the generator, there are no pixel-by-pixel changes that would meaningfully charge its judgments, so the generator can’t learn.</li>
+</ul></li>
+</ul></li>
+</ol>
+</section>
+<section id="other" class="level2">
+<h2 class="anchored" data-anchor-id="other">Other</h2>
+<p>We could also discuss clustering, inferential stats, and even causal inference as other clever applications of the “imitation machine” to useful tasks.</p>
+</section>
+<section id="on-generalization" class="level2">
+<h2 class="anchored" data-anchor-id="on-generalization">On generalization</h2>
+<p>A table-lookup function could be an imitation machine, but it would perform poorly on data it hasn’t seen, and more practically, it’s brittle: mess up the table a bit and the loss spikes even on the training data.<sup>2</sup> But happily we’ve found many types of functions that are much less brittle because they <em>spread out</em> the work of computing the output into a sequence of information-processing operations. Each operation creates a progressively more <em>robust</em> representation of the current datum, where situations that should be treated similarly are brought closer together compared with situations that should be treated differently. In other words, each layer of processing filters out <em>noise</em>, i.e., variation that doesn’t meaningfully change the output.</p>
+<p>This means that the imitation machines we often use in practice, deep neural nets, turn out to be <em>modular</em> and <em>adaptable</em>, because they’re constructing internal representations (which we call <em>embeddings</em>) that are useful <em>perceptions</em> of each datum.</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>This can be a quite nuanced and powerful step, though, as StyleGAN shows us.↩︎</p></li>
+<li id="fn2"><p>I mean this in the sense of the <a href="TODO Sharpness-aware minimization">sharpness of the loss surface</a>↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>ai</category>
+  <category>ml</category>
+  <category>math</category>
+  <guid>https://kenarnold.org/posts/map-to-mimic/index.html</guid>
+  <pubDate>Tue, 04 Apr 2023 04:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Simplifying Instructions</title>
   <dc:creator>Ken Arnold</dc:creator>

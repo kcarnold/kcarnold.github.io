@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/map-to-mimic/index.html",
       "/posts/mark-generated/index.html",
       "/posts/risks-of-alignment/index.html",
       "/posts/personas/index.html",
@@ -35,6 +36,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/map-to-mimic/index.html",
       "/posts/simplify-context/index.html",
       "/posts/mimicry/mimicry.html",
       "/posts/shalom-ia/index.html",
