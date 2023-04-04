@@ -1,9 +1,8 @@
 ---
 title: "Intelligence via Mimicry"
-summary: |
+description: |
   AI systems aren't magic or inherently objective. For all their strengths, most
   AI systems mimic human behavior.
-draft: false
 date: "2023-03-28"
 ---
 

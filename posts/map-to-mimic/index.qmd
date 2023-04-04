@@ -1,6 +1,6 @@
 ---
 title: "Mapping to Mimicry"
-summary: "Loss minimization is a flexible tool."
+description: "Loss minimization is a flexible tool."
 date: "2023-04-04"
 categories: ['ai', 'ml', 'math']
 featured: 1

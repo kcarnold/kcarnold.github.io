@@ -1,6 +1,6 @@
 ---
 title: "Simplifying Instructions"
-summary: We can simplify system messages using LMs.
+description: "We can simplify system messages using LMs."
 date: "2023-03-28"
 ---
 
