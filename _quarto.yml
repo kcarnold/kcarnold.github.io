@@ -4,7 +4,7 @@ project:
   post-render: "rsync -r static/ _site"
  
 website:
-  title: "Ken Arnold @ Calvin University"
+  title: "Ken Arnold (Calvin U)"
   site-url: "https://kenarnold.org/"
   navbar:
     right:
@@ -19,6 +19,7 @@ website:
         href: https://twitter.com/kcarnold
   page-navigation: true
   google-analytics: "G-6SPV9Y5XFG"
+  reader-mode: true
 format:
   html:
     theme: cosmo
