@@ -173,6 +173,8 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
 <li>Attention heads currently can’t turn themselves off. What if we always throw a zero Value in the mix, with a learnable Key? Could also include</li>
 <li>What if only some dims have residual connections?</li>
 <li>Could we get a Transformer where everything is in the same vector space, even queries and keys?</li>
+<li>The causal mask affects what can be learned from even long before the current token to generate. Is it really necessary?</li>
+<li>Could we summarize the past (replace spans of N tokens with N/2 tokens, perhaps?) to model longer sequences? The Perceiver architecture does this but maybe too aggressively?</li>
 </ul></li>
 <li>Interpretable models
 <ul>
