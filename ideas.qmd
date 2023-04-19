@@ -14,6 +14,8 @@ description: "Please feel free to steal."
     - Attention heads currently can't turn themselves off. What if we always throw a zero Value in the mix, with a learnable Key? Could also include 
     - What if only some dims have residual connections?
     - Could we get a Transformer where everything is in the same vector space, even queries and keys?
+    - The causal mask affects what can be learned from even long before the current token to generate. Is it really necessary?
+    - Could we summarize the past (replace spans of N tokens with N/2 tokens, perhaps?) to model longer sequences? The Perceiver architecture does this but maybe too aggressively?
 - Interpretable models
     - Decision trees with soft boundaries
     - Meta-tree: one model gets to set the threshold values for a 2nd simple decision tree that actually makes the decision.
