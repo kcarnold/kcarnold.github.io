@@ -10,6 +10,7 @@
       "/posts/magical-thinking/index.html",
       "/posts/detect-gpt/index.html",
       "/posts/ml-gratitude/index.html",
+      "/posts/debugging/index.html",
       "/posts/simplify-context/index.html",
       "/posts/mimicry/mimicry.html",
       "/posts/shalom-ia/index.html",
@@ -36,6 +37,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/debugging/index.html",
       "/posts/map-to-mimic/index.html",
       "/posts/simplify-context/index.html",
       "/posts/mimicry/mimicry.html",

@@ -994,5 +994,65 @@ In conclusion, while these proverbs may seem wise and insightful, they are actua
   <guid>https://kenarnold.org/posts/knowledge-fusion/index.html</guid>
   <pubDate>Wed, 11 Jan 2023 05:00:00 GMT</pubDate>
 </item>
+<item>
+  <title>Debugging Hints</title>
+  <dc:creator>Ken Arnold</dc:creator>
+  <link>https://kenarnold.org/posts/debugging/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Here are a few debugging hints that I often give students.</p>
+<p>General:</p>
+<ul>
+<li>Read <a href="https://jvns.ca/blog/2022/12/08/a-debugging-manifesto/">A debugging manifesto</a></li>
+</ul>
+<section id="error-messages-tracebacks" class="level2">
+<h2 class="anchored" data-anchor-id="error-messages-tracebacks">Error messages (“traceback”s)</h2>
+<ul>
+<li>Start at the bottom.</li>
+<li>Figure out what it’s talking about. Examples:
+<ul>
+<li>if you get a <code>'NoneType' object is not iterable</code> error, figure out what object is <code>None</code> and why it’s being iterated over.</li>
+<li>if you get <code>TypeError: can only concatenate str (not "int") to str</code>, figure out what the <code>str</code>ing is and what the <code>int</code> is and why they’re being concatenated (probably a <code>+</code> sign).</li>
+</ul></li>
+</ul>
+</section>
+<section id="general-debugging" class="level2">
+<h2 class="anchored" data-anchor-id="general-debugging">General debugging</h2>
+<ul>
+<li>Make sure you’re running the code you think you’re running. I sometimes intentionally make a syntax error or add an <code>assert False</code> and check that it crashes. Sometimes I’ve been editing the wrong file, or not reloading the file.</li>
+<li>Find an example that does something similar to what you’re trying to do. Systematically compare and contrast your code with the example. You might try starting with the example and modifying it step by step to make it closer to what you want to do, checking at every step that it still works.</li>
+<li>Make and test hypotheses.</li>
+</ul>
+</section>
+<section id="more-strategies" class="level2">
+<h2 class="anchored" data-anchor-id="more-strategies">More strategies</h2>
+<p>For grins, I turned on GitHub Copilot and let it generate the following. I gave it either just the <code>-</code> for a Markdown bullet point, or a dash and a first word. All content below here is automatically generated.</p>
+<ul>
+<li>Use <code>print</code> statements to check the values of variables.</li>
+<li>Use <code>assert</code> statements to check that values are what you expect them to be.</li>
+<li>Use <code>%debug</code> or a debugger like <code>pdb</code> to step through your code line by line.</li>
+<li>Use <code>git diff</code> to see what you’ve changed since the last time your code worked.</li>
+<li>Use <code>git log</code> to see what you’ve changed recently.</li>
+<li>Use <code>git checkout</code> to go back to a previous version of your code.</li>
+<li>Use <code>git stash</code> to temporarily set aside changes you’ve made.</li>
+<li>Try to make your code as simple and small as possible. Remove unnecessary code. Simplify.</li>
+<li>Try to make your code as modular as possible. Break it into small functions that do one thing each. Test each function separately.</li>
+<li>Make sure you understand the code you’re using. If you’re using someone else’s code, read the documentation and/or the source code.</li>
+<li>Make a minimal example that demonstrates the problem you’re having. Often, in the process of making a minimal example, you’ll figure out what the problem is.</li>
+<li>When you’re stuck, take a break. Go for a walk. Take a nap. Talk to someone. Often, when you come back to the problem, you’ll see it in a new light.</li>
+<li>Whatever you do, don’t just keep trying the same thing over and over again. If it didn’t work the first time, it’s not going to work the second time.</li>
+<li>If you’re stuck, ask for help. Ask a friend. Ask a TA. Ask on Piazza. Ask on Stack Overflow. Ask on Reddit. Ask on Twitter. Ask on Facebook. Ask on IRC. Ask on Dis</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://kenarnold.org/posts/debugging/index.html</guid>
+  <pubDate>Mon, 24 Apr 2023 14:11:07 GMT</pubDate>
+</item>
 </channel>
 </rss>
