@@ -1,5 +1,8 @@
 ---
 title: "Debugging Hints"
+date: "2023-04-24"
+categories: ["coding"]
+featured: 0
 ---
 
 Here are a few debugging hints that I often give students.
