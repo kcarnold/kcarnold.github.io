@@ -7,10 +7,10 @@ featured: 0
 
 Here are a few debugging hints that I often give students.
 
-General:
+## General Resources
 
-- Read [A debugging manifesto](https://jvns.ca/blog/2022/12/08/a-debugging-manifesto/)
-
+- [A debugging manifesto](https://jvns.ca/blog/2022/12/08/a-debugging-manifesto/)
+- [How do I ask a good question? - Help Center - Stack Overflow](https://stackoverflow.com/help/how-to-ask)
 
 ## Error messages ("traceback"s)
 
