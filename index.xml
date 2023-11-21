@@ -6,16 +6,17 @@
       version="2.0">
 <channel>
 <title>Ken Arnold (Calvin U)</title>
-<link>https://kenarnold.org/index.html</link>
+<link>https://kenarnold.org/</link>
 <atom:link href="https://kenarnold.org/index.xml" rel="self" type="application/rss+xml"/>
 <description>Augmenting Intelligence for Everyday Creativity</description>
-<generator>quarto-1.3.340</generator>
+<generator>quarto-99.9.9</generator>
 <lastBuildDate>Mon, 24 Apr 2023 04:00:00 GMT</lastBuildDate>
 <item>
   <title>Debugging Hints</title>
   <dc:creator>Ken Arnold</dc:creator>
-  <link>https://kenarnold.org/posts/debugging/index.html</link>
+  <link>https://kenarnold.org/posts/debugging/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -72,14 +73,15 @@
 
  ]]></description>
   <category>coding</category>
-  <guid>https://kenarnold.org/posts/debugging/index.html</guid>
+  <guid>https://kenarnold.org/posts/debugging/</guid>
   <pubDate>Mon, 24 Apr 2023 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Mapping to Mimicry</title>
   <dc:creator>Ken Arnold</dc:creator>
-  <link>https://kenarnold.org/posts/map-to-mimic/index.html</link>
+  <link>https://kenarnold.org/posts/map-to-mimic/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -146,24 +148,25 @@
 </section>
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><aside id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>This can be a quite nuanced and powerful step, though, as StyleGAN shows us.↩︎</p></li>
 <li id="fn2"><p>I mean this in the sense of the <a href="https://arxiv.org/abs/2010.01412">sharpness of the loss surface</a>↩︎</p></li>
 </ol>
-</section></div> ]]></description>
+</aside></div> ]]></description>
   <category>ai</category>
   <category>ml</category>
   <category>math</category>
-  <guid>https://kenarnold.org/posts/map-to-mimic/index.html</guid>
+  <guid>https://kenarnold.org/posts/map-to-mimic/</guid>
   <pubDate>Tue, 04 Apr 2023 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Simplifying Instructions</title>
   <dc:creator>Ken Arnold</dc:creator>
-  <link>https://kenarnold.org/posts/simplify-context/index.html</link>
+  <link>https://kenarnold.org/posts/simplify-context/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -214,7 +217,7 @@
 </section>
 
  ]]></description>
-  <guid>https://kenarnold.org/posts/simplify-context/index.html</guid>
+  <guid>https://kenarnold.org/posts/simplify-context/</guid>
   <pubDate>Tue, 28 Mar 2023 04:00:00 GMT</pubDate>
 </item>
 <item>
@@ -222,6 +225,7 @@
   <dc:creator>Ken Arnold</dc:creator>
   <link>https://kenarnold.org/posts/mimicry/mimicry.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -268,21 +272,22 @@
 </section>
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><aside id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>Strictly speaking, most models use “tokens”, which are common words or common fragments of less-common words.↩︎</p></li>
 <li id="fn2"><p>Perhaps we don’t even need to label examples; perhaps the model itself could be prompted to identify the problems.↩︎</p></li>
 </ol>
-</section></div> ]]></description>
+</aside></div> ]]></description>
   <guid>https://kenarnold.org/posts/mimicry/mimicry.html</guid>
   <pubDate>Tue, 28 Mar 2023 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Flourishing with Intelligence Augmentation Systems</title>
   <dc:creator>Ken Arnold</dc:creator>
-  <link>https://kenarnold.org/posts/shalom-ia/index.html</link>
+  <link>https://kenarnold.org/posts/shalom-ia/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -349,14 +354,15 @@
 
 
  ]]></description>
-  <guid>https://kenarnold.org/posts/shalom-ia/index.html</guid>
+  <guid>https://kenarnold.org/posts/shalom-ia/</guid>
   <pubDate>Tue, 07 Mar 2023 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Information and Decision</title>
   <dc:creator>Ken Arnold</dc:creator>
-  <link>https://kenarnold.org/posts/info-decision/index.html</link>
+  <link>https://kenarnold.org/posts/info-decision/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -385,14 +391,15 @@
   <category>hci</category>
   <category>ml</category>
   <category>ia</category>
-  <guid>https://kenarnold.org/posts/info-decision/index.html</guid>
+  <guid>https://kenarnold.org/posts/info-decision/</guid>
   <pubDate>Tue, 21 Feb 2023 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Transparency for Generated Text</title>
   <dc:creator>Ken Arnold</dc:creator>
-  <link>https://kenarnold.org/posts/mark-generated/index.html</link>
+  <link>https://kenarnold.org/posts/mark-generated/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -627,14 +634,15 @@ font-style: inherit;">+</span> encoded_text)))</span></code></pre></div>
   <category>ml</category>
   <category>llm</category>
   <category>nlp</category>
-  <guid>https://kenarnold.org/posts/mark-generated/index.html</guid>
+  <guid>https://kenarnold.org/posts/mark-generated/</guid>
   <pubDate>Fri, 17 Feb 2023 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Two Ways that LLMs Hallucinate</title>
   <dc:creator>Ken Arnold</dc:creator>
-  <link>https://kenarnold.org/posts/lm-hallucinate/index.html</link>
+  <link>https://kenarnold.org/posts/lm-hallucinate/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -680,23 +688,24 @@ font-style: inherit;">+</span> encoded_text)))</span></code></pre></div>
 </section>
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><aside id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>technically, a probability distribution over next tokens↩︎</p></li>
 </ol>
-</section></div> ]]></description>
+</aside></div> ]]></description>
   <category>ai</category>
   <category>ml</category>
   <category>lm</category>
-  <guid>https://kenarnold.org/posts/lm-hallucinate/index.html</guid>
+  <guid>https://kenarnold.org/posts/lm-hallucinate/</guid>
   <pubDate>Thu, 16 Feb 2023 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Does increasing ‘alignment’ increase risk?</title>
   <dc:creator>Ken Arnold</dc:creator>
-  <link>https://kenarnold.org/posts/risks-of-alignment/index.html</link>
+  <link>https://kenarnold.org/posts/risks-of-alignment/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -710,14 +719,15 @@ font-style: inherit;">+</span> encoded_text)))</span></code></pre></div>
 
  ]]></description>
   <category>ai</category>
-  <guid>https://kenarnold.org/posts/risks-of-alignment/index.html</guid>
+  <guid>https://kenarnold.org/posts/risks-of-alignment/</guid>
   <pubDate>Thu, 09 Feb 2023 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>On being unsurprised by the Internet</title>
   <dc:creator>Ken Arnold</dc:creator>
-  <link>https://kenarnold.org/posts/unsurprised-by-internet/index.html</link>
+  <link>https://kenarnold.org/posts/unsurprised-by-internet/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -730,14 +740,15 @@ font-style: inherit;">+</span> encoded_text)))</span></code></pre></div>
   <category>ai</category>
   <category>ml</category>
   <category>lm</category>
-  <guid>https://kenarnold.org/posts/unsurprised-by-internet/index.html</guid>
+  <guid>https://kenarnold.org/posts/unsurprised-by-internet/</guid>
   <pubDate>Thu, 09 Feb 2023 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Language Models have Personas?</title>
   <dc:creator>Ken Arnold</dc:creator>
-  <link>https://kenarnold.org/posts/personas/index.html</link>
+  <link>https://kenarnold.org/posts/personas/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -774,23 +785,24 @@ font-style: inherit;">+</span> encoded_text)))</span></code></pre></div>
 
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><aside id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>For the technical details of how these things work, see <a href="https://huggingface.co/blog/dialog-agents">this HuggingFace blog post</a>.↩︎</p></li>
 </ol>
-</section></div> ]]></description>
+</aside></div> ]]></description>
   <category>ai</category>
   <category>ml</category>
   <category>lm</category>
-  <guid>https://kenarnold.org/posts/personas/index.html</guid>
+  <guid>https://kenarnold.org/posts/personas/</guid>
   <pubDate>Mon, 06 Feb 2023 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Humanity of the Gaps</title>
   <dc:creator>Ken Arnold</dc:creator>
-  <link>https://kenarnold.org/posts/major-in-human/index.html</link>
+  <link>https://kenarnold.org/posts/major-in-human/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -814,14 +826,15 @@ font-style: inherit;">+</span> encoded_text)))</span></code></pre></div>
  ]]></description>
   <category>ai</category>
   <category>perspectival</category>
-  <guid>https://kenarnold.org/posts/major-in-human/index.html</guid>
+  <guid>https://kenarnold.org/posts/major-in-human/</guid>
   <pubDate>Fri, 03 Feb 2023 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>ChatGPT Doesn’t Have a Database of Facts</title>
   <dc:creator>Ken Arnold</dc:creator>
-  <link>https://kenarnold.org/posts/lm-facts/index.html</link>
+  <link>https://kenarnold.org/posts/lm-facts/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -862,22 +875,23 @@ font-style: inherit;">+</span> encoded_text)))</span></code></pre></div>
 </section>
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><aside id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p><a href="https://arxiv.org/abs/2301.12810">Crawling the Internal Knowledge-Base of Language Models | Abstract</a>↩︎</p></li>
 </ol>
-</section></div> ]]></description>
+</aside></div> ]]></description>
   <category>ai</category>
   <category>ml</category>
-  <guid>https://kenarnold.org/posts/lm-facts/index.html</guid>
+  <guid>https://kenarnold.org/posts/lm-facts/</guid>
   <pubDate>Fri, 03 Feb 2023 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Self-Study Advice</title>
   <dc:creator>Ken Arnold</dc:creator>
-  <link>https://kenarnold.org/posts/self-study/index.html</link>
+  <link>https://kenarnold.org/posts/self-study/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -896,14 +910,15 @@ font-style: inherit;">+</span> encoded_text)))</span></code></pre></div>
 
  ]]></description>
   <category>coding</category>
-  <guid>https://kenarnold.org/posts/self-study/index.html</guid>
+  <guid>https://kenarnold.org/posts/self-study/</guid>
   <pubDate>Mon, 30 Jan 2023 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Multidimensional Array Terminology</title>
   <dc:creator>Ken Arnold</dc:creator>
-  <link>https://kenarnold.org/posts/dim-axis-rank/index.html</link>
+  <link>https://kenarnold.org/posts/dim-axis-rank/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -988,14 +1003,15 @@ font-style: inherit;">;</span> t3</span></code></pre></div>
  ]]></description>
   <category>ml</category>
   <category>coding</category>
-  <guid>https://kenarnold.org/posts/dim-axis-rank/index.html</guid>
+  <guid>https://kenarnold.org/posts/dim-axis-rank/</guid>
   <pubDate>Fri, 27 Jan 2023 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Avoid Magical Thinking about AI</title>
   <dc:creator>Ken Arnold</dc:creator>
-  <link>https://kenarnold.org/posts/magical-thinking/index.html</link>
+  <link>https://kenarnold.org/posts/magical-thinking/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1031,14 +1047,15 @@ font-style: inherit;">;</span> t3</span></code></pre></div>
  ]]></description>
   <category>ai</category>
   <category>ml</category>
-  <guid>https://kenarnold.org/posts/magical-thinking/index.html</guid>
+  <guid>https://kenarnold.org/posts/magical-thinking/</guid>
   <pubDate>Tue, 24 Jan 2023 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Stop trying to detect computer-generated writing.</title>
   <dc:creator>Ken Arnold</dc:creator>
-  <link>https://kenarnold.org/posts/detect-gpt/index.html</link>
+  <link>https://kenarnold.org/posts/detect-gpt/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1057,14 +1074,15 @@ font-style: inherit;">;</span> t3</span></code></pre></div>
   <category>ai</category>
   <category>ml</category>
   <category>lm</category>
-  <guid>https://kenarnold.org/posts/detect-gpt/index.html</guid>
+  <guid>https://kenarnold.org/posts/detect-gpt/</guid>
   <pubDate>Tue, 17 Jan 2023 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Solomon’s proverbs about AI</title>
   <dc:creator>Ken Arnold</dc:creator>
-  <link>https://kenarnold.org/posts/ai-proverbs/index.html</link>
+  <link>https://kenarnold.org/posts/ai-proverbs/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1101,14 +1119,15 @@ In conclusion, while these proverbs may seem wise and insightful, they are actua
   <category>ai</category>
   <category>ml</category>
   <category>lm</category>
-  <guid>https://kenarnold.org/posts/ai-proverbs/index.html</guid>
+  <guid>https://kenarnold.org/posts/ai-proverbs/</guid>
   <pubDate>Mon, 16 Jan 2023 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Without Acknowledgment: Cultivating Gratitude in an ML age</title>
   <dc:creator>Ken Arnold</dc:creator>
-  <link>https://kenarnold.org/posts/ml-gratitude/index.html</link>
+  <link>https://kenarnold.org/posts/ml-gratitude/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1143,24 +1162,25 @@ In conclusion, while these proverbs may seem wise and insightful, they are actua
 </section>
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><aside id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p><a href="https://arxiv.org/abs/2106.04753">On Sample Based Explanation Methods for NLP:Efficiency, Faithfulness, and Semantic Evaluation</a>↩︎</p></li>
 </ol>
-</section></div> ]]></description>
+</aside></div> ]]></description>
   <category>ai</category>
   <category>ml</category>
   <category>lm</category>
   <category>ia</category>
-  <guid>https://kenarnold.org/posts/ml-gratitude/index.html</guid>
+  <guid>https://kenarnold.org/posts/ml-gratitude/</guid>
   <pubDate>Thu, 12 Jan 2023 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Language Models for Species-Scale Collaboration</title>
   <dc:creator>Ken Arnold</dc:creator>
-  <link>https://kenarnold.org/posts/knowledge-fusion/index.html</link>
+  <link>https://kenarnold.org/posts/knowledge-fusion/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1188,7 +1208,7 @@ In conclusion, while these proverbs may seem wise and insightful, they are actua
   <category>ml</category>
   <category>lm</category>
   <category>ia</category>
-  <guid>https://kenarnold.org/posts/knowledge-fusion/index.html</guid>
+  <guid>https://kenarnold.org/posts/knowledge-fusion/</guid>
   <pubDate>Wed, 11 Jan 2023 05:00:00 GMT</pubDate>
 </item>
 </channel>

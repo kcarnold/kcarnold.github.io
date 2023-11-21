@@ -6,10 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Ken Arnold">
-<meta name="dcterms.date" content="2023-03-07">
+<meta name="dcterms.date" content="2023-10-27">
 
-<title>Ken Arnold (Calvin U) - Flourishing with Intelligence Augmentation Systems</title>
+<title>Ken Arnold (Calvin U) - Towards Full Authorship with AI: An Interactive User Interface for Supporting Revision</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -137,105 +136,127 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Flourishing with Intelligence Augmentation Systems</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Ken Arnold </p>
-            </div>
-    </div>
-      
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">March 7, 2023</p>
-      </div>
-    </div>
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Towards Full Authorship with AI: An Interactive User Interface for Supporting Revision</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">HCI</div>
+    <div class="quarto-category">NLP</div>
+  </div>
+  </div>
 
 
 
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Edom Maru </p>
+             <p>Jiho Kim </p>
+             <p>Noelle Haviland </p>
+             <p>Ray Flanagan </p>
+             <p>Saron Melesse </p>
+             <p>Souad Yakubu </p>
+             <p>ZeAi Sun </p>
+             <p>Kenneth C. Arnold </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 27, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="block-title">Abstract</div>
+    Large language model (LLM)-based writing tools, such as ChatGPT, Bing Chat, and Bard, promise efficiency and productivity; however, they can overshadow the thinking process necessary for original writing, compromising autonomy and authorship. This limitation is not intrinsic to LLM itself but is due to the design of the chatbot user interface, which encourages reliance on a LLM for both thinking and writing. In order to explore alternative approaches and the potential benefits that LLMs can offer to the writing process, we have implemented a user interface that encourages writers to reflect on texts they wrote themselves. By conducting a pilot study, we investigated the impact of new user interface affordances on encouraging writers to reflect on their writing. Through the analysis of feedback from study participants, we identified ways to improve the interface and interaction, as well as an opportunity to incorporate conversational aspects into our prototype. Additionally, we outlined a potential future research plan to conduct a deployment study to observe user interactions with our interface in a natural setting.
+  </div>
+</div>
 
 
-<p>I’ve noticed some dominant narratives in public discourse around doing-what’s-right-with-AI. I’ll give them some oversimplified names; this is a complex topic.</p>
+</header>
+
+
+<p><img src="featured.png" class="img-fluid"></p>
+<p><a href="Arnold-Kim-Poster2023.pdf">PDF</a> WMRUGS 2023</p>
+<p>Want to know more or try it out? <a href="https://tiny.cc/2oobvz">interest form</a></p>
+<section id="abstract" class="level2">
+<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
+<p>Large language model (LLM)-based writing tools, such as ChatGPT, Bing Chat, and Bard, promise efficiency and productivity; however, they can overshadow the thinking process necessary for original writing, compromising autonomy and authorship. This limitation is not intrinsic to LLM itself but is due to the design of the chatbot user interface, which encourages reliance on a LLM for both thinking and writing. In order to explore alternative approaches and the potential benefits that LLMs can offer to the writing process, we have implemented a user interface that encourages writers to reflect on texts they wrote themselves. By conducting a pilot study, we investigated the impact of new user interface affordances on encouraging writers to reflect on their writing. Through the analysis of feedback from study participants, we identified ways to improve the interface and interaction, as well as an opportunity to incorporate conversational aspects into our prototype. Additionally, we outlined a potential future research plan to conduct a deployment study to observe user interactions with our interface in a natural setting.</p>
+</section>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>Recent breakthroughs in large language models (LLMs) have led to the development of tools like ChatGPT and Bing Chat, which can produce texts comparable to those written by competent writers. The affordances of these tools encourage users to offload large parts of their thinking and writing onto the LLM. But in doing so, users surrender autonomy and authorship over their writing. Could LLMs instead encourage writers to reflect on texts that they wrote themselves? Could these reflections lead them to make meaningful revisions to their texts?</p>
+<p>Our goal is to provide writers with a tool that promotes reflection and encourages revision of their writing.</p>
+</section>
+<section id="approach" class="level2">
+<h2 class="anchored" data-anchor-id="approach">Approach</h2>
+<p>Research in rhetoric and composition shows that revision is often driven by the realization of a novel idea and the recognition and development of new connections and arguments. To facilitate this process, we have developed a UI that displays reflection cards. These cards can either contain a summary of important ideas in the text, or non-directive feedback generated by the LLM. By enabling writers to interact with these cards, our aim is to provide them with opportunities to reflect on their writing, helping them in making original discoveries that result in meaningful revisions.</p>
+<p><img src="process.png" class="img-fluid"></p>
+</section>
+<section id="pilot-study" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-study">Pilot Study</h2>
+<p>To compare our novel interface with the existing interface, we also prototyped a traditional LLM-powered chatbot and conducted a within-subjects study with four participants:</p>
 <ul>
-<li><strong>Ethics</strong>: getting organizations to deploy AI in ways that avoid harm to individual people. Example: avoiding discrimination in lending/policing/sentencing. Fairness, accountability, and transparency broadly fall under this heading, though those considerations have broader impact too (like making trustworthy systems). This is most common in academic settings, such as the FAccT conference. Solutions are often sociotechnical, e.g., get a broader range of stakeholders involved.</li>
-<li><strong>Safety</strong>: avoiding risks to society and humanity. OpenAI talks a lot about this, sometimes using the term “alignment”. Example: preventing disinformation campaigns, keeping language models from generating racist comments. Solutions are often technical, e.g., tweaking model behavior based on human feedback.</li>
-<li><strong>Data/AI For Good</strong>: developing technology that addresses Problems That Matter, which often means serving those who are hurt, vulnerable, or oppressed. Example: AI for medicine, climate change mitigation, ecological restoration, agriculture, etc.</li>
-<li><strong>Wise engagement</strong>: making individual choices about how to engage with AI systems.</li>
+<li>During the study, participants verbally reflected on the cards and how they would help them revise their text better.</li>
+<li>We observed changes in their perceptions and expectations throughout their interactions with the prototypes.</li>
+<li>We also interviewed them to assess their satisfaction with the UI and collected feedback for improvements.</li>
 </ul>
-<p>I’d like to suggest a broader perspective that includes all of the above. It’s the biblical word <em>shalom</em>, sometimes translated <em>peace</em>, <em>wholeness</em>, or <em>flourishing</em>. It involves the absence of conflict and harm, as the translation “peace” suggests, but goes beyond that to suggest a comprehensive vision of things being <em>right</em>. <em>Shalom</em> includes right relationships, including justice.</p>
-<p>The Bible doesn’t define <em>shalom</em> very explicitly but instead usually gives examples. That invites us to consider examples of what shalom might look like as we develop a society that includes computational intelligence-augmentation technologies, while also expecting that people will come to different conclusions about the specifics. Here’s a few things that I’ve thought shalom might mean for us. Note that this incudes both <em>threats</em> and <em>opportunities</em>.</p>
+</section>
+<section id="implementation" class="level2">
+<h2 class="anchored" data-anchor-id="implementation">Implementation</h2>
+<p>Key Concepts:</p>
 <ul>
-<li><strong>Healthy view of self</strong>
+<li><p>For faster prototyping, we developed our user interface as a Microsoft Word add-in.</p></li>
+<li><p>Predefined prompts consist of buttons that users can select, prompting the LLM to generate summary texts or non-directive feedback based on the chosen prompt.</p></li>
+<li><p>Users have the option to customize prompts to better meet their needs, which is facilitated by the prompt editor.</p></li>
+<li><p>Once modifications are made to a prompt, it can be saved as a “Custom” prompt. Currently, only one “Custom” prompt saving is supported, but it can be overwritten.</p></li>
+<li><p>Highlighted cards indicate the current paragraph that the user is revising. Users can also attach each card as a comment to the respective paragraph by pinning it.</p></li>
+<li><p>Selecting a particular card will highlight the associated paragraph.</p></li>
+</ul>
+<p>Example:</p>
 <ul>
-<li>ML systems nudge us to view ourselves in terms of only our skills–and then to devalue those skills. <a href="../../posts/major-in-human/index.html">more</a></li>
-<li>Tools are framed in terms of efficiency; leading us to an “efficiency” / “productivity” mindset: we view ourselves in terms of what we can produce.</li>
-</ul></li>
-<li><strong>Healthy relationships with other people</strong>
+<li><p>Writer’s Text: <br> “Alan Turing's favorite poem was Jabberwocky by Lewis Caroll…”</p></li>
+<li><p>Predefined Prompt: <br> “What questions do you have about this paragraph as a reader? List three of them in dashes -”</p></li>
+<li><p>Reflections (generated by add-in)</p>
 <ul>
-<li>Embrace of diversity of thought and expression
-<ul>
-<li>We believe that a diversity of people, cultures, expressions, views, etc. reflects God’s glory less incompletely than any individual.</li>
-<li>Threat: LMs embodying narrow norms of language, encouraging a smooth sameness</li>
-</ul></li>
-<li>Humans communicating truth to other humans.
-<ul>
-<li>We believe that there <em>is</em> truth grounded in reality.</li>
-<li>So we need to counter threats:
-<ul>
-<li>disinformation and propaganda, which will be easier to do at scale.</li>
-<li>sophisticated scams, which will be easier to carry out, so our neighbors are vulnerable.</li>
-</ul></li>
-</ul></li>
-<li><em>gratitude</em> towards other humans (see <a href="../../posts/ml-gratitude/index.html">gratitude post</a>)</li>
-<li>truth of outcomes (e.g., not authoritatively spouting falsehoods)</li>
-<li>caring for those who work with what we make. Opportunities:
-<ul>
-<li>better <strong>writing</strong> as systems help people express themselves more clearly</li>
-<li>better <strong>reading</strong>, as systems help people process more perspectives more deeply.</li>
-</ul></li>
-<li>LM opportunities:
-<ul>
-<li>Democratized access to conventional wisdom</li>
-<li>Helping us reflect on how much of what we expect of people is actually mimicry, and how much it should be</li>
-</ul></li>
-</ul></li>
-<li><strong>Healthy relationships with technical systems</strong>
-<ul>
-<li>People, not systems, in control.</li>
-<li>No hidden nudges pushing people to express certain viewpoints</li>
-</ul></li>
-<li><strong>Healthy relationships with the created world</strong>
-<ul>
-<li>beauty: celebrating, not cheapening</li>
-<li>caring for the natural world around us
-<ul>
-<li>conscious of energy use (ML requires a lot)</li>
-</ul></li>
+<li>Why was Alan Turing's favorite poem Jabberwocky?</li>
+<li>How did Alan Turing come across this poem?</li>
+<li>What other works by Lewis Carroll did Alan Turing enjoy?</li>
 </ul></li>
 </ul>
+</section>
+<section id="results-and-conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="results-and-conclusion">Results and Conclusion</h2>
+<ul>
+<li>From our pilot study, we gained insights about our UI design, discovered what worked and what did not, and identified features that should have been added, such as automatically loading the document as a context for the chatbot prototype.</li>
+<li>Our novel interface showed positive results with prompts that generated summaries of texts and non-directive feedback. For instance, feedback generated from the “Questions as a Reader” prompt was found to be helpful for reflection.</li>
+<li>However, some participants found our initial user interface confusing to use, especially with highlighting features.</li>
+<li>With the traditional chatbot prototype, some participants appreciated the flexibility offered by the conversational feature of the chatbot. For example, one participant copied the predefined prompt to the chatbot interface to have a more refined conversation about the prompt.</li>
+<li>This hinted to us that combining the chatbot interface with our novel interface could be worth exploring.</li>
+<li>Overall, we have found some preliminary evidence that our approach was working.</li>
+</ul>
+</section>
+<section id="acknowledgements" class="level2">
+<h2 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
+<p>We would like to thank Dr.&nbsp;Keith Vander Linden and Dr.&nbsp;Kristine Johnson for their feedback and advice. We would also like to express our gratitude to the participants of our pilot study. This research is supported by the Wierenga Family Foundation Summer Research Fellowship for Sciences and the National Science Foundation under grant number 2246145.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -627,8 +648,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
-<script src="https://utteranc.es/client.js" repo="kcarnold/kcarnold.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
 
