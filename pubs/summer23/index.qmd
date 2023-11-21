@@ -34,9 +34,9 @@ url_video: ''
 
 ![](featured.png)
 
-[PDF]({{< meta url_pdf >}}) {{< meta publication_short >}}
+[PDF]({{< meta url_pdf >}}) presented at {{< meta publication_short >}}
 
-Want to know more or try it out? [interest form](https://tiny.cc/2oobvz)
+Want to know more or try it out? [Sign up here!](https://tiny.cc/2oobvz)
 
 
 ## Abstract
@@ -47,7 +47,7 @@ Want to know more or try it out? [interest form](https://tiny.cc/2oobvz)
 
 Recent breakthroughs in large language models (LLMs) have led to the development of tools like ChatGPT and Bing Chat, which can produce texts comparable to those written by competent writers. The affordances of these tools encourage users to offload large parts of their thinking and writing onto the LLM. But in doing so, users surrender autonomy and authorship over their writing. Could LLMs instead encourage writers to reflect on texts that they wrote themselves? Could these reflections lead them to make meaningful revisions to their texts?
 
-Our goal is to provide writers with a tool that promotes reflection and encourages revision of their writing.
+**Our goal is to provide writers with a tool that promotes reflection and encourages revision of their writing.**
 
 ## Approach
 
@@ -80,7 +80,7 @@ Key Concepts:
 -   Selecting a particular card will highlight the associated paragraph.
 
 
-Example:
+### Example
 
 - Writer's Text: <br> "Alan Turing\'s favorite poem was Jabberwocky by Lewis Caroll..."
 
