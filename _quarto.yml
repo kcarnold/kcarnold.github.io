@@ -1,8 +1,9 @@
 project:
   type: "website"
   output-dir: _site
-  post-render: "rsync -r static/ _site"
- 
+  resources: 
+    - CNAME
+    - static/*
 website:
   title: "Ken Arnold (Calvin U)"
   site-url: "https://kenarnold.org/"
