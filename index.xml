@@ -30,6 +30,9 @@
 
 
  ]]></description>
+  <category>coding</category>
+  <category>ai</category>
+  <category>ml</category>
   <guid>https://kenarnold.org/posts/ml-interactives/</guid>
   <pubDate>Thu, 15 Feb 2024 05:00:00 GMT</pubDate>
 </item>
@@ -95,8 +98,6 @@
 
  ]]></description>
   <category>coding</category>
-  <category>ai</category>
-  <category>ml</category>
   <guid>https://kenarnold.org/posts/debugging/</guid>
   <pubDate>Mon, 24 Apr 2023 04:00:00 GMT</pubDate>
 </item>
