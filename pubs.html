@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ken Arnold (Calvin U) - Publications</title>
+<title>Ken Arnold (Calvin U) – Publications</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -62,6 +62,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -109,13 +110,40 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -209,18 +237,18 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="HCI,NLP" data-listing-date-sort="1698379200000" data-listing-file-modified-sort="1700584995424" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="713">
+<div class="quarto-post image-right" data-index="0" data-categories="HCI,NLP" data-listing-date-sort="1698379200000" data-listing-file-modified-sort="1700584995424" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="717">
 <div class="thumbnail">
-<p><a href="./pubs/summer23/index.html"></a></p><a href="./pubs/summer23/index.html">
+<p><a href="./pubs/summer23/index.html" class="no-external"></a></p><a href="./pubs/summer23/index.html" class="no-external">
 <p class="card-img-top"><img src="pubs/summer23/featured.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./pubs/summer23/index.html"></a></p>
+</a><p><a href="./pubs/summer23/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./pubs/summer23/index.html">Towards Full Authorship with AI: An Interactive User Interface for Supporting Revision</a>
+<a href="./pubs/summer23/index.html" class="no-external">Towards Full Authorship with AI: An Interactive User Interface for Supporting Revision</a>
 </h3>
 <div class="listing-subtitle">
-<a href="./pubs/summer23/index.html"></a>
+<a href="./pubs/summer23/index.html" class="no-external"></a>
 </div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('HCI'); return false;">
@@ -231,11 +259,11 @@ NLP
 </div>
 </div>
 <div class="listing-description">
-<a href="./pubs/summer23/index.html">Large language model (LLM)-based writing tools, such as ChatGPT, Bing Chat, and Bard, promise efficiency and productivity; however, they can overshadow the thinking process necessary for original writing, compromising autonomy and authorship. This limitation is not intrinsic to LLM itself but is due to the design of the chatbot user interface, which encourages reliance on a LLM for both thinking and writing. In order to explore alternative approaches and the potential benefits that LLMs can offer to the writing process, we have implemented a user interface that encourages writers to reflect on texts they wrote themselves. By conducting a pilot study, we investigated the impact of new user interface affordances on encouraging writers to reflect on their writing. Through the analysis of feedback from study participants, we identified ways to improve the interface and interaction, as well as an opportunity to incorporate conversational aspects into our prototype. Additionally, we outlined a potential future research plan to conduct a deployment study to observe user interactions with our interface in a natural setting.</a>
+<a href="./pubs/summer23/index.html" class="no-external">Large language model (LLM)-based writing tools, such as ChatGPT, Bing Chat, and Bard, promise efficiency and productivity; however, they can overshadow the thinking process necessary for original writing, compromising autonomy and authorship. This limitation is not intrinsic to LLM itself but is due to the design of the chatbot user interface, which encourages reliance on a LLM for both thinking and writing. In order to explore alternative approaches and the potential benefits that LLMs can offer to the writing process, we have implemented a user interface that encourages writers to reflect on texts they wrote themselves. By conducting a pilot study, we investigated the impact of new user interface affordances on encouraging writers to reflect on their writing. Through the analysis of feedback from study participants, we identified ways to improve the interface and interaction, as well as an opportunity to incorporate conversational aspects into our prototype. Additionally, we outlined a potential future research plan to conduct a deployment study to observe user interactions with our interface in a natural setting.</a>
 </div>
 </div>
 <div class="metadata">
-<a href="./pubs/summer23/index.html">
+<a href="./pubs/summer23/index.html" class="no-external">
 <div class="listing-date">
 Oct 27, 2023
 </div>
@@ -244,16 +272,16 @@ Oct 27, 2023
 </div>
 <div class="quarto-post image-right" data-index="1" data-categories="HCI,NLP" data-listing-date-sort="1654142400000" data-listing-file-modified-sort="1677597243681" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="174">
 <div class="thumbnail">
-<p><a href="./pubs/acms-mimicry/index.html"></a></p><a href="./pubs/acms-mimicry/index.html">
+<p><a href="./pubs/acms-mimicry/index.html" class="no-external"></a></p><a href="./pubs/acms-mimicry/index.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./pubs/acms-mimicry/index.html"></a></p>
+</a><p><a href="./pubs/acms-mimicry/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./pubs/acms-mimicry/index.html">AI and Writing: Do we speak the words of stochastic parrots?</a>
+<a href="./pubs/acms-mimicry/index.html" class="no-external">AI and Writing: Do we speak the words of stochastic parrots?</a>
 </h3>
 <div class="listing-subtitle">
-<a href="./pubs/acms-mimicry/index.html"></a>
+<a href="./pubs/acms-mimicry/index.html" class="no-external"></a>
 </div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('HCI'); return false;">
@@ -264,11 +292,11 @@ NLP
 </div>
 </div>
 <div class="listing-description">
-<a href="./pubs/acms-mimicry/index.html">Mimicry pervades the design and implementation of generative AI systems. I reflect on this observation from a Christian perspective and outline various approaches to ‘redeem’ how we use the artificial parrots in writing.</a>
+<a href="./pubs/acms-mimicry/index.html" class="no-external">Mimicry pervades the design and implementation of generative AI systems. I reflect on this observation from a Christian perspective and outline various approaches to ‘redeem’ how we use the artificial parrots in writing.</a>
 </div>
 </div>
 <div class="metadata">
-<a href="./pubs/acms-mimicry/index.html">
+<a href="./pubs/acms-mimicry/index.html" class="no-external">
 <div class="listing-date">
 Jun 2, 2022
 </div>
@@ -277,16 +305,16 @@ Jun 2, 2022
 </div>
 <div class="quarto-post image-right" data-index="2" data-categories="HCI,NLP" data-listing-date-sort="1618286400000" data-listing-file-modified-sort="1675288980523" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="163">
 <div class="thumbnail">
-<p><a href="./pubs/iui21-help-writers/index.html"></a></p><a href="./pubs/iui21-help-writers/index.html">
+<p><a href="./pubs/iui21-help-writers/index.html" class="no-external"></a></p><a href="./pubs/iui21-help-writers/index.html" class="no-external">
 <p class="card-img-top"><img src="pubs/iui21-help-writers/featured.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./pubs/iui21-help-writers/index.html"></a></p>
+</a><p><a href="./pubs/iui21-help-writers/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./pubs/iui21-help-writers/index.html">Generative Models can Help Writers without Writing for Them</a>
+<a href="./pubs/iui21-help-writers/index.html" class="no-external">Generative Models can Help Writers without Writing for Them</a>
 </h3>
 <div class="listing-subtitle">
-<a href="./pubs/iui21-help-writers/index.html"></a>
+<a href="./pubs/iui21-help-writers/index.html" class="no-external"></a>
 </div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('HCI'); return false;">
@@ -297,11 +325,11 @@ NLP
 </div>
 </div>
 <div class="listing-description">
-<a href="./pubs/iui21-help-writers/index.html">Current writing-support systems encourage writers to appropriate the language model’s output as their own words. Does it have to be that way? We explore of two new types of interactions with generative language models: enabling structural manipulation of already-drafted sentences, and offering questions rather than snippets to writers. We present early experiments on feasibility and suitability of these interactions.</a>
+<a href="./pubs/iui21-help-writers/index.html" class="no-external">Current writing-support systems encourage writers to appropriate the language model’s output as their own words. Does it have to be that way? We explore of two new types of interactions with generative language models: enabling structural manipulation of already-drafted sentences, and offering questions rather than snippets to writers. We present early experiments on feasibility and suitability of these interactions.</a>
 </div>
 </div>
 <div class="metadata">
-<a href="./pubs/iui21-help-writers/index.html">
+<a href="./pubs/iui21-help-writers/index.html" class="no-external">
 <div class="listing-date">
 Apr 13, 2021
 </div>
@@ -310,16 +338,16 @@ Apr 13, 2021
 </div>
 <div class="quarto-post image-right" data-index="3" data-categories="HCI,NLP" data-listing-date-sort="1584417600000" data-listing-file-modified-sort="1675288980523" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="116">
 <div class="thumbnail">
-<p><a href="./pubs/predictable/index.html"></a></p><a href="./pubs/predictable/index.html">
+<p><a href="./pubs/predictable/index.html" class="no-external"></a></p><a href="./pubs/predictable/index.html" class="no-external">
 <p class="card-img-top"><img src="pubs/predictable/featured.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./pubs/predictable/index.html"></a></p>
+</a><p><a href="./pubs/predictable/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./pubs/predictable/index.html">Predictive Text Encourages Predictable Writing</a>
+<a href="./pubs/predictable/index.html" class="no-external">Predictive Text Encourages Predictable Writing</a>
 </h3>
 <div class="listing-subtitle">
-<a href="./pubs/predictable/index.html"></a>
+<a href="./pubs/predictable/index.html" class="no-external"></a>
 </div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('HCI'); return false;">
@@ -330,11 +358,11 @@ NLP
 </div>
 </div>
 <div class="listing-description">
-<a href="./pubs/predictable/index.html">In our lab study, image captions written with predictive text suggestions were shorter and included fewer words that that the system did not predict.</a>
+<a href="./pubs/predictable/index.html" class="no-external">In our lab study, image captions written with predictive text suggestions were shorter and included fewer words that that the system did not predict.</a>
 </div>
 </div>
 <div class="metadata">
-<a href="./pubs/predictable/index.html">
+<a href="./pubs/predictable/index.html" class="no-external">
 <div class="listing-date">
 Mar 17, 2020
 </div>
@@ -343,16 +371,16 @@ Mar 17, 2020
 </div>
 <div class="quarto-post image-right" data-index="4" data-categories="HCI,NLP" data-listing-date-sort="1525752000000" data-listing-file-modified-sort="1675517265191" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="58">
 <div class="thumbnail">
-<p><a href="./pubs/sentiment-bias/index.html"></a></p><a href="./pubs/sentiment-bias/index.html">
+<p><a href="./pubs/sentiment-bias/index.html" class="no-external"></a></p><a href="./pubs/sentiment-bias/index.html" class="no-external">
 <p class="card-img-top"><img src="pubs/sentiment-bias/featured.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./pubs/sentiment-bias/index.html"></a></p>
+</a><p><a href="./pubs/sentiment-bias/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./pubs/sentiment-bias/index.html">Sentiment Bias in Predictive Text Recommendations Results in Biased Writing</a>
+<a href="./pubs/sentiment-bias/index.html" class="no-external">Sentiment Bias in Predictive Text Recommendations Results in Biased Writing</a>
 </h3>
 <div class="listing-subtitle">
-<a href="./pubs/sentiment-bias/index.html"></a>
+<a href="./pubs/sentiment-bias/index.html" class="no-external"></a>
 </div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('HCI'); return false;">
@@ -363,11 +391,11 @@ NLP
 </div>
 </div>
 <div class="listing-description">
-<a href="./pubs/sentiment-bias/index.html">Intelligent systems make biased decisions because they are trained on biased data. Could these system biases affect what people create? We found that when writing restaurant reviews, biased system behavior leads to biased human behavior: People presented with phrasal text entry shortcuts that were skewed positive wrote more positive reviews than they did when presented with negative-skewed shortcuts.</a>
+<a href="./pubs/sentiment-bias/index.html" class="no-external">Intelligent systems make biased decisions because they are trained on biased data. Could these system biases affect what people create? We found that when writing restaurant reviews, biased system behavior leads to biased human behavior: People presented with phrasal text entry shortcuts that were skewed positive wrote more positive reviews than they did when presented with negative-skewed shortcuts.</a>
 </div>
 </div>
 <div class="metadata">
-<a href="./pubs/sentiment-bias/index.html">
+<a href="./pubs/sentiment-bias/index.html" class="no-external">
 <div class="listing-date">
 May 8, 2018
 </div>
@@ -376,16 +404,16 @@ May 8, 2018
 </div>
 <div class="quarto-post image-right" data-index="5" data-categories="HCI,NLP" data-listing-date-sort="1476590400000" data-listing-file-modified-sort="1675288980523" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="118">
 <div class="thumbnail">
-<p><a href="./pubs/phrase-suggestion/index.html"></a></p><a href="./pubs/phrase-suggestion/index.html">
+<p><a href="./pubs/phrase-suggestion/index.html" class="no-external"></a></p><a href="./pubs/phrase-suggestion/index.html" class="no-external">
 <p class="card-img-top"><img src="pubs/phrase-suggestion/featured.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./pubs/phrase-suggestion/index.html"></a></p>
+</a><p><a href="./pubs/phrase-suggestion/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./pubs/phrase-suggestion/index.html">On Suggesting Phrases vs.&nbsp;Predicting Words for Mobile Text Composition</a>
+<a href="./pubs/phrase-suggestion/index.html" class="no-external">On Suggesting Phrases vs.&nbsp;Predicting Words for Mobile Text Composition</a>
 </h3>
 <div class="listing-subtitle">
-<a href="./pubs/phrase-suggestion/index.html"></a>
+<a href="./pubs/phrase-suggestion/index.html" class="no-external"></a>
 </div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('HCI'); return false;">
@@ -396,11 +424,11 @@ NLP
 </div>
 </div>
 <div class="listing-description">
-<a href="./pubs/phrase-suggestion/index.html">We introduce a simple extension to the familiar mobile keyboard suggestion interface that presents phrase suggestions that can be accepted by a repeated-tap gesture. In an extended composition task, we found that phrases were interpreted as suggestions that affected the content of what participants wrote more than conventional single-word suggestions, which were interpreted as predictions.</a>
+<a href="./pubs/phrase-suggestion/index.html" class="no-external">We introduce a simple extension to the familiar mobile keyboard suggestion interface that presents phrase suggestions that can be accepted by a repeated-tap gesture. In an extended composition task, we found that phrases were interpreted as suggestions that affected the content of what participants wrote more than conventional single-word suggestions, which were interpreted as predictions.</a>
 </div>
 </div>
 <div class="metadata">
-<a href="./pubs/phrase-suggestion/index.html">
+<a href="./pubs/phrase-suggestion/index.html" class="no-external">
 <div class="listing-date">
 Oct 16, 2016
 </div>
@@ -540,38 +568,28 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
     stripColumnClz(note)
-    const typesetMath = (el) => {
-      if (window.MathJax) {
-        // MathJax Typeset
-        window.MathJax.typeset([el]);
-      } else if (window.katex) {
-        // KaTeX Render
-        var mathElements = el.getElementsByClassName("math");
-        var macros = [];
-        for (var i = 0; i < mathElements.length; i++) {
-          var texText = mathElements[i].firstChild;
-          if (mathElements[i].tagName == "SPAN") {
-            window.katex.render(texText.data, mathElements[i], {
-              displayMode: mathElements[i].classList.contains('display'),
-              throwOnError: false,
-              macros: macros,
-              fleqn: false
-            });
-          }
-        }
-      }
-    }
     if (id === null || id.startsWith('sec-')) {
       // Special case sections, only their first couple elements
       const container = document.createElement("div");
       if (note.children && note.children.length > 2) {
-        for (let i = 0; i < 2; i++) {
-          container.appendChild(note.children[i].cloneNode(true));
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
         }
-        typesetMath(container);
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
         return container.innerHTML
       } else {
-        typesetMath(note);
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
         return note.innerHTML;
       }
     } else {
@@ -580,8 +598,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (anchorLink) {
         anchorLink.remove();
       }
-      typesetMath(note);
-      return note.innerHTML;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
     }
   }
   for (var i=0; i<xrefs.length; i++) {

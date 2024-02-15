@@ -10,7 +10,29 @@
 <atom:link href="https://kenarnold.org/index.xml" rel="self" type="application/rss+xml"/>
 <description>Augmenting Intelligence for Everyday Creativity</description>
 <generator>quarto-99.9.9</generator>
-<lastBuildDate>Mon, 24 Apr 2023 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 15 Feb 2024 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>ML Interactives</title>
+  <dc:creator>Ken Arnold</dc:creator>
+  <link>https://kenarnold.org/posts/ml-interactives/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>As I’ve been teaching AI / Machine Learning, I’ve made a few interactive demos to help students understand some concepts. Here’s a few:</p>
+<ul>
+<li><a href="https://cs.calvin.edu/courses/cs/375/24sp/fundamentals/u04n00-relu.ipynb">ReLU interactive</a> (name: <code>u04n00-relu.ipynb</code>; show <a href="https://cs.calvin.edu/courses/cs/375/24sp/fundamentals/u04n00-relu.html">preview</a>, open in <a href="https://colab.research.google.com/github/Calvin-Data-Science/cs375-376-public/blob/main/notebooks/u04n00-relu.ipynb">Colab</a>)</li>
+<li><a href="https://observablehq.com/@kcarnold/softmax">Softmax / Cross Entropy</a></li>
+</ul>
+
+
+
+ ]]></description>
+  <guid>https://kenarnold.org/posts/ml-interactives/</guid>
+  <pubDate>Thu, 15 Feb 2024 05:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Debugging Hints</title>
   <dc:creator>Ken Arnold</dc:creator>
@@ -148,13 +170,13 @@
 </section>
 
 
-<div id="quarto-appendix" class="default"><aside id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>This can be a quite nuanced and powerful step, though, as StyleGAN shows us.↩︎</p></li>
 <li id="fn2"><p>I mean this in the sense of the <a href="https://arxiv.org/abs/2010.01412">sharpness of the loss surface</a>↩︎</p></li>
 </ol>
-</aside></div> ]]></description>
+</section></div> ]]></description>
   <category>ai</category>
   <category>ml</category>
   <category>math</category>
@@ -272,13 +294,13 @@
 </section>
 
 
-<div id="quarto-appendix" class="default"><aside id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>Strictly speaking, most models use “tokens”, which are common words or common fragments of less-common words.↩︎</p></li>
 <li id="fn2"><p>Perhaps we don’t even need to label examples; perhaps the model itself could be prompted to identify the problems.↩︎</p></li>
 </ol>
-</aside></div> ]]></description>
+</section></div> ]]></description>
   <guid>https://kenarnold.org/posts/mimicry/mimicry.html</guid>
   <pubDate>Tue, 28 Mar 2023 04:00:00 GMT</pubDate>
 </item>
@@ -578,6 +600,7 @@ background-color: null;
 font-style: inherit;">import</span> HTML</span>
 <span id="cb8-2"><span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">def</span> format_generated(match):</span>
 <span id="cb8-3">    word <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -586,6 +609,7 @@ background-color: null;
 font-style: inherit;">1</span>)</span>
 <span id="cb8-4">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> <span class="ss" style="color: #20794D;
 background-color: null;
 font-style: inherit;">f'&lt;span style="color: #999999;"&gt;</span><span class="sc" style="color: #5E5E5E;
@@ -598,8 +622,10 @@ font-style: inherit;">&lt;/span&gt;'</span></span>
 <span id="cb8-5"></span>
 <span id="cb8-6"><span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">def</span> pre_line(x): <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> <span class="ss" style="color: #20794D;
 background-color: null;
 font-style: inherit;">f'&lt;div style="white-space: pre-line;"&gt;</span><span class="sc" style="color: #5E5E5E;
@@ -688,12 +714,12 @@ font-style: inherit;">+</span> encoded_text)))</span></code></pre></div>
 </section>
 
 
-<div id="quarto-appendix" class="default"><aside id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>technically, a probability distribution over next tokens↩︎</p></li>
 </ol>
-</aside></div> ]]></description>
+</section></div> ]]></description>
   <category>ai</category>
   <category>ml</category>
   <category>lm</category>
@@ -785,12 +811,12 @@ font-style: inherit;">+</span> encoded_text)))</span></code></pre></div>
 
 
 
-<div id="quarto-appendix" class="default"><aside id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>For the technical details of how these things work, see <a href="https://huggingface.co/blog/dialog-agents">this HuggingFace blog post</a>.↩︎</p></li>
 </ol>
-</aside></div> ]]></description>
+</section></div> ]]></description>
   <category>ai</category>
   <category>ml</category>
   <category>lm</category>
@@ -875,12 +901,12 @@ font-style: inherit;">+</span> encoded_text)))</span></code></pre></div>
 </section>
 
 
-<div id="quarto-appendix" class="default"><aside id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p><a href="https://arxiv.org/abs/2301.12810">Crawling the Internal Knowledge-Base of Language Models | Abstract</a>↩︎</p></li>
 </ol>
-</aside></div> ]]></description>
+</section></div> ]]></description>
   <category>ai</category>
   <category>ml</category>
   <guid>https://kenarnold.org/posts/lm-facts/</guid>
@@ -1162,54 +1188,18 @@ In conclusion, while these proverbs may seem wise and insightful, they are actua
 </section>
 
 
-<div id="quarto-appendix" class="default"><aside id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p><a href="https://arxiv.org/abs/2106.04753">On Sample Based Explanation Methods for NLP:Efficiency, Faithfulness, and Semantic Evaluation</a>↩︎</p></li>
 </ol>
-</aside></div> ]]></description>
+</section></div> ]]></description>
   <category>ai</category>
   <category>ml</category>
   <category>lm</category>
   <category>ia</category>
   <guid>https://kenarnold.org/posts/ml-gratitude/</guid>
   <pubDate>Thu, 12 Jan 2023 05:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Language Models for Species-Scale Collaboration</title>
-  <dc:creator>Ken Arnold</dc:creator>
-  <link>https://kenarnold.org/posts/knowledge-fusion/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>Large lanugage models like ChatGPT (and its peers like PaLM, BLOOMZ, etc.) are surprisingly powerful tools for knowledge <em>fusion</em>. For example, if I ask GPT-3 to continue “A list of exercises for beginning computer science students: 1.”, it will generate that list based on all exercises that ever have been listed in plausibly similar contexts. Communities of practice have been exchanging ideas and knowledge throughout human history, but the tools and scale have increased with technological developments like the printing press, video capture, and the Internet, and social developments like academic conferences and social media. Language models are continuing the trend of increasing knowledge sharing by becoming, in a sense, dynamic summaries of slices of others’ ideas. Like reading a textbook or a review article, we can benefit from the insights and ideas of others without directly having to read them. But it can do this without nearly as much human effort as writing such reviews.</p>
-<section id="implications" class="level2">
-<h2 class="anchored" data-anchor-id="implications">Implications</h2>
-<ul>
-<li>We’ll be able to collaborate at even greater scales than before. AI systems will help cross-pollinate ideas between disparate communities of practice. Instructors will still make our own educational materials, for example, but instead of blank pages, we’ll start with ideas synthesized from everyone else who’s ever taught a related subject.</li>
-<li>But, LMs will need to get better at citing their sources. There’s thankfully some work going on in that area: <a href="https://arxiv.org/abs/2212.08037">Attributed Question Answering: Evaluation and Modeling for Attributed Large Language Models | Abstract</a></li>
-<li>And: since LMs conflate popularity (i.e., what’s common) with quality—and that’s really tricky to untangle—we’ll need more discernment about when, and when not, to seek and use LM suggestions.</li>
-</ul>
-</section>
-<section id="related" class="level2">
-<h2 class="anchored" data-anchor-id="related">Related</h2>
-<ul>
-<li><a href="https://ojs.aaai.org/index.php/aimagazine/article/view/2254">Margaret Boden, Computer Models of Creativity | AI Magazine</a></li>
-</ul>
-
-
-</section>
-
- ]]></description>
-  <category>ai</category>
-  <category>ml</category>
-  <category>lm</category>
-  <category>ia</category>
-  <guid>https://kenarnold.org/posts/knowledge-fusion/</guid>
-  <pubDate>Wed, 11 Jan 2023 05:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
