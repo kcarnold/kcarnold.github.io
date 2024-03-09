@@ -9,3 +9,4 @@ As I've been teaching AI / Machine Learning, I've made a few interactive demos t
 
 - [ReLU interactive](https://cs.calvin.edu/courses/cs/375/24sp/fundamentals/u04n00-relu.ipynb) (name: `u04n00-relu.ipynb`; show [preview](https://cs.calvin.edu/courses/cs/375/24sp/fundamentals/u04n00-relu.html), open in [Colab](https://colab.research.google.com/github/Calvin-Data-Science/cs375-376-public/blob/main/notebooks/u04n00-relu.ipynb))
 - [Softmax / Cross Entropy](https://observablehq.com/@kcarnold/softmax)
+- [Next-Token Distribution Visualization](https://huggingface.co/spaces/kcarnold/next-token) for seq2seq translation models
