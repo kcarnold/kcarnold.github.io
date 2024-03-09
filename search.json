@@ -158,7 +158,7 @@
     "href": "posts/ml-interactives/index.html",
     "title": "ML Interactives",
     "section": "",
-    "text": "As I’ve been teaching AI / Machine Learning, I’ve made a few interactive demos to help students understand some concepts. Here’s a few:\n\nReLU interactive (name: u04n00-relu.ipynb; show preview, open in Colab)\nSoftmax / Cross Entropy"
+    "text": "As I’ve been teaching AI / Machine Learning, I’ve made a few interactive demos to help students understand some concepts. Here’s a few:\n\nReLU interactive (name: u04n00-relu.ipynb; show preview, open in Colab)\nSoftmax / Cross Entropy\nNext-Token Distribution Visualization for seq2seq translation models"
   },
   {
     "objectID": "posts/dim-axis-rank/index.html",
