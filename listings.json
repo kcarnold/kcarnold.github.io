@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/instead/index.html",
       "/posts/ml-interactives/index.html",
       "/posts/debugging/index.html",
       "/posts/map-to-mimic/index.html",
@@ -39,6 +40,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/instead/index.html",
       "/posts/ml-interactives/index.html",
       "/posts/debugging/index.html",
       "/posts/map-to-mimic/index.html",
