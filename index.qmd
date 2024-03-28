@@ -43,7 +43,7 @@ I'm interested in research and teaching at the intersection of data science, peo
 :::{#blog-posts}
 :::
 
-[All posts](/posts/)
+[All posts](/posts.html)
 
 ## Updates
 
