@@ -2,7 +2,6 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/instead/index.html",
       "/posts/ml-interactives/index.html",
       "/posts/debugging/index.html",
       "/posts/map-to-mimic/index.html",
@@ -13,6 +12,7 @@
       "/posts/magical-thinking/index.html",
       "/posts/detect-gpt/index.html",
       "/posts/ml-gratitude/index.html",
+      "/posts/instead/index.html",
       "/posts/simplify-context/index.html",
       "/posts/mimicry/mimicry.html",
       "/posts/shalom-ia/index.html",
