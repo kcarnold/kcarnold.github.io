@@ -2,7 +2,6 @@
 title: "Interacting with AI: X instead of Y"
 date: "2024-03-28"
 categories: ["ux", "ai"]
-featured: 0
 ---
 
 - Writing
