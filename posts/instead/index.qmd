@@ -1,0 +1,20 @@
+---
+title: "Interacting with AI: X instead of Y"
+date: "2024-03-28"
+categories: ["ux", "ai"]
+featured: 0
+---
+
+- Writing
+    - instead of "content production"
+    - what if AI systems could help with navigating a document, giving feedback, executing edits that the user requests, etc.
+- Decisions
+    - instead of making decisions for (or about) people
+    - AI systems could help people make decisions by bringing awareness to important aspects, identifying exemplars from past experience, etc.
+- Teaching
+    - instead of building an artificial tutor
+    - AI systems could help people teach by helping instructors understand what students are struggling with, providing feedback on teaching materials, helping differentiate instruction, etc.
+- Governance
+    - instead of codifying rules into automation
+    - AI systems could help bring constituents' perspectives into the decision-making process
+
