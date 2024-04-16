@@ -47,6 +47,7 @@ I'm interested in research and teaching at the intersection of data science, peo
 
 ## Updates
 
+- 2024-03-18: Student first author Jiho Kim presented [Towards Full Authorship with AI: Supporting Revision with AI-Generated Views](https://arxiv.org/abs/2403.01055) at [HAI-GEN 2024 workshop](https://hai-gen.github.io/2024/) at [IUI 2024](https://iui.acm.org/2024/index.html)
 - 2023-10-27: [Poster from summer research work](pubs/summer23/) presented at WMRUGS and Calvin
 - 2023-07-27: Presented at [ASA 2023](https://network.asa3.org/mpage/ASA2023) in Toronto (with 3 summer students)
 - 2023-07-01: Awarded NSF CRII grant for writing research
@@ -60,7 +61,7 @@ I'm interested in research and teaching at the intersection of data science, peo
 I teach computer science, data science, and machine learning. Recent classes:
 
 - [DATA 202 Data Science 2](https://calvin-data-science.github.io/data202/), a data wrangling, predictive modeling, and visualization course in Python (pandas, plotly, sklearn, etc.), with a project emphasis. (In prior years I taught this using R tidyverse.)
-- [CS 344 Artificial Intelligence](https://cs.calvin.edu/courses/cs/344/), a hands-on (but also concept-heavy) machine learning course based on the [fast.ai course](https://course.fast.ai/) and Hugging Face Transformers
+- [CS 375 / 376 AI and Machine Learning](https://cs.calvin.edu/courses/cs/375/), formerly [CS 344 Artificial Intelligence](https://cs.calvin.edu/courses/cs/344/), a hands-on (but also concept-heavy) machine learning course based [F. Chollet's Deep Learning with Python](https://www.manning.com/books/deep-learning-with-python-second-edition) (formerly, based on the [fast.ai course](https://course.fast.ai/)) and Hugging Face Transformers
 - [CS 108 Introduction to Computing](https://cs.calvin.edu/courses/cs/108/) and [CS 106](https://cs.calvin.edu/courses/cs/106/), Calvin's first-year Computer Science courses, in Python.
 - INFO 602 Predictive Analytics (for Calvin's MBA program)
 
