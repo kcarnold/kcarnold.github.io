@@ -43,6 +43,20 @@
 <li>AI systems could help bring constituents’ perspectives into the decision-making process</li>
 </ul></li>
 </ul>
+<p>Other design considerations:</p>
+<ul>
+<li>Autocomplete: commands/style, not content</li>
+<li>Visualize complex collections and artifacts using <em>selective attention</em> not <em>select/summarize/regenerate</em></li>
+<li>Provide control over <em>views</em> instead of <em>automatic</em> adjustments</li>
+<li>Blanks instead of guesses</li>
+<li>AI saying “what someone in this role might say” instead of taking on first-person personas</li>
+<li>AI checking and facilitating human work, not humans checking AI work.
+<ul>
+<li>suggestiong high-level editing actions instead of making the edits</li>
+<li>visualizing examples / documentation instead of generating target content based on them.</li>
+<li>help people identify faults that recent changes might have introduced</li>
+</ul></li>
+</ul>
 
 
 
