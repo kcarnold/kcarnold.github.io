@@ -17,3 +17,15 @@ categories: ["ux", "ai"]
     - instead of codifying rules into automation
     - AI systems could help bring constituents' perspectives into the decision-making process
 
+
+Other design considerations:
+
+- Autocomplete: commands/style, not content
+- Visualize complex collections and artifacts using *selective attention* not *select/summarize/regenerate*
+- Provide control over *views* instead of *automatic* adjustments
+- Blanks instead of guesses
+- AI saying "what someone in this role might say" instead of taking on first-person personas
+- AI checking and facilitating human work, not humans checking AI work.
+    - suggestiong high-level editing actions instead of making the edits
+    - visualizing examples / documentation instead of generating target content based on them.
+    - help people identify faults that recent changes might have introduced
