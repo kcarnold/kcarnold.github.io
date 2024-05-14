@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2023-10-27">
 
-<title>Ken Arnold (Calvin U) – Towards Full Authorship with AI: An Interactive User Interface for Supporting Revision</title>
+<title>Ken Arnold (Calvin U) – Towards Full Authorship with AI: Supporting Revision with AI-Generated Views</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -142,7 +142,7 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Towards Full Authorship with AI: An Interactive User Interface for Supporting Revision</h1>
+<h1 class="title">Towards Full Authorship with AI: Supporting Revision with AI-Generated Views</h1>
   <div class="quarto-categories">
     <div class="quarto-category">HCI</div>
     <div class="quarto-category">NLP</div>
@@ -156,13 +156,12 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
     <div>
     <div class="quarto-title-meta-heading">Authors</div>
     <div class="quarto-title-meta-contents">
-             <p>Edom Maru </p>
              <p>Jiho Kim </p>
-             <p>Noelle Haviland </p>
-             <p>Ray Flanagan </p>
-             <p>Saron Melesse </p>
-             <p>Souad Yakubu </p>
+             <p>Ray C. Flanagan </p>
+             <p>Noelle E. Haviland </p>
              <p>ZeAi Sun </p>
+             <p>Souad N. Yakubu </p>
+             <p>Edom A. Maru </p>
              <p>Kenneth C. Arnold </p>
           </div>
   </div>
@@ -180,7 +179,7 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
 <div>
   <div class="abstract">
     <div class="block-title">Abstract</div>
-    Large language model (LLM)-based writing tools, such as ChatGPT, Bing Chat, and Bard, promise efficiency and productivity; however, they can overshadow the thinking process necessary for original writing, compromising autonomy and authorship. This limitation is not intrinsic to LLM itself but is due to the design of the chatbot user interface, which encourages reliance on a LLM for both thinking and writing. In order to explore alternative approaches and the potential benefits that LLMs can offer to the writing process, we have implemented a user interface that encourages writers to reflect on texts they wrote themselves. By conducting a pilot study, we investigated the impact of new user interface affordances on encouraging writers to reflect on their writing. Through the analysis of feedback from study participants, we identified ways to improve the interface and interaction, as well as an opportunity to incorporate conversational aspects into our prototype. Additionally, we outlined a potential future research plan to conduct a deployment study to observe user interactions with our interface in a natural setting.
+    Large language models (LLMs) are shaping a new user interface (UI) paradigm in writing tools by enabling users to generate text through prompts. This paradigm shifts some creative control from the user to the system, thereby diminishing the user’s authorship and autonomy in the writing process. To restore autonomy, we introduce Textfocals, a UI prototype designed to investigate a human-centered approach that emphasizes the user’s role in writing. Textfocals supports the writing process by providing LLM-generated summaries, questions, and advice (i.e., LLM views) in a sidebar of a text editor, encouraging reflection and self-driven revision in writing without direct text generation. Textfocals’ UI affordances, including contextually adaptive views and scaffolding for prompt selection and customization, offer a novel way to interact with LLMs where users maintain full authorship of their writing. A formative user study with Textfocals showed promising evidence that this approach might help users develop underdeveloped ideas, cater to the rhetorical audience, and clarify their writing. However, the study also showed interaction design challenges related to document navigation and scoping, prompt engineering, and context management. Our work highlights the breadth of the design space of writing support interfaces powered by generative AI that maintain authorship integrity.
   </div>
 </div>
 
@@ -189,70 +188,12 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
 
 
 <p><img src="featured.png" class="img-fluid"></p>
-<p><a href="Arnold-Kim-Poster2023.pdf">PDF</a> presented at WMRUGS 2023</p>
+<p><a href="https://arxiv.org/abs/2403.01055">PDF</a> presented at HAI-GEN 2024</p>
 <p>Want to know more or try it out? <a href="https://tiny.cc/2oobvz">Sign up here!</a></p>
+<p>Previously presented as a <a href="Arnold-Kim-Poster2023.pdf">poster</a> at 2023 West Michigan Regional Undergraduate Science Research Conference and Calvin University Summer Research Poster Fair, 2023</p>
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
-<p>Large language model (LLM)-based writing tools, such as ChatGPT, Bing Chat, and Bard, promise efficiency and productivity; however, they can overshadow the thinking process necessary for original writing, compromising autonomy and authorship. This limitation is not intrinsic to LLM itself but is due to the design of the chatbot user interface, which encourages reliance on a LLM for both thinking and writing. In order to explore alternative approaches and the potential benefits that LLMs can offer to the writing process, we have implemented a user interface that encourages writers to reflect on texts they wrote themselves. By conducting a pilot study, we investigated the impact of new user interface affordances on encouraging writers to reflect on their writing. Through the analysis of feedback from study participants, we identified ways to improve the interface and interaction, as well as an opportunity to incorporate conversational aspects into our prototype. Additionally, we outlined a potential future research plan to conduct a deployment study to observe user interactions with our interface in a natural setting.</p>
-</section>
-<section id="background" class="level2">
-<h2 class="anchored" data-anchor-id="background">Background</h2>
-<p>Recent breakthroughs in large language models (LLMs) have led to the development of tools like ChatGPT and Bing Chat, which can produce texts comparable to those written by competent writers. The affordances of these tools encourage users to offload large parts of their thinking and writing onto the LLM. But in doing so, users surrender autonomy and authorship over their writing. Could LLMs instead encourage writers to reflect on texts that they wrote themselves? Could these reflections lead them to make meaningful revisions to their texts?</p>
-<p><strong>Our goal is to provide writers with a tool that promotes reflection and encourages revision of their writing.</strong></p>
-</section>
-<section id="approach" class="level2">
-<h2 class="anchored" data-anchor-id="approach">Approach</h2>
-<p>Research in rhetoric and composition shows that revision is often driven by the realization of a novel idea and the recognition and development of new connections and arguments. To facilitate this process, we have developed a UI that displays reflection cards. These cards can either contain a summary of important ideas in the text, or non-directive feedback generated by the LLM. By enabling writers to interact with these cards, our aim is to provide them with opportunities to reflect on their writing, helping them in making original discoveries that result in meaningful revisions.</p>
-<p><img src="process.png" class="img-fluid"></p>
-</section>
-<section id="pilot-study" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-study">Pilot Study</h2>
-<p>To compare our novel interface with the existing interface, we also prototyped a traditional LLM-powered chatbot and conducted a within-subjects study with four participants:</p>
-<ul>
-<li>During the study, participants verbally reflected on the cards and how they would help them revise their text better.</li>
-<li>We observed changes in their perceptions and expectations throughout their interactions with the prototypes.</li>
-<li>We also interviewed them to assess their satisfaction with the UI and collected feedback for improvements.</li>
-</ul>
-</section>
-<section id="implementation" class="level2">
-<h2 class="anchored" data-anchor-id="implementation">Implementation</h2>
-<p>Key Concepts:</p>
-<ul>
-<li><p>For faster prototyping, we developed our user interface as a Microsoft Word add-in.</p></li>
-<li><p>Predefined prompts consist of buttons that users can select, prompting the LLM to generate summary texts or non-directive feedback based on the chosen prompt.</p></li>
-<li><p>Users have the option to customize prompts to better meet their needs, which is facilitated by the prompt editor.</p></li>
-<li><p>Once modifications are made to a prompt, it can be saved as a “Custom” prompt. Currently, only one “Custom” prompt saving is supported, but it can be overwritten.</p></li>
-<li><p>Highlighted cards indicate the current paragraph that the user is revising. Users can also attach each card as a comment to the respective paragraph by pinning it.</p></li>
-<li><p>Selecting a particular card will highlight the associated paragraph.</p></li>
-</ul>
-<section id="example" class="level3">
-<h3 class="anchored" data-anchor-id="example">Example</h3>
-<ul>
-<li><p>Writer’s Text: <br> “Alan Turing's favorite poem was Jabberwocky by Lewis Caroll…”</p></li>
-<li><p>Predefined Prompt: <br> “What questions do you have about this paragraph as a reader? List three of them in dashes -”</p></li>
-<li><p>Reflections (generated by add-in)</p>
-<ul>
-<li>Why was Alan Turing's favorite poem Jabberwocky?</li>
-<li>How did Alan Turing come across this poem?</li>
-<li>What other works by Lewis Carroll did Alan Turing enjoy?</li>
-</ul></li>
-</ul>
-</section>
-</section>
-<section id="results-and-conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="results-and-conclusion">Results and Conclusion</h2>
-<ul>
-<li>From our pilot study, we gained insights about our UI design, discovered what worked and what did not, and identified features that should have been added, such as automatically loading the document as a context for the chatbot prototype.</li>
-<li>Our novel interface showed positive results with prompts that generated summaries of texts and non-directive feedback. For instance, feedback generated from the “Questions as a Reader” prompt was found to be helpful for reflection.</li>
-<li>However, some participants found our initial user interface confusing to use, especially with highlighting features.</li>
-<li>With the traditional chatbot prototype, some participants appreciated the flexibility offered by the conversational feature of the chatbot. For example, one participant copied the predefined prompt to the chatbot interface to have a more refined conversation about the prompt.</li>
-<li>This hinted to us that combining the chatbot interface with our novel interface could be worth exploring.</li>
-<li>Overall, we have found some preliminary evidence that our approach was working.</li>
-</ul>
-</section>
-<section id="acknowledgements" class="level2">
-<h2 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
-<p>We would like to thank Dr.&nbsp;Keith Vander Linden and Dr.&nbsp;Kristine Johnson for their feedback and advice. We would also like to express our gratitude to the participants of our pilot study. This research is supported by the Wierenga Family Foundation Summer Research Fellowship for Sciences and the National Science Foundation under grant number 2246145.</p>
+<p>Large language models (LLMs) are shaping a new user interface (UI) paradigm in writing tools by enabling users to generate text through prompts. This paradigm shifts some creative control from the user to the system, thereby diminishing the user’s authorship and autonomy in the writing process. To restore autonomy, we introduce Textfocals, a UI prototype designed to investigate a human-centered approach that emphasizes the user’s role in writing. Textfocals supports the writing process by providing LLM-generated summaries, questions, and advice (i.e., LLM views) in a sidebar of a text editor, encouraging reflection and self-driven revision in writing without direct text generation. Textfocals’ UI affordances, including contextually adaptive views and scaffolding for prompt selection and customization, offer a novel way to interact with LLMs where users maintain full authorship of their writing. A formative user study with Textfocals showed promising evidence that this approach might help users develop underdeveloped ideas, cater to the rhetorical audience, and clarify their writing. However, the study also showed interaction design challenges related to document navigation and scoping, prompt engineering, and context management. Our work highlights the breadth of the design space of writing support interfaces powered by generative AI that maintain authorship integrity.</p>
 
 
 </section>
