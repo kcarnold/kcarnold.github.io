@@ -1,0 +1,31 @@
+---
+title: "Honor and GenAI"
+description: "Technology can be re-formed into a tool for honoring others."
+date: 2024-05-22
+draft: 1
+---
+
+> Let love be genuine. Abhor what is evil; hold fast to what is good. Love one another with brotherly affection. Outdo one another in showing honor. (**Romans 12:9-10 ESV**)
+
+The contrast of honor and shame is prevalent in the Biblical story. People are encouraged to honor God, but also to honor each other. And those who hope in Jesus will not be put to shame, but will receive honor along with him when our hope is ultimately vindicated.
+
+## AI tech can be a a tool to dishonor:
+
+I can dishonor you by **perceiving** you only through the "coded gaze" of an ML model. This can lead me to make false, or at least oversimplified (reductionist), assumptions about you. Examples: screening resumes, judging students' work, ...
+
+I can dishonor you by spitting generated text in your face.
+James advises us to be "quick to listen, slow to speak" (James 1:19). But generating from LLMs encourages us to speak lots quickly; it’s "productive".
+When I pass off generated words to you:
+
+- I’m dishonestly implying these are "my" words.
+- I’m not thinking about whether they’re ultimately true.
+- I’m assuming that a machine knows more than you.
+- I’m making you read something that’s full of assumptions
+
+Knowing that some words are AI generated makes people more skeptical of even real words.
+(Liar’s Dividend)
+
+Finally, I can dishonor you by doing things that affect you without thinking about you.
+TODO write more here
+
+
