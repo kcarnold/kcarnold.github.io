@@ -12,7 +12,7 @@ Ken Arnold is an assistant professor of computer science and data science at Cal
 
 ## Longer
 
-Ken Arnold is an assistant professor of computer science and data science at Calvin University. His research has shown how predictive text interfaces, like those in smartphones and email apps, can shape the content of human communication. He is currently developing intelligence augmentation to help writers craft words that are fully their own to serve their readers. His other research interests include human-AI interaction in communication, creativity, and education. He holds advanced degrees from Harvard and MIT.
+Ken Arnold is an assistant professor of computer science and data science at Calvin University. His research has shown how predictive text interfaces, like those in smartphones and email apps, can shape the content of human communication. He is currently developing intelligence augmentation to help writers serve readers by crafting words that are fully their own. His other research interests include human-AI interaction in communication, creativity, and education. He holds advanced degrees from Harvard and MIT.
 
 ## Alternative
 
