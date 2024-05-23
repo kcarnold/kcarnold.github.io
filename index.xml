@@ -21,28 +21,15 @@
 
 
 
-<ul>
-<li>Writing
-<ul>
-<li>instead of “content production”</li>
-<li>what if AI systems could help with navigating a document, giving feedback, executing edits that the user requests, etc.</li>
-</ul></li>
-<li>Decisions
-<ul>
-<li>instead of making decisions for (or about) people</li>
-<li>AI systems could help people make decisions by bringing awareness to important aspects, identifying exemplars from past experience, etc.</li>
-</ul></li>
-<li>Teaching
-<ul>
-<li>instead of building an artificial tutor</li>
-<li>AI systems could help people teach by helping instructors understand what students are struggling with, providing feedback on teaching materials, helping differentiate instruction, etc.</li>
-</ul></li>
-<li>Governance
-<ul>
-<li>instead of codifying rules into automation</li>
-<li>AI systems could help bring constituents’ perspectives into the decision-making process</li>
-</ul></li>
-</ul>
+<p>AI is typically designed in ways that push people aside, but what if we could reimagine the relationship?</p>
+<p><strong>Writing</strong></p>
+<p>The way that AI is currently used supports a view of writing as primarily about generating content. Instead, imagine AI tools guiding you through a document, offering feedback, and executing changes based on your specific instructions. This would empower writers rather than supplanting them.</p>
+<p><strong>Making Decisions</strong></p>
+<p>Sometimes AI systems are designed to make autonomous decisions about people, sometimes presented to people to endorse (verify). But AI could instead work in a collaborative mode, where it highlights aspects of the situation that people might not be considering, offers relevant precedents from historical data, and facilitates a more thoughtful and informed deliberation process without dictating the outcome.</p>
+<p><strong>Learning and Teaching</strong></p>
+<p>Instead of directly teaching people, replacing instructors or tutors, AI could be employed to serve <em>instructors</em> by helping them better understand what students are struggling with or excelling in, providing direction and feedback on educational materials, enabling new ways to differentiate instruction to meet diverse learners’ needs, and providing qualitative feedback on teaching methods.</p>
+<p><strong>Governance</strong></p>
+<p>AI could transform governance by bringing the voices of diverse constituents into the decision-making process, even at points (like private committee meetings) where the individual people who might be affected by the decisions being made might normally be able to be present.</p>
 <p>Other design considerations:</p>
 <ul>
 <li>Autocomplete: commands/style, not content</li>
@@ -796,7 +783,7 @@ font-style: inherit;">+</span> encoded_text)))</span></code></pre></div>
 
 
 <p>OpenAI’s <a href="https://openai.com/alignment/">stated purpose</a> for working on the sort of adjustments to language models that led to ChatGPT was to “align” their behavior with human goals. Their motivation for this is <em>safety</em>, i.e., ensuring that the AI doesn’t do harmful things. That sounds noble, indeed. But is it?</p>
-<p>The biggest practical effect of this so-called “alignment” work was actually in molding the model into the form of a servant that can obey instructions. (Inside current models like ChatGPT, “obeying an instruction” looks less like planning steps towards a goal, more like imitating the behavior of people who have had that goal before; see my post on <a href="../../posts/personas/index.html">personas and RLHF</a> for details.) And, surprise, people found that servant collection-of-personas <em>much more useful</em> than the un-“aligned” language model. (To be explicit: the “goal” of the language model is simply to be <a href="../../posts/unsurprised-by-internet/index.html">unsurprised by the Internet</a>.)</p>
+<p>The biggest practical effect of this so-called “alignment” work was actually in molding the model into the form of a servant that can obey instructions. (Inside current models like ChatGPT, “obeying an instruction” looks less like planning steps towards a goal, more like imitating the behavior of people who have had that goal before; see my post on <a href="../../posts/personas/index.html">personas and RLHF</a> for details.) And, surprise, people found that servant collection-of-personas <em>much more useful</em> than the un-“aligned” language model. (To be explicit: the “goal” of the language model is simply to be <a href="../unsurprised-by-internet/index.qmd">unsurprised by the Internet</a>.)</p>
 <p>Since people found it useful (combined with the <a href="https://www.tabletmag.com/sections/news/articles/oy-ai-jaron-lanier">theatrical show of the chat interface</a>), ChatGPT <em>got used</em>. Far more than any of their previous work.</p>
 <p>Was OpenAI’s effort towards AI “safety” successful? Perhaps the <em>relative</em> amount of harm per output was decreased, but the main effect was making the system far more successful, increasing its influence and the likelihood of undesired behaviors that they didn’t think to try to “align” (e.g., generating StackOverflow answers, which the community <a href="https://meta.stackoverflow.com/questions/421831/temporary-policy-chatgpt-is-banned">had to quickly ban</a>).</p>
 
@@ -805,27 +792,6 @@ font-style: inherit;">+</span> encoded_text)))</span></code></pre></div>
  ]]></description>
   <category>ai</category>
   <guid>https://kenarnold.org/posts/risks-of-alignment/</guid>
-  <pubDate>Thu, 09 Feb 2023 05:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>On being unsurprised by the Internet</title>
-  <dc:creator>Ken Arnold</dc:creator>
-  <link>https://kenarnold.org/posts/unsurprised-by-internet/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>(placeholder post for now; until then, see my <a href="../../pubs.html">ChatGPT talk</a>.)</p>
-
-
-
- ]]></description>
-  <category>ai</category>
-  <category>ml</category>
-  <category>lm</category>
-  <guid>https://kenarnold.org/posts/unsurprised-by-internet/</guid>
   <pubDate>Thu, 09 Feb 2023 05:00:00 GMT</pubDate>
 </item>
 <item>
@@ -1206,6 +1172,59 @@ In conclusion, while these proverbs may seem wise and insightful, they are actua
   <category>lm</category>
   <guid>https://kenarnold.org/posts/ai-proverbs/</guid>
   <pubDate>Mon, 16 Jan 2023 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Without Acknowledgment: Cultivating Gratitude in an ML age</title>
+  <dc:creator>Ken Arnold</dc:creator>
+  <link>https://kenarnold.org/posts/ml-gratitude/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Generative AI tools can be really helpful for our creativity. Engaging with many and diverse examples has been shown to help human creativity; the systems themselves have engaged deeply with diverse examples and can fluently retrieve them for creators to use. But unlike when we a search engine, we can’t even acknowledge our inspiration if we want to. Rather than being able to give credit to a specific human author, or even to a creative team, the model makes us credit <em>it</em>, as the amalgamation of all of the human labor that it was trained on. The sheer scale of the data these models work with makes this hard: being trained on close to all human work becomes essentially the same as not being human work at all. If <strong>gratitude</strong> is a virtue, it seems like generative AI is positioned in opposition to it.</p>
+<ul>
+<li>Lack of gratitude has been developing for a while. My students regularly write that they got some code “from StackOverflow” or got their data “from Kaggle” (note that they’re crediting the platform rather than the people); social media memes and quotes are copy-pasted without attribution. “Credit goes to the original authors” (without specifying who they are) exemplifies this trend.</li>
+<li>In the case of image generation, researchers have found that generative image models would even learn to add watermarks like Shutterstock’s to their generated images; current systems avoid this behavior but the creators of both academic or industrial image generation systems have not thoroughly engaged the questions of attribution that arise.</li>
+<li>I’ve mainly seen this discussed in terms of copyright, which represents the perspective of the creator who rightly wants credit for their labor. But I’m pointing out here that the model isn’t serving the <em>user</em> either, if they want to practice gratitude in their creative work. Another related virtue is <strong>humility</strong>, exemplified by the phrase popularized by Isaac Newton of “<a href="https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants">standing on the shoulders of giants</a>” (see that link for further tracing the source).</li>
+<li>It’s most obvious in image generation models, where artists (rightly) complain that the model has appropriated their individual style without attribution. But text has the same issue; it’s just harder to notice how one piece of text is based on another, and text can be recomposed in so many different ways that it’s easy to dilute obvious influence.</li>
+</ul>
+<p>Does it have to be this way? Yesterday I referenced an LM that tries to cite its sources for factual knowledge; citing sources for ideas and inspiration is technically and conceptually harder. But here are some things we might explore:</p>
+<ul>
+<li>Instead of treating the task as generating a complete outcome, what if the system’s goal were to <em>retrieve</em> a curated set of inspirational examples? There’s some good academic work on this using older AI techniques; perhaps we can upgrade that.</li>
+<li>Can we query an LM to ask what items in its training data were most helpful in constructing an example? This has some relationships with interpretability and explainability literature<sup>1</sup>, but academic work there tends to be focused on explaining a single decision, rather than the sequence of decisions that leads to a generated text or image.
+<ul>
+<li>Retrieval-oriented LMs help with this a lot for factual content, but don’t really work for style, I’m guessing.</li>
+<li>Simple approach would be to query the training data for examples with similar embeddings for the current token. I saw some then-Facebook Research papers on this a while back. But that’s a single token, not a phrase.</li>
+<li>Perhaps we can sample forward from a hidden state to get a sense of: contexts are similar if they lead to similar generations.</li>
+<li>A different direction could be augmenting the training process with some aux output that is then used for retrieval.</li>
+</ul></li>
+</ul>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=rjJjXM3qcKE">GPT-3 – Copyright Law and Power - Dr Michael Guihot - YouTube</a></li>
+<li><a href="https://digismak.com/dall-e-works-with-the-images-of-creators-who-do-not-receive-anything-in-return-what-copyright-says-about-ai/">DALL-E works with the images of creators who do not receive anything in return: what copyright says about AI - Digis Mak</a></li>
+<li><a href="https://www.engadget.com/dall-e-generative-ai-tracking-data-privacy-160034656.html">Is DALL-E’s art borrowed or stolen? - Engadget</a></li>
+</ul>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><a href="https://arxiv.org/abs/2106.04753">On Sample Based Explanation Methods for NLP:Efficiency, Faithfulness, and Semantic Evaluation</a>↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>ai</category>
+  <category>ml</category>
+  <category>lm</category>
+  <category>ia</category>
+  <guid>https://kenarnold.org/posts/ml-gratitude/</guid>
+  <pubDate>Thu, 12 Jan 2023 05:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
