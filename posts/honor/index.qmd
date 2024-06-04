@@ -40,8 +40,13 @@ Knowing that some words are AI generated makes people more skeptical of even rea
 Finally, I can dishonor you by doing things that affect you without thinking about you.
 TODO write more here
 
+## What does honoring others through our communication look like?
+
+
 
 ## How could communication tools help us honor each other?
+
+"Swords to plowshares" model of tech development
 
 Most simply, AI tools could help us check ourselves against the obvious forms of some of the evils of the tongue, like slander. “From the same mouth come blessing and cursing; my brothers and sisters, this ought not to be so” (James 3:10).; “do not speak evil against one another” (James 4:11). An AI editor could check if what we’re saying could be interpreted as cursing or slandering anyone, or identify places where our writing is boastful or not gentle. The system would be necessarily error-prone: it could not detect the hypocrisy of gentle words but a deceptive heart (Proverbs), and it might flag constructive criticism as evil speech. But taking a moment to check our speech against a few known fruits of the fire of Gehenna (James 3:6) could give faithful writers an opportunity to “examine their work”. Some email add-ins already let us evaluate the "tone" of our messages; a slander-checker could fit right in, but it might require more detailed explanation of how our writing might be (mis)-construed, in order to catch the problem.
 
@@ -52,3 +57,21 @@ Things we write might also simply be wrong or incomplete. Writing tools could he
 Writing as a technology puts the people who will receive it at a distance. This is useful for us for various reasons (we can edit, refine our thoughts; readers can skim or re-read as desired, etc.), but it does allow us to avoid thinking about our “audience”. But what writing does in someone else’s head is ultimately the point of the exercise of writing. 
 
 TODO write more here
+
+	- Perception:
+		- more deeply understanding others’ perspectives 
+		- Understanding how social / organizational / governmental systems affect  different  people
+	- Communication: all the words at least went through my brain before going to yours
+		- Better: I can see how you might react, and I revise my text accordingly
+		- I remove quirks of my text that don’t honor your attention
+		- I humbly notice where my ideas might be wrong or incomplete.
+	- Action: 
+		- Bring others’ voices into decision-making conversations (min_i normalize_i ( grad of conversation wrt perspective_i) )
+		- Communicate clearly, bringing recipients’ voices into crafting of messages
+- How we get there: my focus on Communication
+	- Specific technologies I’m developing
+		- Use AI for meta-text, not text
+		- Use generation for highlighting, not replacement
+		- Make crafting tools (brushes, knives, …) for text, not magic wands
+	- Process of involving students (research teams, classes)
+		- HCI class: options for students to work on writing tools or org decision-making tools
