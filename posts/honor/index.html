@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-99.9.9">
+<meta name="generator" content="quarto-1.5.56">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,7 +10,7 @@
 <meta name="dcterms.date" content="2024-05-22">
 <meta name="description" content="Technology can be re-formed into a tool for honoring others.">
 
-<title>Ken Arnold (Calvin U) – Honor and GenAI</title>
+<title>Honor and GenAI – Ken Arnold (Calvin U)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -95,7 +95,7 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -124,7 +124,7 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
@@ -202,13 +202,42 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
 <p>Knowing that some words are AI generated makes people more skeptical of even real words. (Liar’s Dividend)</p>
 <p>Finally, I can dishonor you by doing things that affect you without thinking about you. TODO write more here</p>
 </section>
+<section id="what-does-honoring-others-through-our-communication-look-like" class="level2">
+<h2 class="anchored" data-anchor-id="what-does-honoring-others-through-our-communication-look-like">What does honoring others through our communication look like?</h2>
+</section>
 <section id="how-could-communication-tools-help-us-honor-each-other" class="level2">
 <h2 class="anchored" data-anchor-id="how-could-communication-tools-help-us-honor-each-other">How could communication tools help us honor each other?</h2>
+<p>“Swords to plowshares” model of tech development</p>
 <p>Most simply, AI tools could help us check ourselves against the obvious forms of some of the evils of the tongue, like slander. “From the same mouth come blessing and cursing; my brothers and sisters, this ought not to be so” (James 3:10).; “do not speak evil against one another” (James 4:11). An AI editor could check if what we’re saying could be interpreted as cursing or slandering anyone, or identify places where our writing is boastful or not gentle. The system would be necessarily error-prone: it could not detect the hypocrisy of gentle words but a deceptive heart (Proverbs), and it might flag constructive criticism as evil speech. But taking a moment to check our speech against a few known fruits of the fire of Gehenna (James 3:6) could give faithful writers an opportunity to “examine their work”. Some email add-ins already let us evaluate the “tone” of our messages; a slander-checker could fit right in, but it might require more detailed explanation of how our writing might be (mis)-construed, in order to catch the problem.</p>
 <p>Things we write may not be intentionally evil, but may still not honor the time or thinking of our readers if they are not clear. Writing tools can help us honor our readers’ attention and thought by helping to remove quirks of text that distract, or clarify language that takes extra effort to understand. Tools like Grammarly or Microsoft Editor do this reasonably well at the scale of phrases or sentences; other tools could help writers identify larger-scale issues like inconsistencies, ambiguous interpretations, using terms without definition, etc.</p>
 <p>Things we write might also simply be wrong or incomplete. Writing tools could help us honor our readers by helping us notice unsubstantiated statements, overconfidence, assumptions that are made, etc. Current writing tools don’t help us identify these things at all; in fact they tend to <a href="https://christianscholars.com/grammarly-ai-editors-chatgpt-and-the-pedagogical-perils-of-writing-with-confidence/">encourage us to be overly confident</a>.</p>
 <p>Writing as a technology puts the people who will receive it at a distance. This is useful for us for various reasons (we can edit, refine our thoughts; readers can skim or re-read as desired, etc.), but it does allow us to avoid thinking about our “audience”. But what writing does in someone else’s head is ultimately the point of the exercise of writing.</p>
 <p>TODO write more here</p>
+<pre><code>- Perception:
+    - more deeply understanding others’ perspectives 
+    - Understanding how social / organizational / governmental systems affect  different  people
+- Communication: all the words at least went through my brain before going to yours
+    - Better: I can see how you might react, and I revise my text accordingly
+    - I remove quirks of my text that don’t honor your attention
+    - I humbly notice where my ideas might be wrong or incomplete.
+- Action: 
+    - Bring others’ voices into decision-making conversations (min_i normalize_i ( grad of conversation wrt perspective_i) )
+    - Communicate clearly, bringing recipients’ voices into crafting of messages</code></pre>
+<ul>
+<li>How we get there: my focus on Communication
+<ul>
+<li>Specific technologies I’m developing
+<ul>
+<li>Use AI for meta-text, not text</li>
+<li>Use generation for highlighting, not replacement</li>
+<li>Make crafting tools (brushes, knives, …) for text, not magic wands</li>
+</ul></li>
+<li>Process of involving students (research teams, classes)
+<ul>
+<li>HCI class: options for students to work on writing tools or org decision-making tools</li>
+</ul></li>
+</ul></li>
+</ul>
 
 
 </section>
@@ -249,18 +278,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -292,7 +310,47 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/kenarnold\.org\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -327,7 +385,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

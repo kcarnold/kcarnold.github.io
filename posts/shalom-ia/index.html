@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-99.9.9">
+<meta name="generator" content="quarto-1.5.56">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ken Arnold">
 <meta name="dcterms.date" content="2023-03-07">
 
-<title>Ken Arnold (Calvin U) – Flourishing with Intelligence Augmentation Systems</title>
+<title>Flourishing with Intelligence Augmentation Systems – Ken Arnold (Calvin U)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -94,7 +94,7 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -123,7 +123,7 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
@@ -180,15 +180,22 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
 <li><strong>Data/AI For Good</strong>: developing technology that addresses Problems That Matter, which often means serving those who are hurt, vulnerable, or oppressed. Example: AI for medicine, climate change mitigation, ecological restoration, agriculture, etc.</li>
 <li><strong>Wise engagement</strong>: making individual choices about how to engage with AI systems.</li>
 </ul>
-<p>I’d like to suggest a broader perspective that includes all of the above. It’s the biblical word <em>shalom</em>, sometimes translated <em>peace</em>, <em>wholeness</em>, or <em>flourishing</em>. It involves the absence of conflict and harm, as the translation “peace” suggests, but goes beyond that to suggest a comprehensive vision of things being <em>right</em>. <em>Shalom</em> includes right relationships, including justice.</p>
+<p>I’d like to suggest a broader perspective that includes all of the above. It’s the biblical word <em>shalom</em>, sometimes translated <em>peace</em>, <em>wholeness</em>, or <em>flourishing</em>. It involves the absence of conflict and harm, as the translation “peace” suggests, but goes beyond that to suggest a comprehensive vision of things being <em>right</em>. <em>Shalom</em> includes right relationships, including justice. It also implies a wide-eyed realism about the fallen state of the world, both of human hearts (our inclination to elevate self and harm others) and our technology. So the vision of shalom is unlike either techno-optimism or techno-pessimism.</p>
 <p>The Bible doesn’t define <em>shalom</em> very explicitly but instead usually gives examples. That invites us to consider examples of what shalom might look like as we develop a society that includes computational intelligence-augmentation technologies, while also expecting that people will come to different conclusions about the specifics. Here’s a few things that I’ve thought shalom might mean for us. Note that this incudes both <em>threats</em> and <em>opportunities</em>.</p>
 <ul>
 <li><strong>Healthy view of self</strong>
 <ul>
-<li>ML systems nudge us to view ourselves in terms of only our skills–and then to devalue those skills. <a href="../../posts/major-in-human/index.html">more</a></li>
-<li>Tools are framed in terms of efficiency; leading us to an “efficiency” / “productivity” mindset: we view ourselves in terms of what we can produce.</li>
+<li>ML systems nudge us to view ourselves in terms of only our skills–and then to devalue those skills. <a href="../../posts/major-in-human/index.html">more</a>
+<ul>
+<li>We are <em>not machines</em>. We have potential and responsibilities both to create and to empathize.</li>
+<li>We have a new identity: “You were ransomed from your futile ways…by Jesus”; “offer our selves as instruments of righteousness”</li>
 </ul></li>
-<li><strong>Healthy relationships with other people</strong>
+<li>Tools are framed in terms of efficiency; leading us to an “efficiency” / “productivity” mindset: we view ourselves in terms of what we can produce.
+<ul>
+<li>instead: avoid maximizing engagement: let people use <em>words</em> to describe what they want to exist or to become.</li>
+</ul></li>
+</ul></li>
+<li><strong>Healthy relationships with other people</strong>. Honor, love, serve.
 <ul>
 <li>Embrace of diversity of thought and expression
 <ul>
@@ -203,6 +210,7 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
 <li>disinformation and propaganda, which will be easier to do at scale.</li>
 <li>sophisticated scams, which will be easier to carry out, so our neighbors are vulnerable.</li>
 </ul></li>
+<li>Don’t spit generated words in other people’s faces.</li>
 </ul></li>
 <li><em>gratitude</em> towards other humans (see <a href="../../posts/ml-gratitude/index.html">gratitude post</a>)</li>
 <li>truth of outcomes (e.g., not authoritatively spouting falsehoods)</li>
@@ -270,18 +278,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -313,7 +310,47 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/kenarnold\.org\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -348,7 +385,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
