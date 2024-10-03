@@ -11,6 +11,7 @@ website:
     right:
       - posts.qmd
       - pubs.qmd
+      - projects.qmd
       - text: CV
         href: static/kcarnold_cv.pdf
       - icon: github
