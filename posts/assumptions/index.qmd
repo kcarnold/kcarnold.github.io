@@ -1,0 +1,19 @@
+---
+title: "Typical Assumptions of ML-Based AI"
+draft: true
+---
+
+- Data are independent and identically distributed.
+- It’s meaningful to define a single number called loss.
+- Models must be big.
+- Bigger is better.
+- In general looking at average case behavior is good (as opposed to resilience or reliability
+- Input an output behavior is all that matters, we don’t care about internal logic, internal thinking, or having an accurate model of the world that’s faithful to how things actually work
+- The world is basically predictable (and everything that isn't we can just call noise and ignore)
+
+Reductionism:
+
+- We can reduce intelligence to input-output behavior
+- We can quantify intelligence with a few benchmark numbers
+- People are basically interchangeable with each other and with machines
+
