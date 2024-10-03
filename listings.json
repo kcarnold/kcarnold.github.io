@@ -12,7 +12,6 @@
       "/posts/magical-thinking/index.html",
       "/posts/detect-gpt/index.html",
       "/posts/ml-gratitude/index.html",
-      "/posts/assumptions/index.html",
       "/posts/instead/index.html",
       "/posts/simplify-context/index.html",
       "/posts/mimicry/mimicry.html",
@@ -40,7 +39,6 @@
   {
     "listing": "/posts.html",
     "items": [
-      "/posts/assumptions/index.html",
       "/posts/instead/index.html",
       "/posts/ml-interactives/index.html",
       "/posts/debugging/index.html",
