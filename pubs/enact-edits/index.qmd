@@ -1,0 +1,34 @@
+---
+title: "Enacting Desired Edits by Interacting with Conditional Distributions"
+authors:
+    - Kenneth C. Arnold
+date: "2024-06-01"
+
+publication: "In Preparation"
+publication_short: "prep"
+
+categories: ["HCI", "NLP"]
+
+url_pdf: ""
+url_code: 'https://huggingface.co/spaces/kcarnold/writing-prototypes/tree/main'
+url_dataset: ''
+url_poster: ""
+url_project: 'https://huggingface.co/spaces/kcarnold/writing-prototypes'
+url_slides: 'https://docs.google.com/presentation/d/1WVWa32uvPxat12nuemBX2Pjo19EAKnUKbwjaGpkOR_M/edit?usp=sharing'
+url_source: ''
+url_video: ''
+
+---
+
+::: {.columns}
+::: {.column}
+![Highlight Goal-Directed Edit Locations](highlight-edits.png)
+:::
+::: {.column}
+![Rewrite with Predictive Text](predictive-rewrite.png)
+:::
+:::
+
+- [Try it yourself]({{< meta url_project >}})
+- [Code]({{< meta url_code >}})
+- [Presentation Slides]({{< meta url_slides >}})
