@@ -1,5 +1,5 @@
 ---
-title: "Towards Full Authorship with AI: Supporting Revision with AI-Generated Views"
+title: "Promoting End-to-End Intentionality with Large Language Models"
 authors:
   - Jason Chew
   - Daniel Kim

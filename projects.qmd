@@ -10,9 +10,10 @@ Publications:
 
 - [Supporting Revision with AI-Generated Views](/pubs/haigen24/index.qmd) (HAI-GEN workshop at IUI 2024)
 - [Generative Models can Help Writers without Writing for Them](/pubs/iui21-help-writers/index.qmd) (HAI-GEN workshop at IUI 2021)
+- [Cognitive Engagement with AI Writing Suggestions](/pubs/cognitive-engagement/index.qmd) (internal poster fair 2024)
+- [Interacting with Conditional Distributions to Enact Desired Edits](/pubs/enact-edits/index.qmd) (in preparation, *demo available*)
 
-See [Writing Prototypes](https://huggingface.co/spaces/kcarnold/writing-prototypes) for a demo of two recent interfaces. Also, students are currently working on deploying the TextFocals sidebar(described in the publications above) as part of a broader study; let me know if you're interested in participating.
-
+Also, students are currently working on deploying the Textfocals sidebar (described in the publications above) as part of a broader study; let me know if you're interested in participating.
 
 ## Predictive Text
 
