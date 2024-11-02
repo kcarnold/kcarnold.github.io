@@ -36,6 +36,8 @@ AI should help people work better with other people. To achieve this, AI should 
 
 My research focus is on AI for writing. My dissertation work showed that even simple AI suggestions nudged people to write less thoughtfully, so I have been working on alternative ways that AI could help writers serve readers, especially through revising their writing. Student researchers have contributed to various projects along this theme, including tools that have AI generate questions (rather than answers), tools that help writers see their work from different perspectives, and tools to help writers express and enact their revision goals.
 
+For more, see [Publications](/pubs.qmd) and [Projects](/projects.qmd).
+
 ## Highlighted Posts
 
 :::{#blog-posts}
