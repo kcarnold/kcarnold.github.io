@@ -14,10 +14,14 @@ publication_short: HAI-GEN Workshop at IUI 2021
 
 abstract: "Current writing-support systems encourage writers to appropriate the language model's output as their own words. Does it have to be that way? We explore of two new types of interactions with generative language models: enabling structural manipulation of already-drafted sentences, and offering questions rather than snippets to writers. We present early experiments on feasibility and suitability of these interactions."
 
-categories: ["HCI", "NLP"]
+categories: ["HCI", "NLP", "Undergrad"]
 ---
 
 ![](featured.png)
+
+::: {.callout-important}
+Note: all other authors are undergraduate students
+:::
 
 [PDF](arnold21GenerativeWriting.pdf) {{< meta publication_short >}}
 

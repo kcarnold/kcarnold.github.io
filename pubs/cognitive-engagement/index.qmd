@@ -15,7 +15,7 @@ abstract_long: ""
 
 abstract: ""
 
-categories: ["HCI", "NLP"]
+categories: ["HCI", "NLP", "Undergrad"]
 
 url_pdf: ""
 url_code: ''
