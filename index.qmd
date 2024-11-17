@@ -80,5 +80,6 @@ I welcome students who are interested in human-computer interaction, machine lea
 
 ## Selected Press Coverage
 
+- (2019-08-12) [How 'smart' email could change the way we talk](https://www.bbc.com/future/article/20190812-how-ai-powered-predictive-text-affects-your-brain). BBC Future.
 - (2023-09-11) [AI Will Shape Your Soul](https://www.christianitytoday.com/ct/2023/october/artificial-intelligence-robots-soul-formation.html). Christianity Today.
 
