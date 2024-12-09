@@ -1,5 +1,5 @@
 ---
-title: "Enacting Desired Edits by Interacting with Conditional Distributions"
+title: "Interaction-Required Content Editing Suggestions"
 authors:
     - Kenneth C. Arnold
 date: "2024-06-01"
@@ -10,10 +10,10 @@ publication_short: "prep"
 categories: ["HCI", "NLP"]
 
 url_pdf: ""
-url_code: 'https://huggingface.co/spaces/kcarnold/writing-prototypes/tree/main'
+url_code: 'https://huggingface.co/spaces/CalvinU/writing-prototypes/tree/main'
 url_dataset: ''
 url_poster: ""
-url_project: 'https://huggingface.co/spaces/kcarnold/writing-prototypes'
+url_project: 'https://huggingface.co/spaces/CalvinU/writing-prototypes'
 url_slides: 'https://docs.google.com/presentation/d/1WVWa32uvPxat12nuemBX2Pjo19EAKnUKbwjaGpkOR_M/edit?usp=sharing'
 url_source: ''
 url_video: ''
@@ -32,3 +32,15 @@ url_video: ''
 - [Try it yourself]({{< meta url_project >}})
 - [Code]({{< meta url_code >}})
 - [Presentation Slides]({{< meta url_slides >}})
+
+
+Consider a revision task, e.g,. a writer trying to adapt their work for a non-expert audience.  An LLM can be used in at least 3 different ways for a task like this: directly generating the complete revised document (requiring no direct interaction), providing the revision as predictive text for the writer one word at a time (showing incremental contextual alternatives and requiring choices at each step), or showing the writer’s original document annotated with alternative words the LLM might generate if generating that document (focusing human attention and requiring the writer to make any edits themselves). 
+
+
+A modern LLM like ChatGPT is almost always used in a turn-taking interaction, using APIs that return a complete “assistant” response. These APIs hide the true form of the model—a conditional distribution over next tokens. Interfacing with the model at this lower level enables a wider variety of interactive systems, such as interactively constructing a revised text or visualizing alternatives to a given text.
+
+In this work-in-progress, we present two new interactive interfaces for writing support powered by direct access to the conditional distributions computed by an LLM.  Both start with the writer stating a revision goal that they would like to enact, such as “Make this paragraph clear and concise”. (The interface offers a range of suggested goals.) Both interactions use this goal as a prompt to an instruction-tuned (“chatbot”) language model—but then rather than generating a complete assistant response (model.generate()), they inject interaction into the generation process.
+
+The first interaction highlights words in the document that the LLM would be likely to change if given the user’s goal as a prompt. Crucially, it does not make the edits itself, but only shows the writer areas where they could focus their attention—and, if desired, offers one possible alternative direction in each location.
+
+In the second interaction, the writer retypes their own document, but with text predictions based on an LLM's next-word probabilities. For example, I wrote this paragraph by dictating a rough explanation into a textbox, then I typed out the refined text using predictive suggestions from the LLM prompted to "Rewrite this document to be clear and concise". Unlike in a chatbot interaction, I maintain full control over each word, but unlike traditional predictive text, the suggestions are highly specific because they are derived from what I'd previously dictated. 
