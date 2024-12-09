@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2024-06-01">
 
-<title>Enacting Desired Edits by Interacting with Conditional Distributions – Ken Arnold (Calvin U)</title>
+<title>Interaction-Required Content Editing Suggestions – Ken Arnold (Calvin U)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -36,10 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -146,7 +146,7 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Enacting Desired Edits by Interacting with Conditional Distributions</h1>
+<h1 class="title">Interaction-Required Content Editing Suggestions</h1>
   <div class="quarto-categories">
     <div class="quarto-category">HCI</div>
     <div class="quarto-category">NLP</div>
@@ -197,10 +197,15 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
 </div>
 </div>
 <ul>
-<li><a href="https://huggingface.co/spaces/kcarnold/writing-prototypes">Try it yourself</a></li>
-<li><a href="https://huggingface.co/spaces/kcarnold/writing-prototypes/tree/main">Code</a></li>
+<li><a href="https://huggingface.co/spaces/CalvinU/writing-prototypes">Try it yourself</a></li>
+<li><a href="https://huggingface.co/spaces/CalvinU/writing-prototypes/tree/main">Code</a></li>
 <li><a href="https://docs.google.com/presentation/d/1WVWa32uvPxat12nuemBX2Pjo19EAKnUKbwjaGpkOR_M/edit?usp=sharing">Presentation Slides</a></li>
 </ul>
+<p>Consider a revision task, e.g,. a writer trying to adapt their work for a non-expert audience. An LLM can be used in at least 3 different ways for a task like this: directly generating the complete revised document (requiring no direct interaction), providing the revision as predictive text for the writer one word at a time (showing incremental contextual alternatives and requiring choices at each step), or showing the writer’s original document annotated with alternative words the LLM might generate if generating that document (focusing human attention and requiring the writer to make any edits themselves).</p>
+<p>A modern LLM like ChatGPT is almost always used in a turn-taking interaction, using APIs that return a complete “assistant” response. These APIs hide the true form of the model—a conditional distribution over next tokens. Interfacing with the model at this lower level enables a wider variety of interactive systems, such as interactively constructing a revised text or visualizing alternatives to a given text.</p>
+<p>In this work-in-progress, we present two new interactive interfaces for writing support powered by direct access to the conditional distributions computed by an LLM. Both start with the writer stating a revision goal that they would like to enact, such as “Make this paragraph clear and concise”. (The interface offers a range of suggested goals.) Both interactions use this goal as a prompt to an instruction-tuned (“chatbot”) language model—but then rather than generating a complete assistant response (model.generate()), they inject interaction into the generation process.</p>
+<p>The first interaction highlights words in the document that the LLM would be likely to change if given the user’s goal as a prompt. Crucially, it does not make the edits itself, but only shows the writer areas where they could focus their attention—and, if desired, offers one possible alternative direction in each location.</p>
+<p>In the second interaction, the writer retypes their own document, but with text predictions based on an LLM’s next-word probabilities. For example, I wrote this paragraph by dictating a rough explanation into a textbox, then I typed out the refined text using predictive suggestions from the LLM prompted to “Rewrite this document to be clear and concise”. Unlike in a chatbot interaction, I maintain full control over each word, but unlike traditional predictive text, the suggestions are highly specific because they are derived from what I’d previously dictated.</p>
 
 
 
@@ -287,8 +292,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -399,7 +402,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
