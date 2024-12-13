@@ -173,14 +173,14 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
 <ul>
 <li>Transformers architecture
 <ul>
-<li>It’s kinda weird that Transformers has to compute the next-token embedding by adding (residual connections) to the current token. It may mostly make sense, but why not have a zero input and depend on the attention mechanism?</li>
+<li>It’s kinda weird that Transformers has to compute the next-token embedding by adding (residual connections) to the current token. It may mostly make sense, but why not have a zero input (or just a position embedding) and depend on the attention mechanism?</li>
 <li>What if only half of the embedding weights are tied between input and LM head? <code>wte = concat(A, B)</code>, <code>lm_head = concat(A, C)</code></li>
 <li>What if each layer could attend to the keys and values of the previous layer? That would provide non-residual data flow between layers.
 <ul>
 <li>Might need a layer embedding; perhaps a learnable offset vector layer-wise, or just a component that’s 0 for self layer and 1 for other-layer</li>
 <li>Related to PaLM’s “multi-key attention”</li>
 </ul></li>
-<li>Attention heads currently can’t turn themselves off. What if we always throw a zero Value in the mix, with a learnable Key? Could also include</li>
+<li>Attention heads currently can’t turn themselves off. What if we always throw a zero Value in the mix, with a learnable Key?</li>
 <li>What if only some dims have residual connections?</li>
 <li>Could we get a Transformer where everything is in the same vector space, even queries and keys?</li>
 <li>The causal mask affects what can be learned from even long before the current token to generate. Is it really necessary?</li>
