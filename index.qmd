@@ -45,6 +45,8 @@ For more, see [Publications](/pubs.qmd) and [Projects](/projects.qmd).
 
 [All posts](/posts.html)
 
+My doctoral advisor, Krzysztof Gajos, has discussed my work and implications in some of his [recent talks](https://www.youtube.com/watch?v=JybLJiJpKS0).
+
 ## Updates
 
 - 2024-03-18: Student first author Jiho Kim presented [Towards Full Authorship with AI: Supporting Revision with AI-Generated Views](https://arxiv.org/abs/2403.01055) at [HAI-GEN 2024 workshop](https://hai-gen.github.io/2024/) at [IUI 2024](https://iui.acm.org/2024/index.html)
