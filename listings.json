@@ -1,18 +1,5 @@
 [
   {
-    "listing": "/pubs.html",
-    "items": [
-      "/pubs/cognitive-engagement/index.html",
-      "/pubs/enact-edits/index.html",
-      "/pubs/haigen24/index.html",
-      "/pubs/acms-mimicry/index.html",
-      "/pubs/iui21-help-writers/index.html",
-      "/pubs/predictable/index.html",
-      "/pubs/sentiment-bias/index.html",
-      "/pubs/phrase-suggestion/index.html"
-    ]
-  },
-  {
     "listing": "/index.html",
     "items": [
       "/posts/ml-interactives/index.html",
@@ -36,6 +23,19 @@
       "/posts/dim-axis-rank/index.html",
       "/posts/ai-proverbs/index.html",
       "/posts/knowledge-fusion/index.html"
+    ]
+  },
+  {
+    "listing": "/pubs.html",
+    "items": [
+      "/pubs/cognitive-engagement/index.html",
+      "/pubs/enact-edits/index.html",
+      "/pubs/haigen24/index.html",
+      "/pubs/acms-mimicry/index.html",
+      "/pubs/iui21-help-writers/index.html",
+      "/pubs/predictable/index.html",
+      "/pubs/sentiment-bias/index.html",
+      "/pubs/phrase-suggestion/index.html"
     ]
   },
   {
