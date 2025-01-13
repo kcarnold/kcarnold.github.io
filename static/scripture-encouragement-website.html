@@ -246,7 +246,7 @@
                                 {role: "system", content: "You are a compassionate Christian counselor. Provide brief, empathetic encouragement using relevant scripture passages to address the user's concern."},
                                 {role: "user", content: problem}
                             ],
-                            max_tokens: 150
+                            max_tokens: 500
                         })
                     });
                 } else {
@@ -260,7 +260,7 @@
                         },
                         body: JSON.stringify({
                             model: "claude-3-5-sonnet-latest",
-                            max_tokens: 150,
+                            max_tokens: 500,
                             messages: [{
                                 role: "user",
                                 content: "As a compassionate Christian counselor, provide brief, empathetic encouragement using relevant scripture passages to address this concern: " + problem
