@@ -4,6 +4,7 @@
     "items": [
       "/posts/ml-interactives/index.html",
       "/posts/debugging/index.html",
+      "/posts/reflective-ai/index.html",
       "/posts/map-to-mimic/index.html",
       "/posts/mark-generated/index.html",
       "/posts/risks-of-alignment/index.html",
@@ -41,6 +42,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/reflective-ai/index.html",
       "/posts/instead/index.html",
       "/posts/ml-interactives/index.html",
       "/posts/debugging/index.html",

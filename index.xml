@@ -10,7 +10,45 @@
 <atom:link href="https://kenarnold.org/index.xml" rel="self" type="application/rss+xml"/>
 <description>Thinking About People with AI</description>
 <generator>quarto-1.6.40</generator>
-<lastBuildDate>Thu, 28 Mar 2024 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 14 Jan 2025 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>GenAI in Reflective Mode</title>
+  <dc:creator>Ken Arnold</dc:creator>
+  <link>https://kenarnold.org/posts/reflective-ai/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>When you hear “generative AI”, you probably think about getting things done for you. And generally that’s what we use computers for: getting things done faster or more accurately. But I argue there’s another valuable use of computing that you should consider: reflecting on your own work.</p>
+<p>Let’s be concrete. Suppose you’re writing an email communicating a decision you’ve made to a group of people. Generative mode says: AI can help you write that email more quickly (just say what you want to communicate and it’ll write it out in nice language), fix up your grammar and tone to make it sound kind and empathetic, and let you get on with your day. But reflective mode says: let’s think through how people are going to react to this. How will it make them feel? What’s unclear or ambiguous? What’s missing? Will this decision affect them in ways that I didn’t think about? Were there some perspectives that weren’t heard while we were making this decision?</p>
+<p>Fundamentally, reflective-mode AI is about <em>humility</em>. When we recognize that human cognition isn’t just <em>inefficient</em> but <em>flawed</em>, we can take steps to address those flaws. Reflective-mode AI can address cognitive flaws in various ways:</p>
+<ul>
+<li>Helping us recognize <em>when to slow down</em> because our actions affect others.</li>
+<li>Prompting us to reflect on our actions in ways that we ourselves, our teammates, or others have identified as healthy practices.</li>
+<li>Providing concrete examples of these reflections, based on the accumulated wisdom of human authors around the world, over time.</li>
+<li>Helping us think through things from different perspectives, either perspectives of particular people or “thinking hats”.</li>
+</ul>
+<p>Here’s a quick and dirty Streamlit prototype of the idea (made with help from Claude, and using the Claude API). <a href="https://github.com/kcarnold/reflective-communication">source code</a></p>
+<div class="column-screen-right">
+<iframe width="100%" height="700" src="https://reflective-communication-4c5irjgahhmnyxbqqyhmxb.streamlit.app/?embed=true" frameborder="0" allowfullscreen="">
+</iframe>
+</div>
+<p>The prototype doesn’t fully capture all of the ideas, but is a place to start. In particular, one important thing missing is how <strong>teams can curate reflective practices</strong>, so that the practice is meaningful, contextually appropriate, and aligns with the team’s values and processes.</p>
+<p>We were made to be makers–not just of things or text, but of ideas, questions, hypotheses, observations.</p>
+<p>Ultimately, it’s not about getting the right answers faster. It’s about asking better questions, the sort of questions that will help us act virtuously.</p>
+<p>Let’s use computing power to help us think <em>better</em>.</p>
+<p>Related: <a href="https://dl.acm.org/doi/10.1145/3649404">AI Should Challenge, Not Obey</a></p>
+
+
+
+ ]]></description>
+  <category>llm</category>
+  <category>interaction</category>
+  <guid>https://kenarnold.org/posts/reflective-ai/</guid>
+  <pubDate>Tue, 14 Jan 2025 05:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Interacting with AI: X instead of Y</title>
   <dc:creator>Ken Arnold</dc:creator>
@@ -1180,59 +1218,6 @@ In conclusion, while these proverbs may seem wise and insightful, they are actua
   <category>lm</category>
   <guid>https://kenarnold.org/posts/ai-proverbs/</guid>
   <pubDate>Mon, 16 Jan 2023 05:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Without Acknowledgment: Cultivating Gratitude in an ML age</title>
-  <dc:creator>Ken Arnold</dc:creator>
-  <link>https://kenarnold.org/posts/ml-gratitude/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>Generative AI tools can be really helpful for our creativity. Engaging with many and diverse examples has been shown to help human creativity; the systems themselves have engaged deeply with diverse examples and can fluently retrieve them for creators to use. But unlike when we a search engine, we can’t even acknowledge our inspiration if we want to. Rather than being able to give credit to a specific human author, or even to a creative team, the model makes us credit <em>it</em>, as the amalgamation of all of the human labor that it was trained on. The sheer scale of the data these models work with makes this hard: being trained on close to all human work becomes essentially the same as not being human work at all. If <strong>gratitude</strong> is a virtue, it seems like generative AI is positioned in opposition to it.</p>
-<ul>
-<li>Lack of gratitude has been developing for a while. My students regularly write that they got some code “from StackOverflow” or got their data “from Kaggle” (note that they’re crediting the platform rather than the people); social media memes and quotes are copy-pasted without attribution. “Credit goes to the original authors” (without specifying who they are) exemplifies this trend.</li>
-<li>In the case of image generation, researchers have found that generative image models would even learn to add watermarks like Shutterstock’s to their generated images; current systems avoid this behavior but the creators of both academic or industrial image generation systems have not thoroughly engaged the questions of attribution that arise.</li>
-<li>I’ve mainly seen this discussed in terms of copyright, which represents the perspective of the creator who rightly wants credit for their labor. But I’m pointing out here that the model isn’t serving the <em>user</em> either, if they want to practice gratitude in their creative work. Another related virtue is <strong>humility</strong>, exemplified by the phrase popularized by Isaac Newton of “<a href="https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants">standing on the shoulders of giants</a>” (see that link for further tracing the source).</li>
-<li>It’s most obvious in image generation models, where artists (rightly) complain that the model has appropriated their individual style without attribution. But text has the same issue; it’s just harder to notice how one piece of text is based on another, and text can be recomposed in so many different ways that it’s easy to dilute obvious influence.</li>
-</ul>
-<p>Does it have to be this way? Yesterday I referenced an LM that tries to cite its sources for factual knowledge; citing sources for ideas and inspiration is technically and conceptually harder. But here are some things we might explore:</p>
-<ul>
-<li>Instead of treating the task as generating a complete outcome, what if the system’s goal were to <em>retrieve</em> a curated set of inspirational examples? There’s some good academic work on this using older AI techniques; perhaps we can upgrade that.</li>
-<li>Can we query an LM to ask what items in its training data were most helpful in constructing an example? This has some relationships with interpretability and explainability literature<sup>1</sup>, but academic work there tends to be focused on explaining a single decision, rather than the sequence of decisions that leads to a generated text or image.
-<ul>
-<li>Retrieval-oriented LMs help with this a lot for factual content, but don’t really work for style, I’m guessing.</li>
-<li>Simple approach would be to query the training data for examples with similar embeddings for the current token. I saw some then-Facebook Research papers on this a while back. But that’s a single token, not a phrase.</li>
-<li>Perhaps we can sample forward from a hidden state to get a sense of: contexts are similar if they lead to similar generations.</li>
-<li>A different direction could be augmenting the training process with some aux output that is then used for retrieval.</li>
-</ul></li>
-</ul>
-<section id="resources" class="level2">
-<h2 class="anchored" data-anchor-id="resources">Resources</h2>
-<ul>
-<li><a href="https://www.youtube.com/watch?v=rjJjXM3qcKE">GPT-3 – Copyright Law and Power - Dr Michael Guihot - YouTube</a></li>
-<li><a href="https://digismak.com/dall-e-works-with-the-images-of-creators-who-do-not-receive-anything-in-return-what-copyright-says-about-ai/">DALL-E works with the images of creators who do not receive anything in return: what copyright says about AI - Digis Mak</a></li>
-<li><a href="https://www.engadget.com/dall-e-generative-ai-tracking-data-privacy-160034656.html">Is DALL-E’s art borrowed or stolen? - Engadget</a></li>
-</ul>
-
-
-</section>
-
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p><a href="https://arxiv.org/abs/2106.04753">On Sample Based Explanation Methods for NLP:Efficiency, Faithfulness, and Semantic Evaluation</a>↩︎</p></li>
-</ol>
-</section></div> ]]></description>
-  <category>ai</category>
-  <category>ml</category>
-  <category>lm</category>
-  <category>ia</category>
-  <guid>https://kenarnold.org/posts/ml-gratitude/</guid>
-  <pubDate>Thu, 12 Jan 2023 05:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
