@@ -10,7 +10,130 @@
 <atom:link href="https://kenarnold.org/index.xml" rel="self" type="application/rss+xml"/>
 <description>Thinking About People with AI</description>
 <generator>quarto-1.6.40</generator>
-<lastBuildDate>Tue, 14 Jan 2025 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 23 Jan 2025 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>GenAI to Power Reflective Practice</title>
+  <dc:creator>Ken Arnold</dc:creator>
+  <link>https://kenarnold.org/posts/reflective-practice/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="example" class="level2">
+<h2 class="anchored" data-anchor-id="example">Example</h2>
+<p>Yesterday I had the first meeting of my class on AI and machine learning. After class, I sat down away from my computer, closed the door, started a voice memo recording on my phone, and monologued my reflections from the class:</p>
+<ul>
+<li>what happened, what worked and didn’t, and what I thought about it</li>
+<li>follow-ups I need to do</li>
+<li>questions about how to practically work out things that I’ve been thinking about</li>
+<li>reflections on my own process for preparing the class</li>
+<li>ideas for what to do in upcoming classes</li>
+<li>etc.</li>
+</ul>
+<p>Since I was not in front of a screen, I was not distracted, and I had a lot of thoughts in the 35 minutes that the voice memo recorded.</p>
+<p>Then, to turn my reflections into action:</p>
+<ol type="1">
+<li>I copied the transcript that my iPhone generated of my voice note (transcription errors and all).</li>
+<li>I pasted the transcript into a new Claude conversation (in my Project about planning this course, although that probably didn’t matter) and added a brief spec on what I wanted the LLM to do with my reflection.</li>
+<li>After it generated the summary I wanted, I asked for anything that the summary didn’t capture.</li>
+<li>I went back to the computer and, exercising some self-control to not immediately act on things, updated my todo list according to the tasks that I had identified on.</li>
+</ol>
+<p>Then I did what I said I needed to do.</p>
+</section>
+<section id="the-conversation" class="level2">
+<h2 class="anchored" data-anchor-id="the-conversation">The Conversation</h2>
+<div class="conversation">
+<div class="human">
+<p>I just had my first meeting of my AI and machine learning class, and I sat down with a voice note to debrief the experience. I’m gonna paste the content of the voice note below, including various transcription errors. I’d like to figure out what to do with this at the very least. I need a organized task list of things to do. Some of those things should be organized by date some things that I reflected on, might not be quite to the point of a specific task, but I still want to have an organized collection of my insights and thoughts it might also be helpful to have some questions for me to consider.</p>
+<p><em>transcript here</em></p>
+</div>
+<div class="assistant">
+<p><em>some preamble, including “Let me analyze this thoughtfully.” Then it generated an “artifact” structured like this:</em></p>
+<section id="first-class-reflection-summary" class="level3">
+<h3 class="anchored" data-anchor-id="first-class-reflection-summary">First Class Reflection Summary</h3>
+<section id="immediate-tasks-due-this-week" class="level4">
+<h4 class="anchored" data-anchor-id="immediate-tasks-due-this-week">Immediate Tasks (Due This Week)</h4>
+<p><em>numbered list</em></p>
+</section>
+<section id="tasks-by-date" class="level4">
+<h4 class="anchored" data-anchor-id="tasks-by-date">Tasks by Date</h4>
+<section id="fridays-class" class="level5">
+<h5 class="anchored" data-anchor-id="fridays-class">Friday’s Class</h5>
+<p><em>…bulleted list…</em></p>
+</section>
+<section id="next-week-mondaywednesday" class="level5">
+<h5 class="anchored" data-anchor-id="next-week-mondaywednesday">Next Week (Monday/Wednesday)</h5>
+<p><em>…bulleted list…</em></p>
+</section>
+</section>
+<section id="course-development-tasks" class="level4">
+<h4 class="anchored" data-anchor-id="course-development-tasks">Course Development Tasks</h4>
+<ol type="1">
+<li>Learning Paths Organization <em>…bulleted list…</em></li>
+<li>Student Presentations <em>…bulleted list…</em></li>
+<li>Class Materials <em>…bulleted list…</em></li>
+</ol>
+</section>
+<section id="key-insights" class="level4">
+<h4 class="anchored" data-anchor-id="key-insights">Key Insights</h4>
+<ol type="1">
+<li>Class Structure <em>…bulleted list…</em></li>
+<li>Teaching Approach <em>…bulleted list…</em></li>
+<li>Technology Integration <em>…bulleted list…</em></li>
+</ol>
+</section>
+<section id="questions-to-consider" class="level4">
+<h4 class="anchored" data-anchor-id="questions-to-consider">Questions to Consider</h4>
+<ol type="1">
+<li>Student Engagement <em>…bulleted list…</em></li>
+<li>Course Organization <em>…bulleted list…</em></li>
+<li>Assessment and Feedback <em>…bulleted list…</em></li>
+</ol>
+</section>
+<section id="reflection-process-improvement" class="level4">
+<h4 class="anchored" data-anchor-id="reflection-process-improvement">Reflection Process Improvement</h4>
+<ol type="1">
+<li>Consider building a workflow: <em>…</em></li>
+<li>Documentation needs: <em>…</em></li>
+</ol>
+</section>
+</section>
+</div>
+<div class="human">
+<p>Was there anything from my voice memo that didn’t make it into the summary, perhaps because it didn’t fit cleanly into that structure or because of transcription errors or some other reason?</p>
+</div>
+<div class="assistant">
+<p>Let me review the transcript. A few notable items that didn’t fit cleanly into the structured summary:</p>
+<ol type="1">
+<li><p>Your personal story presentation went well - you mentioned wanting to grab the transcript to build it into a biographical story combining research interests and faith journey.</p></li>
+<li><p>A specific instance of AI influence: GitHub Copilot “short-circuited” your thinking about discussion prompts. This could be a valuable teaching example.</p></li>
+<li><p>A detailed interaction with student <em>…</em> who kicked off discussion about AI in writing - this specific example of productive class discussion could inform future session planning.</p></li>
+<li><p>An idea about using AI to estimate timing for class activities and anticipate student questions/thoughts.</p></li>
+</ol>
+<p><em>…</em></p>
+</div>
+</div>
+</section>
+<section id="implications" class="level2">
+<h2 class="anchored" data-anchor-id="implications">Implications</h2>
+<ul>
+<li>screen-free interactions</li>
+<li>closing loops: reflection outputs back into actionable steps</li>
+<li>risk of over-reflection; analysis paralysis</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>llm</category>
+  <category>interaction</category>
+  <category>reflection</category>
+  <guid>https://kenarnold.org/posts/reflective-practice/</guid>
+  <pubDate>Thu, 23 Jan 2025 05:00:00 GMT</pubDate>
+</item>
 <item>
   <title>GenAI in Reflective Mode</title>
   <dc:creator>Ken Arnold</dc:creator>
@@ -66,6 +189,7 @@
  ]]></description>
   <category>llm</category>
   <category>interaction</category>
+  <category>reflection</category>
   <guid>https://kenarnold.org/posts/reflective-ai/</guid>
   <pubDate>Tue, 14 Jan 2025 05:00:00 GMT</pubDate>
 </item>
@@ -1193,51 +1317,6 @@ font-style: inherit;">;</span> t3</span></code></pre></div>
   <category>lm</category>
   <guid>https://kenarnold.org/posts/detect-gpt/</guid>
   <pubDate>Tue, 17 Jan 2023 05:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Solomon’s proverbs about AI</title>
-  <dc:creator>Ken Arnold</dc:creator>
-  <link>https://kenarnold.org/posts/ai-proverbs/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><strong>Prompt</strong>: Solomon’s proverbs about AI:</p>
-<p><strong>Generated text</strong> (by <code>text-davinci-003</code>):</p>
-<pre><code>1. "The clever man uses artificial intelligence to better understand the world."  
-2. "Artificial intelligence can be a great friend, but a dangerous enemy."
-3. "The man who trusts artificial intelligence too much will be led astray."
-4. "He who puts his trust in artificial intelligence will suffer many defeats."
-5. "Artificial intelligence is a powerful tool, but it must be used with caution."
-6. "The wise man uses artificial intelligence to gain knowledge, but not to make decisions."
-7. "Artificial intelligence is a double-edged sword; it can be used for good or harm."
-8. "The man who follows artificial intelligence blindly will suffer the consequences."
-9. "Artificial intelligence can be a helpful guide, but its advice should be taken with care."
-10. "He who uses artificial intelligence wisely will find many advantages."</code></pre>
-<p><strong>Prompt</strong>: Write a blog post about how these “proverbs” are superficial.</p>
-<p><strong>Generated text</strong>:</p>
-<pre><code>The age of Artificial Intelligence (AI) has arrived, bringing with it a flurry of proverbs and sayings about the technology. While these proverbs may seem wise and insightful, they are actually quite superficial when it comes to understanding the true implications of AI.
-
-Let's take a look at the first proverb: "The clever man uses artificial intelligence to better understand the world." While this proverb may be true in a certain sense, it fails to capture the full scope of what AI can do. AI can be used for a variety of purposes, from predicting market trends to helping diagnose medical conditions. It's more than just a tool for understanding the world; it's a powerful technology that can be used to improve efficiency and accuracy in many different contexts.
-
-The second proverb, "Artificial intelligence can be a great friend, but a dangerous enemy," is similarly shallow. AI may be capable of making decisions on our behalf, but it's important to remember that it's still only a machine. It lacks the capacity for moral judgement and can often lead us astray if it's used without proper oversight.
-
-The third and fourth proverbs, "The man who trusts artificial intelligence too much will be led astray" and "He who puts his trust in artificial intelligence will suffer many defeats," further illustrate the superficial nature of these proverbs. While it's true that AI can be a powerful tool, it can also be dangerous if used improperly. It's important to remember that AI is still a machine and should be used with caution and oversight.
-
-Finally, the fifth proverb, "Artificial intelligence is a powerful tool, but it must be used with caution," is the only one that captures the full scope of the implications of AI. AI is an incredibly powerful tool, but it's important to remember that it's still a machine and should be used responsibly.
-
-In conclusion, while these proverbs may seem wise and insightful, they are actually quite superficial in their approach to AI. It's important to remember that AI is a powerful tool, but it must be used with caution and oversight.</code></pre>
-
-
-
- ]]></description>
-  <category>ai</category>
-  <category>ml</category>
-  <category>lm</category>
-  <guid>https://kenarnold.org/posts/ai-proverbs/</guid>
-  <pubDate>Mon, 16 Jan 2023 05:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
