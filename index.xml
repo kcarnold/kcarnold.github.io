@@ -10,7 +10,249 @@
 <atom:link href="https://kenarnold.org/index.xml" rel="self" type="application/rss+xml"/>
 <description>Thinking About People with AI</description>
 <generator>quarto-1.6.40</generator>
-<lastBuildDate>Thu, 23 Jan 2025 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 28 Jan 2025 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Careful Translation Workflow</title>
+  <dc:creator>Ken Arnold</dc:creator>
+  <link>https://kenarnold.org/posts/translation-workflow/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Language translation was one of the earliest applications of natural language processing (NLP). Today’s large language models have the potential to perform accurate translation in a highly contextually adaptive way. But they also have the potential to hallucinate or fail in surprising ways, while trying to convince you of its own accuracy.</p>
+<section id="my-context" class="level2">
+<h2 class="anchored" data-anchor-id="my-context">My context</h2>
+<ul>
+<li>use in church for hospitality</li>
+<li>I’m a beginner speaker of the target language</li>
+<li>need for alignment of section markers</li>
+</ul>
+</section>
+<section id="design-principles" class="level2">
+<h2 class="anchored" data-anchor-id="design-principles">Design principles</h2>
+<ul>
+<li><strong>Transparency</strong>: checking intermediate steps, back-translation side-by-side, visibility of alternatives, visibility of prompts</li>
+<li><strong>Control</strong>: user can provide additional context (whether or not it’s a song, other freeform context)
+<ul>
+<li><strong>Editable intermediate steps</strong>: All intermediate outputs are editable, so if the LLM makes an error or the user wants to provide other feedback or guidance at any point, they can simply edit the result of any intermediate step. The app then regenerates any other results that were dependent on that result. The user can also simply choose to <em>regenerate</em> any intermediate step.</li>
+<li><strong>Lightweight structure</strong>: Intermediate results are legible, but mark outputs using machine-readable region markers.</li>
+</ul></li>
+<li><strong>Self-Critique</strong>: to avoid sycophancy, prompt suggests that input steps might have errors</li>
+<li><strong>Iterative Improvement</strong>: can put the output back into the input</li>
+</ul>
+</section>
+<section id="implementation" class="level2">
+<h2 class="anchored" data-anchor-id="implementation">Implementation</h2>
+<p>I <a href="https://github.com/kcarnold/translation-workflow/">implemented this workflow</a> as a <a href="https://docs.streamlit.io/">Streamlit</a> app using the <a href="https://www.anthropic.com/api">Anthropic API</a>. When the user supplies a source text, it executes the following workflow through ordinary sequential code, using Streamlit state management and caching to handle editing and regeneration:</p>
+<ol type="1">
+<li><strong>Analysis</strong>: It analyzes theological concepts, metaphors, and (for songs) syllable stress patterns.</li>
+<li><strong>Literal Translation</strong>: It generates a word-for-word translation, including alternative translations (with back-translations) where needed.</li>
+<li><strong>Clarity</strong>: Refines the literal translation; for songs it additionally considers meter and rhyme scheme. For songs, this stage also generates a syllabification of the translated text.</li>
+<li><strong>Back-translation</strong>: It translates the result so far back to English and shows it side-by-side with the input text.</li>
+<li><strong>Review</strong>: It generates a review of the translation for accuracy, preservation of theological concepts, and cultural appropriateness, and gives suggestions for improvement. The prompt includes “One or more errors may have been introduced in the translation. Identify and correct them.” The review prompt also includes the back-translation and (for songs) syllabification.</li>
+<li><strong>Final Translation</strong>: It generates a final translation based on the review.</li>
+</ol>
+<p>The app then shows the final translation side-by-side with the input text for easy comparison.</p>
+</section>
+<section id="example" class="level2">
+<h2 class="anchored" data-anchor-id="example">Example</h2>
+<p>Suppose we want to translate the song “And Can It Be” into Spanish:</p>
+<pre><code>Verse 1 
+And can it be that I should gain 
+An interest in the Savior's blood? 
+Died He for me, who caused His pain? 
+For me, who Him to death pursued? 
+
+Amazing love! How can it be 
+That Thou my God shouldst die for me? 
+Amazing love! How can it be 
+That Thou, my God, shouldst die for me? </code></pre>
+<p>(For the output below, I had actually provided the entire song.)</p>
+<section id="analysis" class="level3">
+<h3 class="anchored" data-anchor-id="analysis">Analysis</h3>
+<p>The analysis step gives:</p>
+<pre><code>1. Theological Concepts and Terminology:
+• Substitutionary atonement ("Died He for me") - Christ's sacrificial death
+  - Spanish concept: "expiación sustitutiva"
+• Divine grace ("So free, so infinite His grace") 
+  - Spanish concept: "gracia infinita"
+• Original sin/bondage to sin ("Fast bound in sin and nature's night")
+  - Spanish concept: "esclavitud al pecado"
+• Justification ("clothed in righteousness divine")
+  - Spanish concept: "justificación"/"vestido de su justicia"
+• Adoption/inheritance ("claim the crown")
+  - Spanish concept: "adopción"/"herencia celestial"
+• Scripture references:
+  - Romans 8:1 ("No condemnation")
+  - Ephesians 2:8-9 (salvation by grace)
+  - Colossians 1:18 ("living Head")
+
+2. Cultural References:
+• Imagery of royal court/throne
+• Prison/dungeon imagery from 18th century England
+• References to blood sacrifice, which may need careful handling in some cultures
+
+3. Key Metaphors and Imagery:
+• Imprisonment/chains ("imprisoned spirit," "chains fell off")
+• Light vs. darkness ("nature's night," "dungeon flamed with light")
+• Clothing ("clothed in righteousness")
+• Royal/throne imagery
+• Blood as payment/interest
+
+4. Potential Translation Challenges:
+• Archaic language ("shouldst," "Thou")
+• Complex theological concepts
+• Maintaining meter while preserving meaning
+• Cultural adaptation of prison/dungeon imagery
+• Poetic inversions of normal word order
+
+5. Poetic Devices:
+• Rhyme scheme: AABB in most verses
+• Repetition of "Amazing love! How can it be"
+• Parallel structure in many lines
+• Internal rhyme and assonance
+
+Stress Pattern Analysis (Verse 1):
+"And CAN it BE that I should GAIN"
+"An INT'rest IN the SAV-ior's BLOOD"
+"DIED He for ME, who CAUSED His PAIN"
+"For ME, who HIM to DEATH pur-SUED"
+
+"a-MA-zing LOVE! How CAN it BE"
+"That THOU, my GOD, shouldst DIE for ME"
+
+The meter is primarily iambic, with some variations, typically 4 strong beats per line in the verses and 3 in the refrain.</code></pre>
+</section>
+<section id="literal-translation" class="level3">
+<h3 class="anchored" data-anchor-id="literal-translation">Literal Translation</h3>
+<pre><code>Verse 1
+¿Y puede ser que yo debería ganar
+Un interés en la sangre del Salvador?
+¿Murió Él por mí, quien causó Su dolor?
+¿Por mí, quien Lo persiguió hasta la muerte?
+
+¡Amor asombroso! ¿Cómo puede ser
+Que Tú mi Dios debieras morir por mí?
+¡Amor asombroso! ¿Cómo puede ser
+Que Tú, mi Dios, debieras morir por mí?
+
+[Key terms:
+- "interest": "interés" [alternative: "parte" - meaning "share/portion"]
+- "pursued to death": "persiguió hasta la muerte" [alternative: "llevó a la muerte" - meaning "led to death"]
+- "amazing": "asombroso" [alternatives: "maravilloso", "increíble" - meaning "wonderful", "incredible"]]</code></pre>
+</section>
+<section id="clarity" class="level3">
+<h3 class="anchored" data-anchor-id="clarity">Clarity</h3>
+<pre><code>Verse 1
+¿Cómo es posible que yo gané
+Una parte en la sangre de mi Rey?
+¿Murió por mí, que le causé dolor?
+¿Por mí, que lo llevé a morir?
+
+¡Qué grande amor! ¿Cómo puede ser
+Que Tú, mi Dios, murieras por mí?
+¡Qué grande amor! ¿Cómo puede ser
+Que Tú, mi Dios, murieras por mí?</code></pre>
+<p>It also generates a syllabification, which is surprisingly accurate in this case despite the fact that Claude 3.5 is not character-level (it uses a subword tokenizer).</p>
+<pre><code>Verse 1
+¿có-mo es po-SI-ble que yo ga-NÉ
+u-na PAR-te en la SAN-gre de mi REY?
+mu-RIÓ por MÍ, que le cau-SÉ do-LOR?
+¿por MÍ, que lo lle-VÉ a mo-RIR?
+
+¡qué GRAN-de a-MOR! ¿có-mo PUE-de SER
+que TÚ, mi DIOS, mu-RIE-ras por MÍ?
+¡qué GRAN-de a-MOR! ¿có-mo PUE-de SER
+que TÚ, mi DIOS, mu-RIE-ras por MÍ?</code></pre>
+</section>
+<section id="back-translation" class="level3">
+<h3 class="anchored" data-anchor-id="back-translation">Back-Translation</h3>
+<pre><code>Verse 1
+How is it possible that I gained
+A part in the blood of my King?
+Did He die for me, who caused Him pain?
+For me, who led Him to die?
+
+What great love! How can it be
+That You, my God, would die for me?
+What great love! How can it be
+That You, my God, would die for me?</code></pre>
+</section>
+<section id="review" class="level3">
+<h3 class="anchored" data-anchor-id="review">Review</h3>
+<pre><code>Overall Assessment:
+The translation successfully captures the theological depth and emotional weight of this classic hymn while maintaining singability. Here's a detailed analysis:
+
+Strengths:
+1. Theological accuracy is well-maintained, preserving key concepts like redemption, grace, and justification
+2. The emotional progression of the narrative remains intact
+3. The Spanish flows naturally while keeping the poetic quality
+4. The meter and rhyme schemes work well with the original tune
+5. The use of "tú" forms maintains the intimate relationship with God
+
+Areas for Improvement:
+
+1. Verse 1:
+- "que yo gané" could be improved to "alcanzar" to better reflect the theological concept of receiving rather than earning grace
+- Suggested revision: "¿Cómo es posible alcanzar"
+
+... other verses ...
+
+Recommendations:
+1. Consider revising verse 1's opening to use "alcanzar" instead of "gané"
+2. Use "Mis cadenas rotas están" in verse 3 for stronger imagery
+3. Consider tightening verse 4's ending to match the original's structure more closely
+
+Despite these suggestions, the translation is strong and singable, maintaining both theological accuracy and poetic beauty. The adaptations made serve the target language and culture well while preserving the essential message of the hymn.</code></pre>
+<p>Note, with some skepticism, the feel-good judgment at the end.</p>
+</section>
+</section>
+<section id="challenges" class="level2">
+<h2 class="anchored" data-anchor-id="challenges">Challenges</h2>
+<ul>
+<li><strong>Meter</strong>: often made translations that were very metrically off; addressed by adding meter prompt</li>
+<li><strong>Self-Assessment Hallucination</strong>: An earlier revision included numeric scores in the review, but I found them to be meaningless. In general we should be skeptical of numeric ratings from LLMs, especially when the rating is generated before the rationale (since it must rationalize the rating it generated).</li>
+</ul>
+</section>
+<section id="next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="next-steps">Next Steps</h2>
+<ul>
+<li><strong>Systematic Evaluation</strong></li>
+<li><strong>Simplify flow</strong>: do we need to have the “literal translation” step? Can we evaluate whether it helps or hurts?</li>
+<li><strong>Interactivity</strong>
+<ul>
+<li>Alternatives are currently displayed as static text; they should be interactive</li>
+<li>Perhaps one could simply have a conversation around the translation, with continuously updating back-translation and contextualized (sidebar comments?) critique?
+<ul>
+<li>The conversation could include tool calls for suggesting translation updates, context updates, etc.</li>
+<li>Comments could have conversations attached to them; there could also be an overall conversation.</li>
+<li>The translation could simply be editable by both the user and the LLM; the LLM could perhaps see a history of what changes the user had made (or maybe both “author”s’ changes show up as “tracked changes” until approved)</li>
+</ul></li>
+</ul></li>
+<li><strong>Working with rights holders</strong>: Currently, it would only be legal to distribute the outputs of this tool when applied to public-domain songs (of which there are many), but I would like to work with authors and rights-holders of songs to</li>
+</ul>
+</section>
+<section id="related-work" class="level2">
+<h2 class="anchored" data-anchor-id="related-work">Related Work</h2>
+<ul>
+<li>Predictive Translation Memory</li>
+<li>Agentic Workflows</li>
+<li>Langchain / langflow</li>
+<li>ChatGPT Canvas</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>llm</category>
+  <category>interaction</category>
+  <category>hospitality</category>
+  <guid>https://kenarnold.org/posts/translation-workflow/</guid>
+  <pubDate>Tue, 28 Jan 2025 05:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Screen-Free Reflective Practice using GenAI</title>
   <dc:creator>Ken Arnold</dc:creator>
@@ -1310,33 +1552,6 @@ font-style: inherit;">;</span> t3</span></code></pre></div>
   <category>ml</category>
   <guid>https://kenarnold.org/posts/magical-thinking/</guid>
   <pubDate>Tue, 24 Jan 2023 05:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Stop trying to detect computer-generated writing.</title>
-  <dc:creator>Ken Arnold</dc:creator>
-  <link>https://kenarnold.org/posts/detect-gpt/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>Many people saw the quality of AI-generated text and immediately thought that they need to find ways to detect such “cheating”. I respect those trying to make those tools (including my former colleagues who made <a href="http://gltr.io/">GLTR</a> back in 2019, and more recently Edward Tian, who is “<a href="https://www.npr.org/sections/money/2023/01/17/1149206188/this-22-year-old-is-trying-to-save-us-from-chatgpt-before-it-changes-writing-for">trying to save us from ChatGPT before it changes writing forever (NPR)</a>” with <a href="https://gptzero.me/">GPTZero</a>), and the educators feeling like they’re forced into using them—at the present moment this might be a best-of-bad-options situation. But we need to stop it. Reasons:</p>
-<ol type="1">
-<li><p>It’s going to have <strong>false positives</strong>. There will be text that’s actually written by a thoughtful human but gets flagged as machine-generated. The author will get accused of cheating and will probably have no recourse. Even if they successfully counter the accusation, it’s discouraging — especially if classmates who used ChatGPT a bit more cleverly were able to sneak actual computer-generated text past the system (a <em>false negative</em>). And although I don’t have specific evidence in this situation, the false positives of other AI risk assessment systems tend to fall disproportionately on those already marginalized.</p></li>
-<li><p>It’s just going to lead to an <strong>arms race</strong>. We’ve already seen examples of how simple tweaks to how the system is used (e.g., telling it to introduce mistakes) can sneak past some ways of detection (some examples I found without trying hard: <a href="https://twitter.com/nickmmark/status/1612602697492074497">1</a>, <a href="https://twitter.com/SmoothMikeP/status/1613750382181888001">2</a>, <a href="https://twitter.com/KyleLiang5/status/1611897959217790976">3</a>). If there’s a clear signal of computer generation, the bad actors will find a way around it. Meanwhile the false positive rate will go up (see #1).</p></li>
-<li><p>It’s distracting and unproductive for most common purposes of writing. For writing-as-<em>art</em>, it might be productive to detect forgeries. But when writing is used to <em>communicate</em>, <em>think</em>, and <em>learn</em>, this focus on evaluating the <em>output</em> distracts from the emphasis we need to have on the <em>process</em>. Others have written more about this, and I’ll post some more thoughts myself soon.</p></li>
-</ol>
-<p><em>Post-script</em> 2023-02-09*: OpenAI released their own <a href="https://openai.com/blog/new-ai-classifier-for-indicating-ai-written-text/">Classifier for AI-written text</a>. They acknowledge the first two of the above points.</p>
-
-
-
- ]]></description>
-  <category>ai</category>
-  <category>ml</category>
-  <category>lm</category>
-  <guid>https://kenarnold.org/posts/detect-gpt/</guid>
-  <pubDate>Tue, 17 Jan 2023 05:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/translation-workflow/index.html",
       "/posts/reflective-practice/index.html",
       "/posts/reflective-ai/index.html",
       "/posts/ml-interactives/index.html",
@@ -43,6 +44,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/translation-workflow/index.html",
       "/posts/reflective-practice/index.html",
       "/posts/reflective-ai/index.html",
       "/posts/instead/index.html",
