@@ -10,8 +10,8 @@ Language translation was one of the earliest applications of natural language pr
 
 ## My context
 
-- use in church for hospitality
-- I'm a beginner speaker of the target language
+- use in church for hospitality (so theological accuracy is important)
+- I'm a beginner speaker of the target language (so back-translation and transparency is important)
 - need for alignment of section markers
 
 ## Design principles
@@ -55,10 +55,7 @@ That Thou, my God, shouldst die for me?
 
 (For the output below, I had actually provided the entire song.)
 
-### Analysis
-
-The analysis step gives:
-
+::: {.callout-note collapse="true" title="Analysis Results"}
 ```
 1. Theological Concepts and Terminology:
 • Substitutionary atonement ("Died He for me") - Christ's sacrificial death
@@ -112,8 +109,9 @@ Stress Pattern Analysis (Verse 1):
 
 The meter is primarily iambic, with some variations, typically 4 strong beats per line in the verses and 3 in the refrain.
 ```
+:::
 
-### Literal Translation
+::: {.callout-note collapse="true" title="Literal Translation"}
 
 ```
 Verse 1
@@ -132,8 +130,9 @@ Que Tú, mi Dios, debieras morir por mí?
 - "pursued to death": "persiguió hasta la muerte" [alternative: "llevó a la muerte" - meaning "led to death"]
 - "amazing": "asombroso" [alternatives: "maravilloso", "increíble" - meaning "wonderful", "incredible"]]
 ```
+:::
 
-### Clarity
+::: {.callout-note collapse="true" title="Clarity"}
 
 ```
 Verse 1
@@ -162,8 +161,9 @@ que TÚ, mi DIOS, mu-RIE-ras por MÍ?
 ¡qué GRAN-de a-MOR! ¿có-mo PUE-de SER
 que TÚ, mi DIOS, mu-RIE-ras por MÍ?
 ```
+:::
 
-### Back-Translation
+::: {.callout-note collapse="true" title="Back-Translation"}
 
 ```
 Verse 1
@@ -177,9 +177,9 @@ That You, my God, would die for me?
 What great love! How can it be
 That You, my God, would die for me?
 ```
+:::
 
-### Review
-
+::: {.callout-note collapse="true" title="Review"}
 ```
 Overall Assessment:
 The translation successfully captures the theological depth and emotional weight of this classic hymn while maintaining singability. Here's a detailed analysis:
@@ -206,8 +206,64 @@ Recommendations:
 
 Despite these suggestions, the translation is strong and singable, maintaining both theological accuracy and poetic beauty. The adaptations made serve the target language and culture well while preserving the essential message of the hymn.
 ```
+:::
 
 Note, with some skepticism, the feel-good judgment at the end.
+
+::: {.callout-note collapse="true" title="Final Translation"}
+
+I'll include the whole song here for anyone interested.
+
+```
+Verse 1
+¿Cómo es posible alcanzar
+Una parte en la sangre de mi Rey?
+¿Murió por mí, que le causé dolor?
+¿Por mí, que lo llevé a morir?
+
+¡Qué grande amor! ¿Cómo puede ser
+Que Tú, mi Dios, murieras por mí?
+¡Qué grande amor! ¿Cómo puede ser
+Que Tú, mi Dios, murieras por mí?
+
+Verse 2
+Dejó Su trono celestial
+(¡Tan libre y sin fin es Su amor!)
+Se humilló con tanto amor
+Y dio Su sangre, el Salvador
+
+¡Qué inmensa gracia y libertad!
+¡Me encontró en mi oscuridad!
+¡Qué grande amor! ¿Cómo puede ser
+Que Tú, mi Dios, murieras por mí?
+
+Verse 3
+Mi espíritu en prisión yacía,
+Atado en noche y perdición;
+Tu luz brillante me alcanzó,
+Y el calabozo iluminó;
+
+Mis cadenas rotas están;
+Me alcé y decidí seguir
+¡Qué grande amor! ¿Cómo puede ser
+Que Tú, mi Dios, murieras por mí?
+
+Verse 4
+Ya no hay temor ni condenación;
+¡Jesús, y todo en Él, es mío!
+En Él yo vivo, mi Salvador,
+Vestido en Su justicia estoy,
+
+Con confianza llegaré
+Al trono eterno, y por Jesús
+La corona obtendré
+
+¡Qué grande amor! ¿Cómo puede ser
+Que Tú, mi Dios, murieras por mí?
+¡Qué grande amor! ¿Cómo puede ser
+Que Tú, mi Dios, murieras por mí?
+```
+:::
 
 ## Challenges
 
