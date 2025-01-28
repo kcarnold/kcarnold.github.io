@@ -70,9 +70,6 @@ That Thou my God shouldst die for me?
 Amazing love! How can it be 
 That Thou, my God, shouldst die for me? </code></pre>
 <p>(For the output below, I had actually provided the entire song.)</p>
-<section id="analysis" class="level3">
-<h3 class="anchored" data-anchor-id="analysis">Analysis</h3>
-<p>The analysis step gives:</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Analysis Results">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -139,9 +136,18 @@ The meter is primarily iambic, with some variations, typically 4 strong beats pe
 </div>
 </div>
 </div>
-</section>
-<section id="literal-translation" class="level3">
-<h3 class="anchored" data-anchor-id="literal-translation">Literal Translation</h3>
+<div class="callout callout-style-default callout-note callout-titled" title="Literal Translation">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Literal Translation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <pre><code>Verse 1
 ¿Y puede ser que yo debería ganar
 Un interés en la sangre del Salvador?
@@ -157,9 +163,21 @@ Que Tú, mi Dios, debieras morir por mí?
 - "interest": "interés" [alternative: "parte" - meaning "share/portion"]
 - "pursued to death": "persiguió hasta la muerte" [alternative: "llevó a la muerte" - meaning "led to death"]
 - "amazing": "asombroso" [alternatives: "maravilloso", "increíble" - meaning "wonderful", "incredible"]]</code></pre>
-</section>
-<section id="clarity" class="level3">
-<h3 class="anchored" data-anchor-id="clarity">Clarity</h3>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Clarity">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Clarity
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <pre><code>Verse 1
 ¿Cómo es posible que yo gané
 Una parte en la sangre de mi Rey?
@@ -181,9 +199,21 @@ mu-RIÓ por MÍ, que le cau-SÉ do-LOR?
 que TÚ, mi DIOS, mu-RIE-ras por MÍ?
 ¡qué GRAN-de a-MOR! ¿có-mo PUE-de SER
 que TÚ, mi DIOS, mu-RIE-ras por MÍ?</code></pre>
-</section>
-<section id="back-translation" class="level3">
-<h3 class="anchored" data-anchor-id="back-translation">Back-Translation</h3>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Back-Translation">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Back-Translation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <pre><code>Verse 1
 How is it possible that I gained
 A part in the blood of my King?
@@ -194,9 +224,21 @@ What great love! How can it be
 That You, my God, would die for me?
 What great love! How can it be
 That You, my God, would die for me?</code></pre>
-</section>
-<section id="review" class="level3">
-<h3 class="anchored" data-anchor-id="review">Review</h3>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Review">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Review
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <pre><code>Overall Assessment:
 The translation successfully captures the theological depth and emotional weight of this classic hymn while maintaining singability. Here's a detailed analysis:
 
@@ -221,8 +263,10 @@ Recommendations:
 3. Consider tightening verse 4's ending to match the original's structure more closely
 
 Despite these suggestions, the translation is strong and singable, maintaining both theological accuracy and poetic beauty. The adaptations made serve the target language and culture well while preserving the essential message of the hymn.</code></pre>
+</div>
+</div>
+</div>
 <p>Note, with some skepticism, the feel-good judgment at the end.</p>
-</section>
 </section>
 <section id="challenges" class="level2">
 <h2 class="anchored" data-anchor-id="challenges">Challenges</h2>
