@@ -25,8 +25,8 @@
 <section id="my-context" class="level2">
 <h2 class="anchored" data-anchor-id="my-context">My context</h2>
 <ul>
-<li>use in church for hospitality</li>
-<li>I’m a beginner speaker of the target language</li>
+<li>use in church for hospitality (so theological accuracy is important)</li>
+<li>I’m a beginner speaker of the target language (so back-translation and transparency is important)</li>
 <li>need for alignment of section markers</li>
 </ul>
 </section>
@@ -73,6 +73,18 @@ That Thou, my God, shouldst die for me? </code></pre>
 <section id="analysis" class="level3">
 <h3 class="anchored" data-anchor-id="analysis">Analysis</h3>
 <p>The analysis step gives:</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Analysis Results">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Analysis Results
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <pre><code>1. Theological Concepts and Terminology:
 • Substitutionary atonement ("Died He for me") - Christ's sacrificial death
   - Spanish concept: "expiación sustitutiva"
@@ -124,6 +136,9 @@ Stress Pattern Analysis (Verse 1):
 "That THOU, my GOD, shouldst DIE for ME"
 
 The meter is primarily iambic, with some variations, typically 4 strong beats per line in the verses and 3 in the refrain.</code></pre>
+</div>
+</div>
+</div>
 </section>
 <section id="literal-translation" class="level3">
 <h3 class="anchored" data-anchor-id="literal-translation">Literal Translation</h3>
