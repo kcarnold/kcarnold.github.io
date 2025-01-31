@@ -529,20 +529,7 @@ Que Tú, mi Dios, murieras por mí?</code></pre>
 
 
 <p>When you hear “generative AI”, you probably think about getting things done for you. And generally that’s what we use computers for: getting things done faster or more accurately. But I argue there’s another valuable use of computing that you should consider: reflecting on your own work.</p>
-<p>Let’s be concrete. Suppose you’re writing an email communicating a decision you’ve made to a group of people. Generative mode says: AI can help you write that email more quickly (just say what you want to communicate and it’ll write it out in nice language), fix up your grammar and tone to make it sound kind and empathetic, and let you get on with your day. But reflective mode says: let’s think through how people are going to react to this. How will it make them feel? What’s unclear or ambiguous? What’s missing? Will this decision affect them in ways that I didn’t think about? Were there some perspectives that weren’t heard while we were making this decision?</p>
-<p>Fundamentally, reflective-mode AI is about <em>humility</em>. When we recognize that human cognition isn’t just <em>inefficient</em> but <em>flawed</em>, we can take steps to address those flaws. Reflective-mode AI can address cognitive flaws in various ways:</p>
-<ul>
-<li>Helping us recognize <em>when to slow down</em> because our actions affect others.</li>
-<li>Prompting us to reflect on our actions in ways that we ourselves, our teammates, or others have identified as healthy practices.</li>
-<li>Providing concrete examples of these reflections, based on the accumulated wisdom of human authors around the world, over time.</li>
-<li>Helping us think through things from different perspectives, either perspectives of particular people or “thinking hats”.</li>
-</ul>
-<p>Here’s a quick and dirty Streamlit prototype of the idea (made with help from Claude, and using the Claude API). <a href="https://github.com/kcarnold/reflective-communication">source code</a></p>
-<div class="column-screen-right">
-<iframe width="100%" height="700" src="https://reflective-communication-4c5irjgahhmnyxbqqyhmxb.streamlit.app/?embed=true" frameborder="0" allowfullscreen="">
-</iframe>
-</div>
-<p>The prototype doesn’t fully capture all of the ideas, but is a place to start. In particular, one important thing missing is how <strong>teams can curate reflective practices</strong>, so that the practice is meaningful, contextually appropriate, and aligns with the team’s values and processes.</p>
+<p>For one concrete example, see my post on <a href="../../posts/reflective-communication/index.html">reflective communication</a>.</p>
 <p>Other things we could be reflecting on:</p>
 <ul>
 <li>in <strong>teaching</strong>:
@@ -575,6 +562,40 @@ Que Tú, mi Dios, murieras por mí?</code></pre>
   <category>interaction</category>
   <category>reflection</category>
   <guid>https://kenarnold.org/posts/reflective-ai/</guid>
+  <pubDate>Tue, 14 Jan 2025 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Reflective Communication</title>
+  <dc:creator>Ken Arnold</dc:creator>
+  <link>https://kenarnold.org/posts/reflective-communication/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Suppose you’re writing an email communicating a decision you’ve made to a group of people. Generative mode says: AI can help you write that email more quickly (just say what you want to communicate and it’ll write it out in nice language), fix up your grammar and tone to make it sound kind and empathetic, and let you get on with your day. But reflective mode says: let’s think through how people are going to react to this. How will it make them feel? What’s unclear or ambiguous? What’s missing? Will this decision affect them in ways that I didn’t think about? Were there some perspectives that weren’t heard while we were making this decision?</p>
+<p>Fundamentally, reflective-mode AI is about <em>humility</em>. When we recognize that human cognition isn’t just <em>inefficient</em> but <em>flawed</em>, we can take steps to address those flaws. Reflective-mode AI can address cognitive flaws in various ways:</p>
+<ul>
+<li>Helping us recognize <em>when to slow down</em> because our actions affect others.</li>
+<li>Prompting us to reflect on our actions in ways that we ourselves, our teammates, or others have identified as healthy practices.</li>
+<li>Providing concrete examples of these reflections, based on the accumulated wisdom of human authors around the world, over time.</li>
+<li>Helping us think through things from different perspectives, either perspectives of particular people or “thinking hats”.</li>
+</ul>
+<p>Here’s a quick and dirty Streamlit prototype of the idea (made with help from Claude, and using the Claude API). <a href="https://github.com/kcarnold/reflective-communication">source code</a></p>
+<div class="column-screen-right">
+<iframe width="100%" height="700" src="https://reflective-communication-4c5irjgahhmnyxbqqyhmxb.streamlit.app/?embed=true" frameborder="0" allowfullscreen="">
+</iframe>
+</div>
+<p>The prototype doesn’t fully capture all of the ideas, but is a place to start. In particular, one important thing missing is how <strong>teams can curate reflective practices</strong>, so that the practice is meaningful, contextually appropriate, and aligns with the team’s values and processes.</p>
+
+
+
+ ]]></description>
+  <category>llm</category>
+  <category>interaction</category>
+  <category>reflection</category>
+  <guid>https://kenarnold.org/posts/reflective-communication/</guid>
   <pubDate>Tue, 14 Jan 2025 05:00:00 GMT</pubDate>
 </item>
 <item>
@@ -1630,50 +1651,6 @@ font-style: inherit;">;</span> t3</span></code></pre></div>
   <category>coding</category>
   <guid>https://kenarnold.org/posts/dim-axis-rank/</guid>
   <pubDate>Fri, 27 Jan 2023 05:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Avoid Magical Thinking about AI</title>
-  <dc:creator>Ken Arnold</dc:creator>
-  <link>https://kenarnold.org/posts/magical-thinking/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>It’s become too common to ascribe a sort of magical veneer to AI. News outlets personify ChatGPT, for example. Not to mention personal assistants, voice recognition, even search engines. In practice, people are viewing these things as black boxes that might have little elves inside them as far as we know.</p>
-<p>That ignorance is understandable because the technology is complex. But it’s harmful, and it doesn’t have to be that way.</p>
-<section id="why-avoid-magical-thinking" class="level2">
-<h2 class="anchored" data-anchor-id="why-avoid-magical-thinking">Why avoid magical thinking?</h2>
-<ul>
-<li>Use the technology <em>better</em>. Work <em>with</em> it. Leverage its strengths. e.g., if you know how a language model (like ChatGPT) is just assigning a score to every possible sequence of characters, you can have it <em>score</em> things that it never would have generated.</li>
-<li>Demonstrate <a href="../ml-gratitude/">gratitude</a> to the humans who worked to make the data the model is trained on. And properly worship the God who made a world that’s simultaneously <em>structured</em> enough to have learnable patterns and <em>rich</em> enough that those patterns are endless and fascinating.</li>
-<li>Know the limits of the technology. Predict its biases. e.g., if you know how the model’s capabilities come from its training data, you can think about what <em>doesn’t</em> get captured in that data, and about what might happen if the model starts getting trained largely on its own outputs.</li>
-<li>Steer its progress. Yes, you can build systems that use AI towards flourishing. (I’m working on that for writers and educators, but there’s many more ways. Chat with me!) Imagine and envision ways that people can benefit from it.</li>
-<li>Policymakers need to regulate it, both inside organizations and in broader society. It can really harm people. We also need to retain the future ability to govern it; its extreme hunger for data and computational power tends towards concentrating AI capabilities in the hands of a few.</li>
-</ul>
-</section>
-<section id="how-to-avoid-magical-thinking" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-avoid-magical-thinking">How to avoid magical thinking?</h2>
-<ul>
-<li>Try it out yourself. With ChatGPT open to everyone (at least for now), this is a great time. Try to find things it can’t do well. This requires attention, because it’s trained to be <em>believable</em> even when it’s wrong.</li>
-<li>Interrogate the model about <em>why</em> it’s giving the outputs it is giving. Unfortunately ths isn’t as accessible right now, but I’m hoping (and working towards) making this more accessible. (Current approaches usually visualize <em>attention</em> or <em>input salience</em>, both of which basically show how information flows through the model. That’s helpful, but limited; we don’t know what the model <em>does</em> with that information. I’ve got some ideas.)</li>
-<li>Develop intuitions about how it works.</li>
-<li>Learn the concepts and math behind how it works. Two concepts that keep coming up in my intuitive explanations are <em>distribution</em> and <em>embedding</em>.</li>
-</ul>
-</section>
-<section id="want-to-learn-more" class="level2">
-<h2 class="anchored" data-anchor-id="want-to-learn-more">Want to learn more?</h2>
-<p>I teach AI at Calvin University, and I’m happy to help anyone grow in understanding in this area.</p>
-
-
-</section>
-
- ]]></description>
-  <category>ai</category>
-  <category>ml</category>
-  <guid>https://kenarnold.org/posts/magical-thinking/</guid>
-  <pubDate>Tue, 24 Jan 2023 05:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
