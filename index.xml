@@ -10,7 +10,81 @@
 <atom:link href="https://kenarnold.org/index.xml" rel="self" type="application/rss+xml"/>
 <description>Thinking About People with AI</description>
 <generator>quarto-1.6.40</generator>
-<lastBuildDate>Tue, 28 Jan 2025 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 06 Feb 2025 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Reflective Paper Reviewing</title>
+  <dc:creator>Ken Arnold</dc:creator>
+  <link>https://kenarnold.org/posts/llm-paper-reviewing/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>I was tasked with reviewing a paper for a workshop, but the paper was so unclear that I had trouble seeing past the clarity issues to understand the contributions in order to provide constructive feedback.</p>
+<div class="conversation">
+<div class="human">
+<p>I’m reviewing this paper for a workshop, but I’m having a real hard time understanding it. Don’t write a review for me! but — can you help me understand this paper? Maybe a reading guide or something like that?</p>
+<p><em>[Paper details omitted]</em></p>
+</div>
+<div class="assistant">
+<p>Let me help break down this paper’s key concepts and structure to make it easier to understand. Here’s a reading guide:</p>
+<ul>
+<li>Core concept explanation</li>
+<li>Key components to focus on</li>
+<li>Main challenges identified</li>
+<li>Key innovations claimed</li>
+</ul>
+<p><em>This kind of structured analysis can help surface issues that might be obscured by unclear writing or organization.</em></p>
+</div>
+<div class="human">
+<p><em>[Question about a specific aspect of the paper’s framing that seems unclear]</em></p>
+</div>
+<div class="assistant">
+<p><em>[Analysis of how that aspect relates to existing literature and identification of potential gaps in the paper’s argument]</em></p>
+<p>Notice how breaking down the paper this way helps us think more systematically about its contributions and limitations, rather than just struggling with the unclear presentation.</p>
+</div>
+<div class="human">
+<p>I want to write a constructive review that helps the authors see feedback as supportive of their growth as researchers. What if we suggest they use AI assistance to explore and reflect on the issues I identify? For example, they could use AI to analyze argument structure, create visual representations of their claims, study how strong papers build arguments, and identify gaps in their literature engagement.</p>
+</div>
+<div class="assistant">
+<p>That’s a creative approach that demonstrates productive AI use - not to do the work, but to help think about it more deeply. We could structure it like:</p>
+<ol type="1">
+<li>Acknowledge their potential and scholarly interests</li>
+<li>Identify key areas for improvement</li>
+<li>Suggest specific ways to use AI as a tool for deeper thinking:
+<ul>
+<li>Diagram argument structure to identify gaps</li>
+<li>Map how strong papers build and support claims</li>
+<li>Analyze literature synthesis patterns</li>
+<li>Extract and evaluate key contributions</li>
+</ul></li>
+<li>Point to foundational literature and writing resources</li>
+<li>Frame AI as a tool for reflection rather than just editing</li>
+</ol>
+<p>This models how to use AI to enhance rather than replace critical thinking.</p>
+</div>
+<div class="human">
+<p>Here’s my draft review incorporating these ideas. Does it strike the right balance?</p>
+<p><em>[Draft review]</em></p>
+</div>
+<div class="assistant">
+<p>Let me analyze your review’s strengths and areas for improvement:</p>
+<p>Strengths: - Opens with genuine encouragement - Balances critique with constructive guidance - Models productive AI use in academic work</p>
+<p>Consider strengthening: - Could add 1-2 foundational papers as concrete examples</p>
+<p>This exchange demonstrates how AI can help us think through academic writing - helping identify key aspects of the work (initial analysis), suggesting approaches for improvement (AI tool suggestions), and providing feedback on our own writing (this review analysis). Today’s AI tools are sophisticated enough to engage meaningfully with academic content while keeping humans firmly in control of the critical thinking process.</p>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <category>llm</category>
+  <category>interaction</category>
+  <category>reflection</category>
+  <guid>https://kenarnold.org/posts/llm-paper-reviewing/</guid>
+  <pubDate>Thu, 06 Feb 2025 05:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Careful Translation Workflow</title>
   <dc:creator>Ken Arnold</dc:creator>
@@ -346,7 +420,7 @@ Que Tú, mi Dios, murieras por mí?</code></pre>
 <li><strong>Interactivity</strong>
 <ul>
 <li>Alternatives are currently displayed as static text; they should be interactive</li>
-<li>Perhaps one could simply have a conversation around the translation, with continuously updating back-translation and contextualized (sidebar comments?) critique?
+<li>Perhaps one could simply have a <em>conversation</em> around the translation, with continuously updating back-translation and contextualized (sidebar comments?) critique?
 <ul>
 <li>The conversation could include tool calls for suggesting translation updates, context updates, etc.</li>
 <li>Comments could have conversations attached to them; there could also be an overall conversation.</li>
@@ -1566,99 +1640,6 @@ font-style: inherit;">+</span> encoded_text)))</span></code></pre></div>
   <category>coding</category>
   <guid>https://kenarnold.org/posts/self-study/</guid>
   <pubDate>Mon, 30 Jan 2023 05:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Multidimensional Array Terminology</title>
-  <dc:creator>Ken Arnold</dc:creator>
-  <link>https://kenarnold.org/posts/dim-axis-rank/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>A surprisingly large amount of the thinking that goes into implementing neural net code is getting the shapes of multidimensional structures right. I’d heard that from others but didn’t really believe it until I had to figure it out myself a couple of times, and that convinced me that everyone could use some guided practice with that. So I give my AI students some exercises in thinking about the shapes of multidimensional structures. We’re working with images because they’re easier to visualize, but the same thing comes up in sequence modeling (batch by sequence length by embedding dimension, sometimes with an attention head dim in there too!).</p>
-<p>Students start to explore what broadcasting does (before officially learning how it works), which lets you do cool things like inverting an image by just computing <code>1 - image</code>.</p>
-<section id="axis-or-dimension" class="level2">
-<h2 class="anchored" data-anchor-id="axis-or-dimension">Axis or Dimension?</h2>
-<p>Problem: both the <a href="https://pytorch.org/docs/stable/notes/broadcasting.html">PyTorch</a> and <a href="https://numpy.org/doc/stable/user/basics.broadcasting.html">NumPy</a> broadcasting docs tend to use the term “dimension”. This is confusing because, e.g., [0.5, 0.25, 0.75] is a vector in 3d space but has just one axis.</p>
-<p>I’m guilty of sloppy use of this terminology too, but I suggest we use “number of axes” to refer to <code>len(some_array.shape)</code>. This aligns with the NumPy <a href="https://numpy.org/doc/stable/glossary.html#term-axis">Glossary</a> and the <code>axis=</code> keyword common in NumPy functions. Unfortunately we’ll need to remember that sometimes PyTorch uses “dimension”, e.g,. ‘array.ndim’ and the <code>dim=</code> keyword argument (kwarg) to reduction methods like <code>softmax</code>.</p>
-</section>
-<section id="rank" class="level2">
-<h2 class="anchored" data-anchor-id="rank">Rank?</h2>
-<p>To make matters worse, the fast.ai book uses “rank” to refer to the number of axes of a tensor. But “rank” means something different in linear algebra. For example, a length-5 column vector times a length-4 row vector would give a matrix (tensor) with two axes (2-dimensional), with shape <code>(5, 4)</code></p>
-<div class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> torch</span>
-<span id="cb1-2">t1 <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> torch.ones((<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">5</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>))<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">;</span> t1</span>
-<span id="cb1-3">t2 <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> torch.ones((<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">4</span>))<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">;</span> t2</span>
-<span id="cb1-4">t3 <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> t1 <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">@</span> t2<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">;</span> t3</span></code></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="1">
-<pre><code>tensor([[1., 1., 1., 1.],
-        [1., 1., 1., 1.],
-        [1., 1., 1., 1.],
-        [1., 1., 1., 1.],
-        [1., 1., 1., 1.]])</code></pre>
-</div>
-</div>
-<div class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1">t3.shape</span></code></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="2">
-<pre><code>torch.Size([5, 4])</code></pre>
-</div>
-</div>
-<div class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1">t3.ndim</span></code></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="3">
-<pre><code>2</code></pre>
-</div>
-</div>
-<p>But because of how we made it, we know that the matrix has <a href="https://en.wikipedia.org/wiki/Rank_(linear_algebra)">rank</a> 1 in the linear algebra sense, as Torch confirms. (Note that the Torch computation is sensitive to numerical precision issues, though it works correctly in this case.)</p>
-<div class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1">torch.linalg.matrix_rank(t3)</span></code></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="4">
-<pre><code>tensor(1)</code></pre>
-</div>
-</div>
-</section>
-<section id="the-exercise" class="level2">
-<h2 class="anchored" data-anchor-id="the-exercise">The Exercise</h2>
-<p>Here’s the exercise, for anyone interested:</p>
-<blockquote class="blockquote">
-<p><a href="https://cs.calvin.edu/courses/cs/344/23sp/fundamentals/u02n2-image-ops.ipynb">Image Operations</a> (show <a href="https://cs.calvin.edu/courses/cs/344/23sp/fundamentals/u02n2-image-ops.html">preview</a>, open in <a href="https://colab.research.google.com/github/kcarnold/cs344/blob/main/static/fundamentals/u02n2-image-ops.ipynb">Colab</a>)</p>
-</blockquote>
-
-
-</section>
-
- ]]></description>
-  <category>ml</category>
-  <category>coding</category>
-  <guid>https://kenarnold.org/posts/dim-axis-rank/</guid>
-  <pubDate>Fri, 27 Jan 2023 05:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

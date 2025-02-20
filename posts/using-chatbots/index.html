@@ -7,10 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ken Arnold">
-<meta name="dcterms.date" content="2025-01-28">
-<meta name="description" content="Using generative AI in a transparent workflow for high-quality translations.">
+<meta name="dcterms.date" content="2025-02-20">
 
-<title>Careful Translation Workflow – Ken Arnold (Calvin U)</title>
+<title>Principles for Thoughtful Conversations with Chatbots – Ken Arnold (Calvin U)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -147,18 +146,8 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Careful Translation Workflow</h1>
-                  <div>
-        <div class="description">
-          Using generative AI in a transparent workflow for high-quality translations.
-        </div>
-      </div>
-                          <div class="quarto-categories">
-                <div class="quarto-category">llm</div>
-                <div class="quarto-category">interaction</div>
-                <div class="quarto-category">hospitality</div>
-              </div>
-                  </div>
+      <h1 class="title">Principles for Thoughtful Conversations with Chatbots</h1>
+                      </div>
   </div>
     
   
@@ -174,7 +163,7 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 28, 2025</p>
+        <p class="date">February 20, 2025</p>
       </div>
     </div>
     
@@ -193,352 +182,46 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
 
 
 
-<p>Language translation was one of the earliest applications of natural language processing (NLP). Today’s large language models have the potential to perform accurate translation in a highly contextually adaptive way. But they also have the potential to hallucinate or fail in surprising ways, while trying to convince you of its own accuracy.</p>
-<section id="my-context" class="level2">
-<h2 class="anchored" data-anchor-id="my-context">My context</h2>
+<p>Even if you’re not <a href="../../posts/reflective-ai/">using AI in reflective mode</a>, I suggest a few principles for having conversations with chatbots.</p>
 <ul>
-<li>use in church for hospitality (so theological accuracy is important)</li>
-<li>I’m a beginner speaker of the target language (so back-translation and transparency is important)</li>
-<li>need for alignment of section markers</li>
+<li><strong>Recollection</strong>. It’s an idol factory. So seek God the wonderful counselor before, during, and after. Ascribe insights to him, not to the AI. Desire his honor and kingdom first.</li>
+<li><em>Cognitive engagement</em>: don’t get distracted.</li>
+<li><em>Integrity</em>. Assume it’s public. Behave in a way that you want other people and other models to learn from.</li>
+<li><em>Humility</em>. Assume both it and you are not just wrong but not even asking the right questions. <em>Prompt for alternative perspectives</em>.</li>
+<li>Keep it from doing things for you that you should do yourself. (“Don’t write for me, instead, …”)</li>
 </ul>
-</section>
-<section id="design-principles" class="level2">
-<h2 class="anchored" data-anchor-id="design-principles">Design principles</h2>
+<p>Here’s how Claude summarized the way that I use chatbots:</p>
 <ul>
-<li><strong>Transparency</strong>: checking intermediate steps, back-translation side-by-side, visibility of alternatives, visibility of prompts</li>
-<li><strong>Control</strong>: user can provide additional context (whether or not it’s a song, other freeform context)
+<li>Supporting reflective and meta-reflective practice&nbsp;
 <ul>
-<li><strong>Editable intermediate steps</strong>: All intermediate outputs are editable, so if the LLM makes an error or the user wants to provide other feedback or guidance at any point, they can simply edit the result of any intermediate step. The app then regenerates any other results that were dependent on that result. The user can also simply choose to <em>regenerate</em> any intermediate step.</li>
-<li><strong>Lightweight structure</strong>: Intermediate results are legible, but mark outputs using machine-readable region markers.</li>
+<li>Synthesizing voice memos and identifying follow-up tasks and insights&nbsp;</li>
+<li>Reflect on how to improve prompts&nbsp;</li>
+<li>Prompt for areas of low confidence&nbsp;</li>
 </ul></li>
-<li><strong>Self-Critique</strong>: to avoid sycophancy, prompt suggests that input steps might have errors</li>
-<li><strong>Iterative Improvement</strong>: can put the output back into the input</li>
-</ul>
-</section>
-<section id="implementation" class="level2">
-<h2 class="anchored" data-anchor-id="implementation">Implementation</h2>
-<p>I <a href="https://github.com/kcarnold/translation-workflow/">implemented this workflow</a> as a <a href="https://docs.streamlit.io/">Streamlit</a> app using the <a href="https://www.anthropic.com/api">Anthropic API</a>. When the user supplies a source text, it executes the following workflow through ordinary sequential code, using Streamlit state management and caching to handle editing and regeneration:</p>
-<ol type="1">
-<li><strong>Analysis</strong>: It analyzes theological concepts, metaphors, and (for songs) syllable stress patterns.</li>
-<li><strong>Literal Translation</strong>: It generates a word-for-word translation, including alternative translations (with back-translations) where needed.</li>
-<li><strong>Clarity</strong>: Refines the literal translation; for songs it additionally considers meter and rhyme scheme. For songs, this stage also generates a syllabification of the translated text.</li>
-<li><strong>Back-translation</strong>: It translates the result so far back to English and shows it side-by-side with the input text.</li>
-<li><strong>Review</strong>: It generates a review of the translation for accuracy, preservation of theological concepts, and cultural appropriateness, and gives suggestions for improvement. The prompt includes “One or more errors may have been introduced in the translation. Identify and correct them.” The review prompt also includes the back-translation and (for songs) syllabification.</li>
-<li><strong>Final Translation</strong>: It generates a final translation based on the review.</li>
-</ol>
-<p>The app then shows the final translation side-by-side with the input text for easy comparison.</p>
-</section>
-<section id="example" class="level2">
-<h2 class="anchored" data-anchor-id="example">Example</h2>
-<p>Suppose we want to translate the song “And Can It Be” into Spanish:</p>
-<pre><code>Verse 1 
-And can it be that I should gain 
-An interest in the Savior's blood? 
-Died He for me, who caused His pain? 
-For me, who Him to death pursued? 
-
-Amazing love! How can it be 
-That Thou my God shouldst die for me? 
-Amazing love! How can it be 
-That Thou, my God, shouldst die for me? </code></pre>
-<p>(For the output below, I had actually provided the entire song.)</p>
-<div class="callout callout-style-default callout-note callout-titled" title="Analysis Results">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Analysis Results
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<pre><code>1. Theological Concepts and Terminology:
-• Substitutionary atonement ("Died He for me") - Christ's sacrificial death
-  - Spanish concept: "expiación sustitutiva"
-• Divine grace ("So free, so infinite His grace") 
-  - Spanish concept: "gracia infinita"
-• Original sin/bondage to sin ("Fast bound in sin and nature's night")
-  - Spanish concept: "esclavitud al pecado"
-• Justification ("clothed in righteousness divine")
-  - Spanish concept: "justificación"/"vestido de su justicia"
-• Adoption/inheritance ("claim the crown")
-  - Spanish concept: "adopción"/"herencia celestial"
-• Scripture references:
-  - Romans 8:1 ("No condemnation")
-  - Ephesians 2:8-9 (salvation by grace)
-  - Colossians 1:18 ("living Head")
-
-2. Cultural References:
-• Imagery of royal court/throne
-• Prison/dungeon imagery from 18th century England
-• References to blood sacrifice, which may need careful handling in some cultures
-
-3. Key Metaphors and Imagery:
-• Imprisonment/chains ("imprisoned spirit," "chains fell off")
-• Light vs. darkness ("nature's night," "dungeon flamed with light")
-• Clothing ("clothed in righteousness")
-• Royal/throne imagery
-• Blood as payment/interest
-
-4. Potential Translation Challenges:
-• Archaic language ("shouldst," "Thou")
-• Complex theological concepts
-• Maintaining meter while preserving meaning
-• Cultural adaptation of prison/dungeon imagery
-• Poetic inversions of normal word order
-
-5. Poetic Devices:
-• Rhyme scheme: AABB in most verses
-• Repetition of "Amazing love! How can it be"
-• Parallel structure in many lines
-• Internal rhyme and assonance
-
-Stress Pattern Analysis (Verse 1):
-"And CAN it BE that I should GAIN"
-"An INT'rest IN the SAV-ior's BLOOD"
-"DIED He for ME, who CAUSED His PAIN"
-"For ME, who HIM to DEATH pur-SUED"
-
-"a-MA-zing LOVE! How CAN it BE"
-"That THOU, my GOD, shouldst DIE for ME"
-
-The meter is primarily iambic, with some variations, typically 4 strong beats per line in the verses and 3 in the refrain.</code></pre>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled" title="Literal Translation">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Literal Translation
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<pre><code>Verse 1
-¿Y puede ser que yo debería ganar
-Un interés en la sangre del Salvador?
-¿Murió Él por mí, quien causó Su dolor?
-¿Por mí, quien Lo persiguió hasta la muerte?
-
-¡Amor asombroso! ¿Cómo puede ser
-Que Tú mi Dios debieras morir por mí?
-¡Amor asombroso! ¿Cómo puede ser
-Que Tú, mi Dios, debieras morir por mí?
-
-[Key terms:
-- "interest": "interés" [alternative: "parte" - meaning "share/portion"]
-- "pursued to death": "persiguió hasta la muerte" [alternative: "llevó a la muerte" - meaning "led to death"]
-- "amazing": "asombroso" [alternatives: "maravilloso", "increíble" - meaning "wonderful", "incredible"]]</code></pre>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled" title="Clarity">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Clarity
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<pre><code>Verse 1
-¿Cómo es posible que yo gané
-Una parte en la sangre de mi Rey?
-¿Murió por mí, que le causé dolor?
-¿Por mí, que lo llevé a morir?
-
-¡Qué grande amor! ¿Cómo puede ser
-Que Tú, mi Dios, murieras por mí?
-¡Qué grande amor! ¿Cómo puede ser
-Que Tú, mi Dios, murieras por mí?</code></pre>
-<p>It also generates a syllabification, which is surprisingly accurate in this case despite the fact that Claude 3.5 is not character-level (it uses a subword tokenizer).</p>
-<pre><code>Verse 1
-¿có-mo es po-SI-ble que yo ga-NÉ
-u-na PAR-te en la SAN-gre de mi REY?
-mu-RIÓ por MÍ, que le cau-SÉ do-LOR?
-¿por MÍ, que lo lle-VÉ a mo-RIR?
-
-¡qué GRAN-de a-MOR! ¿có-mo PUE-de SER
-que TÚ, mi DIOS, mu-RIE-ras por MÍ?
-¡qué GRAN-de a-MOR! ¿có-mo PUE-de SER
-que TÚ, mi DIOS, mu-RIE-ras por MÍ?</code></pre>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled" title="Back-Translation">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Back-Translation
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<pre><code>Verse 1
-How is it possible that I gained
-A part in the blood of my King?
-Did He die for me, who caused Him pain?
-For me, who led Him to die?
-
-What great love! How can it be
-That You, my God, would die for me?
-What great love! How can it be
-That You, my God, would die for me?</code></pre>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled" title="Review">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Review
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<pre><code>Overall Assessment:
-The translation successfully captures the theological depth and emotional weight of this classic hymn while maintaining singability. Here's a detailed analysis:
-
-Strengths:
-1. Theological accuracy is well-maintained, preserving key concepts like redemption, grace, and justification
-2. The emotional progression of the narrative remains intact
-3. The Spanish flows naturally while keeping the poetic quality
-4. The meter and rhyme schemes work well with the original tune
-5. The use of "tú" forms maintains the intimate relationship with God
-
-Areas for Improvement:
-
-1. Verse 1:
-- "que yo gané" could be improved to "alcanzar" to better reflect the theological concept of receiving rather than earning grace
-- Suggested revision: "¿Cómo es posible alcanzar"
-
-... other verses ...
-
-Recommendations:
-1. Consider revising verse 1's opening to use "alcanzar" instead of "gané"
-2. Use "Mis cadenas rotas están" in verse 3 for stronger imagery
-3. Consider tightening verse 4's ending to match the original's structure more closely
-
-Despite these suggestions, the translation is strong and singable, maintaining both theological accuracy and poetic beauty. The adaptations made serve the target language and culture well while preserving the essential message of the hymn.</code></pre>
-</div>
-</div>
-</div>
-<p>Note, with some skepticism, the feel-good judgment at the end.</p>
-<div class="callout callout-style-default callout-note callout-titled" title="Final Translation">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Final Translation
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>I’ll include the whole song here for anyone interested.</p>
-<pre><code>Verse 1
-¿Cómo es posible alcanzar
-Una parte en la sangre de mi Rey?
-¿Murió por mí, que le causé dolor?
-¿Por mí, que lo llevé a morir?
-
-¡Qué grande amor! ¿Cómo puede ser
-Que Tú, mi Dios, murieras por mí?
-¡Qué grande amor! ¿Cómo puede ser
-Que Tú, mi Dios, murieras por mí?
-
-Verse 2
-Dejó Su trono celestial
-(¡Tan libre y sin fin es Su amor!)
-Se humilló con tanto amor
-Y dio Su sangre, el Salvador
-
-¡Qué inmensa gracia y libertad!
-¡Me encontró en mi oscuridad!
-¡Qué grande amor! ¿Cómo puede ser
-Que Tú, mi Dios, murieras por mí?
-
-Verse 3
-Mi espíritu en prisión yacía,
-Atado en noche y perdición;
-Tu luz brillante me alcanzó,
-Y el calabozo iluminó;
-
-Mis cadenas rotas están;
-Me alcé y decidí seguir
-¡Qué grande amor! ¿Cómo puede ser
-Que Tú, mi Dios, murieras por mí?
-
-Verse 4
-Ya no hay temor ni condenación;
-¡Jesús, y todo en Él, es mío!
-En Él yo vivo, mi Salvador,
-Vestido en Su justicia estoy,
-
-Con confianza llegaré
-Al trono eterno, y por Jesús
-La corona obtendré
-
-¡Qué grande amor! ¿Cómo puede ser
-Que Tú, mi Dios, murieras por mí?
-¡Qué grande amor! ¿Cómo puede ser
-Que Tú, mi Dios, murieras por mí?</code></pre>
-</div>
-</div>
-</div>
-</section>
-<section id="challenges" class="level2">
-<h2 class="anchored" data-anchor-id="challenges">Challenges</h2>
+<li>Iterative exploration&nbsp;
 <ul>
-<li><strong>Meter</strong>: often made translations that were very metrically off; addressed by adding meter prompt</li>
-<li><strong>Self-Assessment Hallucination</strong>: An earlier revision included numeric scores in the review, but I found them to be meaningless. In general we should be skeptical of numeric ratings from LLMs, especially when the rating is generated before the rationale (since it must rationalize the rating it generated).</li>
-</ul>
-</section>
-<section id="next-steps" class="level2">
-<h2 class="anchored" data-anchor-id="next-steps">Next Steps</h2>
-<ul>
-<li><strong>Systematic Evaluation</strong></li>
-<li><strong>Simplify flow</strong>: do we need to have the “literal translation” step? Can we evaluate whether it helps or hurts?</li>
-<li><strong>Interactivity</strong>
-<ul>
-<li>Alternatives are currently displayed as static text; they should be interactive</li>
-<li>Perhaps one could simply have a <em>conversation</em> around the translation, with continuously updating back-translation and contextualized (sidebar comments?) critique?
-<ul>
-<li>The conversation could include tool calls for suggesting translation updates, context updates, etc.</li>
-<li>Comments could have conversations attached to them; there could also be an overall conversation.</li>
-<li>The translation could simply be editable by both the user and the LLM; the LLM could perhaps see a history of what changes the user had made (or maybe both “author”s’ changes show up as “tracked changes” until approved)</li>
+<li>Refining rough ideas&nbsp;</li>
+<li>Trying different organizational structures&nbsp;</li>
+<li>Many conversations are many steps not one-shot interactions (build on, challenge, iteratively refine an artifact&nbsp;</li>
 </ul></li>
-</ul></li>
-<li><strong>Working with rights holders</strong>: Currently, it would only be legal to distribute the outputs of this tool when applied to public-domain songs (of which there are many), but I would like to work with authors and rights-holders of songs to</li>
-</ul>
-</section>
-<section id="related-work" class="level2">
-<h2 class="anchored" data-anchor-id="related-work">Related Work</h2>
+<li>Teaching&nbsp;
 <ul>
-<li>Predictive Translation Memory</li>
-<li>Agentic Workflows</li>
-<li>Langchain / langflow</li>
-<li>ChatGPT Canvas</li>
+<li>Analyze alignment between objectives and materials&nbsp;</li>
+<li>Iterating on course structure, progression, policies, assessments&nbsp;</li>
+<li>Suggest reflection questions for students&nbsp;</li>
+<li>Identifying materials in my library that can support my current objectives&nbsp;</li>
+<li>Exploring ways to scaffold student learning&nbsp;</li>
+<li>Identifying potential confusions, misunderstandings, or difficulties&nbsp;</li>
+</ul></li>
+<li>Translation (for multilingual hospitality at church)&nbsp;
+<ul>
+<li>Theological sensitivity&nbsp;</li>
+<li>Back-translation to verify accuracy&nbsp;</li>
+<li>Consideration of singability of song translations&nbsp;</li>
+</ul></li>
 </ul>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
