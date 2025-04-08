@@ -276,7 +276,7 @@ Que Tú, mi Dios, murieras por mí?
 - **Simplify flow**: do we need to have the "literal translation" step? Can we evaluate whether it helps or hurts?
 - **Interactivity**
     - Alternatives are currently displayed as static text; they should be interactive
-    - Perhaps one could simply have a conversation around the translation, with continuously updating back-translation and contextualized (sidebar comments?) critique?
+    - Perhaps one could simply have a *conversation* around the translation, with continuously updating back-translation and contextualized (sidebar comments?) critique?
         - The conversation could include tool calls for suggesting translation updates, context updates, etc.
         - Comments could have conversations attached to them; there could also be an overall conversation.
         - The translation could simply be editable by both the user and the LLM; the LLM could perhaps see a history of what changes the user had made (or maybe both "author"s' changes show up as "tracked changes" until approved)
