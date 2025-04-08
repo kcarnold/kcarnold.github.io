@@ -16,6 +16,7 @@
       "/posts/magical-thinking/index.html",
       "/posts/detect-gpt/index.html",
       "/posts/ml-gratitude/index.html",
+      "/posts/why-school/index.html",
       "/posts/llm-paper-reviewing/index.html",
       "/posts/instead/index.html",
       "/posts/simplify-context/index.html",
@@ -46,6 +47,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/why-school/index.html",
       "/posts/llm-paper-reviewing/index.html",
       "/posts/translation-workflow/index.html",
       "/posts/reflective-practice/index.html",
