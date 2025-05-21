@@ -9,7 +9,7 @@
 <link>https://kenarnold.org/</link>
 <atom:link href="https://kenarnold.org/index.xml" rel="self" type="application/rss+xml"/>
 <description>Thinking About People with AI</description>
-<generator>quarto-1.6.43</generator>
+<generator>quarto-1.7.31</generator>
 <lastBuildDate>Thu, 27 Mar 2025 04:00:00 GMT</lastBuildDate>
 <item>
   <title>Why the University?</title>
@@ -151,6 +151,189 @@
 <li>I’m a beginner speaker of the target language (so back-translation and transparency is important)</li>
 <li>need for alignment of section markers</li>
 </ul>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<svg width="672" height="480" viewbox="0.00 0.00 420.96 565.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 561)">
+<title>TranslationWorkflow</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-561 416.96,-561 416.96,4 -4,4"></polygon>
+<!-- Input -->
+<g id="node1" class="node">
+<title>Input</title>
+<ellipse fill="lightblue" stroke="black" cx="265.85" cy="-539" rx="63.2" ry="18"></ellipse>
+<text text-anchor="middle" x="265.85" y="-534.8" font-family="Arial" font-size="14.00">Source Text</text>
+</g>
+<!-- Analysis -->
+<g id="node2" class="node">
+<title>Analysis</title>
+<polygon fill="lightblue" stroke="black" points="398.36,-483.8 133.34,-483.8 133.34,-442.6 398.36,-442.6 398.36,-483.8"></polygon>
+<text text-anchor="middle" x="265.85" y="-467.4" font-family="Arial" font-size="14.00">Analysis</text>
+<text text-anchor="middle" x="265.85" y="-450.6" font-family="Arial" font-size="14.00">Theological concepts, metaphors, meter</text>
+</g>
+<!-- Input&#45;&gt;Analysis -->
+<g id="edge1" class="edge">
+<title>Input-&gt;Analysis</title>
+<path fill="none" stroke="black" d="M265.85,-520.88C265.85,-512.93 265.85,-503.23 265.85,-494.12"></path>
+<polygon fill="black" stroke="black" points="269.35,-493.83 265.85,-483.83 262.35,-493.83 269.35,-493.83"></polygon>
+</g>
+<!-- Literal -->
+<g id="node3" class="node">
+<title>Literal</title>
+<polygon fill="lightblue" stroke="black" points="370.57,-394.2 161.12,-394.2 161.12,-353 370.57,-353 370.57,-394.2"></polygon>
+<text text-anchor="middle" x="265.85" y="-377.8" font-family="Arial" font-size="14.00">Literal Translation</text>
+<text text-anchor="middle" x="265.85" y="-361" font-family="Arial" font-size="14.00">Word-for-word with alternatives</text>
+</g>
+<!-- Analysis&#45;&gt;Literal -->
+<g id="edge2" class="edge">
+<title>Analysis-&gt;Literal</title>
+<path fill="none" stroke="black" d="M265.85,-442.32C265.85,-431.12 265.85,-416.91 265.85,-404.4"></path>
+<polygon fill="black" stroke="black" points="269.35,-404.4 265.85,-394.4 262.35,-404.4 269.35,-404.4"></polygon>
+</g>
+<!-- Literal&#45;&gt;Analysis -->
+<g id="edge17" class="edge">
+<title>Literal-&gt;Analysis</title>
+<path fill="none" stroke="red" stroke-dasharray="5,2" d="M272.75,-394.38C274.43,-400.12 276,-406.45 276.85,-412.4 277.78,-418.96 277.23,-425.94 275.98,-432.53"></path>
+<polygon fill="red" stroke="red" points="272.53,-431.91 273.56,-442.45 279.33,-433.57 272.53,-431.91"></polygon>
+<text text-anchor="middle" x="303.98" y="-415.4" font-family="Arial" font-size="10.00" fill="red">Regenerate</text>
+</g>
+<!-- Literal&#45;&gt;Literal -->
+<g id="edge8" class="edge">
+<title>Literal-&gt;Literal</title>
+<path fill="none" stroke="darkgreen" stroke-dasharray="5,2" d="M370.71,-380.44C381.68,-379.1 388.71,-376.82 388.71,-373.6 388.71,-371.54 385.82,-369.86 380.87,-368.57"></path>
+<polygon fill="darkgreen" stroke="darkgreen" points="381.17,-365.07 370.71,-366.76 379.94,-371.96 381.17,-365.07"></polygon>
+<text text-anchor="middle" x="397.33" y="-370.6" font-family="Arial" font-size="10.00" fill="darkgreen">Edit</text>
+</g>
+<!-- Clarity -->
+<g id="node4" class="node">
+<title>Clarity</title>
+<polygon fill="lightblue" stroke="black" points="377.6,-304.6 154.1,-304.6 154.1,-263.4 377.6,-263.4 377.6,-304.6"></polygon>
+<text text-anchor="middle" x="265.85" y="-288.2" font-family="Arial" font-size="14.00">Clarity Refinement</text>
+<text text-anchor="middle" x="265.85" y="-271.4" font-family="Arial" font-size="14.00">Fluid translation, preserves meter</text>
+</g>
+<!-- Literal&#45;&gt;Clarity -->
+<g id="edge3" class="edge">
+<title>Literal-&gt;Clarity</title>
+<path fill="none" stroke="black" d="M265.85,-352.72C265.85,-341.52 265.85,-327.31 265.85,-314.8"></path>
+<polygon fill="black" stroke="black" points="269.35,-314.8 265.85,-304.8 262.35,-314.8 269.35,-314.8"></polygon>
+</g>
+<!-- Clarity&#45;&gt;Literal -->
+<g id="edge16" class="edge">
+<title>Clarity-&gt;Literal</title>
+<path fill="none" stroke="red" stroke-dasharray="5,2" d="M272.75,-304.78C274.43,-310.52 276,-316.85 276.85,-322.8 277.78,-329.36 277.23,-336.34 275.98,-342.93"></path>
+<polygon fill="red" stroke="red" points="272.53,-342.31 273.56,-352.85 279.33,-343.97 272.53,-342.31"></polygon>
+<text text-anchor="middle" x="303.98" y="-325.8" font-family="Arial" font-size="10.00" fill="red">Regenerate</text>
+</g>
+<!-- Clarity&#45;&gt;Clarity -->
+<g id="edge9" class="edge">
+<title>Clarity-&gt;Clarity</title>
+<path fill="none" stroke="darkgreen" stroke-dasharray="5,2" d="M377.61,-290.73C388.68,-289.38 395.72,-287.14 395.72,-284 395.72,-281.94 392.69,-280.27 387.48,-278.98"></path>
+<polygon fill="darkgreen" stroke="darkgreen" points="388.06,-275.53 377.61,-277.27 386.87,-282.43 388.06,-275.53"></polygon>
+<text text-anchor="middle" x="404.34" y="-281" font-family="Arial" font-size="10.00" fill="darkgreen">Edit</text>
+</g>
+<!-- BackTrans -->
+<g id="node5" class="node">
+<title>BackTrans</title>
+<polygon fill="lightblue" stroke="black" points="340.12,-215 191.57,-215 191.57,-173.8 340.12,-173.8 340.12,-215"></polygon>
+<text text-anchor="middle" x="265.85" y="-198.6" font-family="Arial" font-size="14.00">Back-Translation</text>
+<text text-anchor="middle" x="265.85" y="-181.8" font-family="Arial" font-size="14.00">Compare with source</text>
+</g>
+<!-- Clarity&#45;&gt;BackTrans -->
+<g id="edge4" class="edge">
+<title>Clarity-&gt;BackTrans</title>
+<path fill="none" stroke="black" d="M265.85,-263.12C265.85,-251.92 265.85,-237.71 265.85,-225.2"></path>
+<polygon fill="black" stroke="black" points="269.35,-225.2 265.85,-215.2 262.35,-225.2 269.35,-225.2"></polygon>
+</g>
+<!-- BackTrans&#45;&gt;Clarity -->
+<g id="edge15" class="edge">
+<title>BackTrans-&gt;Clarity</title>
+<path fill="none" stroke="red" stroke-dasharray="5,2" d="M272.75,-215.18C274.43,-220.92 276,-227.25 276.85,-233.2 277.78,-239.76 277.23,-246.74 275.98,-253.33"></path>
+<polygon fill="red" stroke="red" points="272.53,-252.71 273.56,-263.25 279.33,-254.37 272.53,-252.71"></polygon>
+<text text-anchor="middle" x="303.98" y="-236.2" font-family="Arial" font-size="10.00" fill="red">Regenerate</text>
+</g>
+<!-- BackTrans&#45;&gt;BackTrans -->
+<g id="edge10" class="edge">
+<title>BackTrans-&gt;BackTrans</title>
+<path fill="none" stroke="darkgreen" stroke-dasharray="5,2" d="M340.32,-201.8C350.89,-200.61 357.99,-198.14 357.99,-194.4 357.99,-192.01 355.07,-190.13 350.2,-188.78"></path>
+<polygon fill="darkgreen" stroke="darkgreen" points="350.78,-185.33 340.32,-187 349.54,-192.22 350.78,-185.33"></polygon>
+<text text-anchor="middle" x="366.6" y="-191.4" font-family="Arial" font-size="10.00" fill="darkgreen">Edit</text>
+</g>
+<!-- Review -->
+<g id="node6" class="node">
+<title>Review</title>
+<polygon fill="lightblue" stroke="black" points="357.93,-125.4 173.77,-125.4 173.77,-84.2 357.93,-84.2 357.93,-125.4"></polygon>
+<text text-anchor="middle" x="265.85" y="-109" font-family="Arial" font-size="14.00">Review</text>
+<text text-anchor="middle" x="265.85" y="-92.2" font-family="Arial" font-size="14.00">Accuracy, theology, culture</text>
+</g>
+<!-- BackTrans&#45;&gt;Review -->
+<g id="edge5" class="edge">
+<title>BackTrans-&gt;Review</title>
+<path fill="none" stroke="black" d="M265.85,-173.52C265.85,-162.32 265.85,-148.11 265.85,-135.6"></path>
+<polygon fill="black" stroke="black" points="269.35,-135.6 265.85,-125.6 262.35,-135.6 269.35,-135.6"></polygon>
+</g>
+<!-- Review&#45;&gt;BackTrans -->
+<g id="edge14" class="edge">
+<title>Review-&gt;BackTrans</title>
+<path fill="none" stroke="red" stroke-dasharray="5,2" d="M273.56,-125.55C276.25,-134.64 278.27,-145.61 276.85,-155.6 276.46,-158.3 275.93,-161.07 275.31,-163.83"></path>
+<polygon fill="red" stroke="red" points="271.89,-163.06 272.75,-173.62 278.66,-164.83 271.89,-163.06"></polygon>
+<text text-anchor="middle" x="303.98" y="-146.6" font-family="Arial" font-size="10.00" fill="red">Regenerate</text>
+</g>
+<!-- Review&#45;&gt;Review -->
+<g id="edge11" class="edge">
+<title>Review-&gt;Review</title>
+<path fill="none" stroke="darkgreen" stroke-dasharray="5,2" d="M358.16,-111.84C368.9,-110.54 375.89,-108.19 375.89,-104.8 375.89,-102.63 373.02,-100.88 368.14,-99.57"></path>
+<polygon fill="darkgreen" stroke="darkgreen" points="368.63,-96.1 358.16,-97.76 367.38,-102.99 368.63,-96.1"></polygon>
+<text text-anchor="middle" x="384.5" y="-101.8" font-family="Arial" font-size="10.00" fill="darkgreen">Edit</text>
+</g>
+<!-- Final -->
+<g id="node7" class="node">
+<title>Final</title>
+<ellipse fill="lightblue" stroke="black" cx="265.85" cy="-18" rx="82.34" ry="18"></ellipse>
+<text text-anchor="middle" x="265.85" y="-13.8" font-family="Arial" font-size="14.00">Final Translation</text>
+</g>
+<!-- Review&#45;&gt;Final -->
+<g id="edge6" class="edge">
+<title>Review-&gt;Final</title>
+<path fill="none" stroke="black" d="M265.85,-84.13C265.85,-72.93 265.85,-58.72 265.85,-46.44"></path>
+<polygon fill="black" stroke="black" points="269.35,-46.26 265.85,-36.26 262.35,-46.26 269.35,-46.26"></polygon>
+</g>
+<!-- Final&#45;&gt;Review -->
+<g id="edge13" class="edge">
+<title>Final-&gt;Review</title>
+<path fill="none" stroke="red" stroke-dasharray="5,2" d="M272.4,-36.2C274.22,-41.79 275.94,-48.08 276.85,-54 277.85,-60.55 277.33,-67.52 276.09,-74.11"></path>
+<polygon fill="red" stroke="red" points="272.64,-73.5 273.66,-84.04 279.44,-75.16 272.64,-73.5"></polygon>
+<text text-anchor="middle" x="303.98" y="-57" font-family="Arial" font-size="10.00" fill="red">Regenerate</text>
+</g>
+<!-- Final&#45;&gt;Final -->
+<g id="edge12" class="edge">
+<title>Final-&gt;Final</title>
+<path fill="none" stroke="darkgreen" stroke-dasharray="5,2" d="M340.74,-25.55C355.64,-24.7 366.27,-22.18 366.27,-18 366.27,-14.83 360.17,-12.62 350.72,-11.36"></path>
+<polygon fill="darkgreen" stroke="darkgreen" points="351.01,-7.87 340.74,-10.45 350.38,-14.84 351.01,-7.87"></polygon>
+<text text-anchor="middle" x="374.89" y="-15" font-family="Arial" font-size="10.00" fill="darkgreen">Edit</text>
+</g>
+<!-- Context -->
+<g id="node8" class="node">
+<title>Context</title>
+<polygon fill="lightyellow" stroke="black" points="91.54,-481.2 0.15,-481.2 0.15,-445.2 97.54,-445.2 97.54,-475.2 91.54,-481.2"></polygon>
+<polyline fill="none" stroke="black" points="91.54,-481.2 91.54,-475.2 "></polyline>
+<polyline fill="none" stroke="black" points="97.54,-475.2 91.54,-475.2 "></polyline>
+<text text-anchor="middle" x="48.85" y="-459" font-family="Arial" font-size="14.00">User Context</text>
+</g>
+<!-- Context&#45;&gt;Analysis -->
+<g id="edge7" class="edge">
+<title>Context-&gt;Analysis</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M97.59,-463.2C106,-463.2 114.41,-463.2 122.82,-463.2"></path>
+<polygon fill="black" stroke="black" points="123.08,-466.7 133.08,-463.2 123.08,-459.7 123.08,-466.7"></polygon>
+</g>
+</g>
+</svg>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 </section>
 <section id="design-principles" class="level2">
 <h2 class="anchored" data-anchor-id="design-principles">Design principles</h2>
@@ -1271,7 +1454,21 @@ font-style: inherit;">print</span>(my_text <span class="op" style="color: #5E5E5
 background-color: null;
 font-style: inherit;">+</span> re.sub(<span class="vs" style="color: #20794D;
 background-color: null;
-font-style: inherit;">r'(?&lt;=\b\w)'</span>, <span class="st" style="color: #20794D;
+font-style: inherit;">r'</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">(</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">?&lt;</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">\b\w</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">)</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'</span>, <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'</span><span class="ch" style="color: #20794D;
 background-color: null;
@@ -1299,7 +1496,25 @@ font-style: inherit;">=</span> re.<span class="bu" style="color: null;
 background-color: null;
 font-style: inherit;">compile</span>(<span class="vs" style="color: #20794D;
 background-color: null;
-font-style: inherit;">r'(?&lt;=[\w,.?]) '</span>)</span>
+font-style: inherit;">r'</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">(</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">?&lt;</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">=</span><span class="pp" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">[</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">\w</span><span class="pp" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">,.?]</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">)</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;"> '</span>)</span>
 <span id="cb4-2"><span class="bu" style="color: null;
 background-color: null;
 font-style: inherit;">print</span>(my_text <span class="op" style="color: #5E5E5E;
@@ -1333,7 +1548,21 @@ font-style: inherit;"># encode the generated text with zero-width non-joiners af
 background-color: null;
 font-style: inherit;">=</span> re.sub(<span class="vs" style="color: #20794D;
 background-color: null;
-font-style: inherit;">r'(?&lt;=\w\b)'</span>, <span class="st" style="color: #20794D;
+font-style: inherit;">r'</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">(</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">?&lt;</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">\w\b</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">)</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'</span>, <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'</span><span class="ch" style="color: #20794D;
 background-color: null;
@@ -1409,7 +1638,23 @@ background-color: null;
 font-style: inherit;">&lt;/div&gt;'</span></span>
 <span id="cb8-7">HTML(pre_line(re.sub(<span class="vs" style="color: #20794D;
 background-color: null;
-font-style: inherit;">r'\b(\w+)\u200c'</span>, format_generated, my_text <span class="op" style="color: #5E5E5E;
+font-style: inherit;">r'</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">\b</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">(</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">\w</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">)</span><span class="ch" style="color: #20794D;
+background-color: null;
+font-style: inherit;">\u200c</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'</span>, format_generated, my_text <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span> encoded_text)))</span></code></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="5">
