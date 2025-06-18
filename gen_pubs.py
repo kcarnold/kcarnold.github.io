@@ -16,7 +16,7 @@ import yaml
 from pathlib import Path
 import re
 
-def load_publications(yaml_file):
+def load_publications(yaml_file: str | Path):
     """Load publications from YAML file"""
     with open(yaml_file, 'r') as f:
         return yaml.safe_load(f)
@@ -30,31 +30,129 @@ def get_existing_pub_dirs(pubs_dir="pubs"):
     
     return {item.name for item in pubs_path.iterdir() if item.is_dir()}
 
+def normalize_title(title, fallback=''):
+    """Normalize title that might be a dict with 'value' key"""
+    if isinstance(title, dict):
+        return title.get('value', fallback)
+    return title or fallback
+
+def normalize_date(date):
+    """Normalize date to string format"""
+    if isinstance(date, int):
+        return str(date)
+    elif isinstance(date, datetime.date):
+        return date.isoformat()
+    return str(date) if date else ''
+
+def normalize_parent(parent):
+    """Extract parent title from parent field (list or dict)"""
+    if not parent:
+        return None
+    
+    if isinstance(parent, list):
+        parent = parent[0] if parent else {}
+    
+    if isinstance(parent, dict) and 'title' in parent:
+        return parent['title']
+    
+    return None
+
 def generate_slug(pub_key, pub_data):
     """Generate URL-friendly slug from publication data"""
-    title = pub_data.get('title', pub_key)
+    title = normalize_title(pub_data.get('title'), pub_key)
     
-    # Handle title that might be a dict with 'value' key
-    if isinstance(title, dict):
-        title = title.get('value', pub_key)
+    # Common words to remove for more meaningful slugs
+    stop_words = {
+        'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with',
+        'by', 'from', 'up', 'about', 'into', 'through', 'during', 'before', 'after',
+        'above', 'below', 'between', 'among', 'the', 'is', 'are', 'was', 'were', 'be',
+        'been', 'being', 'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would',
+        'could', 'should', 'may', 'might', 'must', 'can', 'shall'
+    }
+    
+    # Common abbreviations for technical terms
+    abbreviations = {
+        'natural': 'nat',
+        'language': 'lang',
+        'processing': 'proc',
+        'machine': 'ml',
+        'learning': 'learn',
+        'artificial': 'ai',
+        'intelligence': 'intel',
+        'computer': 'comp',
+        'science': 'sci',
+        'human': 'human',
+        'interaction': 'interact',
+        'interface': 'ui',
+        'user': 'user',
+        'experience': 'exp',
+        'system': 'sys',
+        'model': 'model',
+        'models': 'models',
+        'predictive': 'pred',
+        'collaborative': 'collab',
+        'generation': 'gen',
+        'automatic': 'auto',
+        'evaluation': 'eval',
+        'algorithm': 'algo',
+        'approach': 'approach',
+        'method': 'method',
+        'analysis': 'analysis'
+    }
     
     # Remove special characters and convert to lowercase
     slug = re.sub(r'[^\w\s-]', '', title)
-    slug = re.sub(r'[-\s]+', '-', slug)
-    slug = slug.lower().strip('-')
+    slug = slug.lower().strip()
     
-    # Limit length and add year
-    # Note that date is sometimes a plain number (e.g., 2023)
-    date = pub_data.get('date', '')
-    if isinstance(date, int):
-        date = str(date)
-    elif isinstance(date, datetime.date):
-        date = date.isoformat()
-    year = date[:4]
+    # Split into words
+    words = slug.split()
+    
+    # Filter out stop words and apply abbreviations
+    meaningful_words = []
+    for word in words:
+        if word not in stop_words:
+            # Apply abbreviation if available, otherwise keep original
+            abbreviated = abbreviations.get(word, word)
+            meaningful_words.append(abbreviated)
+    
+    # Join words with hyphens
+    slug = '-'.join(meaningful_words)
+    
+    # Get year for suffix
+    date_str = normalize_date(pub_data.get('date', ''))
+    year = date_str[:4] if date_str else ''
+    
+    # Smart truncation: respect word boundaries
+    max_length = 45  # More generous length limit
     if year:
-        slug = f"{slug[:30]}-{year}".strip('-')
+        # Reserve space for year suffix
+        available_length = max_length - len(year) - 1  # -1 for the hyphen
     else:
-        slug = slug[:30].strip('-')
+        available_length = max_length
+    
+    if len(slug) > available_length:
+        # Find the last complete word that fits
+        words = slug.split('-')
+        truncated_words = []
+        current_length = 0
+        
+        for word in words:
+            # Check if adding this word would exceed the limit
+            word_length = len(word) + (1 if truncated_words else 0)  # +1 for hyphen
+            if current_length + word_length <= available_length:
+                truncated_words.append(word)
+                current_length += word_length
+            else:
+                break
+        
+        slug = '-'.join(truncated_words) if truncated_words else words[0][:available_length]
+    
+    # Add year suffix
+    if year:
+        slug = f"{slug}-{year}"
+    
+    # Clean up any trailing hyphens
+    slug = slug.strip('-')
     
     return slug
 
@@ -81,28 +179,21 @@ def generate_quarto_content(pub_key, pub_data):
     authors = pub_data.get('author', [])
     student_authors, clean_authors = extract_student_authors(authors)
     
-    # Handle title that might be a dict with 'value' key
-    title = pub_data.get('title', '')
-    if isinstance(title, dict):
-        title = title.get('value', '')
+    title = normalize_title(pub_data.get('title'), '')
+    normalized_date = normalize_date(pub_data.get('date', ''))
+    parent_title = normalize_parent(pub_data.get('parent'))
     
     # Build frontmatter
     frontmatter = {
         'title': title,
         'authors': clean_authors,
-        'date': pub_data.get('date', ''),
+        'date': normalized_date,
         'categories': ["HCI", "NLP"]  # Default, customize as needed
     }
     
     # Add optional fields
-
-    # Handle 'parent' as a list or dict
-    parent = pub_data.get('parent')
-    if parent:
-        if isinstance(parent, list):
-            parent = parent[0] if parent else {}
-        if isinstance(parent, dict) and 'title' in parent:
-            frontmatter['publication'] = parent['title']
+    if parent_title:
+        frontmatter['publication'] = parent_title
     
     if 'abstract' in pub_data:
         frontmatter['abstract'] = pub_data['abstract']
@@ -129,20 +220,14 @@ def generate_quarto_content(pub_key, pub_data):
     
     # Add publication link
     if 'url' in pub_data:
-        # Handle 'parent' as a list or dict
-        parent = pub_data.get('parent')
-        venue = 'Publication'  # Default value
-        if parent:
-            if isinstance(parent, list):
-                parent = parent[0] if parent else {}
-            if isinstance(parent, dict) and 'title' in parent:
-                venue = parent['title']
+        venue = parent_title or 'Publication'
         content += f"[PDF]({pub_data['url']}) {venue}\n\n"
     
     # Add abstract
     content += "## Abstract\n\n"
-    if 'abstract' in pub_data:
-        content += f"{pub_data['abstract']}\n"
+    abstract = pub_data.get('abstract')
+    if abstract:
+        content += f"{abstract}\n"
     else:
         content += "*Abstract to be added*\n"
     
@@ -163,7 +248,7 @@ def create_publication_page(pub_key, pub_data, slug, pubs_dir="pubs"):
     print(f"Created: {pub_dir}")
     return pub_dir
 
-def sync_publications(yaml_file="my_pubs.yml"):
+def sync_publications(yaml_file: str | Path = "my_pubs.yml"):
     """Main sync function"""
     print(f"Syncing publications from {yaml_file}...")
 
@@ -192,4 +277,6 @@ def sync_publications(yaml_file="my_pubs.yml"):
         print("3. Commit changes to git")
 
 if __name__ == "__main__":
-    sync_publications()
+    default_yaml = "~/Dropbox/Ken/Docs/CV/my_pubs.yml"
+    default_yaml = Path(default_yaml).expanduser()
+    sync_publications(yaml_file=default_yaml)
