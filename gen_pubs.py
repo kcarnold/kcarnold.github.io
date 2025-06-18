@@ -67,7 +67,7 @@ def generate_slug(pub_key, pub_data):
         'by', 'from', 'up', 'about', 'into', 'through', 'during', 'before', 'after',
         'above', 'below', 'between', 'among', 'the', 'is', 'are', 'was', 'were', 'be',
         'been', 'being', 'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would',
-        'could', 'should', 'may', 'might', 'must', 'can', 'shall'
+        'could', 'should', 'may', 'might', 'must', 'can', 'shall', 'we'
     }
     
     # Common abbreviations for technical terms
@@ -167,12 +167,36 @@ def extract_student_authors(authors):
     for author in authors:
         if '*' in author:
             clean_name = author.replace('*', '').strip()
-            student_authors.append(clean_name)
-            clean_authors.append(clean_name)
+            formatted_name = format_author_name(clean_name)
+            student_authors.append(formatted_name)
+            clean_authors.append(formatted_name)
         else:
-            clean_authors.append(author)
+            formatted_name = format_author_name(author)
+            clean_authors.append(formatted_name)
     
     return student_authors, clean_authors
+
+def format_author_name(name):
+    """Convert author name from 'Last, First' to 'First Last' format if needed"""
+    name = name.strip()
+    
+    # Check if name is in "Last, First" format (contains a comma)
+    if ',' in name:
+        parts = name.split(',', 1)  # Split on first comma only
+        if len(parts) == 2:
+            last_name = parts[0].strip()
+            first_name = parts[1].strip()
+            return f"{first_name} {last_name}"
+    
+    # If no comma or invalid format, return as-is
+    return name
+
+def normalize_author_names(authors):
+    """Normalize all author names to 'First Last' format"""
+    if isinstance(authors, str):
+        authors = [authors]
+    
+    return [format_author_name(author) for author in authors]
 
 def generate_quarto_content(pub_key, pub_data):
     """Generate complete Quarto file content"""
