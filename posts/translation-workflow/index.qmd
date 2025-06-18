@@ -6,6 +6,41 @@ description: "Using generative AI in a transparent workflow for high-quality tra
 featured: 0
 ---
 
+::: {.content-hidden}
+Rhetorical Situation
+
+**Audience:** Church leaders who need reliable translations but may not have technical expertise. This should be front and center in your introduction - make it clear you're addressing their specific needs.
+
+**Problem Statement:** Your article would benefit from a clearer articulation of the specific problems you're solving:
+
+1. Ensuring theological accuracy in translations, especially for songs with complex metaphors
+2. Providing transparency for non-fluent speakers to verify quality
+3. Maintaining poetic elements (meter, rhyme) in translations of worship materials
+4. Giving control to users without requiring technical expertise
+
+**Call to Action:** Since you want readers to use your workflow, consider:
+
+- Adding a clear invitation to request access
+- Explaining what they would need to use it (technical requirements)
+- Suggesting use cases beyond the example shown
+
+**Technical Level:** For a non-technical church leader audience, consider:
+
+- Reducing implementation details in favor of practical applications
+- Explaining benefits in ministry terms rather than technical terms
+- Adding sidebars for those interested in technical details
+
+**Key Contribution:** Your design principles are valuable, but they should be more explicitly connected to church leaders' needs. Consider framing them as solutions to common translation problems in ministry contexts.
+
+**Connection to Broader Work:** The "hospitality" angle could be strengthened - explain how better translations create more welcoming environments for diverse congregations.
+
+**Examples:** The song example is compelling but could be strengthened by:
+
+1. Explaining why this song presents specific translation challenges
+2. Highlighting moments where the workflow caught or prevented common errors
+3. Adding a brief testimonial or use case from an actual church context
+:::
+
 Language translation was one of the earliest applications of natural language processing (NLP). Today's large language models have the potential to perform accurate translation in a highly contextually adaptive way. But they also have the potential to hallucinate or fail in surprising ways, while trying to convince you of its own accuracy.
 
 ## My context
@@ -13,6 +48,50 @@ Language translation was one of the earliest applications of natural language pr
 - use in church for hospitality (so theological accuracy is important)
 - I'm a beginner speaker of the target language (so back-translation and transparency is important)
 - need for alignment of section markers
+
+```{dot}
+digraph TranslationWorkflow {
+  // Node styling
+  node [shape=box, style=filled, fillcolor=lightblue, fontname="Arial"];
+  edge [fontname="Arial", fontsize=10];
+  
+  // Main workflow nodes
+  Input [label="Source Text", shape=ellipse];
+  Analysis [label="Analysis\nTheological concepts, metaphors, meter"];
+  Literal [label="Literal Translation\nWord-for-word with alternatives"];
+  Clarity [label="Clarity Refinement\nFluid translation, preserves meter"];
+  BackTrans [label="Back-Translation\nCompare with source"];
+  Review [label="Review\nAccuracy, theology, culture"];
+  Final [label="Final Translation", shape=ellipse];
+  
+  // Context node
+  Context [label="User Context", shape=note, fillcolor=lightyellow];
+  
+  // Main workflow
+  Input -> Analysis -> Literal -> Clarity -> BackTrans -> Review -> Final;
+  
+  // Context influence
+  Context -> Analysis [style=dashed];
+  
+  // Edit loops (using different color)
+  Literal -> Literal [label="Edit", color=darkgreen, fontcolor=darkgreen, style=dashed];
+  Clarity -> Clarity [label="Edit", color=darkgreen, fontcolor=darkgreen, style=dashed];
+  BackTrans -> BackTrans [label="Edit", color=darkgreen, fontcolor=darkgreen, style=dashed];
+  Review -> Review [label="Edit", color=darkgreen, fontcolor=darkgreen, style=dashed];
+  Final -> Final [label="Edit", color=darkgreen, fontcolor=darkgreen, style=dashed];
+  
+  // Regeneration loops
+  Final -> Review [label="Regenerate", color=red, fontcolor=red, constraint=false, style=dashed];
+  Review -> BackTrans [label="Regenerate", color=red, fontcolor=red, constraint=false, style=dashed];
+  BackTrans -> Clarity [label="Regenerate", color=red, fontcolor=red, constraint=false, style=dashed];
+  Clarity -> Literal [label="Regenerate", color=red, fontcolor=red, constraint=false, style=dashed];
+  Literal -> Analysis [label="Regenerate", color=red, fontcolor=red, constraint=false, style=dashed];
+  
+  // Layout hints
+  {rank=same; Context Analysis}
+}
+```
+
 
 ## Design principles
 
