@@ -1,0 +1,37 @@
+---
+abstract: 'This paper explores interaction designs for generative AI interfaces that
+  necessitate human involvement throughout the generation process. We argue that such
+  interfaces can promote cognitive engagement, agency, and thoughtful decision-making.
+  Through a case study in text revision, we present and analyze two interaction techniques:
+  (1) using a predictive-text interaction to type the assistant''s response to a revision
+  request, and (2) highlighting potential edit opportunities in a document. Our implementations
+  demonstrate how these approaches reveal the landscape of writing possibilities and
+  enable fine-grained control. We discuss implications for human-AI writing partnerships
+  and future interaction design directions. '
+authors:
+- Kenneth C. Arnold
+- Jiho Kim
+categories:
+- HCI
+- NLP
+date: '2025-05-04'
+publication: Proceedings of the  The Fourth Workshop on Intelligent and Interactive
+  Writing Assistants (In2Writing), co-located with The 2025 Annual Conference of the
+  Nations of the Americas Chapter of the Association for Computational Linguistics
+  (NAACL 2025)
+title: Interaction-Required Suggestions for Control, Ownership, and Awareness in Human-AI
+  Co-Writing
+url_pdf: https://arxiv.org/abs/2504.08726
+---
+
+::: {.callout-important}
+Note: Jiho Kim is an undergraduate student
+:::
+
+![](featured.png)
+
+[PDF](https://arxiv.org/abs/2504.08726) Proceedings of the  The Fourth Workshop on Intelligent and Interactive Writing Assistants (In2Writing), co-located with The 2025 Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics (NAACL 2025)
+
+## Abstract
+
+This paper explores interaction designs for generative AI interfaces that necessitate human involvement throughout the generation process. We argue that such interfaces can promote cognitive engagement, agency, and thoughtful decision-making. Through a case study in text revision, we present and analyze two interaction techniques: (1) using a predictive-text interaction to type the assistant's response to a revision request, and (2) highlighting potential edit opportunities in a document. Our implementations demonstrate how these approaches reveal the landscape of writing possibilities and enable fine-grained control. We discuss implications for human-AI writing partnerships and future interaction design directions. 
