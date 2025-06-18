@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-05-04">
+<meta name="dcterms.date" content="2008-12-31">
 
-<title>Interaction-Required Suggestions for Control, Ownership, and Awareness in Human-AI Co-Writing – Ken Arnold (Calvin U)</title>
+<title>An interface for targeted collection of common sense knowledge using a mixture model – Ken Arnold (Calvin U)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -152,7 +152,7 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Interaction-Required Suggestions for Control, Ownership, and Awareness in Human-AI Co-Writing</h1>
+<h1 class="title">An interface for targeted collection of common sense knowledge using a mixture model</h1>
   <div class="quarto-categories">
     <div class="quarto-category">HCI</div>
     <div class="quarto-category">NLP</div>
@@ -166,15 +166,19 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
     <div>
     <div class="quarto-title-meta-heading">Authors</div>
     <div class="quarto-title-meta-contents">
-             <p>Kenneth C. Arnold </p>
-             <p>Jiho Kim </p>
+             <p>Speer, Robyn </p>
+             <p>Krishnamurthy, Jayant </p>
+             <p>Havasi, Catherine </p>
+             <p>Smith, Dustin </p>
+             <p>Lieberman, Henry </p>
+             <p>Arnold, Kenneth C. </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 4, 2025</p>
+      <p class="date">December 31, 2008</p>
     </div>
   </div>
   
@@ -184,7 +188,7 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
 <div>
   <div class="abstract">
     <div class="block-title">Abstract</div>
-    This paper explores interaction designs for generative AI interfaces that necessitate human involvement throughout the generation process. We argue that such interfaces can promote cognitive engagement, agency, and thoughtful decision-making. Through a case study in text revision, we present and analyze two interaction techniques: (1) using a predictive-text interaction to type the assistant’s response to a revision request, and (2) highlighting potential edit opportunities in a document. Our implementations demonstrate how these approaches reveal the landscape of writing possibilities and enable fine-grained control. We discuss implications for human-AI writing partnerships and future interaction design directions.
+    We present a game-based interface for acquiring common sense knowledge. In addition to being interactive and entertaining, our interface guides the knowledge acquisition process to learn about the most salient characteristics of a particular concept. We use statistical classification methods to discover the most informative characteristics in the Open Mind Common Sense knowledge base, and use these characteristics to play a game of 20 Questions with the user. Our interface also allows users to enter knowledge more quickly than a more traditional knowledge-acquisition interface. An evaluation showed that users enjoyed the game and that it increased the speed of knowledge acquisition.
   </div>
 </div>
 
@@ -192,37 +196,11 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
 </header>
 
 
-<div class="columns">
-<div class="column">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="highlight-edits.png" class="img-fluid figure-img"></p>
-<figcaption>Highlight Goal-Directed Edit Locations</figcaption>
-</figure>
-</div>
-</div><div class="column">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="predictive-rewrite.png" class="img-fluid figure-img"></p>
-<figcaption>Rewrite with Predictive Text</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<ul>
-<li><a href="https://arxiv.org/abs/2504.08726">PDF</a> | the Fourth Workshop on Intelligent and Interactive Writing Assistants (<a href="https://in2writing.glitch.me/">In2Writing 2025</a>), co-located with <a href="https://2025.naacl.org/">NAACL 2025</a></li>
-<li><a href="https://huggingface.co/spaces/CalvinU/writing-prototypes">Try it yourself</a></li>
-<li><a href="https://github.com/AIToolsLab/writing-prototypes">Code</a></li>
-<li><a href="https://docs.google.com/presentation/d/1WVWa32uvPxat12nuemBX2Pjo19EAKnUKbwjaGpkOR_M/edit?usp=sharing">Presentation Slides</a></li>
-</ul>
-<p>Consider a revision task, e.g,. a writer trying to adapt their work for a non-expert audience. An LLM can be used in at least 3 different ways for a task like this: directly generating the complete revised document (requiring no direct interaction), providing the revision as predictive text for the writer one word at a time (showing incremental contextual alternatives and requiring choices at each step), or showing the writer’s original document annotated with alternative words the LLM might generate if generating that document (focusing human attention and requiring the writer to make any edits themselves).</p>
-<p>A modern LLM like ChatGPT is almost always used in a turn-taking interaction, using APIs that return a complete “assistant” response. These APIs hide the true form of the model—a conditional distribution over next tokens. Interfacing with the model at this lower level enables a wider variety of interactive systems, such as interactively constructing a revised text or visualizing alternatives to a given text.</p>
-<p>In this work-in-progress, we present two new interactive interfaces for writing support powered by direct access to the conditional distributions computed by an LLM. Both start with the writer stating a revision goal that they would like to enact, such as “Make this paragraph clear and concise”. (The interface offers a range of suggested goals.) Both interactions use this goal as a prompt to an instruction-tuned (“chatbot”) language model—but then rather than generating a complete assistant response (model.generate()), they inject interaction into the generation process.</p>
-<p>The first interaction highlights words in the document that the LLM would be likely to change if given the user’s goal as a prompt. Crucially, it does not make the edits itself, but only shows the writer areas where they could focus their attention—and, if desired, offers one possible alternative direction in each location.</p>
-<p>In the second interaction, the writer retypes their own document, but with text predictions based on an LLM’s next-word probabilities. For example, I wrote this paragraph by dictating a rough explanation into a textbox, then I typed out the refined text using predictive suggestions from the LLM prompted to “Rewrite this document to be clear and concise”. Unlike in a chatbot interaction, I maintain full control over each word, but unlike traditional predictive text, the suggestions are highly specific because they are derived from what I’d previously dictated.</p>
+<p><img src="featured.png" class="img-fluid"></p>
+<p><a href="https://doi.org/10.1145/1502650.1502672">PDF</a> Proceedings of the 14th International Conference on Intelligent User Interfaces</p>
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
-<p>This paper explores interaction designs for generative AI interfaces that necessitate human involvement throughout the generation process. We argue that such interfaces can promote cognitive engagement, agency, and thoughtful decision-making. Through a case study in text revision, we present and analyze two interaction techniques: (1) using a predictive-text interaction to type the assistant’s response to a revision request, and (2) highlighting potential edit opportunities in a document. Our implementations demonstrate how these approaches reveal the landscape of writing possibilities and enable fine-grained control. We discuss implications for human-AI writing partnerships and future interaction design directions.</p>
+<p>We present a game-based interface for acquiring common sense knowledge. In addition to being interactive and entertaining, our interface guides the knowledge acquisition process to learn about the most salient characteristics of a particular concept. We use statistical classification methods to discover the most informative characteristics in the Open Mind Common Sense knowledge base, and use these characteristics to play a game of 20 Questions with the user. Our interface also allows users to enter knowledge more quickly than a more traditional knowledge-acquisition interface. An evaluation showed that users enjoyed the game and that it increased the speed of knowledge acquisition.</p>
 
 
 </section>

@@ -10,102 +10,74 @@
   </url>
   <url>
     <loc>https://kenarnold.org/pubs/enact-edits/index.html</loc>
-    <lastmod>2024-12-09T16:56:54.165Z</lastmod>
+    <lastmod>2025-06-18T20:51:25.709Z</lastmod>
   </url>
   <url>
-    <loc>https://kenarnold.org/pubs/predictable/index.html</loc>
-    <lastmod>2024-07-23T13:03:35.789Z</lastmod>
+    <loc>https://kenarnold.org/pubs/voice-interact-conversational-ai-2025/index.html</loc>
+    <lastmod>2025-06-18T20:37:55.692Z</lastmod>
   </url>
   <url>
-    <loc>https://kenarnold.org/pubs/iui21-help-writers/index.html</loc>
-    <lastmod>2024-11-17T22:55:59.924Z</lastmod>
+    <loc>https://kenarnold.org/pubs/sentiment-bias/index.html</loc>
+    <lastmod>2024-07-23T13:03:35.793Z</lastmod>
   </url>
   <url>
-    <loc>https://kenarnold.org/static/new_years_2020/new_years_2020.html</loc>
-    <lastmod>2024-07-23T13:03:35.799Z</lastmod>
+    <loc>https://kenarnold.org/pubs/cognitive-engagement/index.html</loc>
+    <lastmod>2024-11-17T22:50:59.575Z</lastmod>
   </url>
   <url>
-    <loc>https://kenarnold.org/index.html</loc>
-    <lastmod>2025-01-14T16:25:53.044Z</lastmod>
+    <loc>https://kenarnold.org/pubs.html</loc>
+    <lastmod>2024-11-17T22:55:52.795Z</lastmod>
   </url>
   <url>
-    <loc>https://kenarnold.org/ideas.html</loc>
-    <lastmod>2024-12-13T17:12:18.744Z</lastmod>
+    <loc>https://kenarnold.org/projects.html</loc>
+    <lastmod>2024-12-09T16:50:11.669Z</lastmod>
   </url>
   <url>
-    <loc>https://kenarnold.org/posts/detect-gpt/index.html</loc>
-    <lastmod>2024-07-23T13:03:35.749Z</lastmod>
+    <loc>https://kenarnold.org/posts/lm-facts/index.html</loc>
+    <lastmod>2024-07-23T13:03:35.753Z</lastmod>
   </url>
   <url>
-    <loc>https://kenarnold.org/posts/lm-hallucinate/index.html</loc>
-    <lastmod>2024-07-23T13:03:35.754Z</lastmod>
+    <loc>https://kenarnold.org/posts/llm-paper-reviewing/index.html</loc>
+    <lastmod>2025-02-07T13:30:28.276Z</lastmod>
   </url>
   <url>
-    <loc>https://kenarnold.org/posts/using-chatbots/index.html</loc>
-    <lastmod>2025-02-20T18:57:01.671Z</lastmod>
+    <loc>https://kenarnold.org/posts/ml-interactives/index.html</loc>
+    <lastmod>2025-04-22T13:11:42.553Z</lastmod>
   </url>
   <url>
-    <loc>https://kenarnold.org/posts/signaling/index.html</loc>
-    <lastmod>2024-07-23T13:03:35.758Z</lastmod>
+    <loc>https://kenarnold.org/posts/mark-generated/index.html</loc>
+    <lastmod>2024-07-23T13:03:35.755Z</lastmod>
   </url>
   <url>
-    <loc>https://kenarnold.org/posts/dim-axis-rank/index.html</loc>
-    <lastmod>2024-07-23T13:03:35.749Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kenarnold.org/posts/why-school/index.html</loc>
-    <lastmod>2025-04-08T15:05:58.774Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kenarnold.org/posts/reflective-practice/index.html</loc>
-    <lastmod>2025-01-23T15:42:44.463Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kenarnold.org/posts/ai-proverbs/index.html</loc>
-    <lastmod>2024-07-23T13:03:35.748Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kenarnold.org/posts/personas/index.html</loc>
-    <lastmod>2024-07-23T13:03:35.757Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kenarnold.org/posts/simplify-context/index.html</loc>
-    <lastmod>2024-07-23T13:03:35.758Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kenarnold.org/posts/self-study/index.html</loc>
-    <lastmod>2024-07-23T13:03:35.757Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kenarnold.org/posts/reflective-communication/index.html</loc>
-    <lastmod>2025-01-31T15:30:58.536Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kenarnold.org/posts/info-decision/index.html</loc>
-    <lastmod>2024-07-23T13:03:35.750Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kenarnold.org/posts/reflective-ai/index.html</loc>
-    <lastmod>2025-01-31T15:26:22.803Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kenarnold.org/posts/knowledge-fusion/index.html</loc>
-    <lastmod>2024-07-23T13:03:35.751Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kenarnold.org/posts/ml-gratitude/index.html</loc>
+    <loc>https://kenarnold.org/posts/mimicry/mimicry.html</loc>
     <lastmod>2024-07-23T13:03:35.756Z</lastmod>
   </url>
   <url>
-    <loc>https://kenarnold.org/posts/honor/index.html</loc>
+    <loc>https://kenarnold.org/posts/risks-of-alignment/index.html</loc>
+    <lastmod>2024-10-03T14:16:45.600Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kenarnold.org/posts/shalom-ia/index.html</loc>
+    <lastmod>2024-07-23T13:03:35.757Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kenarnold.org/posts/ds-workbench/index.html</loc>
     <lastmod>2024-07-23T13:03:35.750Z</lastmod>
   </url>
   <url>
-    <loc>https://kenarnold.org/posts/translation-workflow/index.html</loc>
-    <lastmod>2025-05-12T14:07:54.245Z</lastmod>
+    <loc>https://kenarnold.org/posts/advice/index.html</loc>
+    <lastmod>2024-07-23T13:03:35.748Z</lastmod>
   </url>
   <url>
-    <loc>https://kenarnold.org/posts/major-in-human/index.html</loc>
+    <loc>https://kenarnold.org/posts/debugging/index.html</loc>
+    <lastmod>2024-07-23T13:03:35.749Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kenarnold.org/posts/instead/index.html</loc>
+    <lastmod>2024-07-23T13:03:35.751Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kenarnold.org/posts/map-to-mimic/index.html</loc>
     <lastmod>2024-07-23T13:03:35.755Z</lastmod>
   </url>
   <url>
@@ -113,68 +85,100 @@
     <lastmod>2024-07-23T13:03:35.754Z</lastmod>
   </url>
   <url>
-    <loc>https://kenarnold.org/posts/map-to-mimic/index.html</loc>
+    <loc>https://kenarnold.org/posts/major-in-human/index.html</loc>
     <lastmod>2024-07-23T13:03:35.755Z</lastmod>
   </url>
   <url>
-    <loc>https://kenarnold.org/posts/instead/index.html</loc>
-    <lastmod>2024-07-23T13:03:35.751Z</lastmod>
+    <loc>https://kenarnold.org/posts/translation-workflow/index.html</loc>
+    <lastmod>2025-05-12T14:07:54.245Z</lastmod>
   </url>
   <url>
-    <loc>https://kenarnold.org/posts/debugging/index.html</loc>
-    <lastmod>2024-07-23T13:03:35.749Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kenarnold.org/posts/advice/index.html</loc>
-    <lastmod>2024-07-23T13:03:35.748Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kenarnold.org/posts/ds-workbench/index.html</loc>
+    <loc>https://kenarnold.org/posts/honor/index.html</loc>
     <lastmod>2024-07-23T13:03:35.750Z</lastmod>
   </url>
   <url>
-    <loc>https://kenarnold.org/posts/shalom-ia/index.html</loc>
-    <lastmod>2024-07-23T13:03:35.757Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kenarnold.org/posts/risks-of-alignment/index.html</loc>
-    <lastmod>2024-10-03T14:16:45.600Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kenarnold.org/posts/mimicry/mimicry.html</loc>
+    <loc>https://kenarnold.org/posts/ml-gratitude/index.html</loc>
     <lastmod>2024-07-23T13:03:35.756Z</lastmod>
   </url>
   <url>
-    <loc>https://kenarnold.org/posts/mark-generated/index.html</loc>
-    <lastmod>2024-07-23T13:03:35.755Z</lastmod>
+    <loc>https://kenarnold.org/posts/knowledge-fusion/index.html</loc>
+    <lastmod>2024-07-23T13:03:35.751Z</lastmod>
   </url>
   <url>
-    <loc>https://kenarnold.org/posts/ml-interactives/index.html</loc>
-    <lastmod>2025-04-22T13:11:42.553Z</lastmod>
+    <loc>https://kenarnold.org/posts/reflective-ai/index.html</loc>
+    <lastmod>2025-01-31T15:26:22.803Z</lastmod>
   </url>
   <url>
-    <loc>https://kenarnold.org/posts/llm-paper-reviewing/index.html</loc>
-    <lastmod>2025-02-07T13:30:28.276Z</lastmod>
+    <loc>https://kenarnold.org/posts/info-decision/index.html</loc>
+    <lastmod>2024-07-23T13:03:35.750Z</lastmod>
   </url>
   <url>
-    <loc>https://kenarnold.org/posts/lm-facts/index.html</loc>
-    <lastmod>2024-07-23T13:03:35.753Z</lastmod>
+    <loc>https://kenarnold.org/posts/reflective-communication/index.html</loc>
+    <lastmod>2025-01-31T15:30:58.536Z</lastmod>
   </url>
   <url>
-    <loc>https://kenarnold.org/projects.html</loc>
-    <lastmod>2024-12-09T16:50:11.669Z</lastmod>
+    <loc>https://kenarnold.org/posts/self-study/index.html</loc>
+    <lastmod>2024-07-23T13:03:35.757Z</lastmod>
   </url>
   <url>
-    <loc>https://kenarnold.org/pubs.html</loc>
-    <lastmod>2024-11-17T22:55:52.795Z</lastmod>
+    <loc>https://kenarnold.org/posts/simplify-context/index.html</loc>
+    <lastmod>2024-07-23T13:03:35.758Z</lastmod>
   </url>
   <url>
-    <loc>https://kenarnold.org/pubs/cognitive-engagement/index.html</loc>
-    <lastmod>2024-11-17T22:50:59.575Z</lastmod>
+    <loc>https://kenarnold.org/posts/personas/index.html</loc>
+    <lastmod>2024-07-23T13:03:35.757Z</lastmod>
   </url>
   <url>
-    <loc>https://kenarnold.org/pubs/sentiment-bias/index.html</loc>
-    <lastmod>2024-07-23T13:03:35.793Z</lastmod>
+    <loc>https://kenarnold.org/posts/ai-proverbs/index.html</loc>
+    <lastmod>2024-07-23T13:03:35.748Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kenarnold.org/posts/reflective-practice/index.html</loc>
+    <lastmod>2025-01-23T15:42:44.463Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kenarnold.org/posts/why-school/index.html</loc>
+    <lastmod>2025-04-08T15:05:58.774Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kenarnold.org/posts/dim-axis-rank/index.html</loc>
+    <lastmod>2024-07-23T13:03:35.749Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kenarnold.org/posts/signaling/index.html</loc>
+    <lastmod>2024-07-23T13:03:35.758Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kenarnold.org/posts/using-chatbots/index.html</loc>
+    <lastmod>2025-02-20T18:57:01.671Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kenarnold.org/posts/lm-hallucinate/index.html</loc>
+    <lastmod>2024-07-23T13:03:35.754Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kenarnold.org/posts/detect-gpt/index.html</loc>
+    <lastmod>2024-07-23T13:03:35.749Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kenarnold.org/ideas.html</loc>
+    <lastmod>2024-12-13T17:12:18.744Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kenarnold.org/index.html</loc>
+    <lastmod>2025-01-14T16:25:53.044Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kenarnold.org/static/new_years_2020/new_years_2020.html</loc>
+    <lastmod>2024-07-23T13:03:35.799Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kenarnold.org/pubs/iui21-help-writers/index.html</loc>
+    <lastmod>2024-11-17T22:55:59.924Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kenarnold.org/pubs/predictable/index.html</loc>
+    <lastmod>2024-07-23T13:03:35.789Z</lastmod>
   </url>
   <url>
     <loc>https://kenarnold.org/pubs/haigen24/index.html</loc>
