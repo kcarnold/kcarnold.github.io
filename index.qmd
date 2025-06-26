@@ -46,6 +46,10 @@ My doctoral advisor, Krzysztof Gajos, has discussed my work and implications in 
 
 ## Updates
 
+- 2025-05-19: Summer research team begins work
+- 2025-05-04: Two posters presented at [In2Writing 2025](https://in2writing.glitch.me/), the Fourth Workshop on Intelligent and Interactive Writing Assistants, co-located with [NAACL 2025](https://2025.naacl.org/):
+  - [Voice Interaction with Conversational AI Could Facilitate Thoughtful Reflection and Substantive Revision in Writing](https://arxiv.org/abs/2504.08687) [publication page](/pubs/voice-interact-conversational-ai-2025/)
+  - [Interaction-Required Suggestions for Control, Ownership, and Awareness in Human-AI Co-Writing](https://arxiv.org/abs/2504.08726) [publication page](/pubs/enact-edits/)
 - 2024-03-18: Student first author Jiho Kim presented [Towards Full Authorship with AI: Supporting Revision with AI-Generated Views](https://arxiv.org/abs/2403.01055) at [HAI-GEN 2024 workshop](https://hai-gen.github.io/2024/) at [IUI 2024](https://iui.acm.org/2024/index.html)
 - 2023-10-27: [Poster from summer research work](pubs/summer23/) presented at WMRUGS and Calvin
 - 2023-07-27: Presented at [ASA 2023](https://network.asa3.org/mpage/ASA2023) in Toronto (with 3 summer students)
