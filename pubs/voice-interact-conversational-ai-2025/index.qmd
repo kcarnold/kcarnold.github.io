@@ -25,7 +25,7 @@ categories:
 - HCI
 - NLP
 date: '2025-05-04'
-publication: Proceedings of the  The Fourth Workshop on Intelligent and Interactive
+publication: Proceedings of the Fourth Workshop on Intelligent and Interactive
   Writing Assistants (In2Writing), co-located with The 2025 Annual Conference of the
   Nations of the Americas Chapter of the Association for Computational Linguistics
   (NAACL 2025)
