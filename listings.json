@@ -30,6 +30,7 @@
       "/posts/magical-thinking/index.html",
       "/posts/detect-gpt/index.html",
       "/posts/ml-gratitude/index.html",
+      "/posts/2025-06-26-formation-not-detection/index.html",
       "/posts/why-school/index.html",
       "/posts/llm-paper-reviewing/index.html",
       "/posts/instead/index.html",
@@ -48,6 +49,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/2025-06-26-formation-not-detection/index.html",
       "/posts/why-school/index.html",
       "/posts/llm-paper-reviewing/index.html",
       "/posts/translation-workflow/index.html",
