@@ -6,7 +6,6 @@ listing:
   page-size: 5
   contents: posts
   sort:
-    - "featured"
     - "date desc"
   type: default
   fields: [date, title, reading-time, description]
@@ -38,12 +37,10 @@ My research focus is on AI for writing. My dissertation work showed that even si
 
 For more, see [Publications](/pubs.qmd) and [Projects](/projects.qmd).
 
-## Highlighted Posts
+## Posts
 
 :::{#blog-posts}
 :::
-
-[All posts](/posts.html)
 
 My doctoral advisor, Krzysztof Gajos, has discussed my work and implications in some of his [recent talks](https://www.youtube.com/watch?v=JybLJiJpKS0).
 
