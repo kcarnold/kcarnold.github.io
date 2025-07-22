@@ -4,6 +4,7 @@ project:
   resources: 
     - CNAME
     - static/*
+    - wrangler.jsonc
 website:
   title: "Ken Arnold (Calvin U)"
   site-url: "https://kenarnold.org/"
