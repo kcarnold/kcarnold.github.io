@@ -4,15 +4,15 @@ title: Bios
 
 ## Short
 
-Assistant professor of computer science and data science at Calvin University. Crafting tools to augment intelligence, teaching students to build and use tech wisely.
+Associate professor of computer science and data science at Calvin University. Crafting tools to augment intelligence, teaching students to build and use tech wisely.
 
 ## Medium
 
-Ken Arnold is an assistant professor of computer science and data science at Calvin University. His research has shown how predictive text interfaces shape human communication. His current research interests include human-AI interaction in communication, creativity, and education. He holds advanced degrees from Harvard and MIT.
+Ken Arnold is an associate professor of computer science and data science at Calvin University. His research has shown how predictive text interfaces shape human communication. His current research interests include human-AI interaction in communication, creativity, and education. He holds advanced degrees from Harvard and MIT.
 
 ## Longer
 
-Ken Arnold is an assistant professor of computer science and data science at Calvin University. His research has shown how predictive text interfaces, like those in smartphones and email apps, can shape the content of human communication. He is currently developing intelligence augmentation to help writers serve readers by crafting words that are fully their own. His other research interests include human-AI interaction in communication, creativity, and education. He holds advanced degrees from Harvard and MIT.
+Ken Arnold is an associate professor of computer science and data science at Calvin University. His research has shown how predictive text interfaces, like those in smartphones and email apps, can shape the content of human communication. He is currently developing intelligence augmentation to help writers serve readers by crafting words that are fully their own. His other research interests include human-AI interaction in communication, creativity, and education. He holds advanced degrees from Harvard and MIT.
 
 ## Alternative
 
