@@ -46,6 +46,7 @@ My doctoral advisor, Krzysztof Gajos, has discussed my work and implications in 
 
 ## Updates
 
+- 2025-08-21: Gave the keynote at the Calvin Fall Conference for faculty and staff
 - 2025-05-19: Summer research team begins work
 - 2025-05-04: Two posters presented at [In2Writing 2025](https://in2writing.glitch.me/), the Fourth Workshop on Intelligent and Interactive Writing Assistants, co-located with [NAACL 2025](https://2025.naacl.org/):
   - [Voice Interaction with Conversational AI Could Facilitate Thoughtful Reflection and Substantive Revision in Writing](https://arxiv.org/abs/2504.08687) [publication page](/pubs/voice-interact-conversational-ai-2025/)
@@ -63,6 +64,9 @@ My doctoral advisor, Krzysztof Gajos, has discussed my work and implications in 
 
 I teach computer science, data science, and machine learning. Recent classes:
 
+- CS 300 special topics
+  - Fall 2025: [Human-Centered AI](https://calvin-data-science.github.io/cs300-hcai/)
+  - Fall 2024: [Human-Computer Interaction (HCI)](https://cs.calvin.edu/courses/cs/300hci/24fa/)
 - [DATA 202 Data Science 2](https://calvin-data-science.github.io/data202/), a data wrangling, predictive modeling, and visualization course in Python (pandas, plotly, sklearn, etc.), with a project emphasis. (In prior years I taught this using R tidyverse.)
 - [CS 375 / 376 AI and Machine Learning](https://cs.calvin.edu/courses/cs/375/), formerly [CS 344 Artificial Intelligence](https://cs.calvin.edu/courses/cs/344/), a hands-on (but also concept-heavy) machine learning course based [F. Chollet's Deep Learning with Python](https://www.manning.com/books/deep-learning-with-python-second-edition) (formerly, based on the [fast.ai course](https://course.fast.ai/)) and Hugging Face Transformers
 - [CS 108 Introduction to Computing](https://cs.calvin.edu/courses/cs/108/) and [CS 106](https://cs.calvin.edu/courses/cs/106/), Calvin's first-year Computer Science courses, in Python.
