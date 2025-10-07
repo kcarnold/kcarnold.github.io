@@ -16,6 +16,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/ai-idolatry/index.html",
       "/posts/2025-06-26-formation-not-detection/index.html",
       "/posts/why-school/index.html",
       "/posts/llm-paper-reviewing/index.html",
@@ -49,6 +50,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/ai-idolatry/index.html",
       "/posts/2025-06-26-formation-not-detection/index.html",
       "/posts/why-school/index.html",
       "/posts/llm-paper-reviewing/index.html",
