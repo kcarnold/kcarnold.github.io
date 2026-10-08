@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -13,10 +13,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -41,10 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-158031087360bce0ff56dc785ce39e06.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-445b8638c3d06994fee0907d791121c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -113,7 +116,7 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
 </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -184,11 +187,6 @@ window.Quarto = {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/kcarnold"> <i class="bi bi-twitter" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
     <a class="nav-link" href="https://hci.social/@kenarnold" rel="me"> <i class="bi bi-mastodon" role="img" aria-label="Mastodon">
 </i> 
 <span class="menu-text"></span></a>
@@ -244,8 +242,8 @@ window.Quarto = {
   </a>
 </div>
       <div class="about-contents"><main class="content" id="quarto-document-content">
-<p>AI should help people work better with other people. To achieve this, AI should help us think more broadly and deeply about the people we’re working with, instead of merely generating content to send to others. That vision animates my research and teaching.</p>
-<p>My research focus is on AI for writing. My dissertation work showed that even simple AI suggestions nudged people to write less thoughtfully, so I have been working on alternative ways that AI could help writers serve readers, especially through revising their writing. Student researchers have contributed to various projects along this theme, including tools that have AI generate questions (rather than answers), tools that help writers see their work from different perspectives, and tools to help writers express and enact their revision goals.</p>
+<p><strong>AI should help people think better about (and with) other people.</strong> I design and study interactive AI for <em>thoughtful written communication</em> and for <em>teaching and learning</em>.</p>
+<p>My <a href="https://thoughtful-ai.com/">Thoughtful AI Tools Lab</a> has welcomed deep contributions from over a dozen undergraduate student researchers and developers. You can <a href="https://app.thoughtful-ai.com/">try our writing tools</a> that support your writing without tainting your words. Watch the website for new tools and research results.</p>
 <p>For more, see <a href="./pubs.html">Publications</a> and <a href="./projects.html">Projects</a>.</p>
 <section id="posts" class="level2">
 <h2 data-anchor-id="posts">Posts</h2>
@@ -784,8 +782,8 @@ Jan 11, 2023
 <section id="updates" class="level2">
 <h2 data-anchor-id="updates">Updates</h2>
 <ul>
+<li>2026-10-08: Two talks at <a href="https://calvin.edu/faith-and-technology/faith-and-ai-conference">Wisdom in the Age of AI</a> at Calvin. <a href="./wisdom2026/">Slides and links</a></li>
 <li>2025-08-21: Gave the <a href="https://www.youtube.com/watch?v=AkNaEuXQEX8">keynote at the Calvin Fall Conference</a> for faculty and staff</li>
-<li>2025-05-19: Summer research team begins work</li>
 <li>2025-05-04: Two posters presented at <a href="https://in2writing.glitch.me/">In2Writing 2025</a>, the Fourth Workshop on Intelligent and Interactive Writing Assistants, co-located with <a href="https://2025.naacl.org/">NAACL 2025</a>:
 <ul>
 <li><a href="https://arxiv.org/abs/2504.08687">Voice Interaction with Conversational AI Could Facilitate Thoughtful Reflection and Substantive Revision in Writing</a> <a href="./pubs/voice-interact-conversational-ai-2025/">publication page</a></li>
@@ -805,6 +803,7 @@ Jan 11, 2023
 <h2 data-anchor-id="teaching">Teaching</h2>
 <p>I teach computer science, data science, and machine learning. Recent classes:</p>
 <ul>
+<li>CS 212 Data Structures and Algorithms (Fall 2026)</li>
 <li>CS 300 special topics
 <ul>
 <li>Fall 2025: <a href="https://calvin-data-science.github.io/cs300-hcai/">Human-Centered AI</a></li>
