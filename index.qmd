@@ -28,9 +28,10 @@ about:
   image: profile.jpg
 ---
 
-AI should help people work better with other people. To achieve this, AI should help us think more broadly and deeply about the people we’re working with, instead of merely generating content to send to others. That vision animates my research and teaching.
+**AI should help people think better about (and with) other people.**
+I design and study interactive AI for *thoughtful written communication* and for *teaching and learning*.
 
-My research focus is on AI for writing. My dissertation work showed that even simple AI suggestions nudged people to write less thoughtfully, so I have been working on alternative ways that AI could help writers serve readers, especially through revising their writing. Student researchers have contributed to various projects along this theme, including tools that have AI generate questions (rather than answers), tools that help writers see their work from different perspectives, and tools to help writers express and enact their revision goals.
+My [Thoughtful AI Tools Lab](https://thoughtful-ai.com/) has welcomed deep contributions from over a dozen undergraduate student researchers and developers. You can [try our writing tools](https://app.thoughtful-ai.com/) that support your writing without tainting your words. Watch the website for new tools and research results.
 
 For more, see [Publications](/pubs.qmd) and [Projects](/projects.qmd).
 
@@ -43,8 +44,8 @@ My doctoral advisor, Krzysztof Gajos, has discussed my work and implications in 
 
 ## Updates
 
+- 2026-10-08: Two talks at [Wisdom in the Age of AI](https://calvin.edu/faith-and-technology/faith-and-ai-conference) at Calvin. [Slides and links](/wisdom2026/)
 - 2025-08-21: Gave the [keynote at the Calvin Fall Conference](https://www.youtube.com/watch?v=AkNaEuXQEX8) for faculty and staff
-- 2025-05-19: Summer research team begins work
 - 2025-05-04: Two posters presented at [In2Writing 2025](https://in2writing.glitch.me/), the Fourth Workshop on Intelligent and Interactive Writing Assistants, co-located with [NAACL 2025](https://2025.naacl.org/):
   - [Voice Interaction with Conversational AI Could Facilitate Thoughtful Reflection and Substantive Revision in Writing](https://arxiv.org/abs/2504.08687) [publication page](/pubs/voice-interact-conversational-ai-2025/)
   - [Interaction-Required Suggestions for Control, Ownership, and Awareness in Human-AI Co-Writing](https://arxiv.org/abs/2504.08726) [publication page](/pubs/enact-edits/)
@@ -61,6 +62,7 @@ My doctoral advisor, Krzysztof Gajos, has discussed my work and implications in 
 
 I teach computer science, data science, and machine learning. Recent classes:
 
+- CS 212 Data Structures and Algorithms (Fall 2026)
 - CS 300 special topics
   - Fall 2025: [Human-Centered AI](https://calvin-data-science.github.io/cs300-hcai/)
   - Fall 2024: [Human-Computer Interaction (HCI)](https://cs.calvin.edu/courses/cs/300hci/24fa/)
