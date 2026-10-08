@@ -16,8 +16,6 @@ website:
         href: static/kcarnold_cv.pdf
       - icon: github
         href: https://github.com/kcarnold
-      - icon: twitter
-        href: https://twitter.com/kcarnold
       - icon: mastodon
         aria-label: Mastodon
         href: https://hci.social/@kenarnold
