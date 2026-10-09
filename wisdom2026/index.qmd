@@ -6,8 +6,8 @@ description: "Slides and links from my talks at the [Wisdom in the Age of AI](ht
 
 ## Talks
 
-<!-- TODO: add talk titles, times, and slide links -->
-Slides will be posted here.
+- **From Every Language: Using AI for live translation in worship** — [slides](/static/wisdom2026-talks/From%20Every%20Language.pptx)
+- **Building Value-Laden Tech with (and using) AI** — [slides](/static/wisdom2026-talks/Building%20Tech%20with%20AI.pptx)
 
 ## Go deeper
 
