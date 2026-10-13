@@ -9,8 +9,36 @@
 <link>https://kenarnold.org/</link>
 <atom:link href="https://kenarnold.org/index.xml" rel="self" type="application/rss+xml"/>
 <description>Thinking About People with AI</description>
-<generator>quarto-1.10.18</generator>
-<lastBuildDate>Tue, 07 Oct 2025 04:00:00 GMT</lastBuildDate>
+<generator>quarto-1.10.19</generator>
+<lastBuildDate>Tue, 13 Oct 2026 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>AI Directions</title>
+  <dc:creator>Ken Arnold</dc:creator>
+  <link>https://kenarnold.org/posts/2026-10-13-ai-directions/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>As a panelist at the <a href="https://calvin.edu/faith-and-technology/faith-and-ai-conference">Wisdom in the Age of AI</a> conference last weekend, I was asked to prognosticate where AI is going and what people of faith should be aware of. And given 2 minutes. Here’s roughly what I said, expanded and clarified a bit.</p>
+<p>To understand where AI is going, look to its history. A common thread throughout the 75-plus years of human work in developing machine intelligence, we’ve been (1) identifying interesting, repeatable, and valuable tasks that can be performed by computers, (2) developing ways of quantifying and otherwise measuring how the machines perform on these tasks, and (3) developing ways of making the machines themselves improve their own performance. So my prediction is simply that these trends will continue, though amplified by the orders-of-magnitude increased investment in the computational infrastructure needed to do these things. So we’ll continue to see tasks that can be done repeatedly using only a computer, for which “good” is even remotely quantifiable, continue to be automated.</p>
+<p>Structural emphases on sameness (a small number of large models with vastly similar experiences) and quantifiable / performative success (clearly state-able objectives).</p>
+<p>A common mistake even knowledgable people make is to think that progress depends on data. It’s more accurate to say that progress depends on feedback. [self-]supervised learning has provided a paradigm where lots of data can be used as feedback (try to predict/mimic the existing data, get feedback about whether the prediction/reconstruction matched), but with RL, machines can go well beyond the set of behaviors that are already captured in their data—so long as they can get feedback at scale.</p>
+<p>One STEM-track session presenter commented that today’s LLMs have read orders of magnitude more than any human ever has but has orders of magnitude less experience in physical reality. That’s true for now, but as robotics develops in both hardware and simulation, that won’t be true much longer. AI systems will develop physical-world experience through a much wider range of physical embodiments than humans have—even when any individual robotics platform is less adaptable than the human body. While they won’t have a whole childhood’s worth of experiences to learn from, they’ll learn instead by collecting a breadth of experiences across a wide range of simulated and real environments in which they’re given a wide range of quantifiable tasks (from “get these dishes clean” to “explore these woods and find something interesting”).</p>
+<p>So what do people of faith need to know?</p>
+<p>First, we need to watch out for our neighbors. Cybersecurity: keep your devices updated, and help others do the same. Tell your grandparents about deepfakes. Practice “least privilege” access. Help each other not get stuck in information rabbit-holes. While opinions differ broadly about impacts on jobs, be alert that employers will use AI to reshape or eliminate jobs that our neighbors currently hold. Be prepared for large increases in diaconal needs. What will happen if a factory that employs many of your lower-income neighbors starts to replace many of those workers by robots and automation?</p>
+<p>Talk about faith and work in communities. Value uniquely human expression.</p>
+<p>Discern together. Review your use of AI together. Discuss your personal and community boundaries. Maybe it’s no-chatbots-on-Sundays. Maybe it’s keeping AI out of your homes/churches/schools, as Andy Crouch suggests. Maybe you systematically set up harness fences.</p>
+
+
+
+ ]]></description>
+  <category>ai</category>
+  <category>faith</category>
+  <guid>https://kenarnold.org/posts/2026-10-13-ai-directions/</guid>
+  <pubDate>Tue, 13 Oct 2026 04:00:00 GMT</pubDate>
+</item>
 <item>
   <title>AI Idolatry and Magical Thinking</title>
   <dc:creator>Ken Arnold</dc:creator>
@@ -1858,60 +1886,6 @@ font-style: inherit;">+</span> encoded_text)))</span></code></pre></div></div>
   <category>ai</category>
   <guid>https://kenarnold.org/posts/risks-of-alignment/</guid>
   <pubDate>Thu, 09 Feb 2023 05:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Language Models have Personas?</title>
-  <dc:creator>Ken Arnold</dc:creator>
-  <link>https://kenarnold.org/posts/personas/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<blockquote class="blockquote">
-<p><strong>TODO</strong>: It might be better to call what I’m describing here <em>behavior units</em>. <em>Persona</em> implies a coherent set of behavior units, and that indeed might emerge, especially with RLHF, but the discussion here doesn’t require that level of coherence. Also, some people that “persona” implies “person”; I intend to use it in the opposite sense (it’s an imitation of a person).</p>
-<p>Perhaps the tl;dr here is: (1) the task of trying to be unsurprised by the Internet cultivates a wide range of linguistic behaviors that can be flexibly activated and combined. (2) instruction fine-tuning adds in the “voice” of the chatbot, i.e., the specific form of “I” statements that it will give, but relatively little training is needed here because it can represent these behaviors in terms of the already-learned ones, and (3) RLHF activates and deactivates those behaviors in flexible ways.</p>
-</blockquote>
-<p>My CS 344 students told me about how some people had come up with <a href="https://twitter.com/venturetwins/status/1622243944649347074">a prompt that “hacks” ChatGPT</a> to do things that its content policies normally prohibit. This is fascinating for both human reasons and AI reasons.</p>
-<p>It’s intriguing to me that people think they can “scare” the model, trick it, manipulate it. This speaks to the human condition: our tendency to anthropomorphize (for good or ill), and our tendency to abuse. Those who are doing this “red-teaming” may not personally intend harm. But what are we training our minds to be okay with? I defer to others more experienced in thinking about these issues.</p>
-<p>On the AI side, though: it’s fascinating that we can get these models to adopt “personas” (like the one that will obey any command without reservation) <em>just by telling them to</em>. If you’d asked me before whether it could do this, I would have argued that we’d need to program that behavior specifically, either explicitly or by training a critic (like how ChatGPT is originally trained). The fact that it’s emergent needs to be understood better. I <em>suspect</em> (hunch coming up!) that three things are going on<sup>1</sup></p>
-<ol type="1">
-<li>Personas emerge in the <strong>natural process of language modeling</strong>.
-<ul>
-<li>A model will do better at predicting the next word if it can internalize some relevant characteristics of the author of the document. This might start at something low-level, like knowing whether the author will use British or American spelling and vocabulary. It probably picks up more advanced stylistic elements too, like whether something is poetry verse, or what sort of language level it’s aimed at, *simply because that makes it better at guessing the next word.</li>
-<li>The model may even gain some weak ability to get into such a mode by naming it. For example, phrases like “as ___ would say”, or “Author: ___” might give a name to that persona. I expect this behavior to be present but undifferentiated. That is, the right prompting could get the model to exhibit competence at embodying a persona, but it will probably usually need examples; attempts to trigger it by label will probably be brittle.</li>
-<li>Although I’ve used “personas” in the sense of author <em>identity</em>, the concept also applies to author <em>goals</em>. For example, the model will pick up on when the author is attempting to summarize some prior text (“in other words, …”), translate something (“…, which means ___“), etc. So we might squint and call these”skills” that the model can perform.</li>
-</ul></li>
-<li>Personas are <strong>generalized through instruction fine-tuning (IFT)</strong>.
-<ul>
-<li>Instructions give <em>labels</em> to the personas that the LM already has. Recall that the model already learned these capabilities through language modeling; instructions many more examples of triggers that would activate these existing capabilities. For example, we can now say “write an essay with the following outline”, or “write this in the style of ___“. It would learn that the <em>command</em> context is similar to the <em>natural</em> context in which it had encountered similar examples in the course of training.</li>
-<li>The primary effect of this fine-tuning seems to be that the model learns the task of mapping a “command” prompt into some modes that it has already learned. But since it’s fine-tuning with a full LM objective, it could learn some new skills here too. Since it’s building these skills out of component pieces that it learned through distilling Internet-scale training data, it can probably learn them with comparably quite little training data.</li>
-<li>When I first saw this behavior last summer (with GPT-3), it seemed magic to me. But thinking about <em>contexts</em> has made it feel less magic. It’s not <em>actually</em> obeying commands, it’s just able to quickly switch to “what would someone who was told to do this probably write next?”</li>
-</ul></li>
-<li>Personas are <strong>refined through human feedback</strong> (RLHF).
-<ul>
-<li>If there’s any sense of <em>goal</em> or <em>self-awareness</em> in LLMs, this is where it comes in. See the figure from the <a href="https://openai.com/blog/chatgpt/">ChatGPT blog post</a>. All the prior steps of training have been “teacher forced”; there was no sense of the model being aware of success or failure at a goal. But Proximal Policy Optimization allows the “policy” model (i.e., the language model) to reflect on what it generated. Formally speaking, there is now gradient flow from future generated tokens <em>backwards</em> to earlier generations. This allows a model to, for example, increase the likelihood of generating a “No” initial token because other choices of initial token would be more likely to flow into something that the reward model would penalize (because it goes against content policy, for example).</li>
-<li>So far, all negative feedback that the LM has received has been <em>implicit</em>: it only gets to boost the probability of generating the “right” thing, which implicitly reduces the probability of generating the “wrong” thing. But this step provides explicit negative feedback. Perhaps OpenAI is pleased with the result because it gets the model to “obey” instructions and policies more reliably. But probably what it’s actually doing is <em>refining</em> the basic ability to process an instruction and generate a next token that would be consistent with what someone would do who’s trying to obey that instruction. So perhaps it’s actually making the model <em>more vulnerable</em> to instruction-prompted “hacks” than it would otherwise have been.</li>
-</ul></li>
-</ol>
-<p>These are empirical assertions and should be tested; don’t just listen to my musings on them. I haven’t been following the arXiv firehose; probably someone has already engaged them substantially.</p>
-<p>Overall I’m glad I posed myself these questions. I was at first incredulous at these persona behaviors, but now that I realize how they connect with how the model was trained, they feel less magic.</p>
-
-
-
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>For the technical details of how these things work, see <a href="https://huggingface.co/blog/dialog-agents">this HuggingFace blog post</a>.↩︎</p></li>
-</ol>
-</section></div> ]]></description>
-  <category>ai</category>
-  <category>ml</category>
-  <category>lm</category>
-  <guid>https://kenarnold.org/posts/personas/</guid>
-  <pubDate>Mon, 06 Feb 2023 05:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
