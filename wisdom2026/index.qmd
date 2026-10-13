@@ -13,6 +13,7 @@ description: "Slides and links from my talks at the [Wisdom in the Age of AI](ht
 
 - **Try it:** the [Thoughtful AI Tools Lab](https://thoughtful-ai.com/) builds AI that helps people think rather than think for them. You can [try our writing tools](https://app.thoughtful-ai.com/) that support your writing without tainting your words.
 - **Read:**
+  - [AI Directions](/posts/2026-10-13-ai-directions/)
   - [AI Idolatry and Magical Thinking](/posts/ai-idolatry/)
   - [Formation, not Detection: AI detection misses the point](/posts/2025-06-26-formation-not-detection/)
   - [Why the University?](/posts/why-school/)
