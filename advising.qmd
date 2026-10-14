@@ -31,6 +31,7 @@ A collection of links I find useful when advising students.
 ```{python}
 #| echo: false
 #| output: asis
+#| column: page
 
 import json
 import re
