@@ -1,5 +1,8 @@
 ---
 title: "Advising Reference"
+execute: 
+  echo: false
+  eval: true
 ---
 
 
@@ -22,3 +25,57 @@ A collection of links I find useful when advising students.
 
 - [Workday Instructions Mega-reference](https://calvincollege.sharepoint.com/sites/workday-info/SitePages/Workday-for-Students.aspx)
 - [GitHub Portfolio Examples](https://github.com/abhisheknaiidu/awesome-github-profile-readme?tab=readme-ov-file)
+
+## Spring 2027 Courses
+
+```{python}
+#| echo: false
+#| output: asis
+
+import json
+import re
+
+with open("CourseSchedule-27SP.json") as f:
+    report = json.load(f)["report"]
+
+
+def meeting(r):
+    parts = []
+    for seg in r["MtgPattern"].split(";"):
+        seg = seg.strip()
+        if not seg:
+            continue
+        fields = [f.strip() for f in seg.split("|")]
+        if len(fields) >= 2:
+            parts.append(fields[0] + " " + fields[1])
+        else:
+            parts.append(seg)
+    return "; ".join(parts)
+
+
+def sortkey(r):
+    m = re.match(r"(\d+)([A-Z]*)", r["Crs_Number"])
+    return (int(m.group(1)), m.group(2), r["Sec_Number"])
+
+
+subjects = [
+    ("Computer Science (CS)", "CS"),
+    ("Data Science (DATA)", "DATA"),
+    ("Statistics (STAT)", "STAT"),
+    ("Mathematics (MATH)", "MATH"),
+]
+
+for title, subj in subjects:
+    rows = [r for r in report if r["Subject_RefID"] == subj and r["Status"] != "Closed"]
+    rows.sort(key=sortkey)
+    print(f"### {title}")
+    print()
+    print("| Course | Title | Instructor | Meeting | Hrs | Enroll | Status |")
+    print("|---|---|---|---|")
+    for r in rows:
+        print(
+            f"| {r['Section_Name']} ({r['Hours']} hours) | {r['Section_Title']} | {r['Instructors']} "
+            f"| {meeting(r)} |"
+        )
+    print()
+```
