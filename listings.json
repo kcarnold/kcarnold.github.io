@@ -1,21 +1,6 @@
 [
   {
-    "listing": "/pubs.html",
-    "items": [
-      "/pubs/voice-interact-conversational-ai-2025/INCOMING.html",
-      "/pubs/enact-edits/index.html",
-      "/pubs/voice-interact-conversational-ai-2025/index.html",
-      "/pubs/cognitive-engagement/index.html",
-      "/pubs/haigen24/index.html",
-      "/pubs/acms-mimicry/index.html",
-      "/pubs/iui21-help-writers/index.html",
-      "/pubs/predictable/index.html",
-      "/pubs/sentiment-bias/index.html",
-      "/pubs/phrase-suggestion/index.html"
-    ]
-  },
-  {
-    "listing": "/index.html",
+    "listing": "/posts.html",
     "items": [
       "/posts/2026-10-13-ai-directions/index.html",
       "/posts/ai-idolatry/index.html",
@@ -50,7 +35,22 @@
     ]
   },
   {
-    "listing": "/posts.html",
+    "listing": "/pubs.html",
+    "items": [
+      "/pubs/voice-interact-conversational-ai-2025/INCOMING.html",
+      "/pubs/enact-edits/index.html",
+      "/pubs/voice-interact-conversational-ai-2025/index.html",
+      "/pubs/cognitive-engagement/index.html",
+      "/pubs/haigen24/index.html",
+      "/pubs/acms-mimicry/index.html",
+      "/pubs/iui21-help-writers/index.html",
+      "/pubs/predictable/index.html",
+      "/pubs/sentiment-bias/index.html",
+      "/pubs/phrase-suggestion/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
     "items": [
       "/posts/2026-10-13-ai-directions/index.html",
       "/posts/ai-idolatry/index.html",
