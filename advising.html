@@ -148,7 +148,7 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -193,15 +193,484 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
 <li><a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme?tab=readme-ov-file">GitHub Portfolio Examples</a></li>
 </ul>
 </section>
-<section id="spring-2027-courses" class="level2">
+<section id="spring-2027-courses" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="spring-2027-courses">Spring 2027 Courses</h2>
-<p>#| echo: false #| output: asis</p>
-<p>import json import re</p>
-<p>with open(“CourseSchedule-27SP.json”) as f: report = json.load(f)[“report”]</p>
-<p>def meeting(r): parts = [] for seg in r[“MtgPattern”].split(“;”): seg = seg.strip() if not seg: continue fields = [f.strip() for f in seg.split(“|”)] if len(fields) &gt;= 2: parts.append(fields[0] + ” ” + fields[1]) else: parts.append(seg) return “;”.join(parts)</p>
-<p>def sortkey(r): m = re.match(r”()([A-Z]*)“, r[“Crs_Number”]) return (int(m.group(1)), m.group(2), r[“Sec_Number”])</p>
-<p>subjects = [ (“Computer Science (CS)”, “CS”), (“Data Science (DATA)”, “DATA”), (“Statistics (STAT)”, “STAT”), (“Mathematics (MATH)”, “MATH”),]</p>
-<p>for title, subj in subjects: rows = [r for r in report if r[“Subject_RefID”] == subj] rows.sort(key=sortkey) print(f”### {title}“) print() print(”| Course | Title | Instructor | Meeting | Hrs | Enroll | Status |“) print(”|—|—|—|—|—|—|—|“) for r in rows: print( f”| {r[‘Section_Name’]} | {r[‘Section_Title’]} | {r[‘Instructors’]} ” f”| {meeting(r)} | {r[‘Hours’]} | {r[‘EnrollCap’]} | {r[‘Status’]} |” ) print()</p>
+<div id="4beca091" class="cell column-page" data-execution_count="1">
+<section id="computer-science-cs" class="level3">
+<h3 class="anchored" data-anchor-id="computer-science-cs">Computer Science (CS)</h3>
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Course</th>
+<th>Title</th>
+<th>Instructor</th>
+<th>Meeting</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CS 108-A (3 hours)</td>
+<td>Introduction to Computing</td>
+<td>Ken Arnold</td>
+<td>MWF 1:30 PM - 2:35 PM</td>
+</tr>
+<tr class="even">
+<td>CS 108L-A (1 hours)</td>
+<td>Intro to Computing Lab</td>
+<td>Ken Arnold</td>
+<td>TH 8:00 AM - 9:40 AM</td>
+</tr>
+<tr class="odd">
+<td>CS 108L-B (1 hours)</td>
+<td>Intro to Computing Lab</td>
+<td>Ken Arnold</td>
+<td>TH 10:20 AM - 12:00 PM</td>
+</tr>
+<tr class="even">
+<td>CS 112-A (3 hours)</td>
+<td>Introduction to Data Structures</td>
+<td>Victor Norman</td>
+<td>MWF 11:00 AM - 12:05 PM</td>
+</tr>
+<tr class="odd">
+<td>CS 112-B (3 hours)</td>
+<td>Introduction to Data Structures</td>
+<td>Eric Araújo</td>
+<td>MWF 12:15 PM - 1:20 PM</td>
+</tr>
+<tr class="even">
+<td>CS 112L-A (1 hours)</td>
+<td>Intro to Data Structures Lab</td>
+<td>Eric Araújo</td>
+<td>T 8:00 AM - 9:40 AM</td>
+</tr>
+<tr class="odd">
+<td>CS 112L-B (1 hours)</td>
+<td>Intro to Data Structures Lab</td>
+<td>Eric Araújo</td>
+<td>T 10:20 AM - 12:00 PM</td>
+</tr>
+<tr class="even">
+<td>CS 195-A (0 hours)</td>
+<td>Introductory Computing Seminar</td>
+<td>Victor Norman</td>
+<td>T 3:05 PM - 3:55 PM</td>
+</tr>
+<tr class="odd">
+<td>CS 214-A (4 hours)</td>
+<td>Programming Language Concepts</td>
+<td>Eric Araújo</td>
+<td>MW 2:45 PM - 3:50 PM; F 2:45 PM - 5:05 PM</td>
+</tr>
+<tr class="even">
+<td>CS 214-B (4 hours)</td>
+<td>Programming Language Concepts</td>
+<td>David Meyer</td>
+<td>MW 4:00 PM - 5:05 PM; F 2:45 PM - 5:05 PM</td>
+</tr>
+<tr class="odd">
+<td>CS 232-A (4 hours)</td>
+<td>Operating Systems and Networking</td>
+<td>Rocky Chang （張蛟川）</td>
+<td>MWF 8:00 AM - 9:05 AM</td>
+</tr>
+<tr class="even">
+<td>CS 232-B (4 hours)</td>
+<td>Operating Systems and Networking</td>
+<td>Victor Norman</td>
+<td>MWF 9:15 AM - 10:20 AM</td>
+</tr>
+<tr class="odd">
+<td>CS 295-A (0 hours)</td>
+<td>Computing Seminar</td>
+<td>Victor Norman</td>
+<td>T 3:05 PM - 3:55 PM</td>
+</tr>
+<tr class="even">
+<td>CS 300-A (2 hours)</td>
+<td>Special Topics: AI-Enabled Software</td>
+<td>Brian Tol</td>
+<td>TH 7:00 PM - 8:40 PM</td>
+</tr>
+<tr class="odd">
+<td>CS 326-A (4 hours)</td>
+<td>Embedded Systems and the Internet of Things</td>
+<td>Derek Schuurman</td>
+<td>MWF 1:30 PM - 2:35 PM</td>
+</tr>
+<tr class="even">
+<td>CS 338-A (2 hours)</td>
+<td>System Administration: Infrastructure</td>
+<td>Christopher Wieringa</td>
+<td>MWF 8:00 AM - 9:05 AM</td>
+</tr>
+<tr class="odd">
+<td>CS 339-A (2 hours)</td>
+<td>System Administration: Cloud Services</td>
+<td>Christopher Wieringa</td>
+<td>MWF 8:00 AM - 9:05 AM</td>
+</tr>
+<tr class="even">
+<td>CS 363-A (4 hours)</td>
+<td>Network Security</td>
+<td>Rocky Chang （張蛟川）</td>
+<td>MWF 12:15 PM - 1:20 PM</td>
+</tr>
+<tr class="odd">
+<td>CS 375-A (2 hours)</td>
+<td>Machine Learning</td>
+<td>Ken Arnold</td>
+<td>MWF 11:00 AM - 12:05 PM</td>
+</tr>
+<tr class="even">
+<td>CS 376-A (2 hours)</td>
+<td>Advanced Machine Learning</td>
+<td>Ken Arnold</td>
+<td>MWF 11:00 AM - 12:05 PM</td>
+</tr>
+<tr class="odd">
+<td>CS 384-A (4 hours)</td>
+<td>Perspectives on Computing</td>
+<td>Derek Schuurman</td>
+<td>TTH 10:20 AM - 12:00 PM</td>
+</tr>
+<tr class="even">
+<td>CS 384-B (4 hours)</td>
+<td>Perspectives on Computing</td>
+<td>Derek Schuurman</td>
+<td>TTH 12:15 PM - 1:55 PM</td>
+</tr>
+<tr class="odd">
+<td>CS 398-A (2 hours)</td>
+<td>Senior Project in Computing II</td>
+<td>Ken Arnold</td>
+<td>T 7:00 PM - 7:50 PM</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="data-science-data" class="level3">
+<h3 class="anchored" data-anchor-id="data-science-data">Data Science (DATA)</h3>
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Course</th>
+<th>Title</th>
+<th>Instructor</th>
+<th>Meeting</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DATA 102-A (2 hours)</td>
+<td>Foundations of Data Science and Analytics</td>
+<td>Jim Momeyer</td>
+<td>TTH 8:00 AM - 9:40 AM</td>
+</tr>
+<tr class="even">
+<td>DATA 102-B (2 hours)</td>
+<td>Foundations of Data Science and Analytics</td>
+<td>Fernando Pasquini Santos</td>
+<td>TTH 12:15 PM - 1:55 PM</td>
+</tr>
+<tr class="odd">
+<td>DATA 102-C (2 hours)</td>
+<td>Foundations of Data Science and Analytics</td>
+<td>Jim Momeyer</td>
+<td>TTH 7:00 PM - 8:40 PM</td>
+</tr>
+<tr class="even">
+<td>DATA 102-D (2 hours)</td>
+<td>Foundations of Data Science and Analytics</td>
+<td>Jim Momeyer</td>
+<td>TTH 8:00 AM - 9:40 AM</td>
+</tr>
+<tr class="odd">
+<td>DATA 102-E (2 hours)</td>
+<td>Foundations of Data Science and Analytics</td>
+<td>Jim Momeyer</td>
+<td>TTH 7:00 PM - 8:40 PM</td>
+</tr>
+<tr class="even">
+<td>DATA 304-A (2 hours)</td>
+<td>Visualizing Data and Models</td>
+<td>Stacy DeRuiter</td>
+<td>MWF 12:15 PM - 1:20 PM</td>
+</tr>
+<tr class="odd">
+<td>DATA 385-A (2 hours)</td>
+<td>Survey Data Analysis</td>
+<td>Stacy DeRuiter</td>
+<td>MWF 12:15 PM - 1:20 PM</td>
+</tr>
+<tr class="even">
+<td>DATA 398-A (2 hours)</td>
+<td>Senior Project in Data Science II</td>
+<td>Ken Arnold</td>
+<td>T 7:00 PM - 7:50 PM</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="statistics-stat" class="level3">
+<h3 class="anchored" data-anchor-id="statistics-stat">Statistics (STAT)</h3>
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Course</th>
+<th>Title</th>
+<th>Instructor</th>
+<th>Meeting</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>STAT 143-A (4 hours)</td>
+<td>Introduction to Probability and Statistics</td>
+<td>Wilson Gyasi</td>
+<td>MWF 11:00 AM - 12:05 PM</td>
+</tr>
+<tr class="even">
+<td>STAT 143-B (4 hours)</td>
+<td>Introduction to Probability and Statistics</td>
+<td>Timothy Pennings</td>
+<td>MWF 12:15 PM - 1:20 PM</td>
+</tr>
+<tr class="odd">
+<td>STAT 143-C (4 hours)</td>
+<td>Introduction to Probability and Statistics</td>
+<td>Wilson Gyasi</td>
+<td>MWF 1:30 PM - 2:35 PM</td>
+</tr>
+<tr class="even">
+<td>STAT 143-D (4 hours)</td>
+<td>Introduction to Probability and Statistics</td>
+<td>Wilson Gyasi</td>
+<td>MWF 2:45 PM - 3:50 PM</td>
+</tr>
+<tr class="odd">
+<td>STAT 143-E (4 hours)</td>
+<td>Introduction to Probability and Statistics</td>
+<td>Joyce Chew</td>
+<td>TTH 10:20 AM - 12:00 PM</td>
+</tr>
+<tr class="even">
+<td>STAT 145-A (4 hours)</td>
+<td>Biostatistics</td>
+<td>Stacy DeRuiter</td>
+<td>MWF 11:00 AM - 12:05 PM</td>
+</tr>
+<tr class="odd">
+<td>STAT 241-A (2 hours)</td>
+<td>Engineering Statistics</td>
+<td>Todd Kapitula</td>
+<td>MWF 9:15 AM - 10:20 AM</td>
+</tr>
+<tr class="even">
+<td>STAT 241-B (2 hours)</td>
+<td>Engineering Statistics</td>
+<td>Todd Kapitula</td>
+<td>MWF 9:15 AM - 10:20 AM</td>
+</tr>
+<tr class="odd">
+<td>STAT 243-A (4 hours)</td>
+<td>Statistics</td>
+<td>Thomas Scofield</td>
+<td>MWF 8:00 AM - 9:05 AM</td>
+</tr>
+<tr class="even">
+<td>STAT 243-B (4 hours)</td>
+<td>Statistics</td>
+<td>Thomas Scofield</td>
+<td>MWF 9:15 AM - 10:20 AM</td>
+</tr>
+<tr class="odd">
+<td>STAT 341-A (4 hours)</td>
+<td>Computational Bayesian Statistics</td>
+<td>Stacy DeRuiter</td>
+<td>MWF 2:45 PM - 3:50 PM</td>
+</tr>
+<tr class="even">
+<td>STAT 385-A (2 hours)</td>
+<td>Survey Data Analysis</td>
+<td>Stacy DeRuiter</td>
+<td>MWF 12:15 PM - 1:20 PM</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="mathematics-math" class="level3">
+<h3 class="anchored" data-anchor-id="mathematics-math">Mathematics (MATH)</h3>
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Course</th>
+<th>Title</th>
+<th>Instructor</th>
+<th>Meeting</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>MATH 132-A (4 hours)</td>
+<td>Calculus for Management, Life, and Social Sciences</td>
+<td>Mike Bolt</td>
+<td>TTH 12:15 PM - 1:55 PM</td>
+</tr>
+<tr class="even">
+<td>MATH 161-A (4 hours)</td>
+<td>Calculus: Modeling and Computation</td>
+<td>Todd Kapitula</td>
+<td>MWF 11:00 AM - 12:05 PM</td>
+</tr>
+<tr class="odd">
+<td>MATH 162-A (4 hours)</td>
+<td>Differential and Integral Calculus</td>
+<td>Todd Kapitula</td>
+<td>MWF 8:00 AM - 9:05 AM</td>
+</tr>
+<tr class="even">
+<td>MATH 162-B (4 hours)</td>
+<td>Differential and Integral Calculus</td>
+<td>James Turner</td>
+<td>MWF 1:30 PM - 2:35 PM</td>
+</tr>
+<tr class="odd">
+<td>MATH 162-C (4 hours)</td>
+<td>Differential and Integral Calculus</td>
+<td>James Turner</td>
+<td>MWF 2:45 PM - 3:50 PM</td>
+</tr>
+<tr class="even">
+<td>MATH 163-A (4 hours)</td>
+<td>Calculus: Modeling, Computation, Techniques of Integration</td>
+<td>Todd Kapitula</td>
+<td>MWF 11:00 AM - 12:05 PM</td>
+</tr>
+<tr class="odd">
+<td>MATH 221-A (4 hours)</td>
+<td>The Real Number System and Methods for Elementary School Teachers</td>
+<td>Jenny Griffin</td>
+<td>MWF 1:30 PM - 2:35 PM</td>
+</tr>
+<tr class="even">
+<td>MATH 231-A (4 hours)</td>
+<td>Differential Equations With Linear Algebra</td>
+<td>Nathan Sunukjian</td>
+<td>MWF 9:15 AM - 10:20 AM</td>
+</tr>
+<tr class="odd">
+<td>MATH 231-B (4 hours)</td>
+<td>Differential Equations With Linear Algebra</td>
+<td>Nathan Sunukjian</td>
+<td>MWF 11:00 AM - 12:05 PM</td>
+</tr>
+<tr class="even">
+<td>MATH 231-C (4 hours)</td>
+<td>Differential Equations With Linear Algebra</td>
+<td>Thomas Scofield</td>
+<td>MWF 12:15 PM - 1:20 PM</td>
+</tr>
+<tr class="odd">
+<td>MATH 251-A (2 hours)</td>
+<td>Discrete Mathematics I</td>
+<td>John Ferdinands</td>
+<td>MWF 1:30 PM - 2:35 PM</td>
+</tr>
+<tr class="even">
+<td>MATH 251-B (2 hours)</td>
+<td>Discrete Mathematics I</td>
+<td>John Ferdinands</td>
+<td>MWF 2:45 PM - 3:50 PM</td>
+</tr>
+<tr class="odd">
+<td>MATH 252-A (2 hours)</td>
+<td>Discrete Mathematics II</td>
+<td>John Ferdinands</td>
+<td>MWF 1:30 PM - 2:35 PM</td>
+</tr>
+<tr class="even">
+<td>MATH 252-B (2 hours)</td>
+<td>Discrete Mathematics II</td>
+<td>John Ferdinands</td>
+<td>MWF 2:45 PM - 3:50 PM</td>
+</tr>
+<tr class="odd">
+<td>MATH 271-A (4 hours)</td>
+<td>Multivariable Calculus</td>
+<td>Joyce Chew</td>
+<td>TTH 2:10 PM - 3:50 PM</td>
+</tr>
+<tr class="even">
+<td>MATH 324-A (4 hours)</td>
+<td>Teaching Mathematics in Elementary Grades: Internship I</td>
+<td>Jenny Griffin</td>
+<td>TTH 12:30 PM - 3:10 PM; THF 7:30 AM - 11:30 AM</td>
+</tr>
+<tr class="odd">
+<td>MATH 359-A (2 hours)</td>
+<td>Mathematics Content and Teaching Methods for High School</td>
+<td>Jenny Griffin</td>
+<td>TH 6:30 PM - 8:10 PM</td>
+</tr>
+<tr class="even">
+<td>MATH 361-A (4 hours)</td>
+<td>Real Analysis I</td>
+<td>Timothy Pennings</td>
+<td>MWF 11:00 AM - 12:05 PM</td>
+</tr>
+<tr class="odd">
+<td>MATH 365-A (4 hours)</td>
+<td>Complex Variables with Topics</td>
+<td>Mike Bolt</td>
+<td>MWF 1:30 PM - 2:35 PM</td>
+</tr>
+<tr class="even">
+<td>MATH 367-A (2 hours)</td>
+<td>Transform Theory</td>
+<td>Mike Bolt</td>
+<td>MWF 1:30 PM - 2:35 PM</td>
+</tr>
+<tr class="odd">
+<td>MATH 385-A (2 hours)</td>
+<td>Survey Data Analysis</td>
+<td>Stacy DeRuiter</td>
+<td>MWF 12:15 PM - 1:20 PM</td>
+</tr>
+<tr class="even">
+<td>MATH 391-A (0 hours)</td>
+<td>Colloquium</td>
+<td>Thomas Scofield</td>
+<td>TH 3:05 PM - 3:55 PM</td>
+</tr>
+</tbody>
+</table>
+</section>
+</div>
 
 
 </section>
