@@ -978,5 +978,12 @@
     "title": "Advising Reference",
     "section": "Student Resources",
     "text": "Student Resources\n\nWorkday Instructions Mega-reference\nGitHub Portfolio Examples"
+  },
+  {
+    "objectID": "advising.html#spring-2027-courses",
+    "href": "advising.html#spring-2027-courses",
+    "title": "Advising Reference",
+    "section": "Spring 2027 Courses",
+    "text": "Spring 2027 Courses\n#| echo: false #| output: asis\nimport json import re\nwith open(“CourseSchedule-27SP.json”) as f: report = json.load(f)[“report”]\ndef meeting(r): parts = [] for seg in r[“MtgPattern”].split(“;”): seg = seg.strip() if not seg: continue fields = [f.strip() for f in seg.split(“|”)] if len(fields) &gt;= 2: parts.append(fields[0] + ” ” + fields[1]) else: parts.append(seg) return “;”.join(parts)\ndef sortkey(r): m = re.match(r”()([A-Z]*)“, r[“Crs_Number”]) return (int(m.group(1)), m.group(2), r[“Sec_Number”])\nsubjects = [ (“Computer Science (CS)”, “CS”), (“Data Science (DATA)”, “DATA”), (“Statistics (STAT)”, “STAT”), (“Mathematics (MATH)”, “MATH”),]\nfor title, subj in subjects: rows = [r for r in report if r[“Subject_RefID”] == subj] rows.sort(key=sortkey) print(f”### {title}“) print() print(”| Course | Title | Instructor | Meeting | Hrs | Enroll | Status |“) print(”|—|—|—|—|—|—|—|“) for r in rows: print( f”| {r[‘Section_Name’]} | {r[‘Section_Title’]} | {r[‘Instructors’]} ” f”| {meeting(r)} | {r[‘Hours’]} | {r[‘EnrollCap’]} | {r[‘Status’]} |” ) print()"
   }
 ]
