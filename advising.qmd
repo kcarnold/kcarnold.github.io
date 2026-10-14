@@ -29,7 +29,7 @@ A collection of links I find useful when advising students.
 
 ## Spring 2027 Courses
 
-Each course is listed once with all of its open sections. For courses with a lab, register for one lecture section and one lab section; the section letters don't need to match. Courses marked *1st half* or *2nd half* meet for only half the semester. Click "Description" to see the catalog description.
+Each course is listed once with all of its open sections. For courses with a lab, register for one lecture section and one lab section; the section letters don't need to match. Courses marked *1st half* or *2nd half* meet for only half the semester. Click "Description" to see the catalog description. The calendar shows when everything meets; click a block to jump to that course.
 
 ```{=html}
 <style>
@@ -150,7 +150,7 @@ def show(subj):
         if "Special Topic" in notes:
             desc = re.sub(r"\s*Fee: \$\d+", "", notes) + (f"<p>{desc}</p>" if desc else "")
 
-        print("<tr><td class='crs'>")
+        print(f"<tr id='crs-{subj}-{num}'><td class='crs'>")
         print(f"<span class='num'>{subj} {num}</span> {escape(first['Section_Title'])}")
         print(f"<div class='meta'>{hours(lec, lab)}</div>")
         xl = cross_listed(first)
@@ -167,6 +167,176 @@ def show(subj):
             print("<ul>" + "".join(section_item(r) for r in lab) + "</ul>")
         print("</td></tr>")
     print("</tbody></table>\n")
+
+
+SUBJECTS = ["CS", "DATA", "STAT", "MATH"]
+DAYS = {"M": 0, "T": 1, "W": 2, "TH": 3, "F": 4}
+
+
+def minutes(t):
+    m = re.match(r"(\d+):(\d+) (AM|PM)", t.strip())
+    h, mi, ampm = int(m.group(1)), int(m.group(2)), m.group(3)
+    return (h % 12 + (12 if ampm == "PM" else 0)) * 60 + mi
+
+
+def halves(dates):
+    # "01/19/2027 - 03/05/2027" -> which half-semesters this meeting is in
+    start, end = [d.strip()[:5] for d in dates.split("-")]
+    if start >= "03/01":
+        return [2]
+    if end <= "03/31":
+        return [1]
+    return [1, 2]
+
+
+def calendar_events():
+    events, seen = [], set()
+    for r in report:
+        subj = r["Subject_RefID"]
+        key = (r["Section_Title"], r["MtgPattern"], r["Instructors"])
+        if subj not in SUBJECTS or key in seen:
+            continue
+        seen.add(key)  # cross-listed sections are drawn once
+        num, is_lab = course_num(r)
+        for seg in r["MtgPattern"].split(";"):
+            fields = [f.strip() for f in seg.split("|")]
+            if len(fields) < 3 or not fields[0]:
+                continue
+            days = [DAYS[d] for d in re.findall(r"TH|M|T|W|F", fields[0])]
+            start, end = [minutes(t) for t in fields[1].split("-")]
+            events.append({
+                "course": f"{subj} {num}",
+                "label": f"{subj} {r['Crs_Number']}-{r['Sec_Number']}",
+                "short": f"{r['Crs_Number']}-{r['Sec_Number']}",
+                "title": r["Section_Title"],
+                "info": f"{fields[0]} {fields[1]} · {r['Instructors']}",
+                "xlist": cross_listed(r),
+                "subjects": sorted({c.split()[0] for c in xlist[key]}),
+                "days": days, "start": start, "end": end,
+                "halves": halves(fields[2]),
+                "lab": is_lab,
+                "href": f"#crs-{subj}-{num}",
+            })
+    return events
+```
+
+### Weekly Calendar
+
+```{python}
+#| output: asis
+data = json.dumps(calendar_events()).replace("</", "<\\/")
+print(f"<script>window.CAL_EVENTS = {data};</script>")
+```
+
+```{=html}
+<style>
+.cal-controls { display: flex; flex-wrap: wrap; gap: 0.5em 1.5em; align-items: center; margin-bottom: 0.75em; font-size: 0.9em; }
+.cal-controls label { cursor: pointer; white-space: nowrap; }
+.cal-controls .sw { display: inline-block; width: 0.8em; height: 0.8em; border-radius: 2px; margin: 0 0.25em 0 0.15em; vertical-align: -0.05em; }
+.cal-controls .legend { color: #6c757d; }
+.cal-controls .legend .lab { display: inline-block; width: 1.4em; height: 0.8em; border: 1px dashed #6c757d; background: #e9ecef; vertical-align: -0.05em; }
+.cal-scroll { overflow-x: auto; }
+.cal { display: grid; grid-template-columns: 3.2em repeat(5, minmax(0, 1fr)); min-width: 640px; font-size: 0.72rem; }
+.cal .dayhead { text-align: center; font-weight: 600; padding-bottom: 0.2em; border-bottom: 1px solid #dee2e6; }
+.cal .hours, .cal .day { position: relative; }
+.cal .day { border-left: 1px solid #dee2e6; }
+.cal .hour { position: absolute; right: 0.4em; transform: translateY(-50%); color: #6c757d; }
+.cal .ev { position: absolute; box-sizing: border-box; padding: 1px 3px; border-radius: 3px; overflow: hidden; line-height: 1.15;
+  color: #fff; text-decoration: none; border: 1px solid #fff; transition: opacity 0.1s; }
+.cal .ev.lab { color: #212529; border-style: dashed; }
+.cal .ev:hover { z-index: 2; }
+.cal.hl .ev { opacity: 0.2; }
+.cal.hl .ev.on { opacity: 1; }
+</style>
+<div class="cal-controls" id="cal-controls"></div>
+<div class="cal-scroll"><div class="cal" id="cal"></div></div>
+<script>
+(() => {
+  const COLORS = { CS: "#2563eb", DATA: "#059669", STAT: "#d97706", MATH: "#7c3aed" };
+  const HOUR_PX = 46;
+  const events = window.CAL_EVENTS;
+  const lo = Math.floor(Math.min(...events.map(e => e.start)) / 60) * 60;
+  const hi = Math.ceil(Math.max(...events.map(e => e.end)) / 60) * 60;
+  const px = m => (m - lo) / 60 * HOUR_PX;
+  const fmt = m => `${(Math.floor(m / 60) + 11) % 12 + 1}${m >= 720 ? "pm" : "am"}`;
+  const state = { half: 1, subjects: new Set(Object.keys(COLORS)) };
+
+  const controls = document.getElementById("cal-controls");
+  controls.innerHTML =
+    `<span>${[[1, "1st half (Jan 19 – Mar 5)"], [2, "2nd half (Mar 15 – May 6)"]].map(([v, t]) =>
+      `<label><input type="radio" name="cal-half" value="${v}" ${v === 1 ? "checked" : ""}> ${t}</label>`).join(" &nbsp; ")}</span>` +
+    `<span>${Object.entries(COLORS).map(([s, c]) =>
+      `<label><input type="checkbox" value="${s}" checked><span class="sw" style="background:${c}"></span>${s}</label>`).join(" ")}</span>` +
+    `<span class="legend"><span class="lab"></span> lab</span>`;
+  controls.addEventListener("change", e => {
+    if (e.target.name === "cal-half") state.half = +e.target.value;
+    else if (e.target.checked) state.subjects.add(e.target.value);
+    else state.subjects.delete(e.target.value);
+    render();
+  });
+
+  // Side-by-side layout for overlapping blocks: group transitively-overlapping
+  // events into clusters, then give each event the first free column.
+  function layout(evs) {
+    evs.sort((a, b) => a.start - b.start || b.end - a.end);
+    let cluster = [], clusterEnd = -1;
+    const flush = () => {
+      const cols = [];
+      for (const e of cluster) {
+        let c = cols.findIndex(end => end <= e.start);
+        if (c < 0) { c = cols.length; cols.push(0); }
+        cols[c] = e.end; e.col = c;
+      }
+      // Let each event widen into free columns to its right.
+      for (const e of cluster) {
+        e.ncols = cols.length;
+        e.span = 1;
+        while (e.col + e.span < e.ncols && !cluster.some(o =>
+          o.col === e.col + e.span && o.start < e.end && e.start < o.end)) e.span++;
+      }
+    };
+    for (const e of evs) {
+      if (e.start >= clusterEnd && cluster.length) { flush(); cluster = []; }
+      cluster.push(e); clusterEnd = Math.max(clusterEnd, e.end);
+    }
+    if (cluster.length) flush();
+    return evs;
+  }
+
+  const cal = document.getElementById("cal");
+  function render() {
+    const height = px(hi);
+    let html = `<div></div>` + ["Mon", "Tue", "Wed", "Thu", "Fri"].map(d => `<div class="dayhead">${d}</div>`).join("");
+    html += `<div class="hours" style="height:${height}px">`;
+    for (let m = lo; m <= hi; m += 60) html += `<div class="hour" style="top:${px(m)}px">${fmt(m)}</div>`;
+    html += `</div>`;
+    const grid = `repeating-linear-gradient(#dee2e6 0 1px, transparent 1px ${HOUR_PX}px)`;
+    const visible = events.filter(e => e.halves.includes(state.half) && e.subjects.some(s => state.subjects.has(s)));
+    for (let d = 0; d < 5; d++) {
+      html += `<div class="day" style="height:${height}px; background:${grid}">`;
+      for (const e of layout(visible.filter(e => e.days.includes(d)).map(e => ({ ...e })))) {
+        const color = COLORS[e.course.split(" ")[0]];
+        const bg = e.lab ? `background:${color}33; border-color:${color}` : `background:${color}`;
+        const tip = `${e.label} ${e.title}\n${e.info}` + (e.xlist.length ? `\nCross-listed as ${e.xlist.join(", ")}` : "");
+        html += `<a class="ev${e.lab ? " lab" : ""}" href="${e.href}" data-course="${e.course}" title="${tip.replace(/"/g, "&quot;")}"
+          style="top:${px(e.start)}px; height:${px(e.end) - px(e.start)}px; left:${e.col / e.ncols * 100}%; width:${e.span / e.ncols * 100}%; ${bg}">${e.short}</a>`;
+      }
+      html += `</div>`;
+    }
+    cal.innerHTML = html;
+  }
+
+  // Hovering a block highlights every lecture and lab section of that course.
+  cal.addEventListener("mouseover", e => {
+    const ev = e.target.closest(".ev");
+    cal.classList.toggle("hl", !!ev);
+    for (const b of cal.querySelectorAll(".ev")) b.classList.toggle("on", !!ev && b.dataset.course === ev.dataset.course);
+  });
+  cal.addEventListener("mouseleave", () => cal.classList.remove("hl"));
+
+  render();
+})();
+</script>
 ```
 
 ### Computer Science (CS)
