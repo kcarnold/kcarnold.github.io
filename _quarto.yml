@@ -2,8 +2,9 @@ project:
   type: "website"
   output-dir: _site
   resources: 
-    - static/*
+    - /static/*
     - wrangler.jsonc
+    - .assetsignore
 website:
   title: "Ken Arnold (Calvin U)"
   site-url: "https://kenarnold.org/"
