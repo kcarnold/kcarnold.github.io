@@ -1,0 +1,21 @@
+# Advising Reference
+
+A collection of links I find useful when advising students.
+
+## Schedules
+
+- [Annual Schedule for CS](https://computing.calvin.edu/academics/course-schedule/)
+- [Annual Schedule for Math / Stat](https://mathstat-advising.stem.calvin.edu/)
+- [Math / Data / Stat minors](https://mathstat-advising.stem.calvin.edu/minors-with-data.html)
+
+## Core Curriculum
+
+- [Core Courses in Catalog](https://catalog.calvin.edu/content.php?catoid=25&navoid=803)
+- [Annotated Core Bookmarklet](https://www.taosdev.com/bookmarklet-devkit/#EQehAIDkHkBUFEBc5YAsCWBncBbAhgJ65bY4CuANgC7oC0VeA5owKYAm4mLAxjQPYA7TAG5OLFuADqfAE4BrNoQCEAHQFqAFBoCU4ALwA+cAG814c+DDgASmQHgqGbIIeoJAYVkeyMmem6UZDjgAA5MEi6oVFQhmIhg3HgMFHyMAHSJFABu6AJp7GQgamYWVgDiSW4y4Nx8PlzYAEZEXLzogiXmtUJUNXUyDfrgAiwA7uAAsnghOsKd4Gx8ATgsAlRpAI5kLDIEAMosFDxUsgCCFBQaAORpeJmptLX1LFfaaQBmsvB3qBoAHvojKZ7BZQUdegI8Cshn80lQWH8qJ41qsqHMQaDzOCxG0XHpwLDuCkGlRrrd7oxHl5XpttrsDkdeLJrqgAMwAGnAqAALDT4YjkfC1ujMRZupg+Ec0ilGBpIStOa1+AJtCLReB0O9wBolE8BixMGlUHhMHKoSxtLpjH1noauKT5SxOQBtAC6ugAvvNQXqGmlWA7zW8QmRML8le0VWrzB7VcUMZYIJA+PDcJQaLQKFgaAJGJh5tj3ugBlRTgIBCmkpGhgJKBRowslkFUbSdvtDsczhcyXc8DKqc8aZ8ZN9uL8AYYTN6LNjHTC4QikYIhWjp1iWL0I3iCRliQbSTde-3ajIXm8tm2GZ2ZCyOVzeW9+UuUcK1+BsSmqth8W6376Df6G5misbzDqOvyfjsBy4vYk7AuqmKatqW72Eoej4pBMjQcqVpvghmGGiGYYaJh2GRnGCYIV6lEWLGDagkhJGODshpHLmjjgEYAAMuE0aK4qSiw0qpBoKjABM6boIgYmco6irHJGnIEWkABWfC5NcnKvBRCFghu4CHL0+KLMsLbcKeSQsPARwrGs1yYGEAivPR6qGbcIQhKsbDuBgFBsBoJnNmsGQWfCsCLsmbAsKJwDgH2EoavYYngAA1OAylqRpVxaZaOm6eYbmYFQBBSp8ax7OgABeEj4lcADsACsACkVwuaKhXFVKtQpNU+JiQAxAAnHVABMDUjY0YmiFY+AyHwHR8ZisLTJ5Ajeb5-mGXl+WMUWJZlhWDDKvo6HDHWuh7UVB2Vsd+J-G14DUQhu3Fld5Y3dWaH4rWFwXa9pbvUdkZpJg5mShQACSax8AAaugYyzPMdFqLGszAEAA) ("Drag me to bookmark bar")
+
+  Run the bookmarklet on [the Core page in the catalog](https://catalog.calvin.edu/content.php?catoid=25&navoid=803).
+
+## Student Resources
+
+- [Workday Instructions Mega-reference](https://calvincollege.sharepoint.com/sites/workday-info/SitePages/Workday-for-Students.aspx)
+- [GitHub Portfolio Examples](https://github.com/abhisheknaiidu/awesome-github-profile-readme?tab=readme-ov-file)
