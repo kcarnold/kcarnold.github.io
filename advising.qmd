@@ -1,5 +1,6 @@
 ---
 title: "Advising Reference"
+toc: true
 execute: 
   echo: false
   eval: true
@@ -28,55 +29,170 @@ A collection of links I find useful when advising students.
 
 ## Spring 2027 Courses
 
+Each course is listed once with all of its open sections. For courses with a lab, register for one lecture section and one lab section; the section letters don't need to match. Courses marked *1st half* or *2nd half* meet for only half the semester. Click "Description" to see the catalog description.
+
+```{=html}
+<style>
+.courses td { vertical-align: top; }
+.courses .crs { width: 55%; font-size: 1.05em; }
+.courses td:last-child { font-size: 0.88em; color: #495057; }
+.courses .num { font-weight: 600; white-space: nowrap; }
+.courses .meta, .courses .xlist { font-size: 0.85em; color: #6c757d; }
+.courses .xlist { color: #8a5a00; }
+.courses .tag { font-size: 0.75em; padding: 0 0.4em; border-radius: 0.6em; border: 1px solid currentColor; color: #0d6efd; white-space: nowrap; }
+.courses .tag.h2 { color: #6f42c1; }
+.courses ul { list-style: none; padding: 0; margin: 0; }
+.courses li { margin-bottom: 0.15em; }
+.courses .kind { font-size: 0.8em; text-transform: uppercase; letter-spacing: 0.04em; color: #6c757d; margin-top: 0.3em; }
+.courses .kind:first-child { margin-top: 0; }
+.courses details { font-size: 0.85em; margin-top: 0.3em; }
+.courses summary { color: #0d6efd; cursor: pointer; }
+</style>
+```
+
 ```{python}
-#| echo: false
-#| output: asis
-#| column: page
+#| output: false
 
 import json
 import re
+from collections import defaultdict
+from html import escape
 
 with open("CourseSchedule-27SP.json") as f:
     report = json.load(f)["report"]
+
+# Only regular Spring-term sections that are still open (skips Winter Intensive).
+report = [
+    r for r in report
+    if r["Status"] != "Closed" and r["AcadPeriod"].startswith("2027 Spring")
+]
 
 
 def meeting(r):
     parts = []
     for seg in r["MtgPattern"].split(";"):
-        seg = seg.strip()
-        if not seg:
-            continue
         fields = [f.strip() for f in seg.split("|")]
-        if len(fields) >= 2:
-            parts.append(fields[0] + " " + fields[1])
-        else:
-            parts.append(seg)
-    return "; ".join(parts)
+        if fields[0]:
+            parts.append(" ".join(fields[:2]))
+    return ", ".join(parts) or "TBA"
 
 
-def sortkey(r):
-    m = re.match(r"(\d+)([A-Z]*)", r["Crs_Number"])
-    return (int(m.group(1)), m.group(2), r["Sec_Number"])
+def half(r):
+    """'1st half' / '2nd half' for 7-week courses, else None."""
+    start, end = r["StartDt"][5:], r["EndDt"][5:]
+    if start >= "03-01":
+        return "2nd half"
+    if end <= "03-31":
+        return "1st half"
+    return None
 
 
-subjects = [
-    ("Computer Science (CS)", "CS"),
-    ("Data Science (DATA)", "DATA"),
-    ("Statistics (STAT)", "STAT"),
-    ("Mathematics (MATH)", "MATH"),
-]
+def course_num(r):
+    # "108L" -> ("108", True)
+    m = re.match(r"(\d+)(L?)", r["Crs_Number"])
+    return m.group(1), bool(m.group(2))
 
-for title, subj in subjects:
-    rows = [r for r in report if r["Subject_RefID"] == subj and r["Status"] != "Closed"]
-    rows.sort(key=sortkey)
-    print(f"### {title}")
-    print()
-    print("| Course | Title | Instructor | Meeting | Hrs | Enroll | Status |")
-    print("|---|---|---|---|")
-    for r in rows:
-        print(
-            f"| {r['Section_Name']} ({r['Hours']} hours) | {r['Section_Title']} | {r['Instructors']} "
-            f"| {meeting(r)} |"
-        )
-    print()
+
+def sortkey(num):
+    return int(re.match(r"\d+", num).group())
+
+
+# Cross-listings: same title, time, and instructor under different subjects.
+xlist = defaultdict(set)
+for r in report:
+    xlist[(r["Section_Title"], r["MtgPattern"], r["Instructors"])].add(
+        f"{r['Subject_RefID']} {r['Crs_Number']}"
+    )
+
+
+def cross_listed(r):
+    me = f"{r['Subject_RefID']} {r['Crs_Number']}"
+    return sorted(xlist[(r["Section_Title"], r["MtgPattern"], r["Instructors"])] - {me})
+
+
+def section_item(r):
+    h = half(r)
+    tag = ""
+    if h:
+        dates = f"{r['StartDt'][5:].replace('-', '/')}–{r['EndDt'][5:].replace('-', '/')}"
+        tag = f' <span class="tag{" h2" if h.startswith("2") else ""}" title="{dates}">{h}</span>'
+    return (
+        f"<li><b>{escape(r['Sec_Number'])}</b> · {escape(meeting(r))} · "
+        f"{escape(r['Instructors'])}{tag}</li>"
+    )
+
+
+def hours(lectures, labs):
+    hrs = sorted({r["Hours"] for r in lectures})
+    s = "/".join(hrs) + (" hr" if hrs == ["1"] else " hrs")
+    if labs:
+        s += f" + {labs[0]['Hours']} hr lab"
+    return s
+
+
+def show(subj):
+    courses = defaultdict(lambda: {"lec": [], "lab": []})
+    for r in report:
+        if r["Subject_RefID"] != subj:
+            continue
+        num, is_lab = course_num(r)
+        courses[num]["lab" if is_lab else "lec"].append(r)
+
+    print('<table class="table table-sm courses"><tbody>')
+    for num in sorted(courses, key=sortkey):
+        lec = sorted(courses[num]["lec"], key=lambda r: r["Sec_Number"])
+        lab = sorted(courses[num]["lab"], key=lambda r: r["Sec_Number"])
+        first = (lec or lab)[0]
+
+        # Special-topics courses put the real description in Notes.
+        desc = escape(next((r["Desc"].strip() for r in lec + lab if r["Desc"]), ""))
+        notes = (first["Notes"] or "")
+        if "Special Topic" in notes:
+            desc = re.sub(r"\s*Fee: \$\d+", "", notes) + (f"<p>{desc}</p>" if desc else "")
+
+        print("<tr><td class='crs'>")
+        print(f"<span class='num'>{subj} {num}</span> {escape(first['Section_Title'])}")
+        print(f"<div class='meta'>{hours(lec, lab)}</div>")
+        xl = cross_listed(first)
+        if xl:
+            print(f"<div class='xlist'>Cross-listed as {' and '.join(xl)}</div>")
+        if desc:
+            print(f"<details><summary>Description</summary>{desc}</details>")
+        print("</td><td>")
+        if lab:
+            print("<div class='kind'>Lecture: pick one</div>" if len(lec) > 1 else "<div class='kind'>Lecture</div>")
+        print("<ul>" + "".join(section_item(r) for r in lec) + "</ul>")
+        if lab:
+            print("<div class='kind'>Lab: pick any one</div>" if len(lab) > 1 else "<div class='kind'>Lab</div>")
+            print("<ul>" + "".join(section_item(r) for r in lab) + "</ul>")
+        print("</td></tr>")
+    print("</tbody></table>\n")
+```
+
+### Computer Science (CS)
+
+```{python}
+#| output: asis
+show("CS")
+```
+
+### Data Science (DATA)
+
+```{python}
+#| output: asis
+show("DATA")
+```
+
+### Statistics (STAT)
+
+```{python}
+#| output: asis
+show("STAT")
+```
+
+### Mathematics (MATH)
+
+```{python}
+#| output: asis
+show("MATH")
 ```
