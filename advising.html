@@ -254,7 +254,12 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
 <style>
 .cal-controls { display: flex; flex-wrap: wrap; gap: 0.5em 1.5em; align-items: center; margin-bottom: 0.75em; font-size: 0.9em; }
 .cal-controls label { cursor: pointer; white-space: nowrap; }
-.cal-controls .sw { display: inline-block; width: 0.8em; height: 0.8em; border-radius: 2px; margin: 0 0.25em 0 0.15em; vertical-align: -0.05em; }
+.cal-controls input[type="checkbox"] { accent-color: var(--cal-color, #2563eb); margin: 0 0.25em 0 0.15em; vertical-align: -0.05em; }
+.cal-controls .half-group { display: inline-flex; align-items: center; gap: 0.25em; }
+.cal-controls .half-label { font-weight: 600; margin-right: 0.25em; }
+.cal-controls .half-opt { border: 1px solid #ced4da; border-radius: 4px; padding: 0.15em 0.6em; background: #fff; }
+.cal-controls .half-opt input { position: absolute; opacity: 0; pointer-events: none; }
+.cal-controls .half-opt:has(input:checked) { background: #2563eb; border-color: #2563eb; color: #fff; }
 .cal-controls .legend { color: #6c757d; }
 .cal-controls .legend .lab { display: inline-block; width: 1.4em; height: 0.8em; border: 1px dashed #6c757d; background: #e9ecef; vertical-align: -0.05em; }
 .cal-scroll { overflow-x: auto; }
@@ -284,11 +289,12 @@ gtag('config', 'G-6SPV9Y5XFG', { 'anonymize_ip': true});
   const state = { half: 1, subjects: new Set(Object.keys(COLORS)) };
 
   const controls = document.getElementById("cal-controls");
+  const halfOpts = [[1, "1st half (Jan 19 – Mar 5)"], [2, "2nd half (Mar 15 – May 6)"]]
+    .map(([v, t]) => `<label class="half-opt"><input type="radio" name="cal-half" value="${v}" ${v === 1 ? "checked" : ""}><span>${t}</span></label>`).join("");
   controls.innerHTML =
-    `<span>${[[1, "1st half (Jan 19 – Mar 5)"], [2, "2nd half (Mar 15 – May 6)"]].map(([v, t]) =>
-      `<label><input type="radio" name="cal-half" value="${v}" ${v === 1 ? "checked" : ""}> ${t}</label>`).join(" &nbsp; ")}</span>` +
+    `<span class="half-group"><span class="half-label">Half:</span>${halfOpts}</span>` +
     `<span>${Object.entries(COLORS).map(([s, c]) =>
-      `<label><input type="checkbox" value="${s}" checked><span class="sw" style="background:${c}"></span>${s}</label>`).join(" ")}</span>` +
+      `<label><input type="checkbox" value="${s}" checked style="--cal-color:${c}">${s}</label>`).join(" ")}</span>` +
     `<span class="legend"><span class="lab"></span> lab</span>`;
   controls.addEventListener("change", e => {
     if (e.target.name === "cal-half") state.half = +e.target.value;
