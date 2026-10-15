@@ -9,11 +9,24 @@ execute:
 
 A collection of links I find useful when advising students.
 
-## Schedules
+## Majors and Programs
 
-- [Annual Schedule for CS](https://computing.calvin.edu/academics/course-schedule/)
-- [Annual Schedule for Math / Stat](https://mathstat-advising.stem.calvin.edu/)
-- [Math / Data / Stat minors](https://mathstat-advising.stem.calvin.edu/minors-with-data.html)
+- Computer Science: [BCS](https://calvin.edu/majors-programs/bachelor-computer-science-bcs), [CS Plus](https://calvin.edu/majors-programs/computer-science-plus), and [CS Minor](https://calvin.edu/majors-programs/computer-science-plus) (same page as CS Plus)
+- [Data Science](https://calvin.edu/majors-programs/data-science-major-bs-minor) major and minor
+
+Consider adding one of the following to your program:
+
+- [Cybersecurity Certificate](https://calvin.edu/majors-programs/cybersecurity-certificate)
+- For CS students, adding a [Data Science](https://calvin.edu/majors-programs/data-science-major-bs-minor) minor or a [Statistics minor](https://calvin.edu/majors-programs/statistics-major-ba-minor) may only require one or two additional courses.
+- For Data Science students, consider a Computer Science minor.
+- Consider the [Information Systems minor](https://calvin.edu/majors-programs/information-systems-minor) or the [Entrepreneurship minor](https://calvin.edu/majors-programs/entrepreneurship-major-ba-minor)
+
+## Program-Specific Advising Resources
+
+- [CS Advising](https://calvin.edu/academics/school-stem/computer-science/student-experience/advising), including the annual schedule
+- [Math / Statistics Advising](https://mathstat-advising.stem.calvin.edu/) homepage:
+    - [annual schedule](https://mathstat-advising.stem.calvin.edu/course-offerings.html)
+    - [Math / Data / Stat minors](https://mathstat-advising.stem.calvin.edu/minors-with-data.html)
 
 ## Core Curriculum
 
