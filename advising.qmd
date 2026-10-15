@@ -245,7 +245,7 @@ print(f"<script>window.CAL_EVENTS = {data};</script>")
 <style>
 .cal-controls { display: flex; flex-wrap: wrap; gap: 0.5em 1.5em; align-items: center; margin-bottom: 0.75em; font-size: 0.9em; }
 .cal-controls label { cursor: pointer; white-space: nowrap; }
-.cal-controls .sw { display: inline-block; width: 0.8em; height: 0.8em; border-radius: 2px; margin: 0 0.25em 0 0.15em; vertical-align: -0.05em; }
+.cal-controls input[type="checkbox"] { accent-color: var(--cal-color, #2563eb); margin: 0 0.25em 0 0.15em; vertical-align: -0.05em; }
 .cal-controls .half-group { display: inline-flex; align-items: center; gap: 0.25em; }
 .cal-controls .half-label { font-weight: 600; margin-right: 0.25em; }
 .cal-controls .half-opt { border: 1px solid #ced4da; border-radius: 4px; padding: 0.15em 0.6em; background: #fff; }
@@ -285,7 +285,7 @@ print(f"<script>window.CAL_EVENTS = {data};</script>")
   controls.innerHTML =
     `<span class="half-group"><span class="half-label">Half:</span>${halfOpts}</span>` +
     `<span>${Object.entries(COLORS).map(([s, c]) =>
-      `<label><input type="checkbox" value="${s}" checked><span class="sw" style="background:${c}"></span>${s}</label>`).join(" ")}</span>` +
+      `<label><input type="checkbox" value="${s}" checked style="--cal-color:${c}">${s}</label>`).join(" ")}</span>` +
     `<span class="legend"><span class="lab"></span> lab</span>`;
   controls.addEventListener("change", e => {
     if (e.target.name === "cal-half") state.half = +e.target.value;
