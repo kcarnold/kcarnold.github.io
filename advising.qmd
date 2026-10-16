@@ -20,6 +20,7 @@ Consider adding one of the following to your program:
 - For CS students, adding a [Data Science](https://calvin.edu/majors-programs/data-science-major-bs-minor) minor or a [Statistics minor](https://calvin.edu/majors-programs/statistics-major-ba-minor) may only require one or two additional courses.
 - For Data Science students, consider a Computer Science minor.
 - Consider the [Information Systems minor](https://calvin.edu/majors-programs/information-systems-minor) or the [Entrepreneurship minor](https://calvin.edu/majors-programs/entrepreneurship-major-ba-minor)
+- If you're adding a minor or second major, you might also consider the [Collegiate Scholars](https://calvin.edu/majors-programs/collegiate-scholars) program.
 
 ## Program-Specific Advising Resources
 
@@ -30,10 +31,9 @@ Consider adding one of the following to your program:
 
 ## Core Curriculum
 
-- [Core Courses in Catalog](https://catalog.calvin.edu/content.php?catoid=25&navoid=803)
-- [Annotated Core Bookmarklet](https://www.taosdev.com/bookmarklet-devkit/#EQehAIDkHkBUFEBc5YAsCWBncBbAhgJ65bY4CuANgC7oC0VeA5owKYAm4mLAxjQPYA7TAG5OLFuADqfAE4BrNoQCEAHQFqAFBoCU4ALwA+cAG814c+DDgASmQHgqGbIIeoJAYVkeyMmem6UZDjgAA5MEi6oVFQhmIhg3HgMFHyMAHSJFABu6AJp7GQgamYWVgDiSW4y4Nx8PlzYAEZEXLzogiXmtUJUNXUyDfrgAiwA7uAAsnghOsKd4Gx8ATgsAlRpAI5kLDIEAMosFDxUsgCCFBQaAORpeJmptLX1LFfaaQBmsvB3qBoAHvojKZ7BZQUdegI8Cshn80lQWH8qJ41qsqHMQaDzOCxG0XHpwLDuCkGlRrrd7oxHl5XpttrsDkdeLJrqgAMwAGnAqAALDT4YjkfC1ujMRZupg+Ec0ilGBpIStOa1+AJtCLReB0O9wBolE8BixMGlUHhMHKoSxtLpjH1noauKT5SxOQBtAC6ugAvvNQXqGmlWA7zW8QmRML8le0VWrzB7VcUMZYIJA+PDcJQaLQKFgaAJGJh5tj3ugBlRTgIBCmkpGhgJKBRowslkFUbSdvtDsczhcyXc8DKqc8aZ8ZN9uL8AYYTN6LNjHTC4QikYIhWjp1iWL0I3iCRliQbSTde-3ajIXm8tm2GZ2ZCyOVzeW9+UuUcK1+BsSmqth8W6376Df6G5misbzDqOvyfjsBy4vYk7AuqmKatqW72Eoej4pBMjQcqVpvghmGGiGYYaJh2GRnGCYIV6lEWLGDagkhJGODshpHLmjjgEYAAMuE0aK4qSiw0qpBoKjABM6boIgYmco6irHJGnIEWkABWfC5NcnKvBRCFghu4CHL0+KLMsLbcKeSQsPARwrGs1yYGEAivPR6qGbcIQhKsbDuBgFBsBoJnNmsGQWfCsCLsmbAsKJwDgH2EoavYYngAA1OAylqRpVxaZaOm6eYbmYFQBBSp8ax7OgABeEj4lcADsACsACkVwuaKhXFVKtQpNU+JiQAxAAnHVABMDUjY0YmiFY+AyHwHR8ZisLTJ5Ajeb5-mGXl+WMUWJZlhWDDKvo6HDHWuh7UVB2Vsd+J-G14DUQhu3Fld5Y3dWaH4rWFwXa9pbvUdkZpJg5mShQACSax8AAaugYyzPMdFqLGszAEAA) ("Drag me to bookmark bar")
+See my [Core Advising tool](https://kcarnold.github.io/calvin-core/)
 
-  Run the bookmarklet on [the Core page in the catalog](https://catalog.calvin.edu/content.php?catoid=25&navoid=803).
+[Core Courses in Catalog](https://catalog.calvin.edu/content.php?catoid=25&navoid=803)
 
 ## Student Resources
 
