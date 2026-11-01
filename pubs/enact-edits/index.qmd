@@ -23,7 +23,7 @@ url_pdf: "https://arxiv.org/abs/2504.08726"
 url_code: 'https://github.com/AIToolsLab/writing-prototypes'
 url_dataset: ''
 url_poster: ""
-url_project: 'https://huggingface.co/spaces/CalvinU/writing-prototypes'
+url_project: 'https://aitoolslab.github.io/writing-prototypes/'
 url_slides: 'https://docs.google.com/presentation/d/1WVWa32uvPxat12nuemBX2Pjo19EAKnUKbwjaGpkOR_M/edit?usp=sharing'
 url_source: ''
 url_video: ''

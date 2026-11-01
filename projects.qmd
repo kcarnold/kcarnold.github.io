@@ -26,7 +26,7 @@ Publications:
 - [On Suggesting Phrases vs. Predicting Words for Mobile Text Composition](/pubs/phrase-suggestion/index.qmd) (UIST 2016)
 
 
-See the [Writing Prototypes](https://huggingface.co/spaces/kcarnold/writing-prototypes) space for one demo that re-imagines the chatbot interface as a predictive text interface.
+See the [Writing Prototypes](https://aitoolslab.github.io/writing-prototypes/) site for one demo that re-imagines the chatbot interface as a predictive text interface.
 
 ## Educational Technology
 
