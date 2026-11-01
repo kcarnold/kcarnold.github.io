@@ -123,7 +123,7 @@
     "href": "projects.html#predictive-text",
     "title": "Projects",
     "section": "Predictive Text",
-    "text": "Predictive Text\nWe study how predictive text shapes what people write and develop interfaces that help people use it differently.\nPublications:\n\nPredictive Text Encourages Predictable Writing (IUI 2020)\nSentiment Bias in Predictive Text Recommendations Results in Biased Writing (GI 2018)\nOn Suggesting Phrases vs. Predicting Words for Mobile Text Composition (UIST 2016)\n\nSee the Writing Prototypes space for one demo that re-imagines the chatbot interface as a predictive text interface."
+    "text": "Predictive Text\nWe study how predictive text shapes what people write and develop interfaces that help people use it differently.\nPublications:\n\nPredictive Text Encourages Predictable Writing (IUI 2020)\nSentiment Bias in Predictive Text Recommendations Results in Biased Writing (GI 2018)\nOn Suggesting Phrases vs. Predicting Words for Mobile Text Composition (UIST 2016)\n\nSee the Writing Prototypes site for one demo that re-imagines the chatbot interface as a predictive text interface."
   },
   {
     "objectID": "projects.html#educational-technology",
@@ -760,7 +760,7 @@
     "href": "posts/ml-interactives/index.html",
     "title": "ML Interactives",
     "section": "",
-    "text": "As I’ve been teaching AI / Machine Learning, I’ve made a few interactive demos to help students understand some concepts. Here’s a few:\n\nChatbot Internals - go to “Show Internals” page\nSoftmax / Cross Entropy\nReLU interactive (name: u04n00-relu.ipynb; show preview, open in Colab)\nNext-Token Distribution Visualization for seq2seq translation models"
+    "text": "As I’ve been teaching AI / Machine Learning, I’ve made a few interactive demos to help students understand some concepts. Here’s a few:\n\nChatbot Internals\nSoftmax / Cross Entropy\nReLU interactive (name: u04n00-relu.ipynb; show preview, open in Colab)\nNext-Token Distribution Visualization for seq2seq translation models"
   },
   {
     "objectID": "posts/llm-paper-reviewing/index.html",
