@@ -1,0 +1,21 @@
+---
+title: "In2Writing Workshop 2026"
+subtitle: "Ken Arnold · Calvin University"
+description: "Slides and links from my talks at the [In2Writing Workshop](https://in2writing.github.io/)"
+---
+
+## Talks
+
+- **Thoughtful: An extensible toolbox structured to guard human thinking** (with Nhyira Mante, Jiamei (Mary) Chen, and Alvin Waigwa) — [slides](/static/in2writing26-talks/Thoughtful.pptx)
+
+## Go deeper
+
+- **Try it:** the [Thoughtful AI Tools Lab](https://thoughtful-ai.com/) builds AI that helps people think rather than think for them. You can [try our writing tools](https://app.thoughtful-ai.com/) that support your writing without tainting your words.
+
+Get in touch: <ken.arnold@calvin.edu>
+
+## Share this page
+
+![](qr.svg){width=200px fig-alt="QR code linking to kenarnold.org/in2writing26"}
+
+kenarnold.org/in2writing26
