@@ -11,6 +11,7 @@ description: "Slides and links from my talks at the [In2Writing Workshop](https:
 ## Go deeper
 
 - **Try it:** the [Thoughtful AI Tools Lab](https://thoughtful-ai.com/) builds AI that helps people think rather than think for them. You can [try our writing tools](https://app.thoughtful-ai.com/) that support your writing without tainting your words.
+- **Prototypes:** [writing-prototypes](https://aitoolslab.github.io/writing-prototypes/) ([GitHub](https://github.com/aitoolslab/writing-prototypes))
 
 Get in touch: <ken.arnold@calvin.edu>
 
