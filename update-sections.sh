@@ -1,0 +1,2 @@
+#!/bin/sh
+curl -o CourseSchedule-27SP.json 'https://apim.workato.com/environmentp415915053/course-schedule-api-v1/CourseSchedule?AcademicPeriod=2027%20Spring' -H 'API-Token: c263621dc24eb72015cb47d26d979933ed1c8120b7ff6aa805870ace2ea2d565'
