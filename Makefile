@@ -8,6 +8,7 @@ all: qr
 	cp "/Users/ka37/Library/CloudStorage/Dropbox/ken/Oregon/Research Statement.pdf" static/kcarnold_research_statement.pdf
 	cp "/Users/ka37/Library/CloudStorage/OneDrive-CalvinUniversity/Scholarship/2026 Wisdom in AI Conference/From Every Language.pptx" static/wisdom2026-talks/
 	cp "/Users/ka37/Library/CloudStorage/OneDrive-CalvinUniversity/Scholarship/2026 Wisdom in AI Conference/Building Tech with AI.pptx" static/wisdom2026-talks/
+	cp "/Users/ka37/Library/CloudStorage/OneDrive-CalvinUniversity/research/Talks/2026-11-02 Thoughtful at In2Writing.pptx" static/in2writing26-talks/Thoughtful.pptx
 	quarto publish gh-pages --no-prompt --no-browser
 
 check:
