@@ -462,6 +462,34 @@
     "text": "How could communication tools help us honor each other?\n“Swords to plowshares” model of tech development\nMost simply, AI tools could help us check ourselves against the obvious forms of some of the evils of the tongue, like slander. “From the same mouth come blessing and cursing; my brothers and sisters, this ought not to be so” (James 3:10).; “do not speak evil against one another” (James 4:11). An AI editor could check if what we’re saying could be interpreted as cursing or slandering anyone, or identify places where our writing is boastful or not gentle. The system would be necessarily error-prone: it could not detect the hypocrisy of gentle words but a deceptive heart (Proverbs), and it might flag constructive criticism as evil speech. But taking a moment to check our speech against a few known fruits of the fire of Gehenna (James 3:6) could give faithful writers an opportunity to “examine their work”. Some email add-ins already let us evaluate the “tone” of our messages; a slander-checker could fit right in, but it might require more detailed explanation of how our writing might be (mis)-construed, in order to catch the problem.\nThings we write may not be intentionally evil, but may still not honor the time or thinking of our readers if they are not clear. Writing tools can help us honor our readers’ attention and thought by helping to remove quirks of text that distract, or clarify language that takes extra effort to understand. Tools like Grammarly or Microsoft Editor do this reasonably well at the scale of phrases or sentences; other tools could help writers identify larger-scale issues like inconsistencies, ambiguous interpretations, using terms without definition, etc.\nThings we write might also simply be wrong or incomplete. Writing tools could help us honor our readers by helping us notice unsubstantiated statements, overconfidence, assumptions that are made, etc. Current writing tools don’t help us identify these things at all; in fact they tend to encourage us to be overly confident.\nWriting as a technology puts the people who will receive it at a distance. This is useful for us for various reasons (we can edit, refine our thoughts; readers can skim or re-read as desired, etc.), but it does allow us to avoid thinking about our “audience”. But what writing does in someone else’s head is ultimately the point of the exercise of writing.\nTODO write more here\n- Perception:\n    - more deeply understanding others’ perspectives \n    - Understanding how social / organizational / governmental systems affect  different  people\n- Communication: all the words at least went through my brain before going to yours\n    - Better: I can see how you might react, and I revise my text accordingly\n    - I remove quirks of my text that don’t honor your attention\n    - I humbly notice where my ideas might be wrong or incomplete.\n- Action: \n    - Bring others’ voices into decision-making conversations (min_i normalize_i ( grad of conversation wrt perspective_i) )\n    - Communicate clearly, bringing recipients’ voices into crafting of messages\n\nHow we get there: my focus on Communication\n\nSpecific technologies I’m developing\n\nUse AI for meta-text, not text\nUse generation for highlighting, not replacement\nMake crafting tools (brushes, knives, …) for text, not magic wands\n\nProcess of involving students (research teams, classes)\n\nHCI class: options for students to work on writing tools or org decision-making tools"
   },
   {
+    "objectID": "in2writing26/index.html",
+    "href": "in2writing26/index.html",
+    "title": "In2Writing Workshop 2026",
+    "section": "",
+    "text": "Thoughtful: An extensible toolbox structured to guard human thinking (with Nhyira Mante, Jiamei (Mary) Chen, and Alvin Waigwa) — slides"
+  },
+  {
+    "objectID": "in2writing26/index.html#talks",
+    "href": "in2writing26/index.html#talks",
+    "title": "In2Writing Workshop 2026",
+    "section": "",
+    "text": "Thoughtful: An extensible toolbox structured to guard human thinking (with Nhyira Mante, Jiamei (Mary) Chen, and Alvin Waigwa) — slides"
+  },
+  {
+    "objectID": "in2writing26/index.html#go-deeper",
+    "href": "in2writing26/index.html#go-deeper",
+    "title": "In2Writing Workshop 2026",
+    "section": "Go deeper",
+    "text": "Go deeper\n\nTry it: the Thoughtful AI Tools Lab builds AI that helps people think rather than think for them. You can try our writing tools that support your writing without tainting your words.\n\nGet in touch: ken.arnold@calvin.edu"
+  },
+  {
+    "objectID": "in2writing26/index.html#share-this-page",
+    "href": "in2writing26/index.html#share-this-page",
+    "title": "In2Writing Workshop 2026",
+    "section": "Share this page",
+    "text": "Share this page\n\nkenarnold.org/in2writing26"
+  },
+  {
     "objectID": "posts/2026-10-13-ai-directions/index.html",
     "href": "posts/2026-10-13-ai-directions/index.html",
     "title": "AI Directions",
