@@ -44,6 +44,7 @@ My doctoral advisor, Krzysztof Gajos, has discussed my work and implications in 
 
 ## Updates
 
+- 2026-11-02: Presented *Thoughtful: An extensible toolbox structured to guard human thinking* at the [In2Writing Workshop](https://in2writing.github.io/). [Slides and links](/in2writing26/)
 - 2026-10-08: Two talks at [Wisdom in the Age of AI](https://calvin.edu/faith-and-technology/faith-and-ai-conference) at Calvin. [Slides and links](/wisdom2026/)
 - 2025-08-21: Gave the [keynote at the Calvin Fall Conference](https://www.youtube.com/watch?v=AkNaEuXQEX8) for faculty and staff
 - 2025-05-04: Two posters presented at [In2Writing 2025](https://in2writing.glitch.me/), the Fourth Workshop on Intelligent and Interactive Writing Assistants, co-located with [NAACL 2025](https://2025.naacl.org/):
