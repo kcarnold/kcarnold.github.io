@@ -67,4 +67,4 @@ In discussions with my students on the way home, here are a few things I'm think
 - Wise use of AI may require pre-commitment. Express your intention ahead of time, and get help following through with that intention. (Like going to the gym?)
 - What does success look like for writers? For writing tools?
 - Rather than having a bunch of different modules, could a set of composable interaction designs enable a wide range of specific (community-shareable/remixable) interactions that are predictable/understandable despite their range?
-- What would it take to run all of these tools on fully-open LLMs?
+- What would it take to run all of these tools on fully-open LLMs? Can we benchmark how well different models do on writing support tasks? (See, e.g., [FOXGLOVE](https://aclanthology.org/2026.emnlp-main.781/))
