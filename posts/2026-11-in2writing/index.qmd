@@ -1,6 +1,8 @@
 ---
 title: "In2Writing 2026 Trip Report"
+description: "I took a day trip to a conference on AI writing assistants. Some thoughts."
 date: "2026-11-03"
+author: "Ken Arnold"
 ---
 
 Last week I had the last-minute idea to attend the [In2Writing](https://in2writing.github.io/) workshop, held this year at UIST in Detroit. I wasn't able to take a week away for the full conference, but I could make a day trip for just the workshop. And if I'm driving anyway, I might as well invite students! Both of my summer research students (Mary Chen and Nhyira Mante), and another student who just joined the project this semester (Alvin Waigwa) were able to come with me on an early-morning drive across Michigan.
@@ -22,3 +24,47 @@ Some quotable quotes:
 Max Kreminski talked about his work on radically open-endend interactive stories, inspired by [Janet Murray](https://en.wikipedia.org/wiki/Janet_Murray)'s [Hamlet on the Holodeck](https://en.wikipedia.org/wiki/Hamlet_on_the_Holodeck). How might people create interactive stories that readers can explore freely, while keeping the hand of the author? He gave examples like [Twine](https://en.wikipedia.org/wiki/Twine_(software)), [Disco Elysium](https://en.wikipedia.org/wiki/Disco_Elysium), [Caves of Qud](https://en.wikipedia.org/wiki/Caves_of_Qud), [Façade](https://en.wikipedia.org/wiki/Fa%C3%A7ade_(video_game)), and [AI Dungeon](https://en.wikipedia.org/wiki/AI_Dungeon) as early ideas. He presented his own work: [Dramamancer](https://github.com/dramamakers/dramamancer) (story progress rules), [Elsewise](https://arxiv.org/abs/2601.15295), and [Bonsai](https://tinypot.vercel.app/). All three explore ways that an author can craft a narrative asynchronously, with AI filling in the synchronous responses. Bonsai was particularly interesting: the author expresses their vision through *editing out* story traces that people explored that aren't within their vision of the story. So the story world become a co-creation between the author and a community of reader-players.
 
 I was given an opportunity to give a brief presentation on the keynote panel as well. I had three messages: (1) design what AI should *not* do (fences), (2) integrate into where writers are already working, through the Thoughtful platform, and (3) (briefly) design for communities, off the screen. My [slides and demos](/in2writing26/).
+
+Afterwards, the panel fielded questions:
+
+- *Our own workflows? Despite studying AI and writing, the three of us all write in old-fashioned ways. That's signal.
+- *AI disclosure* on Wattpad? It's complicated (see above). They're wary of trying to auto-classify, e.g., to avoid flagging people who use translation software.
+- [Adam Coscia](https://adamcoscia.com/) of Stevens asked about learning. Max responded by talking about his work in scientific creativity support, especially through capturing the idiosyncratic traces of how experts explore literature. To avoid homogenization (the range of literature explored by LLMs is much smaller and more homogenous).
+- Role of AI: treating the tool like a first-aid kit (used only when really needed) rather than a coffee (grabbed automatically). Thinking about self-efficacy.
+- What about when the community is not friendly? Algorithms do weird things to communities, and together with jockeying for power/status, that can lead to harm.
+
+## Tool Exchange
+
+We then had a very interesting tool-swapping activity. One of the organizers had vibe-coded a "Modular Word Processor" that included vibed reimplementations of 48 writing tools from the literature and scholarly community, architected so that they could run simultaneously on the same texts. It was pretty cool technically, especially being able to have the tools simultaneously. We did some speed-writing, with each person spending about 5 minutes with a story using a writing tool, then handing that story off to the next person. It was fun but frenetic. Fun to explore all of these different tools, together with other people's writing ideas. Frenetic, though, because we barely had a chance to figure out which tools even worked well, yet alone how to work with them in a writing process.
+
+A few takeaways:
+
+- Thoughtfulness clashes with time pressure.
+- Discovering *what kind of support you need now* takes awareness of the options, intentionality about goals, and effort. **How do people enter** a writing-tool ecosystem?
+- Sometimes very simple tools can be insightful. Like highlighting the topic sentence of prior paragraphs.
+- We need a common visual language / interaction design for writing support tools.
+- Combinations work better than expected.
+- Tools embed assumptions about expected amount of AI use, how creative the writer is expected to be, where in the writing process you'll be spending time, etc.
+
+We did this activity twice, once before lunch and once afterwards.
+
+## Wrap-ups
+
+We debriefed the activity using sticky notes and table discussions. I needed to take a break for part of this time. The list above includes some of what I remember from that time.
+
+[Sarah Sterman](https://ssterman.web.illinois.edu/) of UIUC proposed that we start a collaborative project on common tooling (like [ROS](https://en.wikipedia.org/wiki/Robot_Operating_System) is for robotics) for writing support tools, and that we collaborate to study them in authentic writing contexts. This aligns well with our vision for Thoughtful.
+
+Max Kreminski suggested a return to the genre of "Interaction Criticism" for giving each other heuristic-style evaluations of tools.
+
+Discussion included whether Word/Google Docs extensions could work at all: people don't use Word anymore now that it's paid, Google Docs is free but not open-source; should we really be using it since we can't extend / modify how it shows the document itself?
+
+## Some thoughts
+
+In discussions with my students on the way home, here are a few things I'm thinking about:
+
+- What's writing **for**? Most of the workshop seemed to assume it was for entertainment. But what about thinking? serving others?
+- **Teaching** writers could be a way to think about helping without creating dependency. For example, everyone could learn more about genres, their readers, writing strategies, ideas they could reference, etc. Goal: engaging with the tool helps you write better without the tool.
+- Wise use of AI may require pre-commitment. Express your intention ahead of time, and get help following through with that intention. (Like going to the gym?)
+- What does success look like for writers? For writing tools?
+- Rather than having a bunch of different modules, could a set of composable interaction designs enable a wide range of specific (community-shareable/remixable) interactions that are predictable/understandable despite their range?
+- What would it take to run all of these tools on fully-open LLMs?
