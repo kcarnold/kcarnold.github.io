@@ -18,7 +18,7 @@ Tom McGee spoke about competing tensions of supporting a community of readers an
 Some quotable quotes:
 
 - "People do it for the love of the game---but we can make the game a bit easier"
-- "Adding AI t oanything is like adding food coloring to water. No matter how much or how little you add, it still looks like AI."
+- "Adding AI to anything is like adding food coloring to water. No matter how much or how little you add, it still looks like AI."
 - Can we "improve the *experience* of writing without replacing the *act* of writing"?
 
 Max Kreminski talked about his work on radically open-endend interactive stories, inspired by [Janet Murray](https://en.wikipedia.org/wiki/Janet_Murray)'s [Hamlet on the Holodeck](https://en.wikipedia.org/wiki/Hamlet_on_the_Holodeck). How might people create interactive stories that readers can explore freely, while keeping the hand of the author? He gave examples like [Twine](https://en.wikipedia.org/wiki/Twine_(software)), [Disco Elysium](https://en.wikipedia.org/wiki/Disco_Elysium), [Caves of Qud](https://en.wikipedia.org/wiki/Caves_of_Qud), [Façade](https://en.wikipedia.org/wiki/Fa%C3%A7ade_(video_game)), and [AI Dungeon](https://en.wikipedia.org/wiki/AI_Dungeon) as early ideas. He presented his own work: [Dramamancer](https://github.com/dramamakers/dramamancer) (story progress rules), [Elsewise](https://arxiv.org/abs/2601.15295), and [Bonsai](https://tinypot.vercel.app/). All three explore ways that an author can craft a narrative asynchronously, with AI filling in the synchronous responses. Bonsai was particularly interesting: the author expresses their vision through *editing out* story traces that people explored that aren't within their vision of the story. So the story world become a co-creation between the author and a community of reader-players.
@@ -62,7 +62,7 @@ Discussion included whether Word/Google Docs extensions could work at all: peopl
 
 In discussions with my students on the way home, here are a few things I'm thinking about:
 
-- What's writing **for**? Most of the workshop seemed to assume it was for entertainment. But what about thinking? serving others?
+- What's writing **for**? Most of the workshop seemed to assume it was for entertainment or self-expression. But what about thinking? serving others?
 - **Teaching** writers could be a way to think about helping without creating dependency. For example, everyone could learn more about genres, their readers, writing strategies, ideas they could reference, etc. Goal: engaging with the tool helps you write better without the tool.
 - Wise use of AI may require pre-commitment. Express your intention ahead of time, and get help following through with that intention. (Like going to the gym?)
 - What does success look like for writers? For writing tools?
