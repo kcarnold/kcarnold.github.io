@@ -1,0 +1,24 @@
+---
+title: "In2Writing 2026 Trip Report"
+date: "2026-11-03"
+---
+
+Last week I had the last-minute idea to attend the [In2Writing](https://in2writing.github.io/) workshop, held this year at UIST in Detroit. I wasn't able to take a week away for the full conference, but I could make a day trip for just the workshop. And if I'm driving anyway, I might as well invite students! Both of my summer research students (Mary Chen and Nhyira Mante), and another student who just joined the project this semester (Alvin Waigwa) were able to come with me on an early-morning drive across Michigan.
+
+A brief rundown of the day, then some overall thoughts.
+
+## Keynote Panel
+
+Three panelists spoke briefly: Tom McGee (of Wattpad), Max Kreminski (Cornell Tech, formerly Midjourney), and me.
+
+Tom McGee spoke about competing tensions of supporting a community of readers and writers -- mostly hobbyists, often "Pantsers" (writing by the seat of their pants, without planning), and with complicated relationships with AI. Readers claim they hate AI -- yet many of the stories they gravitate towards have at least some AI text. Writers claim they don't use AI at all... yet many secretly do. How to keep Wattpad from becoming a sea of slop? Probably their most promising uses of AI are on the backend: flagging material that might be age-inappropriate to warn writers before they even submit it; finding stories that are likely to succeed; helping curate tags and labels so that writers can make their work findable. But they're very interested in learning from what the In2Writing community has been working on--and were interested in Thoughtful.
+
+Some quotable quotes:
+
+- "People do it for the love of the game---but we can make the game a bit easier"
+- "Adding AI t oanything is like adding food coloring to water. No matter how much or how little you add, it still looks like AI."
+- Can we "improve the *experience* of writing without replacing the *act* of writing"?
+
+Max Kreminski talked about his work on radically open-endend interactive stories, inspired by [Janet Murray](https://en.wikipedia.org/wiki/Janet_Murray)'s [Hamlet on the Holodeck](https://en.wikipedia.org/wiki/Hamlet_on_the_Holodeck). How might people create interactive stories that readers can explore freely, while keeping the hand of the author? He gave examples like [Twine](https://en.wikipedia.org/wiki/Twine_(software)), [Disco Elysium](https://en.wikipedia.org/wiki/Disco_Elysium), [Caves of Qud](https://en.wikipedia.org/wiki/Caves_of_Qud), [Façade](https://en.wikipedia.org/wiki/Fa%C3%A7ade_(video_game)), and [AI Dungeon](https://en.wikipedia.org/wiki/AI_Dungeon) as early ideas. He presented his own work: [Dramamancer](https://github.com/dramamakers/dramamancer) (story progress rules), [Elsewise](https://arxiv.org/abs/2601.15295), and [Bonsai](https://tinypot.vercel.app/). All three explore ways that an author can craft a narrative asynchronously, with AI filling in the synchronous responses. Bonsai was particularly interesting: the author expresses their vision through *editing out* story traces that people explored that aren't within their vision of the story. So the story world become a co-creation between the author and a community of reader-players.
+
+I was given an opportunity to give a brief presentation on the keynote panel as well. I had three messages: (1) design what AI should *not* do (fences), (2) integrate into where writers are already working, through the Thoughtful platform, and (3) (briefly) design for communities, off the screen. My [slides and demos](/in2writing26/).
