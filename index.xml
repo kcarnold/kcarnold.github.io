@@ -10,7 +10,39 @@
 <atom:link href="https://kenarnold.org/index.xml" rel="self" type="application/rss+xml"/>
 <description>Thinking About People with AI</description>
 <generator>quarto-1.10.19</generator>
-<lastBuildDate>Tue, 13 Oct 2026 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 03 Nov 2026 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>In2Writing 2026 Trip Report</title>
+  <dc:creator>Ken Arnold</dc:creator>
+  <link>https://kenarnold.org/posts/2026-11-in2writing/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Last week I had the last-minute idea to attend the <a href="https://in2writing.github.io/">In2Writing</a> workshop, held this year at UIST in Detroit. I wasn’t able to take a week away for the full conference, but I could make a day trip for just the workshop. And if I’m driving anyway, I might as well invite students! Both of my summer research students (Mary Chen and Nhyira Mante), and another student who just joined the project this semester (Alvin Waigwa) were able to come with me on an early-morning drive across Michigan.</p>
+<p>A brief rundown of the day, then some overall thoughts.</p>
+<section id="keynote-panel" class="level2">
+<h2 class="anchored" data-anchor-id="keynote-panel">Keynote Panel</h2>
+<p>Three panelists spoke briefly: Tom McGee (of Wattpad), Max Kreminski (Cornell Tech, formerly Midjourney), and me.</p>
+<p>Tom McGee spoke about competing tensions of supporting a community of readers and writers – mostly hobbyists, often “Pantsers” (writing by the seat of their pants, without planning), and with complicated relationships with AI. Readers claim they hate AI – yet many of the stories they gravitate towards have at least some AI text. Writers claim they don’t use AI at all… yet many secretly do. How to keep Wattpad from becoming a sea of slop? Probably their most promising uses of AI are on the backend: flagging material that might be age-inappropriate to warn writers before they even submit it; finding stories that are likely to succeed; helping curate tags and labels so that writers can make their work findable. But they’re very interested in learning from what the In2Writing community has been working on–and were interested in Thoughtful.</p>
+<p>Some quotable quotes:</p>
+<ul>
+<li>“People do it for the love of the game—but we can make the game a bit easier”</li>
+<li>“Adding AI t oanything is like adding food coloring to water. No matter how much or how little you add, it still looks like AI.”</li>
+<li>Can we “improve the <em>experience</em> of writing without replacing the <em>act</em> of writing”?</li>
+</ul>
+<p>Max Kreminski talked about his work on radically open-endend interactive stories, inspired by <a href="https://en.wikipedia.org/wiki/Janet_Murray">Janet Murray</a>’s <a href="https://en.wikipedia.org/wiki/Hamlet_on_the_Holodeck">Hamlet on the Holodeck</a>. How might people create interactive stories that readers can explore freely, while keeping the hand of the author? He gave examples like <a href="https://en.wikipedia.org/wiki/Twine_(software)">Twine</a>, <a href="https://en.wikipedia.org/wiki/Disco_Elysium">Disco Elysium</a>, <a href="https://en.wikipedia.org/wiki/Caves_of_Qud">Caves of Qud</a>, <a href="https://en.wikipedia.org/wiki/Fa%C3%A7ade_(video_game)">Façade</a>, and <a href="https://en.wikipedia.org/wiki/AI_Dungeon">AI Dungeon</a> as early ideas. He presented his own work: <a href="https://github.com/dramamakers/dramamancer">Dramamancer</a> (story progress rules), <a href="https://arxiv.org/abs/2601.15295">Elsewise</a>, and <a href="https://tinypot.vercel.app/">Bonsai</a>. All three explore ways that an author can craft a narrative asynchronously, with AI filling in the synchronous responses. Bonsai was particularly interesting: the author expresses their vision through <em>editing out</em> story traces that people explored that aren’t within their vision of the story. So the story world become a co-creation between the author and a community of reader-players.</p>
+<p>I was given an opportunity to give a brief presentation on the keynote panel as well. I had three messages: (1) design what AI should <em>not</em> do (fences), (2) integrate into where writers are already working, through the Thoughtful platform, and (3) (briefly) design for communities, off the screen. My <a href="../../in2writing26/">slides and demos</a>.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://kenarnold.org/posts/2026-11-in2writing/</guid>
+  <pubDate>Tue, 03 Nov 2026 05:00:00 GMT</pubDate>
+</item>
 <item>
   <title>AI Directions</title>
   <dc:creator>Ken Arnold</dc:creator>
@@ -1864,28 +1896,6 @@ font-style: inherit;">+</span> encoded_text)))</span></code></pre></div></div>
   <category>lm</category>
   <guid>https://kenarnold.org/posts/lm-hallucinate/</guid>
   <pubDate>Thu, 16 Feb 2023 05:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Does increasing ‘alignment’ increase risk?</title>
-  <dc:creator>Ken Arnold</dc:creator>
-  <link>https://kenarnold.org/posts/risks-of-alignment/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>OpenAI’s <a href="https://openai.com/alignment/">stated purpose</a> for working on the sort of adjustments to language models that led to ChatGPT was to “align” their behavior with human goals. Their motivation for this is <em>safety</em>, i.e., ensuring that the AI doesn’t do harmful things. That sounds noble, indeed. But is it?</p>
-<p>The biggest practical effect of this so-called “alignment” work was actually in molding the model into the form of a servant that can obey instructions. (Inside current models like ChatGPT, “obeying an instruction” looks less like planning steps towards a goal, more like imitating the behavior of people who have had that goal before; see my post on <a href="../../posts/personas/index.html">personas and RLHF</a> for details.) And, surprise, people found that servant collection-of-personas <em>much more useful</em> than the un-“aligned” language model. (To be explicit: the “goal” of the language model is simply to be unsurprised by the Internet.)</p>
-<p>Since people found it useful (combined with the <a href="https://www.tabletmag.com/sections/news/articles/oy-ai-jaron-lanier">theatrical show of the chat interface</a>), ChatGPT <em>got used</em>. Far more than any of their previous work.</p>
-<p>Was OpenAI’s effort towards AI “safety” successful? Perhaps the <em>relative</em> amount of harm per output was decreased, but the main effect was making the system far more successful, increasing its influence and the likelihood of undesired behaviors that they didn’t think to try to “align” (e.g., generating StackOverflow answers, which the community <a href="https://meta.stackoverflow.com/questions/421831/temporary-policy-chatgpt-is-banned">had to quickly ban</a>).</p>
-
-
-
- ]]></description>
-  <category>ai</category>
-  <guid>https://kenarnold.org/posts/risks-of-alignment/</guid>
-  <pubDate>Thu, 09 Feb 2023 05:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
