@@ -60,7 +60,22 @@
 </section>
 <section id="wrap-ups" class="level2">
 <h2 class="anchored" data-anchor-id="wrap-ups">Wrap-ups</h2>
-<p>We debriefed the activity using sticky notes and table discussions. I needed to take a break for part of this time. But we</p>
+<p>We debriefed the activity using sticky notes and table discussions. I needed to take a break for part of this time. The list above includes some of what I remember from that time.</p>
+<p><a href="https://ssterman.web.illinois.edu/">Sarah Sterman</a> of UIUC proposed that we start a collaborative project on common tooling (like <a href="https://en.wikipedia.org/wiki/Robot_Operating_System">ROS</a> is for robotics) for writing support tools, and that we collaborate to study them in authentic writing contexts. This aligns well with our vision for Thoughtful.</p>
+<p>Max Kreminski suggested a return to the genre of “Interaction Criticism” for giving each other heuristic-style evaluations of tools.</p>
+<p>Discussion included whether Word/Google Docs extensions could work at all: people don’t use Word anymore now that it’s paid, Google Docs is free but not open-source; should we really be using it since we can’t extend / modify how it shows the document itself?</p>
+</section>
+<section id="some-thoughts" class="level2">
+<h2 class="anchored" data-anchor-id="some-thoughts">Some thoughts</h2>
+<p>In discussions with my students on the way home, here are a few things I’m thinking about:</p>
+<ul>
+<li>What’s writing <strong>for</strong>? Most of the workshop seemed to assume it was for entertainment. But what about thinking? serving others?</li>
+<li><strong>Teaching</strong> writers could be a way to think about helping without creating dependency. For example, everyone could learn more about genres, their readers, writing strategies, ideas they could reference, etc. Goal: engaging with the tool helps you write better without the tool.</li>
+<li>Wise use of AI may require pre-commitment. Express your intention ahead of time, and get help following through with that intention. (Like going to the gym?)</li>
+<li>What does success look like for writers? For writing tools?</li>
+<li>Rather than having a bunch of different modules, could a set of composable interaction designs enable a wide range of specific (community-shareable/remixable) interactions that are predictable/understandable despite their range?</li>
+<li>What would it take to run all of these tools on fully-open LLMs?</li>
+</ul>
 
 
 </section>
