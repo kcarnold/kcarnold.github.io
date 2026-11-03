@@ -35,6 +35,32 @@
 </ul>
 <p>Max Kreminski talked about his work on radically open-endend interactive stories, inspired by <a href="https://en.wikipedia.org/wiki/Janet_Murray">Janet Murray</a>’s <a href="https://en.wikipedia.org/wiki/Hamlet_on_the_Holodeck">Hamlet on the Holodeck</a>. How might people create interactive stories that readers can explore freely, while keeping the hand of the author? He gave examples like <a href="https://en.wikipedia.org/wiki/Twine_(software)">Twine</a>, <a href="https://en.wikipedia.org/wiki/Disco_Elysium">Disco Elysium</a>, <a href="https://en.wikipedia.org/wiki/Caves_of_Qud">Caves of Qud</a>, <a href="https://en.wikipedia.org/wiki/Fa%C3%A7ade_(video_game)">Façade</a>, and <a href="https://en.wikipedia.org/wiki/AI_Dungeon">AI Dungeon</a> as early ideas. He presented his own work: <a href="https://github.com/dramamakers/dramamancer">Dramamancer</a> (story progress rules), <a href="https://arxiv.org/abs/2601.15295">Elsewise</a>, and <a href="https://tinypot.vercel.app/">Bonsai</a>. All three explore ways that an author can craft a narrative asynchronously, with AI filling in the synchronous responses. Bonsai was particularly interesting: the author expresses their vision through <em>editing out</em> story traces that people explored that aren’t within their vision of the story. So the story world become a co-creation between the author and a community of reader-players.</p>
 <p>I was given an opportunity to give a brief presentation on the keynote panel as well. I had three messages: (1) design what AI should <em>not</em> do (fences), (2) integrate into where writers are already working, through the Thoughtful platform, and (3) (briefly) design for communities, off the screen. My <a href="../../in2writing26/">slides and demos</a>.</p>
+<p>Afterwards, the panel fielded questions:</p>
+<ul>
+<li>*Our own workflows? Despite studying AI and writing, the three of us all write in old-fashioned ways. That’s signal.</li>
+<li><em>AI disclosure</em> on Wattpad? It’s complicated (see above). They’re wary of trying to auto-classify, e.g., to avoid flagging people who use translation software.</li>
+<li><a href="https://adamcoscia.com/">Adam Coscia</a> of Stevens asked about learning. Max responded by talking about his work in scientific creativity support, especially through capturing the idiosyncratic traces of how experts explore literature. To avoid homogenization (the range of literature explored by LLMs is much smaller and more homogenous).</li>
+<li>Role of AI: treating the tool like a first-aid kit (used only when really needed) rather than a coffee (grabbed automatically). Thinking about self-efficacy.</li>
+<li>What about when the community is not friendly? Algorithms do weird things to communities, and together with jockeying for power/status, that can lead to harm.</li>
+</ul>
+</section>
+<section id="tool-exchange" class="level2">
+<h2 class="anchored" data-anchor-id="tool-exchange">Tool Exchange</h2>
+<p>We then had a very interesting tool-swapping activity. One of the organizers had vibe-coded a “Modular Word Processor” that included vibed reimplementations of 48 writing tools from the literature and scholarly community, architected so that they could run simultaneously on the same texts. It was pretty cool technically, especially being able to have the tools simultaneously. We did some speed-writing, with each person spending about 5 minutes with a story using a writing tool, then handing that story off to the next person. It was fun but frenetic. Fun to explore all of these different tools, together with other people’s writing ideas. Frenetic, though, because we barely had a chance to figure out which tools even worked well, yet alone how to work with them in a writing process.</p>
+<p>A few takeaways:</p>
+<ul>
+<li>Thoughtfulness clashes with time pressure.</li>
+<li>Discovering <em>what kind of support you need now</em> takes awareness of the options, intentionality about goals, and effort. <strong>How do people enter</strong> a writing-tool ecosystem?</li>
+<li>Sometimes very simple tools can be insightful. Like highlighting the topic sentence of prior paragraphs.</li>
+<li>We need a common visual language / interaction design for writing support tools.</li>
+<li>Combinations work better than expected.</li>
+<li>Tools embed assumptions about expected amount of AI use, how creative the writer is expected to be, where in the writing process you’ll be spending time, etc.</li>
+</ul>
+<p>We did this activity twice, once before lunch and once afterwards.</p>
+</section>
+<section id="wrap-ups" class="level2">
+<h2 class="anchored" data-anchor-id="wrap-ups">Wrap-ups</h2>
+<p>We debriefed the activity using sticky notes and table discussions. I needed to take a break for part of this time. But we</p>
 
 
 </section>
