@@ -9,7 +9,7 @@
 <link>https://kenarnold.org/</link>
 <atom:link href="https://kenarnold.org/index.xml" rel="self" type="application/rss+xml"/>
 <description>Thinking About People with AI</description>
-<generator>quarto-1.10.19</generator>
+<generator>quarto-1.11.9</generator>
 <lastBuildDate>Tue, 03 Nov 2026 05:00:00 GMT</lastBuildDate>
 <item>
   <title>In2Writing 2026 Trip Report</title>
@@ -34,7 +34,7 @@
 <li>Can we “improve the <em>experience</em> of writing without replacing the <em>act</em> of writing”?</li>
 </ul>
 <p>Max Kreminski talked about his work on radically open-endend interactive stories, inspired by <a href="https://en.wikipedia.org/wiki/Janet_Murray">Janet Murray</a>’s <a href="https://en.wikipedia.org/wiki/Hamlet_on_the_Holodeck">Hamlet on the Holodeck</a>. How might people create interactive stories that readers can explore freely, while keeping the hand of the author? He gave examples like <a href="https://en.wikipedia.org/wiki/Twine_(software)">Twine</a>, <a href="https://en.wikipedia.org/wiki/Disco_Elysium">Disco Elysium</a>, <a href="https://en.wikipedia.org/wiki/Caves_of_Qud">Caves of Qud</a>, <a href="https://en.wikipedia.org/wiki/Fa%C3%A7ade_(video_game)">Façade</a>, and <a href="https://en.wikipedia.org/wiki/AI_Dungeon">AI Dungeon</a> as early ideas. He presented his own work: <a href="https://github.com/dramamakers/dramamancer">Dramamancer</a> (story progress rules), <a href="https://arxiv.org/abs/2601.15295">Elsewise</a>, and <a href="https://tinypot.vercel.app/">Bonsai</a>. All three explore ways that an author can craft a narrative asynchronously, with AI filling in the synchronous responses. Bonsai was particularly interesting: the author expresses their vision through <em>editing out</em> story traces that people explored that aren’t within their vision of the story. So the story world become a co-creation between the author and a community of reader-players.</p>
-<p>I was given an opportunity to give a brief presentation on the keynote panel as well. I had three messages: (1) design what AI should <em>not</em> do (fences), (2) integrate into where writers are already working, through the Thoughtful platform, and (3) (briefly) design for communities, off the screen. My <a href="../../in2writing26/">slides and demos</a>.</p>
+<p>I was given an opportunity to give a brief presentation on the keynote panel as well. I had three messages: (1) design what AI should <em>not</em> do (fences), (2) integrate into where writers are already working, through the <a href="https://app.thoughtful-ai.com">Thoughtful platform</a>, and (3) (briefly) design for communities, off the screen. My <a href="../../in2writing26/">slides and demos</a>.</p>
 <p>Afterwards, the panel fielded questions:</p>
 <ul>
 <li>*Our own workflows? Despite studying AI and writing, the three of us all write in old-fashioned ways. That’s signal.</li>
@@ -570,7 +570,7 @@ That Thou my God shouldst die for me?
 Amazing love! How can it be 
 That Thou, my God, shouldst die for me? </code></pre>
 <p>(For the output below, I had actually provided the entire song.)</p>
-<div class="callout callout-style-default callout-note callout-titled" title="Analysis Results">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -636,7 +636,7 @@ The meter is primarily iambic, with some variations, typically 4 strong beats pe
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-note callout-titled" title="Literal Translation">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -666,7 +666,7 @@ Que Tú, mi Dios, debieras morir por mí?
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-note callout-titled" title="Clarity">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -702,7 +702,7 @@ que TÚ, mi DIOS, mu-RIE-ras por MÍ?</code></pre>
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-note callout-titled" title="Back-Translation">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -727,7 +727,7 @@ That You, my God, would die for me?</code></pre>
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-note callout-titled" title="Review">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -767,7 +767,7 @@ Despite these suggestions, the translation is strong and singable, maintaining b
 </div>
 </div>
 <p>Note, with some skepticism, the feel-good judgment at the end.</p>
-<div class="callout callout-style-default callout-note callout-titled" title="Final Translation">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
